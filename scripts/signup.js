@@ -59,15 +59,15 @@ signUp.addEventListener("click", () => {
       var data = JSON.parse(localStorage.getItem("signupData"));
       data.push({email: email.value,password: password.value,userName:userName.value});
       localStorage.setItem("signupData", JSON.stringify(data));
-      window.location.href ="/facebook-clone/pages/login.html";
+      window.location.href ="/pages/login.html";
     } else {
       userData.push({email: email.value,password: password.value,userName: userName.value});
       localStorage.setItem("signupData", JSON.stringify(userData));
-      window.location.href = "/facebook-clone/pages/login.html";
+      window.location.href = "/pages/login.html";
     }
   }
 });
 
 cross.addEventListener("click", () => {
-  window.location.href = "/facebook-clone/pages/login.html";
+  window.location.href = "/pages/login.html";
 });
