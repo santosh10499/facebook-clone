@@ -1185,10 +1185,23 @@
     .friends-details-left img {
         width: 4em;
         height: 4em;
-        border: 1px solid rgb(213, 210, 210);
-        border-radius: 0.6em;
         margin-right: 0.5em;
-        cursor: pointer;
+    }
+
+    .image-div {                        
+        width: 25%;
+        padding: 0.3em;  
+        position: relative; 
+        cursor: pointer;  
+    }
+
+    .check-ins-details-wrapper {
+        width: 100%;
+    }
+
+    .groups-details-wrapper {
+        width: 100%;
+        padding: 0.3em;
     }
 
 }
