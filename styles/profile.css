@@ -631,6 +631,17 @@
     border-bottom: 4px solid rgb(24, 118, 242);
 }
 
+#photos-more-btn {
+    display: none;
+}
+
+#photos-more-btn i {
+    margin-left: 0.4em;
+    font-size: 0.8rem;
+}
+
+
+
 
 
 .photos-images-container {           /*========= Photos-div-images-container ========*/ 
@@ -1055,6 +1066,8 @@
 /*=========================================== Responsive-Part =========================================================================*/
 
 
+
+
 @media screen and (max-width: 1280px) {
 
     .section-1-container {
@@ -1190,9 +1203,6 @@
 
     .image-div {                        
         width: 25%;
-        padding: 0.3em;  
-        position: relative; 
-        cursor: pointer;  
     }
 
     .check-ins-details-wrapper {
@@ -1201,7 +1211,67 @@
 
     .groups-details-wrapper {
         width: 100%;
-        padding: 0.3em;
+    }
+
+}
+
+
+
+@media screen and (max-width: 420px) {
+
+    .cover-photo {
+        height: 11em;
+    }
+
+    .add-story, .edit-profile {
+        padding: 0.5em 2em;
+    }
+
+    #profile-friends-btn {
+        display: none;
+    }
+
+    #friends-recentlyAdded-btn {
+        display: none;
+    }
+
+    .friends-details-wrapper {            
+        width: 100%;
+    }
+
+    #your-photos, #albums {
+        display: none;
+    }
+
+    #photos-more-btn {
+        display: block;
+    }
+
+    .image-div {                        
+        width: 100%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 360px) {
+
+    .add-story, .edit-profile {
+        padding: 0.5em 1.5em;
+    }
+
+    .add-photos-videos {
+        display: none   ;
+    }
+
+    .groups-details-div,.check-ins-details-div {
+        padding: 0.5em;
+    }
+
+    .groups-details-div img,
+    .check-ins-details-div img {
+        margin-right: 0.5em;
     }
 
 }
