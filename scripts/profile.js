@@ -114,6 +114,7 @@ const updateCoverPhotoUrlInput = document.querySelector("#update-cover-photo-url
 const coverPhotoUploadBtn = document.querySelector("#cover-photo-upload-btn");
 const coverPhotoCancelBtn = document.querySelector("#cover-photo-cancel-btn");
 
+/*---------------- Event-Listener for Add-Cover-Photo-Btn -----------------*/
 
 addCoverPhotoBtn.addEventListener("click", ()=>{
     updateCoverPhotoDiv.style.display = "block";
@@ -123,6 +124,7 @@ coverPhotoCancelBtn.addEventListener("click", ()=>{
     updateCoverPhotoDiv.style.display = "none";
 })
 
+/*---------------- Event-Listener for Profile-picture-Edit-Btn -----------------*/
 
 profilePicCamera.addEventListener("click", ()=>{
     updateProfilePicDiv.style.display = "block";
@@ -137,6 +139,8 @@ let imagesArray = [];
 imagesArray = JSON.parse(localStorage.getItem("images"));
 displayImages(imagesArray);
 
+/*---------------- Event-Listener for Cover-Photo-UploadBtn -----------------*/
+
 coverPhotoUploadBtn.addEventListener("click", ()=>{
     const coverPhotoUrl = updateCoverPhotoUrlInput.value;
     document.getElementById("cover-photo-img").src = coverPhotoUrl;
@@ -146,6 +150,7 @@ coverPhotoUploadBtn.addEventListener("click", ()=>{
     updateCoverPhotoUrlInput.value = "";
 })
 
+/*---------------- Event-Listener for Profile-picture-UploadBtn -----------------*/
 
 profilePicUploadBtn.addEventListener("click", ()=>{
     const profilePicUrl = updateProfileUrlInput.value;
@@ -157,6 +162,7 @@ profilePicUploadBtn.addEventListener("click", ()=>{
 })
 
 
+/*-------------------- Function to display profile and cover-photo images ------------------------*/
 
 function displayImages(imgArr){
     imgArr.forEach((ele) => {
