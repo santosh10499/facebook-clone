@@ -9,8 +9,19 @@
     <link rel="stylesheet" href="/styles/profile.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="/scripts/sidebar.js" defer></script>
+    <script src="/scripts/profile.js" defer></script>
 </head>
 <body>
+    <div id="fb-header"></div>
+    <div id="header-popUp"></div>
     <main>
         <!----------------------------------------------------------- Section-1 ----------------------------------------------------------------->
         <section class="section-1">
@@ -18,7 +29,7 @@
 
                 <!--------------------------------------------- cover-photo ----------------------------------------------->
                 <div class="cover-photo">
-                    <img src="/images/cover-photo-rohan.jpg" alt="">
+                    <img src="/images/cover-photo-rohan.jpg" id="cover-photo-img" alt="">
                     <div class="add-cover-photo">
                         <i class="bi bi-camera-fill"></i>
                         <span>Add cover photo</span>
@@ -32,8 +43,8 @@
                     <div class="profile-details-display">
                         <div class="profile-details-left-part">
                             <div class="profile-pic">
-                                <img src="/images/profile-pic-rohan.jpg" alt="">
-                                <i class="bi bi-camera-fill"></i>
+                                <img src="/images/profile-pic-rohan.jpg" id="profile-pic-img" alt="">
+                                <i class="bi bi-camera-fill" id="profile-pic-camera"></i>
                             </div>
                             <div class="profile-name">
                                 <h1>Rohan Palankar</h1>
@@ -582,5 +593,48 @@
         <button class="side-fix-button"><i class="bi bi-pencil-square"></i></button>
         <!------------------------------------------------------------------------------------------------------------------------------>
     </main>
+
+
+
+    <!----------------------------------------------- Pop-Up-divs ----------------------------------------------------------------------------->
+
+
+
+
+
+    <!----------------------------------------------- Update-Cover-Photo-PopUp ----------------------------------------------------->
+    <div class="update-cover-photo-div">
+        <div class="update-cover-photo-header">
+            <h2 class="update-cover-photo-title">Update Cover Photo</h2>
+        </div>
+        <div class="update-cover-photo-body">
+            <div class="update-cover-photo-body-top">
+                <label for="">Enter Image URL:</label>
+                <input type="text" id="update-cover-photo-url-input">
+            </div>
+            <div class="update-cover-photo-body-bottom">
+                <button id="cover-photo-upload-btn">Upload</button>
+                <button id="cover-photo-cancel-btn">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------------------------- Update-Profile-Picture-PopUp ----------------------------------------------------->
+    <div class="update-profile-pic-div">
+        <div class="update-profile-header">
+            <h2 class="update-profile-title">Update Profile Picture</h2>
+        </div>
+        <div class="update-profile-body">
+            <div class="update-profile-body-top">
+                <label for="">Enter Image URL:</label>
+                <input type="text" id="update-profile-url-input">
+            </div>
+            <div class="update-profile-body-bottom">
+                <button id="profile-pic-upload-btn">Upload</button>
+                <button id="profile-pic-cancel-btn">Cancel</button>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
