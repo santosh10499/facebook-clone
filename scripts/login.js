@@ -25,7 +25,7 @@ login.addEventListener("click", () => {
       
       email.style.border = "1px solid black";
       password.style.border = "1px solid black";
-      window.location.href ="/facebook-clone/pages/home.html";
+      window.location.href ="/pages/header.html";
       
     } else {
       
@@ -40,5 +40,5 @@ login.addEventListener("click", () => {
 
 // ================================click event on click button]]]]]]]]]]]]]]]]]]]]]]]
 createAccount.addEventListener("click", () => {
-    window.location.href = "/facebook-clone/pages/signup.html";
+    window.location.href = "/pages/signup.html";
 });
