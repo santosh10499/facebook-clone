@@ -220,8 +220,277 @@ let usersArray = [
       {id:"photo-8",img:"/images/photos-of-you-8.jpg"}
     ],
     checkIns: [
-      {id:"checkIns-1",name:""}
+      {id:"checkIns-1",name:"Betalbatim, Goa, India",details_1:"Majorda",details_2:"Visited on December 19, 2019",img:"/images/betalbatim.jpg"},
+      {id:"checkIns-2",name:"Don Mueang Airport Bangkok",details_1:"Bangkok, Thailand",details_2:"Visited on November 9, 2019",img:"/images/airport-bangkok.jpg"},
+      {id:"checkIns-3",name:"Chennai International Airport",details_1:"Chennai, India",details_2:"Visited on November 8, 2019",img:"/images/chennai-airport.jpg"},
+      {id:"checkIns-4",name:"Goa International Airport",details_1:"Mormugao, Goa",details_2:"Visited on November 8, 2019",img:"/images/goa-airport.jpg"}
+    ],
+    groups: [
+      {id:"group-1",name:"Konkani Friends",category:"Public group |",members:"1.9K members",img:"/images/group-1.jpg"},
+      {id:"group-2",name:"Daivadnya Pratibhe",category:"Public group |",members:"797 members",img:"/images/group-2.jpg"},
+      {id:"group-3",name:"Passionpreneurs",category:"Public group |",members:"42.2K members",img:"/images/group-3.jpg"},
+      {id:"group-4",name:"Incredible Karwar",category:"Public group |",members:"4.9K members",img:"/images/group-4.jpg"}
     ]
+  },
+
+  {
+
   }
 
 ]
+
+
+
+
+
+
+/*============================================= Rendering User-Profile-details =================================================*/
+
+
+logInBtn.addEventListener("click", ()=>{
+
+  usersArray.forEach((userObj) => {
+
+    if (emailInput.value == userObj.email){
+
+      document.getElementById("cover-photo-img").src = userObj.coverPhoto;
+
+      document.getElementById("profile-pic-img").src = userObj.profilePic;
+
+      document.getElementById("profile-name").innerText = userObj.name;
+
+      document.getElementById("total-friends").innerText = userObj.totalFriends;
+
+      document.getElementById("work-place").innerText = userObj.workPlace;
+
+      document.getElementById("work-year").innerText = userObj.workYear;
+
+      document.getElementById("college").innerText = userObj.college;
+
+      document.getElementById("college-year").innerText = userObj.collegeYear;
+
+      document.getElementById("current-city").innerText = userObj.currentCity;
+
+      document.getElementById("permanent-city").innerText = userObj.permanentCity;
+
+      document.getElementById("relationship").innerText = userObj.relationship;
+
+      document.getElementById("contact-num").innerText = userObj.contactNum;
+
+      displayFriends(userObj.friends);
+
+      displayPhotos(userObj.photos);
+
+      displayCheckIns(userObj.checkIns);
+
+      displayGroups(userObj.groups);
+
+    }
+
+  })
+
+})
+
+
+
+/*====================================================== Display-Functions ==============================================================*/
+
+
+/*================================================= Function-displayFriends ======================================================*/
+
+function displayFriends(friendsArray){
+
+  friendsArray.forEach((frndObj) => {
+
+    if (frndObj.id == "frnd-1"){
+
+      document.getElementById("friend-1-img").src = frndObj.img;
+      document.getElementById("friend-1-name").innerText = frndObj.name;
+      document.getElementById("friend-1-mutuals").innerText = frndObj.mutual;
+
+    }
+    else if (frndObj.id == "frnd-2"){
+
+      document.getElementById("friend-2-img").src = frndObj.img;
+      document.getElementById("friend-2-name").innerText = frndObj.name;
+      document.getElementById("friend-2-mutuals").innerText = frndObj.mutual;
+
+    }
+    else if (frndObj.id == "frnd-3"){
+
+      document.getElementById("friend-3-img").src = frndObj.img;
+      document.getElementById("friend-3-name").innerText = frndObj.name;
+      document.getElementById("friend-3-mutuals").innerText = frndObj.mutual;
+
+    }
+    else if (frndObj.id == "frnd-4"){
+
+      document.getElementById("friend-4-img").src = frndObj.img;
+      document.getElementById("friend-4-name").innerText = frndObj.name;
+      document.getElementById("friend-4-mutuals").innerText = frndObj.mutual;
+
+    }
+    else if (frndObj.id == "frnd-5"){
+
+      document.getElementById("friend-5-img").src = frndObj.img;
+      document.getElementById("friend-5-name").innerText = frndObj.name;
+      document.getElementById("friend-5-mutuals").innerText = frndObj.mutual;
+
+    }
+    else if (frndObj.id == "frnd-6"){
+
+      document.getElementById("friend-6-img").src = frndObj.img;
+      document.getElementById("friend-6-name").innerText = frndObj.name;
+      document.getElementById("friend-6-mutuals").innerText = frndObj.mutual;
+
+    }
+
+  })
+
+}
+
+
+/*================================================= Function-displayPhotos ======================================================*/
+
+
+function displayPhotos(photosArray){
+
+  photosArray.forEach((photoObj) => {
+
+    if (photoObj.id == "photo-1"){
+
+      document.getElementById("photo-1").src = photoObj.img;
+
+    }
+    else if (photoObj.id == "photo-2"){
+
+      document.getElementById("photo-2").src = photoObj.img;
+
+    }
+    else if (photoObj.id == "photo-3"){
+
+      document.getElementById("photo-3").src = photoObj.img;
+
+    }
+    else if (photoObj.id == "photo-4"){
+
+      document.getElementById("photo-4").src = photoObj.img;
+
+    }
+    else if (photoObj.id == "photo-5"){
+
+      document.getElementById("photo-5").src = photoObj.img;
+
+    }
+    else if (photoObj.id == "photo-6"){
+
+      document.getElementById("photo-6").src = photoObj.img;
+
+    }
+    else if (photoObj.id == "photo-7"){
+
+      document.getElementById("photo-7").src = photoObj.img;
+
+    }
+    else if (photoObj.id == "photo-8"){
+
+      document.getElementById("photo-8").src = photoObj.img;
+
+    }
+
+  })
+
+}
+
+
+
+/*================================================= Function-displayCheckIns ======================================================*/
+
+
+function displayCheckIns(checkInsArray){
+
+  checkInsArray.forEach((checkInsObj) => {
+
+    if (checkInsObj.id == "checkIns-1"){
+
+      document.getElementById("checkIns-1-img").src = checkInsObj.img;
+      document.getElementById("check-ins-1-name").innerText = checkInsObj.name;
+      document.getElementById("check-ins-1-details-1").innerText = checkInsObj.details_1;
+      document.getElementById("check-ins-1-details-2").innerText = checkInsObj.details_2;
+
+    }
+    else if (checkInsObj.id == "checkIns-2"){
+
+      document.getElementById("checkIns-2-img").src = checkInsObj.img;
+      document.getElementById("check-ins-2-name").innerText = checkInsObj.name;
+      document.getElementById("check-ins-2-details-1").innerText = checkInsObj.details_1;
+      document.getElementById("check-ins-2-details-2").innerText = checkInsObj.details_2;
+
+    }
+    else if (checkInsObj.id == "checkIns-3"){
+
+      document.getElementById("checkIns-3-img").src = checkInsObj.img;
+      document.getElementById("check-ins-3-name").innerText = checkInsObj.name;
+      document.getElementById("check-ins-3-details-1").innerText = checkInsObj.details_1;
+      document.getElementById("check-ins-3-details-2").innerText = checkInsObj.details_2;
+
+    }
+    else if (checkInsObj.id == "checkIns-4"){
+
+      document.getElementById("checkIns-4-img").src = checkInsObj.img;
+      document.getElementById("check-ins-4-name").innerText = checkInsObj.name;
+      document.getElementById("check-ins-4-details-1").innerText = checkInsObj.details_1;
+      document.getElementById("check-ins-4-details-2").innerText = checkInsObj.details_2;
+
+    }
+
+  })
+
+}
+
+
+
+/*================================================= Function-displayGroups ======================================================*/
+
+
+function displayGroups(groupsArray){
+
+  groupsArray.forEach((groupObj) => {
+
+    if (groupObj.id == "group-1"){
+
+      document.getElementById("group-1-img").src = groupObj.img;
+      document.getElementById("group-1-name").innerText = groupObj.name;
+      document.getElementById("group-1-category").innerText = groupObj.category;
+      document.getElementById("group-1-members").innerText = groupObj.members;
+
+    }
+    else if (groupObj.id == "group-2"){
+
+      document.getElementById("group-2-img").src = groupObj.img;
+      document.getElementById("group-2-name").innerText = groupObj.name;
+      document.getElementById("group-2-category").innerText = groupObj.category;
+      document.getElementById("group-2-members").innerText = groupObj.members;
+
+    }
+    else if (groupObj.id == "group-3"){
+
+      document.getElementById("group-3-img").src = groupObj.img;
+      document.getElementById("group-3-name").innerText = groupObj.name;
+      document.getElementById("group-3-category").innerText = groupObj.category;
+      document.getElementById("group-3-members").innerText = groupObj.members;
+
+    }
+    else if (groupObj.id == "group-4"){
+
+      document.getElementById("group-4-img").src = groupObj.img;
+      document.getElementById("group-4-name").innerText = groupObj.name;
+      document.getElementById("group-4-category").innerText = groupObj.category;
+      document.getElementById("group-4-members").innerText = groupObj.members;
+
+    }
+
+  })
+
+}
+

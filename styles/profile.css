@@ -983,13 +983,13 @@
     opacity: 0.9;
 }
 
-#group-name {
+.group-name {
     font-weight: 600;
     margin-bottom: 0.2em;
     cursor: pointer;
 }
 
-#group-name:hover {
+.group-name:hover {
     text-decoration: underline;
 } 
 
@@ -1004,13 +1004,13 @@
     color: rgb(104, 103, 103);
 }
 
-#group-members {
+.group-members {
     font-size: 0.8rem;
     color: rgb(104, 103, 103);
     cursor: pointer;
 }
 
-#group-members:hover {
+.group-members:hover {
     text-decoration: underline;
 }
 

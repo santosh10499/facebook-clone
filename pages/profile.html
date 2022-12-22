@@ -48,8 +48,8 @@
                                 <i class="bi bi-camera-fill" id="profile-pic-camera"></i>
                             </div>
                             <div class="profile-name">
-                                <h1>Rohan Palankar</h1>
-                                <p>2.1K friends</p>
+                                <h1 id="profile-name">Rohan Palankar</h1>
+                                <p id="total-friends">2.1K friends</p>
                                 <div class="small-imgs">
                                     <img src="/images/friend-1.jpg" alt="">
                                     <img src="/images/friend-2.jpg" alt="">
@@ -399,7 +399,7 @@
                     <div class="check-ins-container">
                         <div class="check-ins-details-wrapper">
                             <div class="check-ins-details-div">
-                                <img src="/images/betalbatim.jpg" id="checkIn-1-img" alt="">
+                                <img src="/images/betalbatim.jpg" id="checkIns-1-img" alt="">
                                 <div class="check-ins-details">
                                     <p class="check-ins-place-name" id="check-ins-1-name">Betalbatim, Goa, India</p>
                                     <p class="check-ins-place-details" id="check-ins-1-details-1">Majorda</p>
@@ -409,7 +409,7 @@
                         </div>
                         <div class="check-ins-details-wrapper">
                             <div class="check-ins-details-div">
-                                <img src="/images/airport-bangkok.jpg" alt="">
+                                <img src="/images/airport-bangkok.jpg" id="checkIns-2-img" alt="">
                                 <div class="check-ins-details">
                                     <p class="check-ins-place-name" id="check-ins-2-name">Don Mueang Airport Bangkok</p>
                                     <p class="check-ins-place-details" id="check-ins-2-details-1">Bangkok, Thailand</p>
@@ -419,7 +419,7 @@
                         </div>
                         <div class="check-ins-details-wrapper">
                             <div class="check-ins-details-div">
-                                <img src="/images/chennai-airport.jpg" alt="">
+                                <img src="/images/chennai-airport.jpg" id="checkIns-3-img" alt="">
                                 <div class="check-ins-details">
                                     <p class="check-ins-place-name" id="check-ins-3-name">Chennai International Airport</p>
                                     <p class="check-ins-place-details" id="check-ins-3-details-1">Chennai, India</p>
@@ -429,31 +429,11 @@
                         </div>
                         <div class="check-ins-details-wrapper">
                             <div class="check-ins-details-div">
-                                <img src="/images/goa-airport.jpg" alt="">
+                                <img src="/images/goa-airport.jpg" id="checkIns-4-img" alt="">
                                 <div class="check-ins-details">
                                     <p class="check-ins-place-name" id="check-ins-4-name">Goa International Airport</p>
                                     <p class="check-ins-place-details" id="check-ins-4-details-1">Mormugao, Goa</p>
                                     <p class="check-ins-place-details" id="check-ins-4-details-2">Visited on November 8, 2019</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="check-ins-details-wrapper">
-                            <div class="check-ins-details-div">
-                                <img src="/images/osia-multiplex.jpg" alt="">
-                                <div class="check-ins-details">
-                                    <p class="check-ins-place-name" id="check-ins-5-name">Osia Multiplex</p>
-                                    <p class="check-ins-place-details" id="check-ins-5-details-1">Margao, India</p>
-                                    <p class="check-ins-place-details" id="check-ins-5-details-2">Visited on January 25, 2015</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="check-ins-details-wrapper">
-                            <div class="check-ins-details-div">
-                                <img src="/images/colva-goa.jpg" alt="">
-                                <div class="check-ins-details">
-                                    <p class="check-ins-place-name" id="check-ins-6-name">Colva, Goa, India</p>
-                                    <p class="check-ins-place-details" id="check-ins-6-details-1">Goa</p>
-                                    <p class="check-ins-place-details" id="check-ins-6-details-2">Visited on April 29, 2019</p>
                                 </div>
                             </div>
                         </div>
@@ -477,78 +457,52 @@
                     <div class="groups-container">
                         <div class="groups-details-wrapper">
                             <div class="groups-details-div">
-                                <img src="/images/group-1.jpg" alt="">
+                                <img src="/images/group-1.jpg" id="group-1-img" alt="">
                                 <div class="groups-details">
-                                    <p id="group-name">Konkani Friends</p>
+                                    <p class="group-name" id="group-1-name">Konkani Friends</p>
                                     <div class="groups-sub-details">
                                         <span class="material-icons visibility">public</span>
-                                        <span id="group-category">Public group |</span>
-                                        <p id="group-members">1.9K members</p>
+                                        <span class="group-category" id="group-1-category">Public group |</span>
+                                        <p class="group-members" id="group-1-members">1.9K members</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="groups-details-wrapper">
                             <div class="groups-details-div">
-                                <img src="/images/group-2.jpg" alt="">
+                                <img src="/images/group-2.jpg" id="group-2-img" alt="">
                                 <div class="groups-details">
-                                    <p id="group-name">Daivadnya Pratibhe</p>
+                                    <p class="group-name" id="group-2-name">Daivadnya Pratibhe</p>
                                     <div class="groups-sub-details">
                                         <span class="material-icons visibility">public</span>
-                                        <span id="group-category">Public group |</span>
-                                        <p id="group-members">797 members</p>
+                                        <span class="group-category" id="group-2-category">Public group |</span>
+                                        <p class="group-members" id="group-2-members">797 members</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="groups-details-wrapper">
                             <div class="groups-details-div">
-                                <img src="/images/group-3.jpg" alt="">
+                                <img src="/images/group-3.jpg" id="group-3-img" alt="">
                                 <div class="groups-details">
-                                    <p id="group-name">Passionpreneurs</p>
+                                    <p class="group-name" id="group-3-name">Passionpreneurs</p>
                                     <div class="groups-sub-details">
                                         <span class="material-icons visibility">public</span>
-                                        <span id="group-category">Public group |</span>
-                                        <p id="group-members">42.2K members</p>
+                                        <span class="group-category" id="group-3-category">Public group |</span>
+                                        <p class="group-members" id="group-3-members">42.2K members</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="groups-details-wrapper">
                             <div class="groups-details-div">
-                                <img src="/images/group-4.jpg" alt="">
+                                <img src="/images/group-4.jpg" id="group-4-img" alt="">
                                 <div class="groups-details">
-                                    <p id="group-name">Incredible Karwar</p>
+                                    <p class="group-name" id="group-4-name">Incredible Karwar</p>
                                     <div class="groups-sub-details">
                                         <span class="material-icons visibility">public</span>
-                                        <span id="group-category">Public group |</span>
-                                        <p id="group-members">4.9K members</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="groups-details-wrapper">
-                            <div class="groups-details-div">
-                                <img src="/images/group-5.jpg" alt="">
-                                <div class="groups-details">
-                                    <p id="group-name">Pharma Wisdom</p>
-                                    <div class="groups-sub-details">
-                                        <span class="material-icons visibility">public</span>
-                                        <span id="group-category">Public group |</span>
-                                        <p id="group-members">122.0K members</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="groups-details-wrapper">
-                            <div class="groups-details-div">
-                                <img src="/images/group-6.jpg" alt="">
-                                <div class="groups-details">
-                                    <p id="group-name">The Green India Films</p>
-                                    <div class="groups-sub-details">
-                                        <span class="material-icons visibility">public</span>
-                                        <span id="group-category">Public group |</span>
-                                        <p id="group-members">198 members</p>
+                                        <span class="group-category" id="group-4-category">Public group |</span>
+                                        <p class="group-members" id="group-4-members">4.9K members</p>
                                     </div>
                                 </div>
                             </div>
