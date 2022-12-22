@@ -221,9 +221,9 @@ let usersArray = [
     ],
     checkIns: [
       {id:"checkIns-1",name:"Betalbatim, Goa, India",details_1:"Majorda",details_2:"Visited on December 19, 2019",img:"/images/betalbatim.jpg"},
-      {id:"checkIns-2",name:"Don Mueang Airport Bangkok",details_1:"Bangkok, Thailand",details_2:"Visited on November 9, 2019",img:"/images/airport-bangkok.jpg"},
-      {id:"checkIns-3",name:"Chennai International Airport",details_1:"Chennai, India",details_2:"Visited on November 8, 2019",img:"/images/chennai-airport.jpg"},
-      {id:"checkIns-4",name:"Goa International Airport",details_1:"Mormugao, Goa",details_2:"Visited on November 8, 2019",img:"/images/goa-airport.jpg"}
+      {id:"checkIns-2",name:"Don Mueang Airport",details_1:"Bangkok, Thailand",details_2:"Visited on November 9, 2019",img:"/images/airport-bangkok.jpg"},
+      {id:"checkIns-3",name:"Chennai Airport",details_1:"Chennai, India",details_2:"Visited on November 8, 2019",img:"/images/chennai-airport.jpg"},
+      {id:"checkIns-4",name:"Goa Airport",details_1:"Mormugao, Goa",details_2:"Visited on November 8, 2019",img:"/images/goa-airport.jpg"}
     ],
     groups: [
       {id:"group-1",name:"Konkani Friends",category:"Public group |",members:"1.9K members",img:"/images/group-1.jpg"},
@@ -234,10 +234,148 @@ let usersArray = [
   },
 
   {
+    name: "Santosh Mehta",
+    email: "santosh@gmail.com",
+    profilePic: "/images/santosh-mehta-profilepic.jpg",
+    coverPhoto: "/images/santosh-mehta-coverphoto.jpg",
+    totalFriends: "1K friends",
+    workPlace: "Worked at Facebook Management",
+    workYear: "2015 to 2022",
+    college: "Studied at Aiscet University",
+    collegeYear: "2017 to 2020",
+    currentCity: "Lives in Jharkhand",
+    permanentCity: "From Jharkhand",
+    relationship: "Single",
+    contactNum: "099396 81016",
+    friends: [
+      {id:"frnd-1",name:"Rahul Mehta",mutual:"270 mutual friends",img:"/images/santosh-friend-1.jpg"},
+      {id:"frnd-2",name:"Satish Mehta",mutual:"301 mutual friends",img:"/images/santosh-friend-2.jpg"},
+      {id:"frnd-3",name:"Ranjeet Gope",mutual:"110 mutual friends",img:"/images/santosh-friend-3.jpg"},
+      {id:"frnd-4",name:"Nitu Mehta",mutual:"18 mutual friends",img:"/images/santosh-friend-4.jpg"},
+      {id:"frnd-5",name:"Swapnil Gupta",mutual:"107 mutual friends",img:"/images/santosh-friend-5.jpg"},
+      {id:"frnd-6",name:"Vivek Mehta",mutual:"168 mutual friends",img:"/images/santosh-friend-6.jpg"}
+    ],
+    photos: [
+      {id:"photo-1",img:"/images/santosh-photo-1.jpg"},
+      {id:"photo-2",img:"/images/santosh-photo-2.jpg"},
+      {id:"photo-3",img:"/images/santosh-photo-3.jpg"},
+      {id:"photo-4",img:"/images/santosh-photo-4.jpg"},
+      {id:"photo-5",img:"/images/santosh-photo-5.jpg"},
+      {id:"photo-6",img:"/images/santosh-photo-6.jpg"},
+      {id:"photo-7",img:"/images/santosh-photo-7.jpg"},
+      {id:"photo-8",img:"/images/santosh-photo-8.jpg"}
+    ],
+    checkIns: [
+      {id:"checkIns-1",name:"Tagore Hill",details_1:"Jharkhand",details_2:"Visited on may 19, 2021",img:"/images/santosh-checkIn-1.webp"},
+      {id:"checkIns-2",name:"Pahari Mandir",details_1:"Jharkhand",details_2:"Visited on December 9, 2020",img:"/images/santosh-checkIn-2.webp"},
+      {id:"checkIns-3",name:"Jagannath Temple",details_1:"Jharkhand",details_2:"Visited on November 8, 2020",img:"/images/santosh-checkIn-3.webp"},
+      {id:"checkIns-4",name:"Nakshatra Van",details_1:"Jharkhand",details_2:"Visited on April 8, 2019",img:"/images/santosh-checkIn-4.webp"}
+    ],
+    groups: [
+      {id:"group-1",name:"Konkani Friends",category:"Public group |",members:"1.9K members",img:"/images/group-1.jpg"},
+      {id:"group-2",name:"Daivadnya Pratibhe",category:"Public group |",members:"797 members",img:"/images/group-2.jpg"},
+      {id:"group-3",name:"Passionpreneurs",category:"Public group |",members:"42.2K members",img:"/images/group-3.jpg"},
+      {id:"group-4",name:"Incredible Karwar",category:"Public group |",members:"4.9K members",img:"/images/group-4.jpg"}
+    ]
+  },
 
+  {
+    name: "Sonu Chandravanshi",
+    email: "ss0149952@gmail.com",
+    profilePic: "/images/sonu-profilepic.jpg",
+    coverPhoto: "/images/sonu-coverphoto.jpg",
+    totalFriends: "1.5K friends",
+    workPlace: "Worked at Asha Devi Firms",
+    workYear: "2022",
+    college: "Studied at Ramanujan College",
+    collegeYear: "2019 to 2022",
+    currentCity: "Lives in Faridabad",
+    permanentCity: "From Sasaram",
+    relationship: "Single",
+    contactNum: "083683 79257",
+    friends: [
+      {id:"frnd-1",name:"Amul Singh",mutual:"170 mutual friends",img:"/images/sonu-friend-1.jpg"},
+      {id:"frnd-2",name:"Satish Gupta",mutual:"221 mutual friends",img:"/images/sonu-friend-2.jpg"},
+      {id:"frnd-3",name:"Shubham Singh",mutual:"310 mutual friends",img:"/images/sonu-friend-3.jpg"},
+      {id:"frnd-4",name:"Deepak Mandal",mutual:"48 mutual friends",img:"/images/sonu-friend-4.jpg"},
+      {id:"frnd-5",name:"Manjeet",mutual:"207 mutual friends",img:"/images/sonu-friend-5.jpg"},
+      {id:"frnd-6",name:"Ashok Meena",mutual:"178 mutual friends",img:"/images/sonu-friend-6.jpg"}
+    ],
+    photos: [
+      {id:"photo-1",img:"/images/sonu-photo-1.jpg"},
+      {id:"photo-2",img:"/images/sonu-photo-2.jpg"},
+      {id:"photo-3",img:"/images/sonu-photo-3.jpg"},
+      {id:"photo-4",img:"/images/sonu-photo-4.jpg"},
+      {id:"photo-5",img:"/images/sonu-photo-5.jpg"},
+      {id:"photo-6",img:"/images/sonu-photo-6.jpg"},
+      {id:"photo-7",img:"/images/sonu-photo-7.jpg"},
+      {id:"photo-8",img:"/images/sonu-photo-8.jpg"}
+    ],
+    checkIns: [
+      {id:"checkIns-1",name:"Bodh Gaya",details_1:"Bihar",details_2:"Visited on January 19, 2022",img:"/images/sonu-checkIn-1.jpg"},
+      {id:"checkIns-2",name:"Patna",details_1:"Bihar",details_2:"Visited on November 9, 2021",img:"/images/sonu-checkIn-2.jpg"},
+      {id:"checkIns-3",name:"Iskcon Temple",details_1:"Faridabad",details_2:"Visited on August 8, 2021",img:"/images/sonu-checkIn-3.jpg"},
+      {id:"checkIns-4",name:"CITM Lake",details_1:"Faridabad",details_2:"Visited on September 8, 2019",img:"/images/sonu-checkIn-4.jpg"}
+    ],
+    groups: [
+      {id:"group-1",name:"Konkani Friends",category:"Public group |",members:"1.9K members",img:"/images/group-1.jpg"},
+      {id:"group-2",name:"Daivadnya Pratibhe",category:"Public group |",members:"797 members",img:"/images/group-2.jpg"},
+      {id:"group-3",name:"Passionpreneurs",category:"Public group |",members:"42.2K members",img:"/images/group-3.jpg"},
+      {id:"group-4",name:"Incredible Karwar",category:"Public group |",members:"4.9K members",img:"/images/group-4.jpg"}
+    ]
+  },
+
+  {
+    name: "Varsha Rajput",
+    email: "varsharajput353@gmail.com",
+    profilePic: "/images/varsha-profilepic.jpg",
+    coverPhoto: "/images/varsha-coverphoto.jpg",
+    totalFriends: "1.2K friends",
+    workPlace: "Worked at Herbal Life",
+    workYear: "2022",
+    college: "Studied at Delhi University",
+    collegeYear: "2018 to 2021",
+    currentCity: "Lives in Delhi",
+    permanentCity: "From Delhi",
+    relationship: "Single",
+    contactNum: "098765 43210",
+    friends: [
+      {id:"frnd-1",name:"Kajal",mutual:"70 mutual friends",img:"/images/varsha-friend-1.jpg"},
+      {id:"frnd-2",name:"Tanmay",mutual:"123 mutual friends",img:"/images/varsha-friend-2.jpg"},
+      {id:"frnd-3",name:"Ajay",mutual:"150 mutual friends",img:"/images/varsha-friend-3.jpg"},
+      {id:"frnd-4",name:"Arti",mutual:"74 mutual friends",img:"/images/varsha-friend-4.jpg"},
+      {id:"frnd-5",name:"Aditya",mutual:"401 mutual friends",img:"/images/varsha-friend-5.jpg"},
+      {id:"frnd-6",name:"Ashutosh",mutual:"205 mutual friends",img:"/images/varsha-friend-6.jpg"}
+    ],
+    photos: [
+      {id:"photo-1",img:"/images/varsha-photo-1.jpg"},
+      {id:"photo-2",img:"/images/varsha-photo-2.jpg"},
+      {id:"photo-3",img:"/images/varsha-photo-3.jpg"},
+      {id:"photo-4",img:"/images/varsha-photo-4.jpg"},
+      {id:"photo-5",img:"/images/varsha-photo-5.jpg"},
+      {id:"photo-6",img:"/images/varsha-photo-6.jpg"},
+      {id:"photo-7",img:"/images/varsha-photo-7.jpg"},
+      {id:"photo-8",img:"/images/varsha-photo-8.jpg"}
+    ],
+    checkIns: [
+      {id:"checkIns-1",name:"India Gate",details_1:"Delhi",details_2:"Visited on January 10, 2022",img:"/images/varsha-checkIn-1.jpg"},
+      {id:"checkIns-2",name:"Chandni Chowk",details_1:"Delhi",details_2:"Visited on November 22, 2021",img:"/images/varsha-checkIn-2.jpg"},
+      {id:"checkIns-3",name:"Connaught Place",details_1:"Delhi",details_2:"Visited on July 8, 2021",img:"/images/varsha-checkIn-3.jpg"},
+      {id:"checkIns-4",name:"Lotus Temple",details_1:"Delhi",details_2:"Visited on March 1, 2021",img:"/images/varsha-checkIn-4.jpg"}
+    ],
+    groups: [
+      {id:"group-1",name:"Konkani Friends",category:"Public group |",members:"1.9K members",img:"/images/group-1.jpg"},
+      {id:"group-2",name:"Daivadnya Pratibhe",category:"Public group |",members:"797 members",img:"/images/group-2.jpg"},
+      {id:"group-3",name:"Passionpreneurs",category:"Public group |",members:"42.2K members",img:"/images/group-3.jpg"},
+      {id:"group-4",name:"Incredible Karwar",category:"Public group |",members:"4.9K members",img:"/images/group-4.jpg"}
+    ]
   }
 
 ]
+
+
+
+
 
 
 
