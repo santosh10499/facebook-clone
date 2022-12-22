@@ -384,12 +384,15 @@ let usersArray = [
 
 /*============================================= Rendering User-Profile-details =================================================*/
 
+const logInBtn = document.getElementById("login-btn");
+const emailInput = document.getElementById("email-input");
 
-logInBtn.addEventListener("click", ()=>{
+
+// logInBtn.addEventListener("click", ()=>{
 
   usersArray.forEach((userObj) => {
 
-    if (emailInput.value == userObj.email){
+    if ("rohanpalankar8@gmail.com" == userObj.email){
 
       document.getElementById("cover-photo-img").src = userObj.coverPhoto;
 
@@ -427,7 +430,7 @@ logInBtn.addEventListener("click", ()=>{
 
   })
 
-})
+// })
 
 
 
