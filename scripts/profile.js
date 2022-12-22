@@ -272,10 +272,10 @@ let usersArray = [
       {id:"checkIns-4",name:"Nakshatra Van",details_1:"Jharkhand",details_2:"Visited on April 8, 2019",img:"/images/santosh-checkIn-4.webp"}
     ],
     groups: [
-      {id:"group-1",name:"Konkani Friends",category:"Public group |",members:"1.9K members",img:"/images/group-1.jpg"},
-      {id:"group-2",name:"Daivadnya Pratibhe",category:"Public group |",members:"797 members",img:"/images/group-2.jpg"},
-      {id:"group-3",name:"Passionpreneurs",category:"Public group |",members:"42.2K members",img:"/images/group-3.jpg"},
-      {id:"group-4",name:"Incredible Karwar",category:"Public group |",members:"4.9K members",img:"/images/group-4.jpg"}
+      {id:"group-1",name:"Young India",category:"Public group |",members:"15K members",img:"/images/santosh-group-1.jpg"},
+      {id:"group-2",name:"Local News",category:"Public group |",members:"605 members",img:"/images/santosh-group-2.jpg"},
+      {id:"group-3",name:"Friends",category:"Public group |",members:"30 members",img:"/images/santosh-group-3.jpg"},
+      {id:"group-4",name:"My City",category:"Public group |",members:"12.5K members",img:"/images/santosh-group-4.jpg"}
     ]
   },
 
@@ -318,10 +318,10 @@ let usersArray = [
       {id:"checkIns-4",name:"CITM Lake",details_1:"Faridabad",details_2:"Visited on September 8, 2019",img:"/images/sonu-checkIn-4.jpg"}
     ],
     groups: [
-      {id:"group-1",name:"Konkani Friends",category:"Public group |",members:"1.9K members",img:"/images/group-1.jpg"},
-      {id:"group-2",name:"Daivadnya Pratibhe",category:"Public group |",members:"797 members",img:"/images/group-2.jpg"},
-      {id:"group-3",name:"Passionpreneurs",category:"Public group |",members:"42.2K members",img:"/images/group-3.jpg"},
-      {id:"group-4",name:"Incredible Karwar",category:"Public group |",members:"4.9K members",img:"/images/group-4.jpg"}
+      {id:"group-1",name:"Cricket Lovers",category:"Public group |",members:"14K members",img:"/images/sonu-group-1.jpg"},
+      {id:"group-2",name:"Dreamers",category:"Public group |",members:"555 members",img:"/images/sonu-group-2.jpg"},
+      {id:"group-3",name:"Hustlers",category:"Public group |",members:"4K members",img:"/images/sonu-group-3.jpg"},
+      {id:"group-4",name:"Knowledge Hub",category:"Public group |",members:"8.2K members",img:"/images/sonu-group-4.jpg"}
     ]
   },
 
@@ -364,10 +364,10 @@ let usersArray = [
       {id:"checkIns-4",name:"Lotus Temple",details_1:"Delhi",details_2:"Visited on March 1, 2021",img:"/images/varsha-checkIn-4.jpg"}
     ],
     groups: [
-      {id:"group-1",name:"Konkani Friends",category:"Public group |",members:"1.9K members",img:"/images/group-1.jpg"},
-      {id:"group-2",name:"Daivadnya Pratibhe",category:"Public group |",members:"797 members",img:"/images/group-2.jpg"},
-      {id:"group-3",name:"Passionpreneurs",category:"Public group |",members:"42.2K members",img:"/images/group-3.jpg"},
-      {id:"group-4",name:"Incredible Karwar",category:"Public group |",members:"4.9K members",img:"/images/group-4.jpg"}
+      {id:"group-1",name:"Developers Hub",category:"Public group |",members:"2.1K members",img:"/images/varsha-group-1.jpg"},
+      {id:"group-2",name:"Science Facts",category:"Public group |",members:"21.3k members",img:"/images/varsha-group-2.jpg"},
+      {id:"group-3",name:"Travellers",category:"Public group |",members:"4.2K members",img:"/images/varsha-group-3.jpg"},
+      {id:"group-4",name:"Incredible Delhi",category:"Public group |",members:"87K members",img:"/images/varsha-group-4.jpg"}
     ]
   }
 
@@ -384,15 +384,15 @@ let usersArray = [
 
 /*============================================= Rendering User-Profile-details =================================================*/
 
-const logInBtn = document.getElementById("login-btn");
-const emailInput = document.getElementById("email-input");
+// const logInBtn = document.getElementById("login-btn");
+// const emailInput = document.getElementById("email-input");
 
 
 // logInBtn.addEventListener("click", ()=>{
 
   usersArray.forEach((userObj) => {
 
-    if ("rohanpalankar8@gmail.com" == userObj.email){
+    if ("ss0149952@gmail.com" == userObj.email){
 
       document.getElementById("cover-photo-img").src = userObj.coverPhoto;
 
