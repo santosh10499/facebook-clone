@@ -176,3 +176,52 @@ function displayImages(imgArr){
 }
 
 /*=============================================================================================================================================*/
+
+
+
+
+
+
+/*============================== Users-Array ==================================*/
+
+
+let usersArray = [
+
+  {
+    name: "Rohan Palankar",
+    email: "rohanpalankar8@gmail.com",
+    profilePic: "/images/profile-pic-rohan.jpg",
+    coverPhoto: "/images/cover-photo-rohan.jpg",
+    totalFriends: "2.1K friends",
+    workPlace: "Worked at Lupin Limited",
+    workYear: "2011 to 2021",
+    college: "Studied at YCMOU",
+    collegeYear: "2011 to 2014",
+    currentCity: "Lives in Karwar",
+    permanentCity: "From Karwar",
+    relationship: "Single",
+    contactNum: "095274 57742",
+    friends: [
+      {id:"frnd-1",name:"Rahul Shinde",mutual:"180 mutual friends",img:"/images/friend-1.jpg"},
+      {id:"frnd-2",name:"Nitin Palankar",mutual:"402 mutual friends",img:"/images/friend-2.jpg"},
+      {id:"frnd-3",name:"Sunil Pise",mutual:"100 mutual friends",img:"/images/friend-3.jpg"},
+      {id:"frnd-4",name:"Shivam Kale",mutual:"12 mutual friends",img:"/images/friend-4.jpg"},
+      {id:"frnd-5",name:"Swapnil Jadhav",mutual:"87 mutual friends",img:"/images/friend-5.jpg"},
+      {id:"frnd-6",name:"Aditya Revankar",mutual:"250 mutual friends",img:"/images/friend-6.jpg"}
+    ],
+    photos: [
+      {id:"photo-1",img:"/images/photos-of-you-1.jpg"},
+      {id:"photo-2",img:"/images/photos-of-you-2.jpg"},
+      {id:"photo-3",img:"/images/photos-of-you-3.jpg"},
+      {id:"photo-4",img:"/images/photos-of-you-4.jpg"},
+      {id:"photo-5",img:"/images/photos-of-you-5.jpg"},
+      {id:"photo-6",img:"/images/photos-of-you-6.jpg"},
+      {id:"photo-7",img:"/images/photos-of-you-7.jpg"},
+      {id:"photo-8",img:"/images/photos-of-you-8.jpg"}
+    ],
+    checkIns: [
+      {id:"checkIns-1",name:""}
+    ]
+  }
+
+]

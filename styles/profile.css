@@ -357,7 +357,9 @@
     cursor: default;
 }
 
-.overview-description #p2 {
+.overview-description #work-year,
+.overview-description #college-year,
+.overview-description #mobile {
     font-size: 0.8rem;
     color: rgb(111, 110, 110);
 }
@@ -521,12 +523,12 @@
     opacity: 0.9;
 }
 
-#friend-name {
+.friend-name {
     font-weight: 600;
     cursor: pointer;
 }
 
-#mutual-friends {
+.mutual-friends {
     color: rgb(104, 103, 103);
     font-size: 0.8rem;
     cursor: pointer;
@@ -865,17 +867,17 @@
     opacity: 0.9;
 }
 
-#check-ins-place-name {                      /*======== Check-ins-place-name ========*/
+.check-ins-place-name {                      /*======== Check-ins-place-name ========*/
     font-weight: 600;
     margin-bottom: 0.2em;
     cursor: pointer;
 }
 
-#check-ins-place-name:hover {
+.check-ins-place-name:hover {
     text-decoration: underline;
 } 
 
-#check-ins-place-details {                 /*======== Check-ins-details-below-name ========*/
+.check-ins-place-details {                 /*======== Check-ins-details-below-name ========*/
     color: rgb(104, 103, 103);
     font-size: 0.8rem;
     margin-bottom: 0.2em;
