@@ -27,10 +27,10 @@ for(const bts of delBtn){
 // =========================for sending request======================================================
 for(const bts of addBtn){
     bts.addEventListener('click', function(){
-        bts.parentNode.style.display = 'none';
+        bts.parentElement.style.display = 'none';
         bts.parentElement.previousElementSibling.style.display = 'none';
-        bts.parentElement.nextElementSibling.style.display = 'block'
-        bts.parentElement.nextElementSibling.nextElementSibling.style.display = 'block'
+        bts.parentElement.nextElementSibling.style.display = 'block';
+        bts.parentElement.nextElementSibling.nextElementSibling.style.display = 'block';
     })
 }
 
@@ -47,8 +47,8 @@ for(const bts of addBtn){
 for(const bts of cancel){
     bts.addEventListener('click', function(){
         bts.style.display = 'none';
-        bts.previousElementSibling.previousElementSibling.previousElementSibling.style.display = 'block';
-        bts.previousElementSibling.previousElementSibling.style.display = 'block';
+        bts.previousElementSibling.previousElementSibling.previousElementSibling.style.display = 'flex';
+        bts.previousElementSibling.previousElementSibling.style.display = 'flex';
         bts.previousElementSibling.style.display = 'none'
     })
 }
@@ -60,20 +60,20 @@ frnd_request.addEventListener('click', function(){
     const frndHead = document.getElementById('cont2');
     const frnd1 = document.getElementById('sec1');
     const frndHead1 = document.getElementById('cont1')
-    frnd1.style.display = 'block';
-    frndHead1.style.display = 'block';
+    frnd1.style.display = 'flex';
+    frndHead1.style.display = 'flex';
     frndHead.style.display = 'none';
     frnd.style.display = 'none';
 })
 
 
 allfrnd.addEventListener('click', function(){
-    const frnd = document.getElementById('sec2');
-    const frndHead = document.getElementById('cont2');
+    const frnd = document.querySelector('#sec2');
+    const frndHead = document.querySelector('#cont2');
     const frnd1 = document.getElementById('sec1');
     const frndHead1 = document.getElementById('cont1')
     frnd1.style.display = 'none';
     frndHead1.style.display = 'none';
     frndHead.style.display = 'block';
-    frnd.style.display = 'block';
+    frnd.style.display = 'none';
 })
