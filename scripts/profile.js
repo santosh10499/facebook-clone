@@ -45,8 +45,10 @@ profilePicCancelBtn.addEventListener("click", ()=>{
 
 
 let imagesArray = [];
-imagesArray = JSON.parse(localStorage.getItem("images"));
-displayImages(imagesArray);
+// imagesArray = JSON.parse(localStorage.getItem("images"));
+// displayImages(imagesArray);
+let userEmail=localStorage.getItem('userEmail')
+console.log(userEmail)
 
 /*---------------- Event-Listener for Cover-Photo-UploadBtn -----------------*/
 
@@ -296,7 +298,7 @@ let usersArray = [
 
   usersArray.forEach((userObj) => {
 
-    if ("rohanpalankar8@gmail.com" == userObj.email){
+    if (userEmail == userObj.email){
 
       document.getElementById("cover-photo-img").src = userObj.coverPhoto;
 
@@ -543,4 +545,21 @@ function displayGroups(groupsArray){
   })
 
 }
+const fb_logo = document.querySelector("#fb_logo");
 
+fb_logo.addEventListener("click", () => {
+  window.location.href = "/pages/header.html";
+});
+
+const home = document.querySelector("#home");
+
+home.addEventListener("click", () => {
+
+  window.location.href = "/pages/header.html";
+});
+
+const friend = document.querySelector("#friend");
+
+friend.addEventListener("click", () => {
+  window.location.href = "/pages/friends.html";
+});
