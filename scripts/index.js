@@ -242,7 +242,7 @@ dataRender()
 
 let Add_post = document.querySelector("#Add_post");
 let photo_video = document.querySelector("#create_post_Wrapper");
-console.log(photo_video.innerHTML);
+// console.log(photo_video.innerHTML);
 
 Add_post.addEventListener("click", (e) => {
   if (photo_video.style.display == "block") {
@@ -301,4 +301,20 @@ const fb_logo = document.querySelector("#fb_logo");
 
 fb_logo.addEventListener("click", () => {
   window.location.href = "/pages/header.html";
+});
+const friend = document.querySelector("#find-friend");
+friend.addEventListener("click", () => {
+  window.location.href = "/pages/friends.html";
+});
+const home = document.querySelector("#home");
+
+home.addEventListener("click", () => {
+  window.location.href = "/pages/header.html";
+});
+console.log(home.innerHTML)
+const friendIcon = document.querySelector("#friend");
+
+
+friendIcon.addEventListener("click", () => {
+  window.location.href = "/pages/friends.html";
 });

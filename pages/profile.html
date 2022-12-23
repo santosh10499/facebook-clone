@@ -16,12 +16,68 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="/scripts/sidebar.js" defer></script>
+    <!-- <script src="/scripts/sidebar.js" defer></script> -->
     <script src="/scripts/profile.js" defer></script>
 </head>
 <body>
     <!----------------------------------------------------------- Header ----------------------------------------------------------------->
-    <div id="fb-header"></div>
+    <div id="fb-header">
+        <header class="shadow">
+            <nav>
+              <div class="container flex" id="container">
+                <!-----------------------------------------------------left nav--------------------------------------------------------->
+                <div class="left_of_nav flex">
+                  <img src="/images/fb.png" alt="Facebook logo" id="fb_logo"/>
+                  <i class="fa-solid fa-magnifying-glass hover" id="search_icon"></i>
+                  <div class="search_input flex">
+                    <i class="fa-solid fa-magnifying-glass hover search_icon"></i>
+      
+                    <input type="text" placeholder="Search Facebook" />
+                  </div>
+                </div>
+                <!---------------------------------------------------end of left nav----------------------------------------------------------->
+                <div  id="home"class="mid_of_nav flex">
+                  <div class="mid hover display_none">
+                    <i class="fa-solid fa-house-chimney home_icon"></i>
+                  </div>
+      
+                  <div id="friend"class="mid hover display_none">
+                    <i  class="fa-solid fa-user-group user_icon"></i>
+                  </div>
+      
+                  <div id="friend" class="mid hover display_none">
+                    <i class="fa-solid fa-users users_icons"></i>
+                  </div>
+                </div>
+                <div class="right_of_nav">
+                  <button class="display_none display_none_forTab hover">
+                    Find Friends
+                  </button>
+                  <div class="display_none">
+                    <i class="fa-solid fa-grip bg hover" id="grid"></i>
+                  </div>
+      
+                  <!----------plus icon for media query------------->
+                  <i class="fa-solid fa-plus hover" id="plus_icon"></i>
+      
+                  <i
+                    class="fa-brands fa-facebook-messenger messenger_icon gap hover bg"
+                  id="messenger"></i>
+      
+                  <i
+                    class="fa-solid fa-bell bell_icon bg hover"
+                    id="notifications"
+                  ></i>
+      
+                  <div class="profile" id="profile">
+                    <img src="/images/profile2.png" alt="user" class="hover" />
+                  </div>
+                  <i class="fa-solid fa-bars hover" id="bars"></i>
+                </div>
+              </div>
+            </nav>
+          </header>
+    </div>
     <div id="header-popUp"></div>
     <main>
         <!----------------------------------------------------------- Section-1 ----------------------------------------------------------------->
@@ -562,6 +618,6 @@
 
     <!-- <input type="email" id="email-input">
     <button id="login-btn">Login</button> -->
-    <script src="/scripts/userName.js"></script>
+    <!-- <script src="/scripts/userName.js"></script> -->
 </body>
 </html>
