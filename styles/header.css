@@ -186,7 +186,6 @@ i {
 .content {
   width: 40%;
   height: 100vh;
-  /* background: #ffffff; */
   margin-left: 30%;
 }
 
@@ -216,9 +215,11 @@ i {
 
 .prfile_dialogue_box {
   position: fixed;
+  right: 1%;
+  top: 5%;
+  width: 25%;
   padding: 10px 5px;
   z-index: 100;
-  margin: -0.5% 1% 0 76%;
   border-radius: 0.5em;
   background: var(--main-color);
   display: none;
@@ -235,7 +236,6 @@ i {
 .prfile_dialogue_box .dp .inner {
   display: flex;
   align-items: center;
-  /* border-bottom: 2px solid #a6abb5; */
   padding: 10px;
   margin: 10px;
   border-radius: 0.5em;
@@ -248,9 +248,7 @@ i {
   border-radius: 0.5em;
 }
 
-.items {
-  color: black;
-}
+
 .items p {
   margin: 10px 5px;
   padding: 10px;
@@ -285,8 +283,9 @@ i {
   padding: 1% 2%;
   border-radius: 0.5em;
   position: fixed;
+  right: 2%;
+  top: 5%;
   z-index: 100;
-  margin: -0.5% 1% 0 74%;
   display: none;
 }
 
@@ -329,8 +328,9 @@ i {
   padding: 1% 2%;
   border-radius: 0.5em;
   position: fixed;
+  right: 7%;
+  top: 5%;
   z-index: 100;
-  margin: -0.5% 10% 0 70%;
   text-align: center;
   display: none;
 }
@@ -366,10 +366,11 @@ i {
 
 .plus_items {
   position: fixed;
+  right: 10%;
+  top: 5%;
   background: var(--main-color);
   border-radius: 0.5em;
   padding: 1em;
-  margin: -1% 10% 0 70%;
   z-index: 100;
   display: none;
  
@@ -390,6 +391,39 @@ i {
 .plus_items .box i,
 .plus_items .box img {
   margin-right: 6%;
+}
+
+
+
+/* ---------------create_new_group---------------- */
+
+.create_new_group{
+  background: var(--main-color);
+  border-radius: 0.5em;
+  width: 20%;
+  height: 55vh;
+  padding: 1em;
+  z-index: 99;
+  position: fixed;
+  right: 5%;
+  bottom: 0;
+  display: none;
+}
+
+.create_new_group p, hr{
+  margin: 6% 0;
+}
+
+.create_new_group p input{
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+.create_new_group .blue{
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  padding: 5px 10px;
+  border-radius: 0.5em;
 }
 
 /* ===================end of diagouge boxes============= */
@@ -438,8 +472,8 @@ i {
   }
 
   .aside_container {
-    width: 100%;
-    margin-top: 10%;
+    width: 95%;
+    margin: 4% 2% 0 2% ;
     background: var(--main-color);
   }
 
@@ -453,7 +487,8 @@ i {
     padding: 10px;
   }
   .prfile_dialogue_box {
-    margin: 10% 5%;
+    width: 80%;
+    margin-left: 15%;
   }
 
   #search_icon,
@@ -472,16 +507,7 @@ i {
     font-size: 1.2em;
   }
 
-  .notification {
-    width: 95%;
-    padding: 4%;
-    margin: 8% 2% 0 2%;
-  }
 
-  .messenger {
-    width: 95%;
-    margin: 8% 2% 0 2%;
-  }
 
   .plus_items {
     margin: 8% 2%;
@@ -490,17 +516,48 @@ i {
 
 /* -------------media query for tab------------ */
 
-/* @media only screen and (max-width: 1180px) {
+@media only screen and (max-width: 1180px) {
    .aside_container{
-    margin-top: 4%;
+    margin-top: 10%;
    }
   
    .prfile_dialogue_box {
-    width: 400px;
-    margin-top: 3%;
-    margin-left: 47%;
+    width: 98%;
+   margin: 10% 0;
    }
    .display_none_forTab {
     display: none;
   }
-  } */
+
+  #bars {
+    display: block;
+  }
+
+  .main_container {
+    width: 100%;
+    
+  }
+
+  .content{
+    width: 68%;
+  }
+
+  .create_post{
+    width: 55%;
+  }
+  .notification{
+    width: 95%;
+    margin-top: 10%;
+  }
+
+  .messenger{
+    width: 92%;
+    margin-top: 10%;
+  }
+
+  .plus_items{
+    width: 90%;
+    margin-top: 5%;
+  }
+
+  }

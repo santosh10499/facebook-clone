@@ -196,7 +196,7 @@ const dummy_post = document.querySelector(".dummy_post");
 
 const dataRender = () => {
   for (let i = 0; i < data.length; i++) {
-    let post = `<div class="dummy_post">
+     dummy_post.innerHTML += `<div class="dummy_post">
       <div class="top">
         <img src="${data[i].userImage}" alt="" class="profile bg hover" width="45px" />
         <div class="name">
@@ -231,11 +231,11 @@ const dataRender = () => {
       </div>
     </div>
 `;
-dummy_post.insertAdjacentHTML("afterbegin", post)
+// dummy_post.insertAdjacentHTML("afterbegin", post)
   }
 };
-window.addEventListener("load", dataRender)
-
+// window.addEventListener("load", dataRender)
+dataRender()
 
 
 // pop up on photo/video
@@ -258,9 +258,31 @@ Add_post.addEventListener("click", (e) => {
 const fa_xmark  = document.querySelector(".fa-xmark")
 
 fa_xmark.addEventListener("click", ()=>{
-  if (photo_video.style.display == "block") {
+  if (photo_video.style.display == "block" ) {
     photo_video.style.display = "none";
   }
+
+})
+
+// create_new_group 
+
+const create_new_group_popUp = document.querySelector("#create_new_group");
+const plus_btn = document.querySelector("#plus_btn");
+const New_message = document.querySelector("#New_message");
+
+plus_btn.addEventListener("click", ()=>{
+  if (create_new_group_popUp.style.display == "block") {
+    create_new_group_popUp.style.display = "none";
+  } else {
+    create_new_group_popUp.style.display = "block";
+  }
+})
+
+New_message.addEventListener("click", ()=>{
+  if (create_new_group_popUp.style.display == "block" ) {
+    create_new_group_popUp.style.display = "none";
+  }
+
 })
 
 
@@ -270,4 +292,13 @@ const profile_page = document.querySelector("#profile_page")
 
 profile_page.addEventListener("click", () => {
   window.location.href = "/pages/profile.html";
+});
+
+
+// fb_logo to home page
+
+const fb_logo = document.querySelector("#fb_logo");
+
+fb_logo.addEventListener("click", () => {
+  window.location.href = "/pages/header.html";
 });

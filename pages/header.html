@@ -19,7 +19,7 @@
         <div class="Container flex" id="Container">
           <!-----------------------------------------------------left nav--------------------------------------------------------->
           <div class="left_of_nav flex">
-            <img src="/images/fb.png" alt="Facebook logo" />
+            <img src="/images/fb.png" alt="Facebook logo" id="fb_logo"/>
             <i class="fa-solid fa-magnifying-glass hover" id="search_icon"></i>
             <div class="search_input flex">
               <i class="fa-solid fa-magnifying-glass hover search_icon"></i>
@@ -245,7 +245,7 @@
 
       <!-- ---------- -->
 
-      <div class="right_side_of_main display_none display_none_forTab">
+      <div class="right_side_of_main display_none display_none_forTab" id="plus_btn">
         <h3>Group conversations</h3>
         <p class="hover"><i class="fa-solid fa-plus"></i>Create New Group</p>
       </div>
@@ -407,6 +407,15 @@
             <span>Sell items to people in your community.</span>
           </div>
         </div>
+      </div>
+
+      <!-- ----------------------group conversation------------------- -->
+
+      <div class="create_new_group shadow" id="create_new_group">
+        <span class="flex">New message <i class="fa-solid fa-xmark hover bg" id="New_message"></i></span>
+        <p>To : <input type="text"></p>
+        <hr>
+        <span class="blue hover">Suggested</span>
       </div>
 
       <!---------------------------------end of dialogue boxes-------------------------------------->
