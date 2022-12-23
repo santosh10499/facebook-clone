@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook</title>
+    <link rel="stylesheet" href="/styles/header.css" />
+    <link rel="stylesheet" href="/styles/home.css">
+    <!-- <link rel="stylesheet" href="/styles/profile.css" /> -->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="   crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+  </head>
+  <body>
+    <header class="shadow">
+      <nav>
+        <div class="container flex" id="container">
+          <!-----------------------------------------------------left nav--------------------------------------------------------->
+          <div class="left_of_nav flex">
+            <img src="/images/fb.png" alt="Facebook logo" id="fb_logo"/>
+            <i class="fa-solid fa-magnifying-glass hover" id="search_icon"></i>
+            <div class="search_input flex">
+              <i class="fa-solid fa-magnifying-glass hover search_icon"></i>
+
+              <input type="text" placeholder="Search Facebook" />
+            </div>
+          </div>
+          <!---------------------------------------------------end of left nav----------------------------------------------------------->
+          <div class="mid_of_nav flex">
+            <div class="mid hover display_none">
+              <i class="fa-solid fa-house-chimney home_icon"></i>
+            </div>
+
+            <div class="mid hover display_none">
+              <i class="fa-solid fa-user-group user_icon"></i>
+            </div>
+
+            <div class="mid hover display_none">
+              <i class="fa-solid fa-users users_icons"></i>
+            </div>
+          </div>
+          <div class="right_of_nav">
+            <button class="display_none display_none_forTab hover">
+              Find Friends
+            </button>
+            <div class="display_none">
+              <i class="fa-solid fa-grip bg hover" id="grid"></i>
+            </div>
+
+            <!----------plus icon for media query------------->
+            <i class="fa-solid fa-plus hover" id="plus_icon"></i>
+
+            <i
+              class="fa-brands fa-facebook-messenger messenger_icon gap hover bg"
+            id="messenger"></i>
+
+            <i
+              class="fa-solid fa-bell bell_icon bg hover"
+              id="notifications"
+            ></i>
+
+            <div class="profile" id="profile">
+              <img src="/images/profile2.png" alt="user" class="hover" />
+            </div>
+            <i class="fa-solid fa-bars hover" id="bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-------------------------------------end of header---------------------------------------->
+
+    <!------------------------------------------aside bar---------------------------------->
+    <div class="outer_container" id="outer_container">
+      <div class="aside_container display_none display_none_forTab">
+        <aside>
+          <div class="profile aside_items hover" id="profile_page">
+            <img
+              src="/images/profile2.png"
+              alt="profile"
+              width="50px"
+              class="list_profile side_profile shadow"
+            />
+            <p class="user-name">Varsha Rajput</p>
+          </div>
+
+          <div class="aside_items hover">
+            <img
+              src="/images/find_friends.png"
+              alt="find friends"
+              class=""
+              width="30px"
+            />
+            <p>Find friends</p>
+          </div>
+          <div class="aside_items hover">
+            <img src="/images/fb.png" alt="" width="30px" />
+            <p>Welcome</p>
+          </div>
+          <div class="aside_items hover">
+            <img src="/images/most recent.png" alt="" width="30px" />
+            <p>Most recent</p>
+          </div>
+          <div class="aside_items hover">
+            <img src="/images/groups2.png" alt="" width="30px" />
+            <p>Groups</p>
+          </div>
+          <div class="aside_items hover">
+            <img src="/images/Memories.png" alt="" width="30px" />
+            <p>Memories</p>
+          </div>
+          <div class="aside_items hover">
+            <img src="/images/marketplace.png" alt="" width="30px" />
+            <p>Marketplace</p>
+          </div>
+          <div class="aside_items hover">
+            <img src="/images/watch.png" alt="Watch" width="30px" />
+            <p>Watch</p>
+          </div>
+          <div class="aside_items hover">
+            <img
+              src="/images/saved.png"
+              alt="Saved"
+              class="saved"
+              width="30px"
+            />
+            <p>Saved</p>
+          </div>
+          <div class="aside_items hover">
+            <img src="/images/pages.png" alt="Pages" width="30px" />
+            <p>Pages</p>
+          </div>
+          <div class="aside_items hover">
+            <img src="/images/reels.png" alt="Reels" width="30px" />
+            <p>Reels</p>
+          </div>
+
+          <div class="hidden" id="more_items">
+            <div class="aside_items hover">
+              <img src="/images/AD center.png" alt="ADs Manager" width="30px" />
+              <p>AD Centre</p>
+            </div>
+            <div class="aside_items hover">
+              <img src="/images/ADs.png" alt="ADs Manager" width="30px" />
+              <p>ADs Manager</p>
+            </div>
+            <div class="aside_items hover">
+              <img src="/images/blood.png" alt="Blood Donations" width="30px" />
+              <p>Blood Donations</p>
+            </div>
+            <div class="aside_items hover">
+              <img
+                src="/images/climate.png"
+                alt="Climate Science Centre"
+                width="30px"
+              />
+              <p>Climate Science Centre</p>
+            </div>
+            <div class="aside_items hover">
+              <img
+                src="/images/covid.png"
+                alt="COVID-19 Information Centre"
+                width="30px"
+              />
+              <p>COVID-19 Information Centre</p>
+            </div>
+            <div class="aside_items hover">
+              <img
+                src="/images/crisis.png"
+                alt="Crisis Response"
+                width="30px"
+              />
+              <p>Crisis Response</p>
+            </div>
+            <div class="aside_items hover">
+              <img
+                src="/images/emotional.png"
+                alt="Emotional Health"
+                width="30px"
+              />
+              <p>Emotional Health</p>
+            </div>
+            <div class="aside_items hover">
+              <img src="/images/events.png" alt="Events" width="30px" />
+              <p>Events</p>
+            </div>
+            <div class="aside_items hover">
+              <img src="/images/favourite.png" alt="Favourites" width="30px" />
+              <p>Favourites</p>
+            </div>
+            <div class="aside_items hover">
+              <img src="/images/fund.png" alt="Fundaraisers" width="30px" />
+              <p>Fundaraisers</p>
+            </div>
+            <div class="aside_items hover">
+              <img src="/images/game.png" alt="Gaming video" width="30px" />
+              <p>Gaming video</p>
+            </div>
+            <div class="aside_items hover">
+              <img src="/images/live.png" alt="Live videos" width="30px" />
+              <p>Live videos</p>
+            </div>
+            <div class="aside_items hover">
+              <img src="/images/messenger.png" alt="messenger" width="30px" />
+              <p>Messenger</p>
+            </div>
+            <div class="aside_items hover">
+              <img src="/images/play games.png" alt="Play games" width="30px" />
+              <p>Play games</p>
+            </div>
+            <div class="aside_items hover">
+              <img
+                src="/images/recent.png"
+                alt="Recent ad activity"
+                width="30px"
+              />
+              <p>Recent ad activity</p>
+            </div>
+            <div class="aside_items hover see_more" id="see_less">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path
+                  d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"
+                />
+              </svg>
+              <p>See less</p>
+            </div>
+          </div>
+          <div class="aside_items hover" id="see_more">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+              />
+            </svg>
+            <p>See more</p>
+          </div>
+        </aside>
+      </div>
+      <!---------------------------mid part--------------->
+
+      <div class="content" id="content"></div>
+
+      <!-- ---------- -->
+
+      <div class="right_side_of_main display_none display_none_forTab" id="plus_btn">
+        <h3>Group conversations</h3>
+        <p class="hover"><i class="fa-solid fa-plus"></i>Create New Group</p>
+      </div>
+
+      <!---------------------------------dialogue boxes-------------------------------------->
+
+      <div class="prfile_dialogue_box shadow">
+        <div class="profile dp shadow">
+          <div class="inner hover">
+            <img src="/images/profile2.png" alt="profile" width="50px" />
+            <p class="user-name">Varsha Rajput</p>
+          </div>
+          <hr />
+          <span class="hover">See all profiles</span>
+        </div>
+        <div class="items">
+          <p class="hover">
+            <i class="fa-solid fa-gear"></i>Settings & privacy<i
+              class="fa-solid fa-chevron-right"
+            ></i>
+          </p>
+          <p class="hover">
+            <i class="fa-solid fa-circle-question"></i>Help & support<i
+              class="fa-solid fa-chevron-right"
+            ></i>
+          </p>
+          <p class="hover">
+            <i class="fa-solid fa-moon"></i>Display & accessibility<i
+              class="fa-solid fa-chevron-right"
+            ></i>
+          </p>
+          <p class="hover">
+            <i class="fa-solid fa-circle-exclamation"></i>Give feedback
+          </p>
+          <p class="hover" id="logout">
+            <i class="fa-solid fa-right-from-bracket"></i>Log out
+          </p>
+        </div>
+        <div class="bottom">
+          <span>privacy · Terms · Advertising · Ad choices · Cookies · </span>
+          <span> More· Meta © 2022</span>
+        </div>
+      </div>
+
+      <!--------Notifiction dialogue----->
+
+      <div class="notification shadow">
+        <h2 class="flex">
+          Notifications<i class="fa-solid fa-ellipsis hover"></i>
+        </h2>
+
+        <div class="unread flex padding">
+          <p class="hover para">All</p>
+          <p class="hover para">Unread</p>
+          <p class="hover para">Priority</p>
+        </div>
+        <div class="Earlier flex padding">
+          <span>Earlier</span>
+          <p class="para blue hover">See all</p>
+        </div>
+        <div class="profile2 flex">
+          <img src="/images/profile2.png" alt="profile" class="image hover" />
+          <i class="fa-solid fa-bell bell_icon bg hover"></i>
+          <p>
+            You've turned on SMS updates (charges may apply). you can opt out in
+            your notifiaction seetings.
+          </p>
+        </div>
+      </div>
+
+      <!-----------------messenger dialogue box-------------------->
+
+      <div class="messenger shadow">
+        <div class="top flex padding">
+          <h2>Chats</h2>
+          <div class="">
+            <i class="fa-solid fa-ellipsis hover"></i>
+            <i class="fa-solid fa-arrows-to-dot hover"></i>
+            <i class="fa-solid fa-video hover"></i>
+            <i class="fa-solid fa-pen-to-square hover"></i>
+          </div>
+        </div>
+        <div class="search_input flex bg">
+          <i class="fa-solid fa-magnifying-glass hover search_icon"></i>
+
+          <input type="text" placeholder="Search Facebook" />
+        </div>
+        <p class="padding">No messages found.</p>
+        <hr>
+        <span class="blue">See all in Messenger</span>
+      </div>
+
+
+      <!-- ---------------plus dialogue box for mobile view------------------ -->
+
+      <div class="plus_items shadow">
+        <h2>Create</h2>
+        <div class="box hover">
+          <i class="fa-solid fa-pen-to-square"></i>
+          <div class="text">
+            <p>Post</p>
+            <span>Share a post on News Feed.</span>
+          </div>
+        </div>
+        <div class="box hover">
+          <i class="fa-solid fa-book-open"></i>
+          <div class="text">
+            <p>Story</p>
+            <span>Share a post or write something.</span>
+          </div>
+        </div>
+        <div class="box hover">
+          <img src="/images/reels2.png" alt="reels" width="20px" />
+          <div class="text">
+            <p>Reel</p>
+            <span>Share a Reel.</span>
+          </div>
+        </div>
+        <div class="box hover">
+          <i class="fa-solid fa-video"></i>
+          <div class="text">
+            <p>Room</p>
+            <span>Video chat with anyone, on or off Facebook without timw limits.</span>
+          </div>
+        </div>
+        <hr>
+        <div class="box hover">
+          <i class="fa-solid fa-flag"></i>
+          <div class="text">
+            <p>Page</p>
+            <span>Connect and share with customers on fans</span>
+          </div>
+        </div>
+        <div class="box hover">
+          <i class="fa-solid fa-bullhorn"></i>
+          <div class="text">
+            <p>Ad</p>
+            <span>Advertise your business, brand or organisation.</span>
+          </div>
+        </div>
+        <div class="box hover">
+          <i class="fa-solid fa-users"></i>
+          <div class="text">
+            <p>Group</p>
+            <span>Connect with people who share your interests.</span>
+          </div>
+        </div>
+        <div class="box hover">
+          <i class="fa-regular fa-calendar-plus"></i>
+          <div class="text">
+            <p>Events</p>
+            <span>Bring people together wuth a public or private events.</span>
+          </div>
+        </div>
+        <div class="box hover">
+          <i class="fa-solid fa-store"></i>
+          <div class="text">
+            <p>Marketplace Listing</p>
+            <span>Sell items to people in your community.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ----------------------group conversation------------------- -->
+
+      <div class="create_new_group shadow" id="create_new_group">
+        <span class="flex">New message <i class="fa-solid fa-xmark hover bg" id="New_message"></i></span>
+        <p>To : <input type="text"></p>
+        <hr>
+        <span class="blue hover">Suggested</span>
+      </div>
+
+      <!---------------------------------end of dialogue boxes-------------------------------------->
+    </div>
+    <!------------------------------------------end of aside bar---------------------------------->
+    <script src="/scripts/home.js"></script>
+    <script src="/scripts/sidebar.js"></script>
+     <script src="/scripts/index.js"></script>
+    <script src="/scripts/userName.js"></script>
+  </body>
+</html>

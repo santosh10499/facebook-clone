@@ -1,0 +1,1418 @@
+
+@import "./style.css";
+@import "./header.css";
+
+
+
+/*====================================== FB-Header =========================================================================================*/
+
+#fb-header {
+    height: 3.5em;
+}
+
+
+
+/*====================================== Section-1 =========================================================================================*/
+
+
+.section-1 {
+    box-shadow: 0px 3px 5px rgb(191, 188, 188);
+    margin-bottom: 3px;
+    background-color: white;
+}
+
+.section-1-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/*================================ Cover-Photo ==========================*/
+
+.cover-photo {
+    position: relative;
+    width: 100%;
+    height: 28em;
+}
+
+.cover-photo img {             /*=====Cover-Photo-img=====*/
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+
+.add-cover-photo {               /*==== Add-Cover-Photo-Button====*/
+    position: absolute;
+    background-color: white;
+    right: 1em;
+    bottom: 1.8em;
+    padding: 0.5em 1em;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+
+.add-cover-photo:hover {
+    background-color: rgb(244, 245, 250);
+}
+
+.add-cover-photo i {
+    font-size: 1.1em;
+    margin-right: 0.3em;
+}
+
+.add-cover-photo span {
+    font-size: 0.9em;
+    font-weight: 600;
+    margin-left: 0.3em;
+}
+
+
+/*============== Profile-details ==========================*/
+
+
+.profile-details-container {
+    padding: 0em 2em;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/*============== Profile-details-display ==========================*/
+
+.profile-details-display {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*--------------- Profile-details-left-part ------------------*/
+
+.profile-details-left-part {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {             /*==== Profile-Photo-div ====*/
+    position: absolute;
+    top: -2em;
+    position: relative;
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+.profile-pic:hover {
+    opacity: 0.9;
+}
+
+.profile-pic img {          /*==== Profile-Photo-img ====*/
+    width: 11em;
+    height: 11em;
+    border-radius: 50%;
+    border: 1px solid rgb(158, 158, 159);
+    outline: 0.2em solid white;
+}
+
+.profile-pic i {           /*==== Camera-icon-inside-Profile-Photo-img ====*/
+    position: absolute;
+    bottom: 0.6em;
+    right: 0.2em;
+    padding: 0.3em;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    background-color: rgb(228, 230, 235);
+}
+
+.profile-pic i:hover {
+    background-color: rgb(212, 213, 216);
+}
+
+.profile-name h1 {           /*==== Profile-Name ====*/
+    font-size: 2rem;
+    margin-bottom: 0.2em;
+}
+
+.profile-name p {           /*==== Friends-count ====*/
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(111, 110, 110);
+    margin-bottom: 0.7em;
+    cursor: pointer;
+}
+
+.profile-name p:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.1em;
+}
+
+.small-imgs img {             /*==== Small images of Friends ====*/
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    outline: 3px solid white;
+    margin-right: -0.6em;
+    cursor: pointer;
+}
+
+.small-imgs img:hover {
+    outline-color: rgb(184, 221, 209);
+    outline-width: 4px;
+}
+
+
+/*--------------- Profile-details-right-part ------------------*/
+
+.profile-details-right-part {
+    align-self: flex-end;
+    margin-bottom: 2em;
+    display: flex;
+    align-items: center;
+}
+
+.add-story {                            /*==== Add-story-Button ====*/
+    display: flex;
+    align-items: center;
+    padding: 0.5em 0.8em;
+    background-color: rgb(27, 116, 228);
+    color: white;
+    border-radius: 0.3em;
+    margin-right: 0.5em;
+    cursor: pointer;
+}
+
+.add-story:hover {
+    background-color: rgb(8, 101, 216);
+}
+
+.add-story p {
+    margin-left: 0.2em;
+}
+
+.edit-profile {                        /*==== Edit-profile-Button ====*/
+    display: flex;
+    align-items: center;
+    padding: 0.5em 0.8em;
+    border-radius: 0.3em;
+    background-color: rgb(228, 230, 235);
+    cursor: pointer;
+}
+
+.edit-profile:hover {
+    background-color: rgb(217, 218, 221);
+}
+
+.edit-profile p {
+    margin-left: 0.2em;
+}
+
+
+/*============== Profile-details-Nav-Bar ==========================*/
+
+
+.profile-details-navBar {
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBar-left-part {
+    display: flex;
+}
+
+.navBar-left-part button {            /*==== NavBar-left-part buttons ====*/
+    padding: 1em;
+    border-radius: 0.3em;
+    border: none;
+    background-color: transparent;
+    color: rgb(111, 110, 110);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#profile-about-btn {
+    color: rgb(24, 118, 242);
+    border-bottom: 4px solid rgb(24, 118, 242);
+}
+
+#profile-more-btn i {
+    font-size: 0.8rem; 
+    margin-left: 0.4em;
+}
+
+.navBar-left-part button:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+
+.triple-dot-btn {                      /*==== NavBar-right-part button/ triple-dot-btn ====*/
+    padding: 0.5em 1.1em;
+    border-radius: 0.3em;
+    border: none;
+    background-color: rgb(228, 230, 235);
+    font-size: 1rem; 
+    cursor: pointer;
+}
+
+.triple-dot-btn:hover {
+    background-color: rgb(217, 218, 221);
+}
+
+
+
+
+/*====================================== Section-2 =========================================================================================*/
+
+
+.section-2 {
+    background-color: rgb(240, 242, 245);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.divs-container {
+    width: 66%;
+}
+
+/*======================================== About-div ======================================================*/
+
+.about-div {
+    margin-top: 1em;
+    background-color: white;
+    border-radius: 0.6em;
+    box-shadow: 0 0 2px;
+    display: flex;
+}
+
+/*========================== About-left-part ==========================*/
+
+.about-left-part {
+    width: 33%;
+    border-right: 1px solid rgb(179, 180, 181);
+    display: flex;
+    flex-direction: column;
+    padding: 0.8em 0.4em;
+}
+
+.about-title {
+    padding: 0 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.about-title:hover {
+    text-decoration: underline;
+}
+
+.about-left-part p {                         /*==== About-options ====*/
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    color: rgb(111, 110, 110);
+    border-radius: 0.3em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.about-left-part p:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+#about-overview {                           /*==== option-overview ====*/ 
+    color: rgb(24, 118, 242);
+    background-color: rgb(231, 243, 255);
+}
+
+
+/*========================== About-right-part ==========================*/
+
+.about-right-part {
+    width: 67%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.8em;
+}
+
+.overview-details-div {                /*==== About-right-part-divs / divs of overview option====*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5em;
+}
+
+.overview-details-left {               /*==== Overview-details-left-part ====*/ 
+    display: flex;
+    align-items: center;
+}
+
+.overview-details-left span {
+    margin-right: 0.5em;
+    font-size: 1.8rem;
+    color: rgb(111, 110, 110);
+    cursor: default;
+}
+
+.overview-description #work-year,
+.overview-description #college-year,
+.overview-description #mobile {
+    font-size: 0.8rem;
+    color: rgb(111, 110, 110);
+}
+
+
+.overview-details-right {              /*==== Overview-details-right-part ====*/ 
+    display: flex;
+    align-items: center;
+}
+
+.overview-details-right span {
+    color: rgb(111, 110, 110);
+    margin-right: 0.5em;
+    font-size: 1.3rem;
+    padding: 0.1em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.overview-details-right span:hover {
+    background-color: rgb(228, 230, 235);
+}
+
+.overview-details-right i {
+    padding: 0.4em 0.5em;
+    background-color: rgb(228, 230, 235);
+    border-radius: 50%;
+    margin-right: 1em;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.overview-details-right i:hover {
+    background-color: rgb(202, 203, 206);
+}
+
+
+
+/*======================================== Friends-div ======================================================*/
+
+
+.friends-div {
+    margin-top: 1em;
+    background-color: white;
+    border-radius: 0.6em;
+    box-shadow: 0 0 2px;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.friends-header {                     /*============= Friends-div-header ==============*/ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.friends-title {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.friends-title:hover {
+    text-decoration: underline;
+}
+
+.friends-header-right {
+    display: flex;
+    align-items: center;
+}
+
+.friend-requests, .find-friends {
+    margin-right: 0.5em;
+    color: rgb(24, 118, 242);
+    font-weight: 600;
+    padding: 0.5em;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+
+.friend-requests:hover, .find-friends:hover {
+    background-color: rgb(241, 244, 251);
+}
+
+
+
+.friends-navBar {                              /*==== Friends-div-navBar ====*/ 
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.friends-navBar button {                       /*==== Friends-navBar-buttons ====*/
+    padding: 1.2em;
+    border-radius: 0.3em;
+    border: none;
+    background-color: transparent;
+    color: rgb(111, 110, 110);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.friends-navBar button:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+#friends-allFriends-btn {
+    color: rgb(24, 118, 242);
+    border-bottom: 4px solid rgb(24, 118, 242);
+}
+
+#friends-more-btn {
+    display: none;
+}
+
+#friends-more-btn i {
+    margin-left: 0.4em;
+    font-size: 0.8rem; 
+}
+
+
+
+
+.friends-details-container {           /*==== Friends-div-friends-details-container ====*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.friends-details-wrapper {            /*==== friends-details-div-wrapper ====*/
+    width: 50%;
+    padding: 0.3em; 
+}
+
+.friends-details-div {
+    width: 100%;
+    padding: 1em;
+    border-radius: 0.6em;
+    border: 1px solid rgb(213, 210, 210);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.friends-details-left {                     /*==== friends-details-left-part ====*/
+    display: flex;
+    align-items: center;
+}
+
+.friends-details-left img {
+    width: 5em;
+    height: 5em;
+    border: 1px solid rgb(213, 210, 210);
+    border-radius: 0.6em;
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+.friends-details-left img:hover {
+    opacity: 0.9;
+}
+
+.friend-name {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.mutual-friends {
+    color: rgb(104, 103, 103);
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.name-details p:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.1em;
+}
+
+.friends-details-right i {                 /*==== friends-details-right-part ====*/
+    font-size: 1.2rem;
+    padding: 0.3em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.friends-details-right i:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+
+.friends-see-all-btn {                        /*==== friends-see-all-btn ====*/
+    width: 100%;
+    padding: 0.7em;
+    margin-top: 0.6em;
+    border: none;
+    border-radius: 0.5em;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: rgb(228, 230, 235);
+    cursor: pointer;
+}
+
+.friends-see-all-btn:hover {
+    background-color: rgb(217, 218, 221);
+}
+
+
+
+/*======================================== Photos-div ======================================================*/
+
+
+.photos-div {
+    margin-top: 1em;
+    background-color: white;
+    border-radius: 0.6em;
+    box-shadow: 0 0 2px;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.photos-header {                      /*==== Photos-div-header ====*/ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.photos-title {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.photos-title:hover {
+    text-decoration: underline;
+}
+
+.photos-header-right {
+    display: flex;
+    align-items: center;
+}
+
+.add-photos-videos {
+    margin-right: 0.5em;
+    color: rgb(24, 118, 242);
+    font-weight: 600;
+    padding: 0.5em;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+
+.add-photos-videos:hover {
+    background-color: rgb(241, 244, 251);
+}
+
+
+
+.photos-navBar {                        /*==== Photos-div-navBar ====*/ 
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.photos-navBar button {            /*==== Photos-navBar-buttons ====*/
+    padding: 1.2em;
+    border-radius: 0.3em;
+    border: none;
+    background-color: transparent;
+    color: rgb(111, 110, 110);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.photos-navBar button:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+#photos-of-you {
+    color: rgb(24, 118, 242);
+    border-bottom: 4px solid rgb(24, 118, 242);
+}
+
+#photos-more-btn {
+    display: none;
+}
+
+#photos-more-btn i {
+    margin-left: 0.4em;
+    font-size: 0.8rem;
+}
+
+
+
+
+
+.photos-images-container {           /*========= Photos-div-images-container ========*/ 
+    display: flex;
+    flex-wrap: wrap;
+}
+ 
+.image-div {                        /*========= image-div ========*/ 
+    width: 20%;
+    padding: 0.3em;  
+    position: relative; 
+    cursor: pointer;  
+}
+
+.image-div img {                     /*=== image ===*/ 
+    width: 100%;
+    height: 12.5em;
+    border-radius: 0.6em;
+    border: 1px solid rgb(213, 210, 210);
+}
+
+.image-div span {                     /*=== Edit-Pencil-icon ===*/ 
+    position: absolute;
+    top: 0.6em;
+    right: 0.6em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.523);
+    font-size: 1.2rem;
+    padding: 0.3em;
+    border-radius: 50%;
+}
+
+.image-div span:hover {
+    background-color: rgba(0, 0, 0, 0.627);
+}
+
+
+.photo-see-all-btn {                         /*=== See-All-button ===*/ 
+    width: 100%;
+    padding: 0.7em;
+    border: none;
+    border-radius: 0.5em;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: rgb(228, 230, 235);
+    cursor: pointer;
+}
+
+.photo-see-all-btn:hover {
+    background-color: rgb(217, 218, 221);
+}
+
+
+
+/*======================================== Videos-div ======================================================*/
+
+.videos-div {
+    margin-top: 1em;
+    background-color: white;
+    border-radius: 0.6em;
+    box-shadow: 0 0 2px;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.videos-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.videos-title {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.videos-title:hover {
+    text-decoration: underline;
+}
+
+.videos-navbar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.videos-navbar button {            /*==== Videos-navBar-buttons ====*/
+    padding: 1.2em;
+    border-radius: 0.3em;
+    border: none;
+    background-color: transparent;
+    color: rgb(111, 110, 110);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.videos-navbar button:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+#your-videos {
+    color: rgb(24, 118, 242);
+    border-bottom: 4px solid rgb(24, 118, 242);
+}
+
+
+.videos-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/*======================================== Check-ins-div ======================================================*/
+
+
+.check-ins-div {
+    margin-top: 1em;
+    background-color: white;
+    border-radius: 0.6em;
+    box-shadow: 0 0 2px;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.check-ins-header {                           /*==== Check-ins-header ====*/                  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.check-ins-title {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.check-ins-title:hover {
+    text-decoration: underline;
+}
+
+.check-ins-header-right {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.check-ins-navBar {                              /*======== Check-ins-navBar ========*/
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.check-ins-navBar button {                       /*==== Check-ins-navBar-buttons ====*/
+    padding: 1.2em;
+    border-radius: 0.3em;
+    border: none;
+    background-color: transparent;
+    color: rgb(111, 110, 110);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.check-ins-navBar button:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+#check-ins-recent {                              /*==== Recent-check-ins-button ====*/
+    color: rgb(24, 118, 242);
+    border-bottom: 4px solid rgb(24, 118, 242);
+}
+
+
+
+
+.check-ins-container {                          /*======== Check-ins-container ========*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.check-ins-details-wrapper {
+    width: 50%;
+    padding: 0.3em;
+}
+
+.check-ins-details-div {                      /*======== Check-ins-details-div ========*/
+    width: 100%;
+    padding: 1em;
+    border-radius: 0.6em;
+    border: 1px solid rgb(213, 210, 210);
+    display: flex;
+    align-items: center;
+}
+
+.check-ins-details-div img {                   /*======== Check-ins-Img ========*/
+    width: 5em;
+    height: 5em;
+    border: 1px solid rgb(213, 210, 210);
+    border-radius: 0.6em;
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+.check-ins-details-div img:hover {
+    opacity: 0.9;
+}
+
+.check-ins-place-name {                      /*======== Check-ins-place-name ========*/
+    font-weight: 600;
+    margin-bottom: 0.2em;
+    cursor: pointer;
+}
+
+.check-ins-place-name:hover {
+    text-decoration: underline;
+} 
+
+.check-ins-place-details {                 /*======== Check-ins-details-below-name ========*/
+    color: rgb(104, 103, 103);
+    font-size: 0.8rem;
+    margin-bottom: 0.2em;
+    cursor: pointer;
+}
+
+
+
+
+/*======================================== Groups-div ======================================================*/
+
+
+.groups-div {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: white;
+    border-radius: 0.6em;
+    box-shadow: 0 0 2px;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.groups-header {                           /*==== Groups-header ====*/                  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.groups-title {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.groups-title:hover {
+    text-decoration: underline;
+}
+
+.groups-header-right {
+    display: flex;
+    align-items: center;
+}
+
+
+.groups-navBar {                              /*==== Groups-navBar ====*/
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.groups-navBar button {                       /*==== Groups-navBar-buttons ====*/
+    padding: 1.2em;
+    border-radius: 0.3em;
+    border: none;
+    background-color: transparent;
+    color: rgb(111, 110, 110);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.groups-navBar button:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+#groups-public {                              /*==== Public-groups-button ====*/
+    color: rgb(24, 118, 242);
+    border-bottom: 4px solid rgb(24, 118, 242);
+}
+
+
+
+.groups-container {                         /*==== Groups-container ====*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.groups-details-wrapper {
+    width: 50%;
+    padding: 0.3em;
+}
+
+.groups-details-div {
+    width: 100%;
+    padding: 1em;
+    border-radius: 0.6em;
+    border: 1px solid rgb(213, 210, 210);
+    display: flex;
+    align-items: center;
+}
+
+.groups-details-div img {
+    width: 5em;
+    height: 5em;
+    border: 1px solid rgb(213, 210, 210);
+    border-radius: 0.6em;
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+.groups-details-div img:hover {
+    opacity: 0.9;
+}
+
+.group-name {
+    font-weight: 600;
+    margin-bottom: 0.2em;
+    cursor: pointer;
+}
+
+.group-name:hover {
+    text-decoration: underline;
+} 
+
+.groups-sub-details {
+    display: flex;
+    align-items: center;
+}
+
+.groups-sub-details span {
+    font-size: 0.8rem;
+    margin-right: 0.2em;
+    color: rgb(104, 103, 103);
+}
+
+.group-members {
+    font-size: 0.8rem;
+    color: rgb(104, 103, 103);
+    cursor: pointer;
+}
+
+.group-members:hover {
+    text-decoration: underline;
+}
+
+
+.groups-see-all-btn {                        /*==== Groups-see-all-btn ====*/
+    width: 100%;
+    padding: 0.7em;
+    margin-top: 0.6em;
+    border: none;
+    border-radius: 0.5em;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: rgb(228, 230, 235);
+    cursor: pointer;
+}
+
+.groups-see-all-btn:hover {
+    background-color: rgb(217, 218, 221);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*================================ Side-fix-button for New-message-======================================*/
+
+
+.side-fix-button {
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+    font-size: 1.3rem;
+    background-color: white;
+    border: none;
+    padding: 0.5em 0.6em;
+    border-radius: 50%;
+    box-shadow: 0 0 0.3em;
+    cursor: pointer;
+}
+
+.side-fix-button:hover {
+    background-color: rgb(231, 237, 247);
+    box-shadow: 0 0 0.4em;
+}
+
+/*================================================================================================================================*/
+
+
+
+
+
+
+
+
+/*=========================================== Responsive-Part =========================================================================*/
+
+
+
+
+@media screen and (max-width: 1280px) {
+
+    .section-1-container {
+        min-width: 95%;
+    }
+
+    .divs-container {
+        width: 90%;
+    }
+
+}
+
+
+@media screen and (max-width: 912px) {
+
+    #friends-currentCity-btn, #friends-hometown-btn, #friends-following-btn {
+        display: none;
+    }
+
+    #friends-more-btn {
+        display: block;
+    }
+
+}
+
+
+@media screen and (max-width: 820px) {
+
+    .section-1-container {
+        min-width: 100%;
+    }
+
+    .divs-container {
+        width: 95%;
+    }
+
+    .cover-photo {
+        height: 20em;
+    }
+
+    .profile-details-container {
+        padding: 0em 1em;   
+    }
+
+    .profile-details-display {
+        position: relative;
+        flex-direction: column;
+    }
+
+    .profile-details-left-part {
+        flex-direction: column;
+    }
+
+    .profile-pic {             
+        position: absolute;
+        top: -5em;
+        /* position: relative; */
+        margin-right: 0em;
+        cursor: pointer;
+    }
+
+    .profile-name {
+        margin-top: 7em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-details-right-part {
+        align-self: center;
+        margin-bottom: 1em;
+    }
+
+    .profile-name p,.small-imgs {
+        margin-bottom: 0.5em;
+    }
+
+    .about-left-part {
+        width: 45%;
+    }
+
+    .about-right-part {
+        width: 55%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 540px) {
+
+    .cover-photo {
+        height: 13em;
+    }
+
+    .add-cover-photo span {
+        display: none;
+    }
+
+    #profile-photos-btn, #profile-videos-btn, #profile-check-ins-btn {
+        display: none;
+    }
+
+    .about-div {
+        flex-direction: column;
+    }
+
+    .about-left-part {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid rgb(179, 180, 181);
+    }
+
+    .about-right-part {
+        width: 100%;
+        padding: 1.5em 0.8em;
+    }
+
+    .friend-requests, .find-friends, #friends-birthdays-btn, 
+    #friends-work-btn, #friends-college-btn {
+        display: none;
+    }
+
+    .friends-details-div {
+        padding: 0.5em;
+    }
+    
+    .friends-details-left img {
+        width: 4em;
+        height: 4em;
+        margin-right: 0.5em;
+    }
+
+    .image-div {                        
+        width: 50%;
+    }
+
+    .check-ins-details-wrapper {
+        width: 100%;
+    }
+
+    .groups-details-wrapper {
+        width: 100%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 420px) {
+
+    .cover-photo {
+        height: 11em;
+    }
+
+    .add-story, .edit-profile {
+        padding: 0.5em 2em;
+    }
+
+    #profile-friends-btn {
+        display: none;
+    }
+
+    #friends-recentlyAdded-btn {
+        display: none;
+    }
+
+    .friends-details-wrapper {            
+        width: 100%;
+    }
+
+    #your-photos, #albums {
+        display: none;
+    }
+
+    #photos-more-btn {
+        display: block;
+    }
+
+    .image-div {                        
+        width: 100%;
+    }
+
+    .image-div img {
+        height: 18em;
+    }
+
+    .friends-div, .photos-div,
+    .videos-div, .check-ins-div, .groups-div {
+        padding: 0.5em;
+    } 
+
+}
+
+
+
+@media screen and (max-width: 380px) {
+
+    .add-story, .edit-profile {
+        padding: 0.5em 1.5em;
+    }
+
+    .add-photos-videos {
+        display: none   ;
+    }
+
+    .groups-details-div,.check-ins-details-div {
+        padding: 0.5em;
+    }
+
+    .groups-details-div img,
+    .check-ins-details-div img {
+        margin-right: 0.5em;
+    }
+
+}
+
+
+@media screen and (max-width: 280px) {
+
+    .add-story, .edit-profile {
+        padding: 0.5em 1em;
+    }
+
+    .add-story p,
+    .edit-profile p {
+        margin-left: 0.5em;
+    }
+
+    #profile-posts-btn {
+        display: none;
+    }
+
+    .groups-details-div img {
+        min-width: 5em;
+        height: 5em;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+/*================================================== PopUp - Section ========================================================================*/
+
+
+
+/*=========================================== Update-Profile-Picture & Cover-Photo-PopUp ==========================================*/
+
+.update-profile-pic-div,.update-cover-photo-div {
+    position: absolute;
+    background: white;
+    border-radius: 0.6em;
+    box-shadow: 0 0 0.4em;
+    display: none;
+}
+
+.update-profile-pic-div {
+    top: 13em;
+    left: 15em;
+}
+
+.update-cover-photo-div {
+    top: 10em;
+    right: 15em;
+}
+
+.update-profile-header,.update-cover-photo-header {
+    padding: 1em;
+    border-bottom: 1px solid rgb(182, 180, 180);
+}
+
+.update-profile-title,.update-cover-photo-title {
+    text-align: center;
+}
+
+.update-profile-body,.update-cover-photo-body {
+    padding: 1em;
+}
+
+#update-profile-url-input,#update-cover-photo-url-input {
+    font-size: 1rem;
+    padding: 0.3em;
+    border: 1px solid rgb(182, 180, 180);
+    background-color: rgb(215, 214, 214);
+    border-radius: 0.3em;
+}
+
+.update-profile-body-bottom,
+.update-cover-photo-body-bottom {
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.update-profile-body-bottom button,
+.update-cover-photo-body-bottom button {
+    font-size: 1rem;
+    padding: 0.5em 0.8em;
+    border-radius: 0.5em;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#profile-pic-upload-btn,
+#cover-photo-upload-btn {
+    background-color: rgb(27, 169, 27);
+}
+
+#profile-pic-upload-btn:hover,
+#cover-photo-upload-btn:hover {
+    background-color: rgb(23, 200, 23);
+}
+
+#profile-pic-cancel-btn,
+#cover-photo-cancel-btn {
+    background-color: rgb(243, 68, 5);
+}
+
+#profile-pic-cancel-btn:hover,
+#cover-photo-cancel-btn:hover {
+    background-color: rgb(255, 70, 3);
+}
+
+
+
+
