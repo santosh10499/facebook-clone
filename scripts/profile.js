@@ -293,11 +293,6 @@ let usersArray = [
 
 /*============================================= Rendering User-Profile-details =================================================*/
 
-// const logInBtn = document.getElementById("login-btn");
-// const emailInput = document.getElementById("email-input");
-
-
-// logInBtn.addEventListener("click", ()=>{
 
   usersArray.forEach((userObj) => {
 
@@ -339,7 +334,6 @@ let usersArray = [
 
   })
 
-// })
 
 
 
@@ -354,6 +348,7 @@ function displayFriends(friendsArray){
 
     if (frndObj.id == "frnd-1"){
 
+      document.getElementById("friend-1-small-img").src = frndObj.img;
       document.getElementById("friend-1-img").src = frndObj.img;
       document.getElementById("friend-1-name").innerText = frndObj.name;
       document.getElementById("friend-1-mutuals").innerText = frndObj.mutual;
@@ -361,6 +356,7 @@ function displayFriends(friendsArray){
     }
     else if (frndObj.id == "frnd-2"){
 
+      document.getElementById("friend-2-small-img").src = frndObj.img;
       document.getElementById("friend-2-img").src = frndObj.img;
       document.getElementById("friend-2-name").innerText = frndObj.name;
       document.getElementById("friend-2-mutuals").innerText = frndObj.mutual;
@@ -368,6 +364,7 @@ function displayFriends(friendsArray){
     }
     else if (frndObj.id == "frnd-3"){
 
+      document.getElementById("friend-3-small-img").src = frndObj.img;
       document.getElementById("friend-3-img").src = frndObj.img;
       document.getElementById("friend-3-name").innerText = frndObj.name;
       document.getElementById("friend-3-mutuals").innerText = frndObj.mutual;
@@ -375,6 +372,7 @@ function displayFriends(friendsArray){
     }
     else if (frndObj.id == "frnd-4"){
 
+      document.getElementById("friend-4-small-img").src = frndObj.img;
       document.getElementById("friend-4-img").src = frndObj.img;
       document.getElementById("friend-4-name").innerText = frndObj.name;
       document.getElementById("friend-4-mutuals").innerText = frndObj.mutual;
@@ -382,6 +380,7 @@ function displayFriends(friendsArray){
     }
     else if (frndObj.id == "frnd-5"){
 
+      document.getElementById("friend-5-small-img").src = frndObj.img;
       document.getElementById("friend-5-img").src = frndObj.img;
       document.getElementById("friend-5-name").innerText = frndObj.name;
       document.getElementById("friend-5-mutuals").innerText = frndObj.mutual;
@@ -389,6 +388,7 @@ function displayFriends(friendsArray){
     }
     else if (frndObj.id == "frnd-6"){
 
+      document.getElementById("friend-6-small-img").src = frndObj.img;
       document.getElementById("friend-6-img").src = frndObj.img;
       document.getElementById("friend-6-name").innerText = frndObj.name;
       document.getElementById("friend-6-mutuals").innerText = frndObj.mutual;

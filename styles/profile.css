@@ -8,6 +8,7 @@
 
 #fb-header {
     height: 3.5em;
+    /* display: none; */
 }
 
 
@@ -1337,6 +1338,7 @@
 
 /*=========================================== Update-Profile-Picture & Cover-Photo-PopUp ==========================================*/
 
+
 .update-profile-pic-div,.update-cover-photo-div {
     position: absolute;
     background: white;
@@ -1347,12 +1349,12 @@
 
 .update-profile-pic-div {
     top: 13em;
-    left: 15em;
+    left: 12em;
 }
 
 .update-cover-photo-div {
-    top: 10em;
-    right: 15em;
+    top: 11em;
+    right: 12em;
 }
 
 .update-profile-header,.update-cover-photo-header {
@@ -1416,3 +1418,30 @@
 
 
 
+@media screen and (max-width: 1024px) {
+
+    .update-profile-pic-div {
+        top: 13em;
+        left: 0.6em;
+    }
+    
+    .update-cover-photo-div {
+        top: 11em;
+        right: 0.6em;
+    }
+
+}
+
+@media screen and (max-width: 390px) {
+
+    .update-profile-pic-div {
+        top: 13em;
+        left: 1em;
+    }
+    
+    .update-cover-photo-div {
+        top: 11em;
+        right: 2em;
+    }
+
+}
