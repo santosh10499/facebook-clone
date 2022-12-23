@@ -1,5 +1,16 @@
 
 @import "./style.css";
+@import "./header.css";
+
+
+
+/*====================================== FB-Header =========================================================================================*/
+
+#fb-header {
+    height: 3.5em;
+}
+
+
 
 /*====================================== Section-1 =========================================================================================*/
 
@@ -346,7 +357,9 @@
     cursor: default;
 }
 
-.overview-description #p2 {
+.overview-description #work-year,
+.overview-description #college-year,
+.overview-description #mobile {
     font-size: 0.8rem;
     color: rgb(111, 110, 110);
 }
@@ -510,12 +523,12 @@
     opacity: 0.9;
 }
 
-#friend-name {
+.friend-name {
     font-weight: 600;
     cursor: pointer;
 }
 
-#mutual-friends {
+.mutual-friends {
     color: rgb(104, 103, 103);
     font-size: 0.8rem;
     cursor: pointer;
@@ -631,6 +644,17 @@
     border-bottom: 4px solid rgb(24, 118, 242);
 }
 
+#photos-more-btn {
+    display: none;
+}
+
+#photos-more-btn i {
+    margin-left: 0.4em;
+    font-size: 0.8rem;
+}
+
+
+
 
 
 .photos-images-container {           /*========= Photos-div-images-container ========*/ 
@@ -647,6 +671,7 @@
 
 .image-div img {                     /*=== image ===*/ 
     width: 100%;
+    height: 12.5em;
     border-radius: 0.6em;
     border: 1px solid rgb(213, 210, 210);
 }
@@ -843,17 +868,17 @@
     opacity: 0.9;
 }
 
-#check-ins-place-name {                      /*======== Check-ins-place-name ========*/
+.check-ins-place-name {                      /*======== Check-ins-place-name ========*/
     font-weight: 600;
     margin-bottom: 0.2em;
     cursor: pointer;
 }
 
-#check-ins-place-name:hover {
+.check-ins-place-name:hover {
     text-decoration: underline;
 } 
 
-#check-ins-place-details {                 /*======== Check-ins-details-below-name ========*/
+.check-ins-place-details {                 /*======== Check-ins-details-below-name ========*/
     color: rgb(104, 103, 103);
     font-size: 0.8rem;
     margin-bottom: 0.2em;
@@ -959,13 +984,13 @@
     opacity: 0.9;
 }
 
-#group-name {
+.group-name {
     font-weight: 600;
     margin-bottom: 0.2em;
     cursor: pointer;
 }
 
-#group-name:hover {
+.group-name:hover {
     text-decoration: underline;
 } 
 
@@ -980,13 +1005,13 @@
     color: rgb(104, 103, 103);
 }
 
-#group-members {
+.group-members {
     font-size: 0.8rem;
     color: rgb(104, 103, 103);
     cursor: pointer;
 }
 
-#group-members:hover {
+.group-members:hover {
     text-decoration: underline;
 }
 
@@ -1053,6 +1078,8 @@
 
 
 /*=========================================== Responsive-Part =========================================================================*/
+
+
 
 
 @media screen and (max-width: 1280px) {
@@ -1185,10 +1212,207 @@
     .friends-details-left img {
         width: 4em;
         height: 4em;
-        border: 1px solid rgb(213, 210, 210);
-        border-radius: 0.6em;
         margin-right: 0.5em;
-        cursor: pointer;
+    }
+
+    .image-div {                        
+        width: 50%;
+    }
+
+    .check-ins-details-wrapper {
+        width: 100%;
+    }
+
+    .groups-details-wrapper {
+        width: 100%;
     }
 
 }
+
+
+
+@media screen and (max-width: 420px) {
+
+    .cover-photo {
+        height: 11em;
+    }
+
+    .add-story, .edit-profile {
+        padding: 0.5em 2em;
+    }
+
+    #profile-friends-btn {
+        display: none;
+    }
+
+    #friends-recentlyAdded-btn {
+        display: none;
+    }
+
+    .friends-details-wrapper {            
+        width: 100%;
+    }
+
+    #your-photos, #albums {
+        display: none;
+    }
+
+    #photos-more-btn {
+        display: block;
+    }
+
+    .image-div {                        
+        width: 100%;
+    }
+
+    .image-div img {
+        height: 18em;
+    }
+
+    .friends-div, .photos-div,
+    .videos-div, .check-ins-div, .groups-div {
+        padding: 0.5em;
+    } 
+
+}
+
+
+
+@media screen and (max-width: 380px) {
+
+    .add-story, .edit-profile {
+        padding: 0.5em 1.5em;
+    }
+
+    .add-photos-videos {
+        display: none   ;
+    }
+
+    .groups-details-div,.check-ins-details-div {
+        padding: 0.5em;
+    }
+
+    .groups-details-div img,
+    .check-ins-details-div img {
+        margin-right: 0.5em;
+    }
+
+}
+
+
+@media screen and (max-width: 280px) {
+
+    .add-story, .edit-profile {
+        padding: 0.5em 1em;
+    }
+
+    .add-story p,
+    .edit-profile p {
+        margin-left: 0.5em;
+    }
+
+    #profile-posts-btn {
+        display: none;
+    }
+
+    .groups-details-div img {
+        min-width: 5em;
+        height: 5em;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+/*================================================== PopUp - Section ========================================================================*/
+
+
+
+/*=========================================== Update-Profile-Picture & Cover-Photo-PopUp ==========================================*/
+
+.update-profile-pic-div,.update-cover-photo-div {
+    position: absolute;
+    background: white;
+    border-radius: 0.6em;
+    box-shadow: 0 0 0.4em;
+    display: none;
+}
+
+.update-profile-pic-div {
+    top: 13em;
+    left: 15em;
+}
+
+.update-cover-photo-div {
+    top: 10em;
+    right: 15em;
+}
+
+.update-profile-header,.update-cover-photo-header {
+    padding: 1em;
+    border-bottom: 1px solid rgb(182, 180, 180);
+}
+
+.update-profile-title,.update-cover-photo-title {
+    text-align: center;
+}
+
+.update-profile-body,.update-cover-photo-body {
+    padding: 1em;
+}
+
+#update-profile-url-input,#update-cover-photo-url-input {
+    font-size: 1rem;
+    padding: 0.3em;
+    border: 1px solid rgb(182, 180, 180);
+    background-color: rgb(215, 214, 214);
+    border-radius: 0.3em;
+}
+
+.update-profile-body-bottom,
+.update-cover-photo-body-bottom {
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.update-profile-body-bottom button,
+.update-cover-photo-body-bottom button {
+    font-size: 1rem;
+    padding: 0.5em 0.8em;
+    border-radius: 0.5em;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#profile-pic-upload-btn,
+#cover-photo-upload-btn {
+    background-color: rgb(27, 169, 27);
+}
+
+#profile-pic-upload-btn:hover,
+#cover-photo-upload-btn:hover {
+    background-color: rgb(23, 200, 23);
+}
+
+#profile-pic-cancel-btn,
+#cover-photo-cancel-btn {
+    background-color: rgb(243, 68, 5);
+}
+
+#profile-pic-cancel-btn:hover,
+#cover-photo-cancel-btn:hover {
+    background-color: rgb(255, 70, 3);
+}
+
+
+
+

@@ -9,8 +9,20 @@
     <link rel="stylesheet" href="/styles/profile.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="/scripts/sidebar.js" defer></script>
+    <script src="/scripts/profile.js" defer></script>
 </head>
 <body>
+    <!----------------------------------------------------------- Header ----------------------------------------------------------------->
+    <div id="fb-header"></div>
+    <div id="header-popUp"></div>
     <main>
         <!----------------------------------------------------------- Section-1 ----------------------------------------------------------------->
         <section class="section-1">
@@ -18,7 +30,7 @@
 
                 <!--------------------------------------------- cover-photo ----------------------------------------------->
                 <div class="cover-photo">
-                    <img src="/images/cover-photo-rohan.jpg" alt="">
+                    <img src="/images/cover-photo-rohan.jpg" id="cover-photo-img" alt="">
                     <div class="add-cover-photo">
                         <i class="bi bi-camera-fill"></i>
                         <span>Add cover photo</span>
@@ -32,12 +44,12 @@
                     <div class="profile-details-display">
                         <div class="profile-details-left-part">
                             <div class="profile-pic">
-                                <img src="/images/profile-pic-rohan.jpg" alt="">
-                                <i class="bi bi-camera-fill"></i>
+                                <img src="/images/profile-pic-rohan.jpg" id="profile-pic-img" alt="">
+                                <i class="bi bi-camera-fill" id="profile-pic-camera"></i>
                             </div>
                             <div class="profile-name">
-                                <h1>Rohan Palankar</h1>
-                                <p>2.1K friends</p>
+                                <h1 id="profile-name">Rohan Palankar</h1>
+                                <p id="total-friends">2.1K friends</p>
                                 <div class="small-imgs">
                                     <img src="/images/friend-1.jpg" alt="">
                                     <img src="/images/friend-2.jpg" alt="">
@@ -105,12 +117,12 @@
                     <!----------------------------------------------- About-div-right-part --------------------------------------------->
                     <div class="about-right-part">
                         <!--------------------------- Overview-work ------------------------->
-                        <div class="overview-details-div work">
+                        <div class="overview-details-div">
                             <div class="overview-details-left">
                                 <span class="material-icons">business_center</span>
                                 <div class="overview-description">
-                                    <p id="p1">Worked at Lupin Limited</p>
-                                    <p id="p2">2011 to 2021</p>
+                                    <p id="work-place">Worked at Lupin Limited</p>
+                                    <p id="work-year">2011 to 2021</p>
                                 </div>
                             </div>
                             <div class="overview-details-right">
@@ -119,12 +131,12 @@
                             </div>
                         </div>
                         <!--------------------------- Overview-education ------------------------->
-                        <div class="overview-details-div education">
+                        <div class="overview-details-div">
                             <div class="overview-details-left">
                                 <span class="material-icons">school</span>
                                 <div class="overview-description">
-                                    <p id="p1">Studied at YCMOU</p>
-                                    <p id="p2">2011 to 2014</p>
+                                    <p id="college">Studied at YCMOU</p>
+                                    <p id="college-year">2011 to 2014</p>
                                 </div>
                             </div>
                             <div class="overview-details-right">
@@ -133,11 +145,11 @@
                             </div>
                         </div>
                         <!--------------------------- Overview-current-city ------------------------->
-                        <div class="overview-details-div current-city">
+                        <div class="overview-details-div">
                             <div class="overview-details-left">
                                 <span class="material-icons">house</span>
                                 <div class="overview-description">
-                                    <p id="p1">Lives in Karwar</p>
+                                    <p id="current-city">Lives in Karwar</p>
                                 </div>
                             </div>
                             <div class="overview-details-right">
@@ -146,11 +158,11 @@
                             </div>
                         </div>
                         <!--------------------------- Overview-permanent-city ------------------------->
-                        <div class="overview-details-div permanent-city">
+                        <div class="overview-details-div">
                             <div class="overview-details-left">
                                 <span class="material-icons">place</span>
                                 <div class="overview-description">
-                                    <p id="p1">From Karwar</p>
+                                    <p id="permanent-city">From Karwar</p>
                                 </div>
                             </div>
                             <div class="overview-details-right">
@@ -159,11 +171,11 @@
                             </div>
                         </div>
                         <!--------------------------- Overview-relationship ------------------------->
-                        <div class="overview-details-div relationship">
+                        <div class="overview-details-div">
                             <div class="overview-details-left">
                                 <span class="material-icons">favorite</span>
                                 <div class="overview-description">
-                                    <p id="p1">Single</p>
+                                    <p id="relationship">Single</p>
                                 </div>
                             </div>
                             <div class="overview-details-right">
@@ -172,12 +184,12 @@
                             </div>
                         </div>
                         <!--------------------------- Overview-contact ------------------------->
-                        <div class="overview-details-div contact">
+                        <div class="overview-details-div">
                             <div class="overview-details-left">
                                 <span class="material-icons">phone</span>
                                 <div class="overview-description">
-                                    <p id="p1">095274 57742</p>
-                                    <p id="p2">Mobile</p>
+                                    <p id="contact-num">095274 57742</p>
+                                    <p id="mobile">Mobile</p>
                                 </div>
                             </div>
                             <div class="overview-details-right">
@@ -216,10 +228,10 @@
                         <div class="friends-details-wrapper">
                             <div class="friends-details-div">
                                 <div class="friends-details-left">
-                                    <img src="/images/friend-2.jpg" alt="">
+                                    <img src="/images/friend-1.jpg" id="friend-1-img" alt="">
                                     <div class="name-details">
-                                        <p id="friend-name">Nitin Palankar</p>
-                                        <p id="mutual-friends">402 mutual friends</p>
+                                        <p class="friend-name" id="friend-1-name">Rahul Shinde</p>
+                                        <p class="mutual-friends" id="friend-1-mutuals">180 mutual friends</p>
                                     </div>
                                 </div>
                                 <div class="friends-details-right">
@@ -230,10 +242,10 @@
                         <div class="friends-details-wrapper">
                             <div class="friends-details-div">
                                 <div class="friends-details-left">
-                                    <img src="/images/friend-1.jpg" alt="">
+                                    <img src="/images/friend-2.jpg" id="friend-2-img" alt="">
                                     <div class="name-details">
-                                        <p id="friend-name">Rahul Shinde</p>
-                                        <p id="mutual-friends">180 mutual friends</p>
+                                        <p class="friend-name" id="friend-2-name">Nitin Palankar</p>
+                                        <p class="mutual-friends" id="friend-2-mutuals">402 mutual friends</p>
                                     </div>
                                 </div>
                                 <div class="friends-details-right">
@@ -244,10 +256,10 @@
                         <div class="friends-details-wrapper">
                             <div class="friends-details-div">
                                 <div class="friends-details-left">
-                                    <img src="/images/friend-5.jpg" alt="">
+                                    <img src="/images/friend-3.jpg" id="friend-3-img" alt="">
                                     <div class="name-details">
-                                        <p id="friend-name">Sunil Pise</p>
-                                        <p id="mutual-friends">100 mutual friends</p>
+                                        <p class="friend-name" id="friend-3-name">Sunil Pise</p>
+                                        <p class="mutual-friends" id="friend-3-mutuals">100 mutual friends</p>
                                     </div>
                                 </div>
                                 <div class="friends-details-right">
@@ -258,10 +270,10 @@
                         <div class="friends-details-wrapper">
                             <div class="friends-details-div">
                                 <div class="friends-details-left">
-                                    <img src="/images/friend-3.jpg" alt="">
+                                    <img src="/images/friend-4.jpg" id="friend-4-img" alt="">
                                     <div class="name-details">
-                                        <p id="friend-name">Shivam Kale</p>
-                                        <p id="mutual-friends">12 mutual friends</p>
+                                        <p class="friend-name" id="friend-4-name">Shivam Kale</p>
+                                        <p class="mutual-friends" id="friend-4-mutuals">12 mutual friends</p>
                                     </div>
                                 </div>
                                 <div class="friends-details-right">
@@ -272,10 +284,10 @@
                         <div class="friends-details-wrapper">
                             <div class="friends-details-div">
                                 <div class="friends-details-left">
-                                    <img src="/images/friend-8.jpg" alt="">
+                                    <img src="/images/friend-5.jpg" id="friend-5-img" alt="">
                                     <div class="name-details">
-                                        <p id="friend-name">Swapnil Jadhav</p>
-                                        <p id="mutual-friends">87 mutual friends</p>
+                                        <p class="friend-name" id="friend-5-name">Swapnil Jadhav</p>
+                                        <p class="mutual-friends" id="friend-5-mutuals">87 mutual friends</p>
                                     </div>
                                 </div>
                                 <div class="friends-details-right">
@@ -286,38 +298,10 @@
                         <div class="friends-details-wrapper">
                             <div class="friends-details-div">
                                 <div class="friends-details-left">
-                                    <img src="/images/friend-9.jpg" alt="">
+                                    <img src="/images/friend-6.jpg" id="friend-6-img" alt="">
                                     <div class="name-details">
-                                        <p id="friend-name">Aditya Revankar</p>
-                                        <p id="mutual-friends">250 mutual friends</p>
-                                    </div>
-                                </div>
-                                <div class="friends-details-right">
-                                    <i class="bi bi-three-dots"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="friends-details-wrapper">
-                            <div class="friends-details-div">
-                                <div class="friends-details-left">
-                                    <img src="/images/friend-11.jpg" alt="">
-                                    <div class="name-details">
-                                        <p id="friend-name">Nagaraj Kolvekar</p>
-                                        <p id="mutual-friends">80 mutual friends</p>
-                                    </div>
-                                </div>
-                                <div class="friends-details-right">
-                                    <i class="bi bi-three-dots"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="friends-details-wrapper">   
-                            <div class="friends-details-div">
-                                <div class="friends-details-left">
-                                    <img src="/images/friend-13.jpg" alt="">
-                                    <div class="name-details">
-                                        <p id="friend-name">Amit Singh</p>
-                                        <p id="mutual-friends">72 mutual friends</p>
+                                        <p class="friend-name" id="friend-6-name">Aditya Revankar</p>
+                                        <p class="mutual-friends" id="friend-6-mutuals">250 mutual friends</p>
                                     </div>
                                 </div>
                                 <div class="friends-details-right">
@@ -345,39 +329,40 @@
                         <button id="photos-of-you">Photos of You</button>
                         <button id="your-photos">Your Photos</button>
                         <button id="albums">Albums</button>
+                        <button id="photos-more-btn">More<i class="bi bi-caret-down-fill"></i></button>
                     </div>
                     <!----------------------------------- Photos-div-images-container --------------------->
                     <div class="photos-images-container">
                         <div class="image-div">
-                            <img src="/images/photos-of-you-1.jpg" alt="">
+                            <img src="/images/photos-of-you-1.jpg" id="photo-1" alt="">
                             <span class="material-icons photo-edit">mode</span>
                         </div>
                         <div class="image-div">
-                            <img src="/images/photos-of-you-2.jpg" alt="">
+                            <img src="/images/photos-of-you-2.jpg" id="photo-2" alt="">
                             <span class="material-icons photo-edit">mode</span>
                         </div>
                         <div class="image-div">
-                            <img src="/images/photos-of-you-3.jpg" alt="">
+                            <img src="/images/photos-of-you-3.jpg" id="photo-3" alt="">
                             <span class="material-icons photo-edit">mode</span>
                         </div>
                         <div class="image-div">
-                            <img src="/images/photos-of-you-4.jpg" alt="">
+                            <img src="/images/photos-of-you-4.jpg" id="photo-4" alt="">
                             <span class="material-icons photo-edit">mode</span>
                         </div>
                         <div class="image-div">
-                            <img src="/images/photos-of-you-5.jpg" alt="">
+                            <img src="/images/photos-of-you-5.jpg" id="photo-5" alt="">
                             <span class="material-icons photo-edit">mode</span>
                         </div>
                         <div class="image-div">
-                            <img src="/images/photos-of-you-6.jpg" alt="">
+                            <img src="/images/photos-of-you-6.jpg" id="photo-6" alt="">
                             <span class="material-icons photo-edit">mode</span>
                         </div>
                         <div class="image-div">
-                            <img src="/images/photos-of-you-7.jpg" alt="">
+                            <img src="/images/photos-of-you-7.jpg" id="photo-7" alt="">
                             <span class="material-icons photo-edit">mode</span>
                         </div>
                         <div class="image-div">
-                            <img src="/images/photos-of-you-8.jpg" alt="">
+                            <img src="/images/photos-of-you-8.jpg" id="photo-8" alt="">
                             <span class="material-icons photo-edit">mode</span>
                         </div>
                     </div>
@@ -414,61 +399,41 @@
                     <div class="check-ins-container">
                         <div class="check-ins-details-wrapper">
                             <div class="check-ins-details-div">
-                                <img src="/images/betalbatim.jpg" alt="">
+                                <img src="/images/betalbatim.jpg" id="checkIns-1-img" alt="">
                                 <div class="check-ins-details">
-                                    <p id="check-ins-place-name">Betalbatim, Goa, India</p>
-                                    <p id="check-ins-place-details">Majorda</p>
-                                    <p id="check-ins-place-details">Visited on December 19, 2019</p>
+                                    <p class="check-ins-place-name" id="check-ins-1-name">Betalbatim, Goa, India</p>
+                                    <p class="check-ins-place-details" id="check-ins-1-details-1">Majorda</p>
+                                    <p class="check-ins-place-details" id="check-ins-1-details-2">Visited on December 19, 2019</p>
                                 </div>
                             </div>
                         </div>
                         <div class="check-ins-details-wrapper">
                             <div class="check-ins-details-div">
-                                <img src="/images/airport-bangkok.jpg" alt="">
+                                <img src="/images/airport-bangkok.jpg" id="checkIns-2-img" alt="">
                                 <div class="check-ins-details">
-                                    <p id="check-ins-place-name">Don Mueang Airport Bangkok</p>
-                                    <p id="check-ins-place-details">Bangkok, Thailand</p>
-                                    <p id="check-ins-place-details">Visited on November 9, 2019</p>
+                                    <p class="check-ins-place-name" id="check-ins-2-name">Don Mueang Airport Bangkok</p>
+                                    <p class="check-ins-place-details" id="check-ins-2-details-1">Bangkok, Thailand</p>
+                                    <p class="check-ins-place-details" id="check-ins-2-details-2">Visited on November 9, 2019</p>
                                 </div>
                             </div>
                         </div>
                         <div class="check-ins-details-wrapper">
                             <div class="check-ins-details-div">
-                                <img src="/images/chennai-airport.jpg" alt="">
+                                <img src="/images/chennai-airport.jpg" id="checkIns-3-img" alt="">
                                 <div class="check-ins-details">
-                                    <p id="check-ins-place-name">Chennai International Airport</p>
-                                    <p id="check-ins-place-details">Chennai, India</p>
-                                    <p id="check-ins-place-details">Visited on November 8, 2019</p>
+                                    <p class="check-ins-place-name" id="check-ins-3-name">Chennai International Airport</p>
+                                    <p class="check-ins-place-details" id="check-ins-3-details-1">Chennai, India</p>
+                                    <p class="check-ins-place-details" id="check-ins-3-details-2">Visited on November 8, 2019</p>
                                 </div>
                             </div>
                         </div>
                         <div class="check-ins-details-wrapper">
                             <div class="check-ins-details-div">
-                                <img src="/images/goa-airport.jpg" alt="">
+                                <img src="/images/goa-airport.jpg" id="checkIns-4-img" alt="">
                                 <div class="check-ins-details">
-                                    <p id="check-ins-place-name">Goa International Airport</p>
-                                    <p id="check-ins-place-details">Mormugao, Goa</p>
-                                    <p id="check-ins-place-details">Visited on November 8, 2019</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="check-ins-details-wrapper">
-                            <div class="check-ins-details-div">
-                                <img src="/images/osia-multiplex.jpg" alt="">
-                                <div class="check-ins-details">
-                                    <p id="check-ins-place-name">Osia Multiplex</p>
-                                    <p id="check-ins-place-details">Margao, India</p>
-                                    <p id="check-ins-place-details">Visited on January 25, 2015</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="check-ins-details-wrapper">
-                            <div class="check-ins-details-div">
-                                <img src="/images/colva-goa.jpg" alt="">
-                                <div class="check-ins-details">
-                                    <p id="check-ins-place-name">Colva, Goa, India</p>
-                                    <p id="check-ins-place-details">Goa</p>
-                                    <p id="check-ins-place-details">Visited on April 29, 2019</p>
+                                    <p class="check-ins-place-name" id="check-ins-4-name">Goa International Airport</p>
+                                    <p class="check-ins-place-details" id="check-ins-4-details-1">Mormugao, Goa</p>
+                                    <p class="check-ins-place-details" id="check-ins-4-details-2">Visited on November 8, 2019</p>
                                 </div>
                             </div>
                         </div>
@@ -492,78 +457,52 @@
                     <div class="groups-container">
                         <div class="groups-details-wrapper">
                             <div class="groups-details-div">
-                                <img src="/images/group-1.jpg" alt="">
+                                <img src="/images/group-1.jpg" id="group-1-img" alt="">
                                 <div class="groups-details">
-                                    <p id="group-name">Konkani Friends</p>
+                                    <p class="group-name" id="group-1-name">Konkani Friends</p>
                                     <div class="groups-sub-details">
                                         <span class="material-icons visibility">public</span>
-                                        <span id="group-category">Public group |</span>
-                                        <p id="group-members">1.9K members</p>
+                                        <span class="group-category" id="group-1-category">Public group |</span>
+                                        <p class="group-members" id="group-1-members">1.9K members</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="groups-details-wrapper">
                             <div class="groups-details-div">
-                                <img src="/images/group-2.jpg" alt="">
+                                <img src="/images/group-2.jpg" id="group-2-img" alt="">
                                 <div class="groups-details">
-                                    <p id="group-name">Daivadnya Pratibhe</p>
+                                    <p class="group-name" id="group-2-name">Daivadnya Pratibhe</p>
                                     <div class="groups-sub-details">
                                         <span class="material-icons visibility">public</span>
-                                        <span id="group-category">Public group |</span>
-                                        <p id="group-members">797 members</p>
+                                        <span class="group-category" id="group-2-category">Public group |</span>
+                                        <p class="group-members" id="group-2-members">797 members</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="groups-details-wrapper">
                             <div class="groups-details-div">
-                                <img src="/images/group-3.jpg" alt="">
+                                <img src="/images/group-3.jpg" id="group-3-img" alt="">
                                 <div class="groups-details">
-                                    <p id="group-name">Passionpreneurs</p>
+                                    <p class="group-name" id="group-3-name">Passionpreneurs</p>
                                     <div class="groups-sub-details">
                                         <span class="material-icons visibility">public</span>
-                                        <span id="group-category">Public group |</span>
-                                        <p id="group-members">42.2K members</p>
+                                        <span class="group-category" id="group-3-category">Public group |</span>
+                                        <p class="group-members" id="group-3-members">42.2K members</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="groups-details-wrapper">
                             <div class="groups-details-div">
-                                <img src="/images/group-4.jpg" alt="">
+                                <img src="/images/group-4.jpg" id="group-4-img" alt="">
                                 <div class="groups-details">
-                                    <p id="group-name">Incredible Karwar</p>
+                                    <p class="group-name" id="group-4-name">Incredible Karwar</p>
                                     <div class="groups-sub-details">
                                         <span class="material-icons visibility">public</span>
-                                        <span id="group-category">Public group |</span>
-                                        <p id="group-members">4.9K members</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="groups-details-wrapper">
-                            <div class="groups-details-div">
-                                <img src="/images/group-5.jpg" alt="">
-                                <div class="groups-details">
-                                    <p id="group-name">Pharma Wisdom</p>
-                                    <div class="groups-sub-details">
-                                        <span class="material-icons visibility">public</span>
-                                        <span id="group-category">Public group |</span>
-                                        <p id="group-members">122.0K members</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="groups-details-wrapper">
-                            <div class="groups-details-div">
-                                <img src="/images/group-6.jpg" alt="">
-                                <div class="groups-details">
-                                    <p id="group-name">The Green India Films</p>
-                                    <div class="groups-sub-details">
-                                        <span class="material-icons visibility">public</span>
-                                        <span id="group-category">Public group |</span>
-                                        <p id="group-members">198 members</p>
+                                        <span class="group-category" id="group-4-category">Public group |</span>
+                                        <p class="group-members" id="group-4-members">4.9K members</p>
                                     </div>
                                 </div>
                             </div>
@@ -581,5 +520,47 @@
         <button class="side-fix-button"><i class="bi bi-pencil-square"></i></button>
         <!------------------------------------------------------------------------------------------------------------------------------>
     </main>
+
+
+
+    <!----------------------------------------------- Pop-Up-divs ----------------------------------------------------------------------------->
+
+    <!----------------------------------------------- Update-Cover-Photo-PopUp ----------------------------------------------------->
+    <div class="update-cover-photo-div">
+        <div class="update-cover-photo-header">
+            <h2 class="update-cover-photo-title">Update Cover Photo</h2>
+        </div>
+        <div class="update-cover-photo-body">
+            <div class="update-cover-photo-body-top">
+                <label for="">Enter Image URL:</label>
+                <input type="text" id="update-cover-photo-url-input">
+            </div>
+            <div class="update-cover-photo-body-bottom">
+                <button id="cover-photo-upload-btn">Upload</button>
+                <button id="cover-photo-cancel-btn">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------------------------- Update-Profile-Picture-PopUp ----------------------------------------------------->
+    <div class="update-profile-pic-div">
+        <div class="update-profile-header">
+            <h2 class="update-profile-title">Update Profile Picture</h2>
+        </div>
+        <div class="update-profile-body">
+            <div class="update-profile-body-top">
+                <label for="">Enter Image URL:</label>
+                <input type="text" id="update-profile-url-input">
+            </div>
+            <div class="update-profile-body-bottom">
+                <button id="profile-pic-upload-btn">Upload</button>
+                <button id="profile-pic-cancel-btn">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- <input type="email" id="email-input">
+    <button id="login-btn">Login</button> -->
+
 </body>
 </html>
