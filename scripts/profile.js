@@ -645,5 +645,12 @@ fb_logo.addEventListener("click", () => {
 const home = document.querySelector("#home");
 
 home.addEventListener("click", () => {
+
   window.location.href = "/pages/header.html";
+});
+
+const friend = document.querySelector("#friend");
+
+friend.addEventListener("click", () => {
+  window.location.href = "/pages/friends.html";
 });
