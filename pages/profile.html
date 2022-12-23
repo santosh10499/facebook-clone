@@ -18,6 +18,7 @@
     />
     <!-- <script src="/scripts/sidebar.js" defer></script> -->
     <script src="/scripts/profile.js" defer></script>
+    <script src="/scripts/userName.js" defer></script>
 </head>
 <body>
     <!----------------------------------------------------------- Header ----------------------------------------------------------------->
@@ -78,7 +79,6 @@
             </nav>
           </header>
     </div>
-    <div id="header-popUp"></div>
     <main>
         <!----------------------------------------------------------- Section-1 ----------------------------------------------------------------->
         <section class="section-1">
@@ -107,13 +107,13 @@
                                 <h1 id="profile-name">Rohan Palankar</h1>
                                 <p id="total-friends">2.1K friends</p>
                                 <div class="small-imgs">
-                                    <img src="/images/friend-1.jpg" alt="">
-                                    <img src="/images/friend-2.jpg" alt="">
-                                    <img src="/images/friend-3.jpg" alt="">
-                                    <img src="/images/friend-4.jpg" alt="">
-                                    <img src="/images/friend-5.jpg" alt="">
-                                    <img src="/images/friend-6.jpg" alt="">
-                                    <img src="/images/friend-7.jpg" alt="">
+                                    <img src="/images/friend-1.jpg" id="friend-1-small-img" alt="">
+                                    <img src="/images/friend-2.jpg" id="friend-2-small-img" alt="">
+                                    <img src="/images/friend-3.jpg" id="friend-3-small-img" alt="">
+                                    <img src="/images/friend-4.jpg" id="friend-4-small-img" alt="">
+                                    <img src="/images/friend-5.jpg" id="friend-5-small-img" alt="">
+                                    <img src="/images/friend-6.jpg" id="friend-6-small-img" alt="">
+                                    <img src="/images/friend-7.jpg" id="friend-7-small-img" alt="">
                                 </div>
                             </div>
                         </div>
@@ -599,7 +599,7 @@
         </div>
     </div>
 
-    <!----------------------------------------------- Update-Profile-Picture-PopUp ----------------------------------------------------->
+    <!----------------------------------------------- Update-Profile-Picture-PopUp ----------------------------------------------->
     <div class="update-profile-pic-div">
         <div class="update-profile-header">
             <h2 class="update-profile-title">Update Profile Picture</h2>
