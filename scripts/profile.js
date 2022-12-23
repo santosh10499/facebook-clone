@@ -392,7 +392,7 @@ let usersArray = [
 
   usersArray.forEach((userObj) => {
 
-    if ("ss0149952@gmail.com" == userObj.email){
+    if ("rohanpalankar8@gmail.com" == userObj.email){
 
       document.getElementById("cover-photo-img").src = userObj.coverPhoto;
 
