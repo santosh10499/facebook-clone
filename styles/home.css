@@ -98,7 +98,7 @@
 }
 
 .container {
-  height: 200px;
+  /* height: 200px; */
   margin: 0 5px 0 5px;
 }
 
@@ -118,7 +118,7 @@
   border-radius: 50%;
   object-fit: cover;
   position: relative;
-  top: -90%;
+  top: -76%;
 }
 .container span {
   position: relative;
