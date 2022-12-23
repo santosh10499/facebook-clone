@@ -1,5 +1,16 @@
 
 @import "./style.css";
+@import "./header.css";
+
+
+
+/*====================================== FB-Header =========================================================================================*/
+
+#fb-header {
+    height: 3.5em;
+}
+
+
 
 /*====================================== Section-1 =========================================================================================*/
 
@@ -7,6 +18,7 @@
 .section-1 {
     box-shadow: 0px 3px 5px rgb(191, 188, 188);
     margin-bottom: 3px;
+    background-color: white;
 }
 
 .section-1-container {
@@ -19,7 +31,7 @@
 .cover-photo {
     position: relative;
     width: 100%;
-    height: 60vh;
+    height: 28em;
 }
 
 .cover-photo img {             /*=====Cover-Photo-img=====*/
@@ -51,6 +63,7 @@
 .add-cover-photo span {
     font-size: 0.9em;
     font-weight: 600;
+    margin-left: 0.3em;
 }
 
 
@@ -63,6 +76,8 @@
     flex-direction: column;
     
 }
+
+/*============== Profile-details-display ==========================*/
 
 .profile-details-display {
     position: relative;
@@ -95,7 +110,7 @@
     height: 11em;
     border-radius: 50%;
     border: 1px solid rgb(158, 158, 159);
-    outline: 4px solid white;
+    outline: 0.2em solid white;
 }
 
 .profile-pic i {           /*==== Camera-icon-inside-Profile-Photo-img ====*/
@@ -217,12 +232,12 @@
     cursor: pointer;
 }
 
-#about-btn {
+#profile-about-btn {
     color: rgb(24, 118, 242);
     border-bottom: 4px solid rgb(24, 118, 242);
 }
 
-#more-btn i {
+#profile-more-btn i {
     font-size: 0.8rem; 
     margin-left: 0.4em;
 }
@@ -259,10 +274,13 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.divs-container {
+    width: 66%;
+}
+
 /*======================================== About-div ======================================================*/
 
 .about-div {
-    width: 66%;
     margin-top: 1em;
     background-color: white;
     border-radius: 0.6em;
@@ -273,7 +291,7 @@
 /*========================== About-left-part ==========================*/
 
 .about-left-part {
-    width: 30%;
+    width: 33%;
     border-right: 1px solid rgb(179, 180, 181);
     display: flex;
     flex-direction: column;
@@ -314,7 +332,7 @@
 /*========================== About-right-part ==========================*/
 
 .about-right-part {
-    width: 100%;
+    width: 67%;
     display: flex;
     flex-direction: column;
     padding: 0.8em;
@@ -339,7 +357,9 @@
     cursor: default;
 }
 
-.overview-description #p2 {
+.overview-description #work-year,
+.overview-description #college-year,
+.overview-description #mobile {
     font-size: 0.8rem;
     color: rgb(111, 110, 110);
 }
@@ -382,7 +402,6 @@
 
 
 .friends-div {
-    width: 66%;
     margin-top: 1em;
     background-color: white;
     border-radius: 0.6em;
@@ -449,9 +468,18 @@
     background-color: rgb(240, 240, 240);
 }
 
-#all-friends {
+#friends-allFriends-btn {
     color: rgb(24, 118, 242);
     border-bottom: 4px solid rgb(24, 118, 242);
+}
+
+#friends-more-btn {
+    display: none;
+}
+
+#friends-more-btn i {
+    margin-left: 0.4em;
+    font-size: 0.8rem; 
 }
 
 
@@ -495,12 +523,12 @@
     opacity: 0.9;
 }
 
-#friend-name {
+.friend-name {
     font-weight: 600;
     cursor: pointer;
 }
 
-#mutual-friends {
+.mutual-friends {
     color: rgb(104, 103, 103);
     font-size: 0.8rem;
     cursor: pointer;
@@ -545,7 +573,6 @@
 
 
 .photos-div {
-    width: 66%;
     margin-top: 1em;
     background-color: white;
     border-radius: 0.6em;
@@ -617,6 +644,17 @@
     border-bottom: 4px solid rgb(24, 118, 242);
 }
 
+#photos-more-btn {
+    display: none;
+}
+
+#photos-more-btn i {
+    margin-left: 0.4em;
+    font-size: 0.8rem;
+}
+
+
+
 
 
 .photos-images-container {           /*========= Photos-div-images-container ========*/ 
@@ -633,6 +671,7 @@
 
 .image-div img {                     /*=== image ===*/ 
     width: 100%;
+    height: 12.5em;
     border-radius: 0.6em;
     border: 1px solid rgb(213, 210, 210);
 }
@@ -673,7 +712,6 @@
 /*======================================== Videos-div ======================================================*/
 
 .videos-div {
-    width: 66%;
     margin-top: 1em;
     background-color: white;
     border-radius: 0.6em;
@@ -737,7 +775,6 @@
 
 
 .check-ins-div {
-    width: 66%;
     margin-top: 1em;
     background-color: white;
     border-radius: 0.6em;
@@ -831,17 +868,17 @@
     opacity: 0.9;
 }
 
-#check-ins-place-name {                      /*======== Check-ins-place-name ========*/
+.check-ins-place-name {                      /*======== Check-ins-place-name ========*/
     font-weight: 600;
     margin-bottom: 0.2em;
     cursor: pointer;
 }
 
-#check-ins-place-name:hover {
+.check-ins-place-name:hover {
     text-decoration: underline;
 } 
 
-#check-ins-place-details {                 /*======== Check-ins-details-below-name ========*/
+.check-ins-place-details {                 /*======== Check-ins-details-below-name ========*/
     color: rgb(104, 103, 103);
     font-size: 0.8rem;
     margin-bottom: 0.2em;
@@ -855,7 +892,6 @@
 
 
 .groups-div {
-    width: 66%;
     margin-top: 1em;
     margin-bottom: 1em;
     background-color: white;
@@ -948,13 +984,13 @@
     opacity: 0.9;
 }
 
-#group-name {
+.group-name {
     font-weight: 600;
     margin-bottom: 0.2em;
     cursor: pointer;
 }
 
-#group-name:hover {
+.group-name:hover {
     text-decoration: underline;
 } 
 
@@ -969,13 +1005,13 @@
     color: rgb(104, 103, 103);
 }
 
-#group-members {
+.group-members {
     font-size: 0.8rem;
     color: rgb(104, 103, 103);
     cursor: pointer;
 }
 
-#group-members:hover {
+.group-members:hover {
     text-decoration: underline;
 }
 
@@ -1024,6 +1060,359 @@
     padding: 0.5em 0.6em;
     border-radius: 50%;
     box-shadow: 0 0 0.3em;
+    cursor: pointer;
 }
 
-/*========================================================================================*/
+.side-fix-button:hover {
+    background-color: rgb(231, 237, 247);
+    box-shadow: 0 0 0.4em;
+}
+
+/*================================================================================================================================*/
+
+
+
+
+
+
+
+
+/*=========================================== Responsive-Part =========================================================================*/
+
+
+
+
+@media screen and (max-width: 1280px) {
+
+    .section-1-container {
+        min-width: 95%;
+    }
+
+    .divs-container {
+        width: 90%;
+    }
+
+}
+
+
+@media screen and (max-width: 912px) {
+
+    #friends-currentCity-btn, #friends-hometown-btn, #friends-following-btn {
+        display: none;
+    }
+
+    #friends-more-btn {
+        display: block;
+    }
+
+}
+
+
+@media screen and (max-width: 820px) {
+
+    .section-1-container {
+        min-width: 100%;
+    }
+
+    .divs-container {
+        width: 95%;
+    }
+
+    .cover-photo {
+        height: 20em;
+    }
+
+    .profile-details-container {
+        padding: 0em 1em;   
+    }
+
+    .profile-details-display {
+        position: relative;
+        flex-direction: column;
+    }
+
+    .profile-details-left-part {
+        flex-direction: column;
+    }
+
+    .profile-pic {             
+        position: absolute;
+        top: -5em;
+        /* position: relative; */
+        margin-right: 0em;
+        cursor: pointer;
+    }
+
+    .profile-name {
+        margin-top: 7em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-details-right-part {
+        align-self: center;
+        margin-bottom: 1em;
+    }
+
+    .profile-name p,.small-imgs {
+        margin-bottom: 0.5em;
+    }
+
+    .about-left-part {
+        width: 45%;
+    }
+
+    .about-right-part {
+        width: 55%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 540px) {
+
+    .cover-photo {
+        height: 13em;
+    }
+
+    .add-cover-photo span {
+        display: none;
+    }
+
+    #profile-photos-btn, #profile-videos-btn, #profile-check-ins-btn {
+        display: none;
+    }
+
+    .about-div {
+        flex-direction: column;
+    }
+
+    .about-left-part {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid rgb(179, 180, 181);
+    }
+
+    .about-right-part {
+        width: 100%;
+        padding: 1.5em 0.8em;
+    }
+
+    .friend-requests, .find-friends, #friends-birthdays-btn, 
+    #friends-work-btn, #friends-college-btn {
+        display: none;
+    }
+
+    .friends-details-div {
+        padding: 0.5em;
+    }
+    
+    .friends-details-left img {
+        width: 4em;
+        height: 4em;
+        margin-right: 0.5em;
+    }
+
+    .image-div {                        
+        width: 50%;
+    }
+
+    .check-ins-details-wrapper {
+        width: 100%;
+    }
+
+    .groups-details-wrapper {
+        width: 100%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 420px) {
+
+    .cover-photo {
+        height: 11em;
+    }
+
+    .add-story, .edit-profile {
+        padding: 0.5em 2em;
+    }
+
+    #profile-friends-btn {
+        display: none;
+    }
+
+    #friends-recentlyAdded-btn {
+        display: none;
+    }
+
+    .friends-details-wrapper {            
+        width: 100%;
+    }
+
+    #your-photos, #albums {
+        display: none;
+    }
+
+    #photos-more-btn {
+        display: block;
+    }
+
+    .image-div {                        
+        width: 100%;
+    }
+
+    .image-div img {
+        height: 18em;
+    }
+
+    .friends-div, .photos-div,
+    .videos-div, .check-ins-div, .groups-div {
+        padding: 0.5em;
+    } 
+
+}
+
+
+
+@media screen and (max-width: 380px) {
+
+    .add-story, .edit-profile {
+        padding: 0.5em 1.5em;
+    }
+
+    .add-photos-videos {
+        display: none   ;
+    }
+
+    .groups-details-div,.check-ins-details-div {
+        padding: 0.5em;
+    }
+
+    .groups-details-div img,
+    .check-ins-details-div img {
+        margin-right: 0.5em;
+    }
+
+}
+
+
+@media screen and (max-width: 280px) {
+
+    .add-story, .edit-profile {
+        padding: 0.5em 1em;
+    }
+
+    .add-story p,
+    .edit-profile p {
+        margin-left: 0.5em;
+    }
+
+    #profile-posts-btn {
+        display: none;
+    }
+
+    .groups-details-div img {
+        min-width: 5em;
+        height: 5em;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+/*================================================== PopUp - Section ========================================================================*/
+
+
+
+/*=========================================== Update-Profile-Picture & Cover-Photo-PopUp ==========================================*/
+
+.update-profile-pic-div,.update-cover-photo-div {
+    position: absolute;
+    background: white;
+    border-radius: 0.6em;
+    box-shadow: 0 0 0.4em;
+    display: none;
+}
+
+.update-profile-pic-div {
+    top: 13em;
+    left: 15em;
+}
+
+.update-cover-photo-div {
+    top: 10em;
+    right: 15em;
+}
+
+.update-profile-header,.update-cover-photo-header {
+    padding: 1em;
+    border-bottom: 1px solid rgb(182, 180, 180);
+}
+
+.update-profile-title,.update-cover-photo-title {
+    text-align: center;
+}
+
+.update-profile-body,.update-cover-photo-body {
+    padding: 1em;
+}
+
+#update-profile-url-input,#update-cover-photo-url-input {
+    font-size: 1rem;
+    padding: 0.3em;
+    border: 1px solid rgb(182, 180, 180);
+    background-color: rgb(215, 214, 214);
+    border-radius: 0.3em;
+}
+
+.update-profile-body-bottom,
+.update-cover-photo-body-bottom {
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.update-profile-body-bottom button,
+.update-cover-photo-body-bottom button {
+    font-size: 1rem;
+    padding: 0.5em 0.8em;
+    border-radius: 0.5em;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#profile-pic-upload-btn,
+#cover-photo-upload-btn {
+    background-color: rgb(27, 169, 27);
+}
+
+#profile-pic-upload-btn:hover,
+#cover-photo-upload-btn:hover {
+    background-color: rgb(23, 200, 23);
+}
+
+#profile-pic-cancel-btn,
+#cover-photo-cancel-btn {
+    background-color: rgb(243, 68, 5);
+}
+
+#profile-pic-cancel-btn:hover,
+#cover-photo-cancel-btn:hover {
+    background-color: rgb(255, 70, 3);
+}
+
+
+
+
