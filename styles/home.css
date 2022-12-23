@@ -62,7 +62,7 @@
   background-color: transparent;
 }
 
-.container_myStory {
+.container_mystory {
   height: 24vh;
   border-radius: 0.5em;
   box-shadow: 0 0 2px rgb(174, 167, 167);
@@ -82,7 +82,7 @@
   flex-direction: column;
   align-items: center;
 }
-.forHome {
+.forhome {
   background: #1876f2;
   padding: 0 5px 0 3px;
   font-size: 1.2em;
@@ -395,7 +395,7 @@
     margin-top: 10%;
   }
 
-  .container_myStory {
+  .container_mystory {
     margin-top: 10%;
   
   }
