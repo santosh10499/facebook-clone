@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meta - My profile</title>
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="styles/profile.css">
     <link rel="stylesheet" href="/styles/profile.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -18,11 +18,67 @@
     />
     <script src="/scripts/sidebar.js" defer></script>
     <script src="/scripts/profile.js" defer></script>
+    <script src="/scripts/userName.js" defer></script>
 </head>
 <body>
     <!----------------------------------------------------------- Header ----------------------------------------------------------------->
-    <div id="fb-header"></div>
-    <div id="header-popUp"></div>
+    <div id="fb-header">
+        <header class="shadow">
+            <nav>
+              <div class="container flex" id="container">
+                <!-----------------------------------------------------left nav--------------------------------------------------------->
+                <div class="left_of_nav flex">
+                  <img src="/images/fb.png" alt="Facebook logo" id="fb_logo"/>
+                  <i class="fa-solid fa-magnifying-glass hover" id="search_icon"></i>
+                  <div class="search_input flex">
+                    <i class="fa-solid fa-magnifying-glass hover search_icon"></i>
+      
+                    <input type="text" placeholder="Search Facebook" />
+                  </div>
+                </div>
+                <!---------------------------------------------------end of left nav----------------------------------------------------------->
+                <div class="mid_of_nav flex">
+                  <div class="mid hover display_none">
+                    <i class="fa-solid fa-house-chimney home_icon"></i>
+                  </div>
+      
+                  <div class="mid hover display_none">
+                    <i class="fa-solid fa-user-group user_icon"></i>
+                  </div>
+      
+                  <div class="mid hover display_none">
+                    <i class="fa-solid fa-users users_icons"></i>
+                  </div>
+                </div>
+                <div class="right_of_nav">
+                  <button class="display_none display_none_forTab hover">
+                    Find Friends
+                  </button>
+                  <div class="display_none">
+                    <i class="fa-solid fa-grip bg hover" id="grid"></i>
+                  </div>
+      
+                  <!----------plus icon for media query------------->
+                  <i class="fa-solid fa-plus hover" id="plus_icon"></i>
+      
+                  <i
+                    class="fa-brands fa-facebook-messenger messenger_icon gap hover bg"
+                  id="messenger"></i>
+      
+                  <i
+                    class="fa-solid fa-bell bell_icon bg hover"
+                    id="notifications"
+                  ></i>
+      
+                  <div class="profile" id="profile">
+                    <img src="/images/profile2.png" alt="user" class="hover" />
+                  </div>
+                  <i class="fa-solid fa-bars hover" id="bars"></i>
+                </div>
+              </div>
+            </nav>
+          </header>
+    </div>
     <main>
         <!----------------------------------------------------------- Section-1 ----------------------------------------------------------------->
         <section class="section-1">
@@ -520,6 +576,7 @@
         <button class="side-fix-button"><i class="bi bi-pencil-square"></i></button>
         <!------------------------------------------------------------------------------------------------------------------------------>
     </main>
+    
 
 
 
@@ -542,7 +599,7 @@
         </div>
     </div>
 
-    <!----------------------------------------------- Update-Profile-Picture-PopUp ----------------------------------------------------->
+    <!----------------------------------------------- Update-Profile-Picture-PopUp ----------------------------------------------->
     <div class="update-profile-pic-div">
         <div class="update-profile-header">
             <h2 class="update-profile-title">Update Profile Picture</h2>
@@ -559,8 +616,11 @@
         </div>
     </div>
 
-    <!-- <input type="email" id="email-input">
-    <button id="login-btn">Login</button> -->
+    <!-----------------------------------------------End- Update-Profile-Picture-PopUp ----------------------------------->
+    
+
+
+    
 
 </body>
 </html>

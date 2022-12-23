@@ -11,7 +11,7 @@ const prfileDialogueBox = document.querySelector(".prfile_dialogue_box")
 const profile = document.querySelector("#profile")
 
 const bars = document.querySelector("#bars")
-const outer_container = document.querySelector("#displayNone")
+const outer_container = document.querySelector(".aside_container")
 
 
 /**---------------------click event on see more btn------------------------ */
@@ -37,7 +37,6 @@ seeLess.addEventListener("click",(e)=>{
 /**---------------------click event profile------------------------ */
 
 profile.addEventListener("click",(e)=>{
-  console.log("h")
   if (prfileDialogueBox.style.display == "block") {
       prfileDialogueBox.style.display = "none";
     } else {
@@ -51,5 +50,57 @@ bars.addEventListener("click",(e)=>{
       outer_container.style.display = "none";
     } else {
       outer_container.style.display = "block";
+    }
+})
+
+
+//  notification pop up;
+
+const notification_popUp = document.querySelector(".notification");
+const notifications = document.querySelector("#notifications");
+
+notifications.addEventListener("click",(e)=>{
+  if (notification_popUp.style.display == "block") {
+      notification_popUp.style.display = "none";
+    } else {
+      notification_popUp.style.display = "block";
+    }
+})
+
+
+// messenger pop up;
+
+const messenger_popUp = document.querySelector(".messenger");
+const messenger = document.querySelector("#messenger");
+
+messenger.addEventListener("click",(e)=>{
+  if (messenger_popUp.style.display == "block") {
+      messenger_popUp.style.display = "none";
+    } else {
+      messenger_popUp.style.display = "block";
+    }
+})
+
+
+// plus_items pop Up;
+
+const plus_items_popUp = document.querySelector(".plus_items");
+const plus_icon = document.querySelector("#plus_icon");
+
+const grid = document.querySelector("#grid")
+
+plus_icon.addEventListener("click",(e)=>{
+  if (plus_items_popUp.style.display == "block") {
+      plus_items_popUp.style.display = "none";
+    } else {
+      plus_items_popUp.style.display = "block";
+    }
+})
+
+grid.addEventListener("click",(e)=>{
+  if (plus_items_popUp.style.display == "block") {
+      plus_items_popUp.style.display = "none";
+    } else {
+      plus_items_popUp.style.display = "block";
     }
 })
