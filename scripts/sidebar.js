@@ -1,4 +1,5 @@
 
+
 /**-------------------------foraside bar----------------------------- */
 const seeMore = document.getElementById("see_more");
 const seeLess = document.getElementById("see_less");
@@ -42,10 +43,6 @@ profile.addEventListener("click",(e)=>{
       prfileDialogueBox.style.display = "block";
     }
 })
-
-
-
-
 
 
 bars.addEventListener("click",(e)=>{
@@ -120,60 +117,50 @@ grid.addEventListener("click",(e)=>{
 
 
 
-document.addEventListener("click",(e)=>{
-  if (e.target.classList.contains("file")){
-      fileBar.style.display = "block";
-  }else{
-      fileBar.style.display = "none";
-  }
-  if (e.target.classList.contains("edit")){
-      editBar.style.display = "block";
-  }else{
-      editBar.style.display = "none";
-  }
-  if (e.target.classList.contains("view")){
-      viewBar.style.display = "block";
-  }else{
-      viewBar.style.display = "none";
-  }
-  if (e.target.classList.contains("insert")){
-      insertBar.style.display = "block";
-  }else{
-      insertBar.style.display = "none";
-  }
-  if (e.target.classList.contains("format")){
-      formatBar.style.display = "block";
-  }else{
-      formatBar.style.display = "none";
-  }
-  if (e.target.classList.contains("tools")){
-      toolsBar.style.display = "block";
-  }
-  else{
-      toolsBar.style.display = "none";
-  }
-  if (e.target.classList.contains("extensions")){
-      extensionsBar.style.display = "block";
-  }else{
-      extensionsBar.style.display = "none";
-  }
-  if (e.target.classList.contains("help","search-input")){
-      helpBar.style.display = "block";
-  }
-  else if (e.target.classList.contains("search-input")){
-      helpBar.style.display = "block";
-  }
-  else{
-      helpBar.style.display = "none";
-  }
-})
-
-// let body=document.getElementById('body');
-// body.addEventListener("click",(e)=>{
-//   if (prfileDialogueBox.style.display == "block") {
-//     prfileDialogueBox.style.display = "none";
-//      } 
-//      else {
-//        prfileDialogueBox.style.display = "none";
-//      }
+// document.addEventListener("click",(e)=>{
+//   if (e.target.classList.contains("file")){
+//       fileBar.style.display = "block";
+//   }else{
+//       fileBar.style.display = "none";
+//   }
+//   if (e.target.classList.contains("edit")){
+//       editBar.style.display = "block";
+//   }else{
+//       editBar.style.display = "none";
+//   }
+//   if (e.target.classList.contains("view")){
+//       viewBar.style.display = "block";
+//   }else{
+//       viewBar.style.display = "none";
+//   }
+//   if (e.target.classList.contains("insert")){
+//       insertBar.style.display = "block";
+//   }else{
+//       insertBar.style.display = "none";
+//   }
+//   if (e.target.classList.contains("format")){
+//       formatBar.style.display = "block";
+//   }else{
+//       formatBar.style.display = "none";
+//   }
+//   if (e.target.classList.contains("tools")){
+//       toolsBar.style.display = "block";
+//   }
+//   else{
+//       toolsBar.style.display = "none";
+//   }
+//   if (e.target.classList.contains("extensions")){
+//       extensionsBar.style.display = "block";
+//   }else{
+//       extensionsBar.style.display = "none";
+//   }
+//   if (e.target.classList.contains("help","search-input")){
+//       helpBar.style.display = "block";
+//   }
+//   else if (e.target.classList.contains("search-input")){
+//       helpBar.style.display = "block";
+//   }
+//   else{
+//       helpBar.style.display = "none";
+//   }
 // })
