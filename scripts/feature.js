@@ -80,7 +80,6 @@ frnd_suggestion.addEventListener('click', function(){
     hr.style.display = 'none';
     frnd1.style.display = 'none';
     frndHead1.style.display = 'none';
-<<<<<<< HEAD
     frndHead.style.display = 'flex';
     frnd.style.display = 'flex';
 });
@@ -102,14 +101,6 @@ allfrnd.addEventListener('click', function(){
 });
 
 
-const mediaQuery = window.matchMedia('(max-width: 480px)');
-if(mediaQuery.matches) {
-    alert('media query matched!');
-}
-=======
-    frndHead.style.display = 'block';
-    frnd.style.display = 'none';
-})
 fb_logo.addEventListener("click", () => {
     window.location.href = "/pages/header.html";
   });
@@ -245,4 +236,3 @@ grid.addEventListener("click",(e)=>{
         plus_items_popUp.style.display = "block";
       }
   })
->>>>>>> 21e0e020b83ad127b2dd4edba2317a4292db3f92
