@@ -311,7 +311,7 @@ const home = document.querySelector("#home");
 home.addEventListener("click", () => {
   window.location.href = "/pages/header.html";
 });
-console.log(home.innerHTML)
+// console.log(home.innerHTML)
 const friendIcon = document.querySelector("#friend");
 
 
@@ -319,16 +319,42 @@ friendIcon.addEventListener("click", () => {
   window.location.href = "/pages/friends.html";
 });
 
-let likebtn=document.querySelectorAll('.like');
+// let likebtn=document.querySelectorAll('.like');
 
 
-for(let j=0;j<likebtn.length;j++)
-{
-  likebtn[j].addEventListener('click',()=>{
-    for(let i=0;i<data.length;i++)
-    {
+// for(let j=0;j<likebtn.length;j++)
+// {
+//   likebtn[j].addEventListener('click',()=>{
+//     for(let i=0;i<data.length;i++)
+//     {
       
-     console.log(data[i].like)
-    }
-})
+//      console.log(data[i].like)
+//     }
+// })
+// }
+
+
+
+//=========================for displaying user profile=============
+
+let userdata=[{email: "santosh@gmail.com",profilePic: "/images/santosh-mehta-profilepic.jpg"},
+             {email: "varsharajput353@gmail.com",profilePic: "/images/varsha-profilepic.jpg"},
+             {email:"ss0149952@gmail.com",profilePic: "/images/sonu-profilepic.jpg"},
+             {email: "rohanpalankar8@gmail.com",profilePic: "/images/profile-pic-rohan.jpg"}];
+
+  let Email=localStorage.getItem('userEmail');
+  console.log(Email)
+let userimage=document.querySelectorAll('.userimage');
+
+for(let k=0;k<userdata.length;k++)
+{
+for(let i=0;i<userimage.length;i++)
+{
+   if(userdata[k].email==Email)
+   {
+    
+   userimage[i].src=userdata[k].profilePic
+   }
 }
+}
+

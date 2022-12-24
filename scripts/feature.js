@@ -257,3 +257,26 @@ grid.addEventListener("click",(e)=>{
         plus_items_popUp.style.display = "block";
       }
   })
+
+  //=========================for displaying user profile=============
+
+let userdata=[{email: "santosh@gmail.com",profilePic: "/images/santosh-mehta-profilepic.jpg"},
+{email: "varsharajput353@gmail.com",profilePic: "/images/varsha-profilepic.jpg"},
+{email:"ss0149952@gmail.com",profilePic: "/images/sonu-profilepic.jpg"},
+{email: "rohanpalankar8@gmail.com",profilePic: "/images/profile-pic-rohan.jpg"}];
+
+let Email=localStorage.getItem('userEmail');
+console.log(Email)
+let userimage=document.querySelectorAll('.userimage');
+
+for(let k=0;k<userdata.length;k++)
+{
+for(let i=0;i<userimage.length;i++)
+{
+if(userdata[k].email==Email)
+{
+
+userimage[i].src=userdata[k].profilePic
+}
+}
+}
