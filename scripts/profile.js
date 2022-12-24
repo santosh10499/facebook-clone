@@ -1,4 +1,9 @@
 
+/*======================================= Getting User-Email from local storage ===================================*/
+
+
+let userEmail=localStorage.getItem('userEmail')
+
 
 
 /*======================================= Side-fix-button - Dialog-Box ===================================*/
@@ -62,20 +67,15 @@ profilePicCancelBtn.addEventListener("click", ()=>{
 })
 
 
-let imagesArray = [];
-// imagesArray = JSON.parse(localStorage.getItem("images"));
-// displayImages(imagesArray);
-let userEmail=localStorage.getItem('userEmail')
-console.log(userEmail)
+
+
+
 
 /*---------------- Event-Listener for Cover-Photo-UploadBtn -----------------*/
 
 coverPhotoUploadBtn.addEventListener("click", ()=>{
     const coverPhotoUrl = updateCoverPhotoUrlInput.value;
     document.getElementById("cover-photo-img").src = coverPhotoUrl;
-
-    imagesArray.push({id:"coverPhoto", coverPhotoUrl});
-    localStorage.setItem("images", JSON.stringify(imagesArray));
     updateCoverPhotoUrlInput.value = "";
 })
 
@@ -84,25 +84,11 @@ coverPhotoUploadBtn.addEventListener("click", ()=>{
 profilePicUploadBtn.addEventListener("click", ()=>{
     const profilePicUrl = updateProfileUrlInput.value;
     document.getElementById("profile-pic-img").src = profilePicUrl;
-
-    imagesArray.push({id:"profilePic", profilePicUrl});
-    localStorage.setItem("images", JSON.stringify(imagesArray));
     updateProfileUrlInput.value = "";
 })
 
 
-/*-------------------- Function to display profile and cover-photo images ------------------------*/
 
-function displayImages(imgArr){
-    imgArr.forEach((ele) => {
-        if (ele.id == "profilePic"){
-            document.getElementById("profile-pic-img").src = ele.profilePicUrl;
-        }
-        else if (ele.id == "coverPhoto"){
-            document.getElementById("cover-photo-img").src = ele.coverPhotoUrl;
-        }
-    });
-}
 
 /*=============================================================================================================================================*/
 
@@ -111,7 +97,7 @@ function displayImages(imgArr){
 
 
 
-/*============================== Users-Array ==================================*/
+/*============================== Users-Array ============================================================================*/
 
 
 let usersArray = [
@@ -563,11 +549,25 @@ function displayGroups(groupsArray){
   })
 
 }
+
+
+
+
+
+
+/*=============================== Event-Listeners to move to different pages ===========================================*/
+
+
+/*=============== On-click FB-logo =================*/
+
 const fb_logo = document.querySelector("#fb_logo");
 
 fb_logo.addEventListener("click", () => {
   window.location.href = "/pages/header.html";
 });
+
+
+/*=============== On-click Home-logo =================*/
 
 const home = document.querySelector("#home");
 
@@ -576,6 +576,9 @@ home.addEventListener("click", () => {
   window.location.href = "/pages/header.html";
 });
 
+
+/*=============== On-click Friends-logo =================*/
+
 const friend = document.querySelector("#friend");
 
 friend.addEventListener("click", () => {
@@ -583,7 +586,13 @@ friend.addEventListener("click", () => {
 });
 
 
+/*=============== On-click Logout-logo =================*/
 
+const logOut = document.querySelector("#logout");
+
+logOut.addEventListener("click", () => {
+  window.location.href = "/pages/login.html";
+});
 
 
 

@@ -100,19 +100,41 @@ allfrnd.addEventListener('click', function(){
     frnd.style.display = 'flex';
 });
 
+
+
+/*=============== On-click FB-logo =================*/
+
 fb_logo.addEventListener("click", () => {
     window.location.href = "/pages/header.html";
-  });
-  home.addEventListener("click", () => {
-    window.location.href = "/pages/header.html";
-  });
+});
+
+
+/*=============== On-click Home-logo =================*/
+
+
+home.addEventListener("click", () => {
+  window.location.href = "/pages/header.html";
+});
   
   const friendIcon = document.querySelector("#friend");
   
-  
-  friendIcon.addEventListener("click", () => {
-    window.location.href = "/pages/friends.html";
-  });
+ 
+/*=============== On-click Friends-logo =================*/
+
+friendIcon.addEventListener("click", () => {
+  window.location.href = "/pages/friends.html";
+});
+
+
+/*=============== On-click Logout-logo =================*/
+
+const logOut = document.querySelector("#logout");
+
+logOut.addEventListener("click", () => {
+  window.location.href = "/pages/login.html";
+});
+
+
 
 // let Add_post = document.querySelector("#Add_post");
 // let photo_video = document.querySelector("#create_post_Wrapper");
