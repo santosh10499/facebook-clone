@@ -134,12 +134,12 @@
 }
 
 .item-section {
-    width: 90%;
+    width: 91%;
     height: max-content;
     margin: 1em auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .friend-content {
@@ -151,6 +151,7 @@
     margin-bottom: 0.4em;
     border-radius: 5px;
     box-shadow: 0 0 1px 1px rgb(105, 105, 105);
+    margin-right: 0.5em;
 }
 
 .friend-content img{
