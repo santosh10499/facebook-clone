@@ -8,7 +8,7 @@ content.innerHTML += `<div class="create_story">
 </div>
 <div class="stories">
   <div class="container_myStory pointer">
-    <img
+    <img class="userimage"
       src="/images/profile2.png"
       alt="story"
       id="my_story"

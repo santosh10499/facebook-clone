@@ -218,14 +218,14 @@ const dataRender = () => {
         <div class="likes">
           <img src="" alt="" />
           <img src="" alt="" />
-          <span class="pointer"> ${data[i].like}</span>
+          <span class="pointer like-count" > ${data[i].like}</span>
         </div>
         <div class="commets">
           <p class="pointer comment">${data[i].comment}Comments</p>
         </div>
       </div>
       <div class="reaction">
-        <p class="hover like"><i class="fa-regular fa-thumbs-up"></i> Like</p>
+        <span class="like"><p class="hover "><i class="fa-regular icon  fa-thumbs-up"></i> Like</p></span>
         <p class="hover"><i class="fa-regular fa-message"></i> Comment</p>
         <p class="hover"><i class="fa-solid fa-share"></i> Share</p>
       </div>
@@ -319,19 +319,24 @@ friendIcon.addEventListener("click", () => {
   window.location.href = "/pages/friends.html";
 });
 
-// let likebtn=document.querySelectorAll('.like');
+let likebtn=document.querySelectorAll('.like');
+let icon=document.querySelectorAll('.icon');
+let likeCount=document.querySelectorAll('.like-count');
+console.log(likebtn)
 
 
-// for(let j=0;j<likebtn.length;j++)
-// {
-//   likebtn[j].addEventListener('click',()=>{
-//     for(let i=0;i<data.length;i++)
-//     {
-      
-//      console.log(data[i].like)
-//     }
-// })
-// }
+for(let j=0;j<likebtn.length;j++)
+{
+  likebtn[j].addEventListener('click',()=>{
+    
+      likeCount[j].innerHTML=`<span style="margin-left:-20px" class="pointer like-count" > ${data[j].like+1}</span>`;
+     
+     likebtn[j].style.color="blue";
+     icon[j].style.color="blue";
+     
+    
+})
+}
 
 
 
