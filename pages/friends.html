@@ -9,6 +9,61 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
+    <div id="fb-header">
+        <header class="shadow">
+            <nav>
+              <div class="container flex" id="container">
+                <!-----------------------------------------------------left nav--------------------------------------------------------->
+                <div class="left_of_nav flex">
+                  <img src="/images/fb.png" alt="Facebook logo" id="fb_logo"/>
+                  <i class="fa-solid fa-magnifying-glass hover" id="search_icon"></i>
+                  <div class="search_input flex">
+                    <i class="fa-solid fa-magnifying-glass hover search_icon"></i>
+      
+                    <input type="text" placeholder="Search Facebook" />
+                  </div>
+                </div>
+                <!---------------------------------------------------end of left nav----------------------------------------------------------->
+                <div class="mid_of_nav flex">
+                  <div id="home" class="mid hover display_none">
+                    <i class="fa-solid fa-house-chimney home_icon"></i>
+                  </div>
+      
+                  <div id= "friend"class="mid hover display_none">
+                    <i class="fa-solid fa-user-group user_icon"></i>
+                  </div>
+      
+                  <div class="mid hover display_none">
+                    <i class="fa-solid fa-users users_icons"></i>
+                  </div>
+                </div>
+                <div class="right_of_nav">
+                  <button class="display_none display_none_forTab hover">
+                    Find Friends
+                  </button>
+                  <div class="display_none">
+                    <i class="fa-solid fa-grip bg hover" id="grid"></i>
+                  </div>
+      
+                  <!----------plus icon for media query------------->
+                  <i class="fa-solid fa-plus hover" id="plus_icon"></i>
+      
+                  <i
+                    class="fa-brands fa-facebook-messenger messenger_icon gap hover bg"
+                  id="messenger"></i>
+      
+                  <i
+                    class="fa-solid fa-bell bell_icon bg hover"
+                    id="notifications"
+                  ></i>
+      
+                  <div class="profile" id="profile">
+                    <img src="/images/profile2.png" alt="user" class="hover" />
+                  </div>
+                  <i class="fa-solid fa-bars hover" id="bars"></i>
+                </div>
+              </div>
+            </nav>
      <main id="friend-suggestion-main">
         <!--aside option part-->
         <aside id="suggestion-aside-bar">
@@ -360,6 +415,236 @@
             </div>
         </section>
     </main>
+    <div class="prfile_dialogue_box shadow">
+        <div class="profile dp shadow">
+          <div class="inner hover">
+            <img src="/images/profile2.png" alt="profile" width="50px" />
+            <p class="user-name">Varsha Rajput</p>
+          </div>
+          <hr />
+          <span class="hover">See all profiles</span>
+        </div>
+        <div class="items">
+          <p class="hover">
+            <i class="fa-solid fa-gear"></i>Settings & privacy<i
+              class="fa-solid fa-chevron-right"
+            ></i>
+          </p>
+          <p class="hover">
+            <i class="fa-solid fa-circle-question"></i>Help & support<i
+              class="fa-solid fa-chevron-right"
+            ></i>
+          </p>
+          <p class="hover">
+            <i class="fa-solid fa-moon"></i>Display & accessibility<i
+              class="fa-solid fa-chevron-right"
+            ></i>
+          </p>
+          <p class="hover">
+            <i class="fa-solid fa-circle-exclamation"></i>Give feedback
+          </p>
+          <p class="hover" id="logout">
+            <i class="fa-solid fa-right-from-bracket"></i>Log out
+          </p>
+        </div>
+        <div class="bottom">
+          <span>privacy · Terms · Advertising · Ad choices · Cookies · </span>
+          <span> More· Meta © 2022</span>
+        </div>
+      </div>
+
+      <!--------Notifiction dialogue----->
+
+      <div class="notification shadow">
+        <h2 class="flex">
+          Notifications<i class="fa-solid fa-ellipsis hover"></i>
+        </h2>
+
+        <div class="unread flex padding">
+          <p class="hover para">All</p>
+          <p class="hover para">Unread</p>
+          <p class="hover para">Priority</p>
+        </div>
+        <div class="Earlier flex padding">
+          <span>Earlier</span>
+          <p class="para blue hover">See all</p>
+        </div>
+        <div class="profile2 flex">
+          <img src="/images/profile2.png" alt="profile" class="image hover" />
+          <i class="fa-solid fa-bell bell_icon bg hover"></i>
+          <p>
+            You've turned on SMS updates (charges may apply). you can opt out in
+            your notifiaction seetings.
+          </p>
+        </div>
+      </div>
+
+      <!-----------------messenger dialogue box-------------------->
+
+      <div class="messenger shadow">
+        <div class="top flex padding">
+          <h2>Chats</h2>
+          <div class="">
+            <i class="fa-solid fa-ellipsis hover"></i>
+            <i class="fa-solid fa-arrows-to-dot hover"></i>
+            <i class="fa-solid fa-video hover"></i>
+            <i class="fa-solid fa-pen-to-square hover"></i>
+          </div>
+        </div>
+        <div class="search_input flex bg">
+          <i class="fa-solid fa-magnifying-glass hover search_icon"></i>
+
+          <input type="text" placeholder="Search Facebook" />
+        </div>
+        <p class="padding">No messages found.</p>
+        <hr>
+        <span class="blue">See all in Messenger</span>
+      </div>
+
+
+      <!-- ---------------plus dialogue box for mobile view------------------ -->
+
+      <div class="plus_items shadow">
+        <h2>Create</h2>
+        <div class="box hover">
+          <i class="fa-solid fa-pen-to-square"></i>
+          <div class="text">
+            <p>Post</p>
+            <span>Share a post on News Feed.</span>
+          </div>
+        </div>
+        <div class="box hover">
+          <i class="fa-solid fa-book-open"></i>
+          <div class="text">
+            <p>Story</p>
+            <span>Share a post or write something.</span>
+          </div>
+        </div>
+        <div class="box hover">
+          <img src="/images/reels2.png" alt="reels" width="20px" />
+          <div class="text">
+            <p>Reel</p>
+            <span>Share a Reel.</span>
+          </div>
+        </div>
+        <div class="box hover">
+          <i class="fa-solid fa-video"></i>
+          <div class="text">
+            <p>Room</p>
+            <span>Video chat with anyone, on or off Facebook without timw limits.</span>
+          </div>
+        </div>
+        <hr>
+        <div class="box hover">
+          <i class="fa-solid fa-flag"></i>
+          <div class="text">
+            <p>Page</p>
+            <span>Connect and share with customers on fans</span>
+          </div>
+        </div>
+        <div class="box hover">
+          <i class="fa-solid fa-bullhorn"></i>
+          <div class="text">
+            <p>Ad</p>
+            <span>Advertise your business, brand or organisation.</span>
+          </div>
+        </div>
+        <div class="box hover">
+          <i class="fa-solid fa-users"></i>
+          <div class="text">
+            <p>Group</p>
+            <span>Connect with people who share your interests.</span>
+          </div>
+        </div>
+        <div class="box hover">
+          <i class="fa-regular fa-calendar-plus"></i>
+          <div class="text">
+            <p>Events</p>
+            <span>Bring people together wuth a public or private events.</span>
+          </div>
+        </div>
+        <div class="box hover">
+          <i class="fa-solid fa-store"></i>
+          <div class="text">
+            <p>Marketplace Listing</p>
+            <span>Sell items to people in your community.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ----------------------group conversation------------------- -->
+
+      <div class="create_new_group shadow" id="create_new_group">
+        <span class="flex">New message <i class="fa-solid fa-xmark hover bg" id="New_message"></i></span>
+        <p>To : <input type="text"></p>
+        <hr>
+        <span class="blue hover">Suggested</span>
+      </div>
+
+
+      <!-- -------------dialogue boxes---------------- -->
+    <div class="create_post_Wrapper" id="create_post_Wrapper">
+      <div class="create_post" id="popUp">
+        <h3>Create post</h3>
+        <i class="fa-solid fa-xmark hover"></i>
+        <div class="about_post">
+          <div class="name">
+            <img
+              src="/images/profile2.png"
+              alt=""
+              class="profile bg hover"
+              width="45px"
+            />
+            <div class="btn">
+              <span>Varsha Rajput</span>
+              <button class="pointer">
+                <i class="fa-solid fa-user-group"></i>Friends<i
+                  class="fa-solid fa-caret-down"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="text">
+          <textarea placeholder="What's on your mind"></textarea>
+          <i class="fa-regular fa-face-smile"></i>
+        </div>
+
+        <div class="photo pointer">
+          <i class="fa-solid fa-xmark hover"></i>
+          <div class="inner_div hover">
+            <i class="fa-regular fa-file-image hover bg iconBg"></i>
+            <p>Add photos/vidios</p>
+            <span>or drag and drop</span>
+          </div>
+        </div>
+
+        <div class="bottom">
+          <p>Add to your post</p>
+          <img
+            src="/images/gallery.png"
+            alt="photo"
+            width="25px"
+            class="pointer"
+          />
+          <img
+            src="/images/find_friends.png"
+            alt="find friends"
+            class="pointer"
+            width="20px"
+          />
+          <i class="fa-regular fa-face-smile yellow pointer"></i>
+          <i class="fa-solid fa-location-dot red pointer"></i>
+          <i class="fa-solid fa-flag pointer"></i>
+          <i class="fa-solid fa-ellipsis pointer hover bg"></i>
+        </div>
+      </div>
+    </div>
+
+      <!---------------------------------end of dialogue boxes-------------------------------------->
+    </div>
+
     <script src="/scripts/feature.js"></script>
+    <!-- <script src="/scripts/index.js"></script> -->
 </body>
 </html>

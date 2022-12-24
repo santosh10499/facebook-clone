@@ -80,6 +80,7 @@ frnd_suggestion.addEventListener('click', function(){
     hr.style.display = 'none';
     frnd1.style.display = 'none';
     frndHead1.style.display = 'none';
+<<<<<<< HEAD
     frndHead.style.display = 'flex';
     frnd.style.display = 'flex';
 });
@@ -105,3 +106,143 @@ const mediaQuery = window.matchMedia('(max-width: 480px)');
 if(mediaQuery.matches) {
     alert('media query matched!');
 }
+=======
+    frndHead.style.display = 'block';
+    frnd.style.display = 'none';
+})
+fb_logo.addEventListener("click", () => {
+    window.location.href = "/pages/header.html";
+  });
+  home.addEventListener("click", () => {
+    window.location.href = "/pages/header.html";
+  });
+  
+  const friendIcon = document.querySelector("#friend");
+  
+  
+  friendIcon.addEventListener("click", () => {
+    window.location.href = "/pages/friends.html";
+  });
+
+// let Add_post = document.querySelector("#Add_post");
+// let photo_video = document.querySelector("#create_post_Wrapper");
+// // console.log(photo_video.innerHTML);
+
+// Add_post.addEventListener("click", (e) => {
+//   if (photo_video.style.display == "block") {
+//     photo_video.style.display = "none";
+//   } else {
+//     photo_video.style.display = "block";
+//   }
+// });
+
+
+// click on fa-xmark
+
+const fa_xmark  = document.querySelector(".fa-xmark")
+
+fa_xmark.addEventListener("click", ()=>{
+  if (photo_video.style.display == "block" ) {
+    photo_video.style.display = "none";
+  }
+
+})
+
+// create_new_group 
+
+// const create_new_group_popUp = document.querySelector("#create_new_group");
+// const plus_btn = document.querySelector("#plus_btn");
+// const New_message = document.querySelector("#New_message");
+
+// plus_btn.addEventListener("click", ()=>{
+//   if (create_new_group_popUp.style.display == "block") {
+//     create_new_group_popUp.style.display = "none";
+//   } else {
+//     create_new_group_popUp.style.display = "block";
+//   }
+// })
+
+// New_message.addEventListener("click", ()=>{
+//   if (create_new_group_popUp.style.display == "block" ) {
+//     create_new_group_popUp.style.display = "none";
+//   }
+
+// })
+
+
+const seeMore = document.getElementById("see_more");
+const seeLess = document.getElementById("see_less");
+const moreItems =document.getElementById("more_items")
+
+
+/**------------for prfile_dialouge_box----------------------- */
+
+const prfileDialogueBox = document.querySelector(".prfile_dialogue_box")
+const profile = document.querySelector("#profile")
+
+const bars = document.querySelector("#bars")
+const outer_container = document.querySelector(".aside_container")
+
+
+
+/**---------------------click event profile------------------------ */
+
+profile.addEventListener("click",(e)=>{
+  if (prfileDialogueBox.style.display == "block") {
+      prfileDialogueBox.style.display = "none";
+    } else {
+      prfileDialogueBox.style.display = "block";
+    }
+})
+
+
+bars.addEventListener("click",(e)=>{
+  if (outer_container.style.display == "block") {
+      outer_container.style.display = "none";
+    } else {
+      outer_container.style.display = "block";
+    }
+})
+
+
+//  notification dialouge_box;
+
+const notification_popUp = document.querySelector(".notification");
+const notifications = document.querySelector("#notifications");
+
+notifications.addEventListener("click",(e)=>{
+  if (notification_popUp.style.display == "block") {
+      notification_popUp.style.display = "none";
+    } else {
+      notification_popUp.style.display = "block";
+    }
+})
+
+
+// messenger dialouge_box;
+
+const messenger_popUp = document.querySelector(".messenger");
+const messenger = document.querySelector("#messenger");
+
+messenger.addEventListener("click",(e)=>{
+  if (messenger_popUp.style.display == "block") {
+      messenger_popUp.style.display = "none";
+    } else {
+      messenger_popUp.style.display = "block";
+    }
+})
+
+
+// plus_items dialouge_box;
+
+const plus_items_popUp = document.querySelector(".plus_items");
+const grid = document.querySelector("#grid")
+
+grid.addEventListener("click",(e)=>{
+    if (plus_items_popUp.style.display == "block") {
+        plus_items_popUp.style.display = "none";
+      } else {
+        plus_items_popUp.style.display = "block";
+      }
+  })
+>>>>>>> 21e0e020b83ad127b2dd4edba2317a4292db3f92

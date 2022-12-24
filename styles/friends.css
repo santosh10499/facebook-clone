@@ -1,4 +1,6 @@
 @import "./reset.css";
+ @import "./style.css"; 
+@import "./header.css";
 /* ------------------css reset----------------------*/
 :root {
     --first-color: #ffffff;
@@ -6,6 +8,12 @@
     --text-color: #333333;
     --icon-bg-clr: #dadada;
 }
+
+
+#fb-header {
+    height: 3em;
+}
+
 
 /* main part of body*/
 #friend-suggestion-main {

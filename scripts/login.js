@@ -1,11 +1,12 @@
 
-
 let email = document.getElementById("email");
 let password = document.getElementById("password");
 let login = document.getElementById("log");
 let createAccount = document.getElementById("create");
 let msg = document.getElementById("msg");
-let logindata=[];
+let firstName=[];
+let lastName=[];
+let userEmail=[];
 // --------------------------------Get data from localStorage===================================
 let data = localStorage.getItem("signupData");
 
@@ -19,13 +20,18 @@ login.addEventListener("click", () => {
     if (array[i].email == email.value && array[i].password == password.value) {
        
       // this is used for render name in home page
-       logindata.push(array[i].userName);
-       localStorage.setItem('name',logindata);
+       userEmail.push(array[i].email)
+       firstName.push(array[i].userName);
+       lastName.push(array[i].surName);
+       localStorage.setItem('userEmail',userEmail);
+       localStorage.setItem('firstName',firstName);
+       localStorage.setItem('LastName',lastName)
+
       //  ---------------------------------
       
       email.style.border = "1px solid black";
       password.style.border = "1px solid black";
-      window.location.href ="/facebook-clone/pages/home.html";
+      window.location.href ="/pages/header.html";
       
     } else {
       
@@ -40,5 +46,5 @@ login.addEventListener("click", () => {
 
 // ================================click event on click button]]]]]]]]]]]]]]]]]]]]]]]
 createAccount.addEventListener("click", () => {
-    window.location.href = "/facebook-clone/pages/signup.html";
+    window.location.href = "/pages/signup.html";
 });
