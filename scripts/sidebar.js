@@ -167,3 +167,13 @@ document.addEventListener("click",(e)=>{
       helpBar.style.display = "none";
   }
 })
+
+// let body=document.getElementById('body');
+// body.addEventListener("click",(e)=>{
+//   if (prfileDialogueBox.style.display == "block") {
+//     prfileDialogueBox.style.display = "none";
+//      } 
+//      else {
+//        prfileDialogueBox.style.display = "none";
+//      }
+// })
