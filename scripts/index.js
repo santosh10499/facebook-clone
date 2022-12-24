@@ -194,7 +194,8 @@ let data = [
 
 const dummy_post = document.querySelector(".dummy_post");
 
-const dataRender = () => {
+// const dataRender = () => {
+  for(let k = 0; k < 5; k++){
   for (let i = 0; i < data.length; i++) {
      dummy_post.innerHTML += `<div class="dummy_post">
       <div class="top">
@@ -233,9 +234,10 @@ const dataRender = () => {
 `;
 // dummy_post.insertAdjacentHTML("afterbegin", post)
   }
-};
+}
+// };
 // window.addEventListener("load", dataRender)
-dataRender()
+// dataRender()
 
 
 // pop up on photo/video
