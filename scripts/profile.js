@@ -1,101 +1,10 @@
 
 
-/*====================================== FB-Header =========================================================================================*/
-
-// const fbHeader = document.getElementById("fb-header");
-// const headerPopUp = document.getElementById("header-popUp");
 
 
-// fbHeader.innerHTML = `<header>
-// <nav>
-//   <div class="Container">
-//     <!-----------------------------------------------------left nav--------------------------------------------------------->
-//     <div class="left_of_nav">
-      
-//       <img src="/images/fb.png" alt="Facebook logo" />
-//       <i class="fa-solid fa-magnifying-glass hover" id="search_icon"></i>
-//       <div class="search_input">
-//         <i class="fa-solid fa-magnifying-glass hover search_icon"></i>
-        
-//         <input type="text" placeholder="Search Facebook" />
-//       </div>
-//     </div>
-//     <!---------------------------------------------------end of left nav----------------------------------------------------------->
-//     <div class="mid_of_nav">
-      
-//       <div class="mid hover display_none">
-       
-//         <i class="fa-solid fa-house-chimney home_icon "></i>
-//       </div>
-     
-//       <div class="mid hover display_none">
-//         <i class="fa-solid fa-user-group user_icon "></i>
-//       </div>
 
-//       <div class="mid hover display_none">
-//         <i class="fa-solid fa-users users_icons"></i>
-//       </div>
-//     </div>
-//     <div class="right_of_nav">
-//       <button class="display_none display_none_forTab">Find Friends</button>
-//       <div class="display_none">
-//         <i class="fa-solid fa-grip bg"></i>
-//       </div>
-      
-      
-//       <!----------plus icon for media query------------->
-//       <i class="fa-solid fa-plus hover" id="plus_icon"></i>
 
-//       <i class="fa-brands fa-facebook-messenger messenger_icon gap bg"></i>
-      
-//       <i class="fa-solid fa-bell bell_icon bg"></i>
-      
-//       <div class="profile" id="profile">
-//         <img src="/images/profile2.png" alt="user" />
-//       </div>
-//       <i class="fa-solid fa-bars hover" id="bars"></i>
-//     </div>
-//   </div>
-// </nav>
-// </header>
-//`
-// headerPopUp.innerHTML = `<div class="prfile_dialogue_box">
-// <div class="profile dp">
-//   <div class="inner hover">
-//     <img src="/images/profile2.png" alt="profile" width="50px" />
-//     <p>Varsha Rajput</p>
-//   </div>
-//   <hr />
-//   <span class="hover">See all profiles</span>
-// </div>
-// <div class="items">
-//   <p class="hover">
-//     <i class="fa-solid fa-gear"></i>Settings & privacy<i
-//       class="fa-solid fa-chevron-right"
-//     ></i>
-//   </p>
-//   <p class="hover">
-//     <i class="fa-solid fa-circle-question"></i>Help & support<i
-//       class="fa-solid fa-chevron-right"
-//     ></i>
-//   </p>
-//   <p class="hover">
-//     <i class="fa-solid fa-moon"></i>Display & accessibility<i
-//       class="fa-solid fa-chevron-right"
-//     ></i>
-//   </p>
-//   <p class="hover">
-//     <i class="fa-solid fa-circle-exclamation"></i>Give feedback
-//   </p>
-//   <p class="hover">
-//     <i class="fa-solid fa-right-from-bracket"></i>Log out
-//   </p>
-// </div>
-// <div class="bottom">
-//   <span>privacy · Terms · Advertising · Ad choices · Cookies · </span>
-//   <span> More· Meta © 2022</span>
-// </div>
-// </div>`
+
 
 
 /*====================================== Update-Profile-Picture & Cover-Photo-PopUp =========================================================================================*/
@@ -386,11 +295,6 @@ let usersArray = [
 
 /*============================================= Rendering User-Profile-details =================================================*/
 
-// const logInBtn = document.getElementById("login-btn");
-// const emailInput = document.getElementById("email-input");
-
-
-// logInBtn.addEventListener("click", ()=>{
 
   usersArray.forEach((userObj) => {
 
@@ -432,7 +336,6 @@ let usersArray = [
 
   })
 
-// })
 
 
 
@@ -447,6 +350,7 @@ function displayFriends(friendsArray){
 
     if (frndObj.id == "frnd-1"){
 
+      document.getElementById("friend-1-small-img").src = frndObj.img;
       document.getElementById("friend-1-img").src = frndObj.img;
       document.getElementById("friend-1-name").innerText = frndObj.name;
       document.getElementById("friend-1-mutuals").innerText = frndObj.mutual;
@@ -454,6 +358,7 @@ function displayFriends(friendsArray){
     }
     else if (frndObj.id == "frnd-2"){
 
+      document.getElementById("friend-2-small-img").src = frndObj.img;
       document.getElementById("friend-2-img").src = frndObj.img;
       document.getElementById("friend-2-name").innerText = frndObj.name;
       document.getElementById("friend-2-mutuals").innerText = frndObj.mutual;
@@ -461,6 +366,7 @@ function displayFriends(friendsArray){
     }
     else if (frndObj.id == "frnd-3"){
 
+      document.getElementById("friend-3-small-img").src = frndObj.img;
       document.getElementById("friend-3-img").src = frndObj.img;
       document.getElementById("friend-3-name").innerText = frndObj.name;
       document.getElementById("friend-3-mutuals").innerText = frndObj.mutual;
@@ -468,6 +374,7 @@ function displayFriends(friendsArray){
     }
     else if (frndObj.id == "frnd-4"){
 
+      document.getElementById("friend-4-small-img").src = frndObj.img;
       document.getElementById("friend-4-img").src = frndObj.img;
       document.getElementById("friend-4-name").innerText = frndObj.name;
       document.getElementById("friend-4-mutuals").innerText = frndObj.mutual;
@@ -475,6 +382,7 @@ function displayFriends(friendsArray){
     }
     else if (frndObj.id == "frnd-5"){
 
+      document.getElementById("friend-5-small-img").src = frndObj.img;
       document.getElementById("friend-5-img").src = frndObj.img;
       document.getElementById("friend-5-name").innerText = frndObj.name;
       document.getElementById("friend-5-mutuals").innerText = frndObj.mutual;
@@ -482,6 +390,7 @@ function displayFriends(friendsArray){
     }
     else if (frndObj.id == "frnd-6"){
 
+      document.getElementById("friend-6-small-img").src = frndObj.img;
       document.getElementById("friend-6-img").src = frndObj.img;
       document.getElementById("friend-6-name").innerText = frndObj.name;
       document.getElementById("friend-6-mutuals").innerText = frndObj.mutual;
@@ -654,3 +563,96 @@ const friend = document.querySelector("#friend");
 friend.addEventListener("click", () => {
   window.location.href = "/pages/friends.html";
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const seeMore = document.getElementById("see_more");
+const seeLess = document.getElementById("see_less");
+const moreItems =document.getElementById("more_items")
+
+
+/**------------for prfile_dialouge_box----------------------- */
+
+const prfileDialogueBox = document.querySelector(".prfile_dialogue_box")
+const profile = document.querySelector("#profile")
+
+const bars = document.querySelector("#bars")
+const outer_container = document.querySelector(".aside_container")
+
+
+
+/**---------------------click event profile------------------------ */
+
+profile.addEventListener("click",(e)=>{
+  if (prfileDialogueBox.style.display == "block") {
+      prfileDialogueBox.style.display = "none";
+    } else {
+      prfileDialogueBox.style.display = "block";
+    }
+})
+
+
+bars.addEventListener("click",(e)=>{
+  if (outer_container.style.display == "block") {
+      outer_container.style.display = "none";
+    } else {
+      outer_container.style.display = "block";
+    }
+})
+
+
+//  notification dialouge_box;
+
+const notification_popUp = document.querySelector(".notification");
+const notifications = document.querySelector("#notifications");
+
+notifications.addEventListener("click",(e)=>{
+  if (notification_popUp.style.display == "block") {
+      notification_popUp.style.display = "none";
+    } else {
+      notification_popUp.style.display = "block";
+    }
+})
+
+
+// messenger dialouge_box;
+
+const messenger_popUp = document.querySelector(".messenger");
+const messenger = document.querySelector("#messenger");
+
+messenger.addEventListener("click",(e)=>{
+  if (messenger_popUp.style.display == "block") {
+      messenger_popUp.style.display = "none";
+    } else {
+      messenger_popUp.style.display = "block";
+    }
+})
+
+
+// plus_items dialouge_box;
+
+const plus_items_popUp = document.querySelector(".plus_items");
+const grid = document.querySelector("#grid")
+
+grid.addEventListener("click",(e)=>{
+    if (plus_items_popUp.style.display == "block") {
+        plus_items_popUp.style.display = "none";
+      } else {
+        plus_items_popUp.style.display = "block";
+      }
+  })

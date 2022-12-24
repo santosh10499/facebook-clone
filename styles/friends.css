@@ -9,6 +9,12 @@
     --icon-bg-clr: #dadada;
 }
 
+
+#fb-header {
+    height: 3em;
+}
+
+
 /* main part of body*/
 #friend-suggestion-main {
     width: 100%;
