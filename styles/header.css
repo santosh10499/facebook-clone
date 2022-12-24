@@ -572,4 +572,13 @@ i {
     .aside_container{
       margin-top:15%;
      }
+
+     .main_container {
+      width: 5px;
+      
+    }
+    .display_none_forTab {
+      display: none;
+    }
+  
   }

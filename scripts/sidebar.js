@@ -47,7 +47,6 @@ profile.addEventListener("click",(e)=>{
 bars.addEventListener("click",(e)=>{
   if (outer_container.style.display == "block") {
       outer_container.style.display = "none";
-      outer_container.style.display = "block";
     } else {
       outer_container.style.display = "block";
     }
