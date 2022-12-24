@@ -127,6 +127,13 @@ i {
   border-radius: 50%;
   background: var(--bg-color);
 }
+.bg_img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: var(--bg-color);
+}
 
 /* ------------------------profile---------------------------- */
 
@@ -135,8 +142,9 @@ i {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  box-shadow: 0 0 1px rgb(73, 69, 69);
+  object-fit: cover;
   align-items: center;
-  border-radius: 50%;
   cursor: pointer;
   background: var(--bg-color);
 }
@@ -581,4 +589,34 @@ i {
       display: none;
     }
   
+  }
+
+  @media only screen and (max-width: 380px){
+
+  .prfile_dialogue_box{
+     width: 90%;
+    margin-top: -2%;
+    background: #1876f2;
+  }
+  .notification{
+     width: 90%;
+    margin-top: 4%;
+    margin-right: 5%;
+  }
+  .messenger{
+     width: 85%;
+    margin-top: 4%;
+    margin-right: 6%;
+  }
+  .plus_items{
+     width: 60%;
+    margin-top: 4%;
+    margin-right: 22%;
+  }
+
+    .content{
+      width: 100%;
+      margin-top: 4%;
+    }
+
   }

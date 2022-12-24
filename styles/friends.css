@@ -290,7 +290,7 @@ hr {
     header{
         margin-top: 0;
     }
-    
+
     #suggestion-item {
         display: none;
     }
@@ -310,3 +310,36 @@ hr {
 }
 
 
+@media screen and (max-width: 540px) {
+    header{
+        margin-top: 0;
+    }
+
+    .mid{
+        display: none;
+    }
+
+    .prfile_dialogue_box{
+       width: 95%;
+      margin-top: 4%;
+    }
+    .notification{
+       width: 90%;
+      margin-top: 4%;
+      margin-right: 5%;
+    }
+    .messenger{
+       width: 85%;
+      margin-top: 4%;
+      margin-right: 6%;
+    }
+    .plus_items{
+       width: 60%;
+      margin-top: 4%;
+      margin-right: 22%;
+    }
+
+    #bars, #plus_icon{
+        display: none;
+    }
+}
