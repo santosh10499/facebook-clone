@@ -45,6 +45,10 @@ profile.addEventListener("click",(e)=>{
 })
 
 
+
+
+
+
 bars.addEventListener("click",(e)=>{
   if (outer_container.style.display == "block") {
       outer_container.style.display = "none";
@@ -104,3 +108,13 @@ grid.addEventListener("click",(e)=>{
       plus_items_popUp.style.display = "block";
     }
 })
+
+// let body=document.getElementById('body');
+// body.addEventListener("click",(e)=>{
+//   if (prfileDialogueBox.style.display == "block") {
+//     prfileDialogueBox.style.display = "none";
+//      } 
+//      else {
+//        prfileDialogueBox.style.display = "none";
+//      }
+// })
