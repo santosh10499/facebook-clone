@@ -1315,6 +1315,10 @@
 
 @media screen and (max-width: 380px) {
 
+    header{
+        margin-top: 0;
+    }
+
     .add-story, .edit-profile {
         padding: 0.5em 1.5em;
     }

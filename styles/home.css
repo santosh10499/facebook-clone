@@ -386,6 +386,17 @@
 
 /* media query for mobile view */
 
+
+@media only screen and (max-width: 375px){
+  .dummy_post{
+    width: 100%;
+    border: 2px solid;
+   }
+   .stories{
+    width: 100%;
+   }
+}
+
 @media only screen and (max-width: 580px) {
   .main_container {
     width: 100%;

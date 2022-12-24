@@ -287,6 +287,10 @@ hr {
 /* responsive part*/
 
 @media screen and (max-width: 480px){
+    header{
+        margin-top: 0;
+    }
+    
     #suggestion-item {
         display: none;
     }
@@ -295,6 +299,7 @@ hr {
     #suggestion-aside-bar {
         width: 95%;
     }
+
 }
 
 @media screen  and (max-width: 1200px){
@@ -303,3 +308,5 @@ hr {
         height: 24.5em;
     }
 }
+
+
