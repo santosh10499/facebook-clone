@@ -100,7 +100,6 @@ allfrnd.addEventListener('click', function(){
     frnd.style.display = 'flex';
 });
 
-
 fb_logo.addEventListener("click", () => {
     window.location.href = "/pages/header.html";
   });
