@@ -7,7 +7,7 @@ let data = [
     caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
     post: "/images/post2.png",
     like: 17,
-    comment: "",
+    comment: 48,
     share: "",
   },
 
@@ -19,7 +19,7 @@ let data = [
     caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
     post: "https://scontent.fdel15-1.fna.fbcdn.net/v/t39.30808-6/319366497_856641655537554_6911095490872985966_n.jpg?stp=dst-jpg_s960x960&_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=xStYXxEiZW4AX_4YZFE&_nc_ht=scontent.fdel15-1.fna&oh=00_AfCvCIvC_6AC7T8FJa1C190SIy22sGBFn_lMHSYqJIPXbQ&oe=63A95744",
     like: 17,
-    comment: "",
+    comment: 48,
     share: "",
   },
 
@@ -30,8 +30,8 @@ let data = [
     time: "20h",
     caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
     post: "/images/friend5.png",
-    like: 17,
-    comment: "",
+    like: 171,
+    comment: 87,
     share: "",
   },
 
@@ -42,8 +42,8 @@ let data = [
     time: "20h",
     caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
     post: "https://scontent.fdel15-1.fna.fbcdn.net/v/t39.30808-6/319366497_856641655537554_6911095490872985966_n.jpg?stp=dst-jpg_s960x960&_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=xStYXxEiZW4AX_4YZFE&_nc_ht=scontent.fdel15-1.fna&oh=00_AfCvCIvC_6AC7T8FJa1C190SIy22sGBFn_lMHSYqJIPXbQ&oe=63A95744",
-    like: 17,
-    comment: "",
+    like: 147,
+    comment: 78,
     share: "",
   },
 
@@ -55,7 +55,7 @@ let data = [
     caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
     post: "/images/friend6.png",
     like: 17,
-    comment: "",
+    comment: 487,
     share: "",
   },
 
@@ -67,7 +67,7 @@ let data = [
     caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
     post: "/images/post1.png",
     like: 17,
-    comment: "",
+    comment: 48,
     share: "",
   },
 
@@ -78,8 +78,8 @@ let data = [
     time: "20h",
     caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
     post: "https://scontent.fdel15-1.fna.fbcdn.net/v/t39.30808-6/320786628_885398515819748_6194837900968737595_n.jpg?stp=dst-jpg_s960x960&_nc_cat=106&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=lAvzgTIUB8UAX_2_3fo&tn=uVVaWKvuBVBVoPQW&_nc_ht=scontent.fdel15-1.fna&oh=00_AfD6a0nm-sxj_fhtk2zHHtqR7NnZ9JhVBGeFzE9cj3WktQ&oe=63A90D6E",
-    like: 17,
-    comment: "",
+    like: 184,
+    comment:47,
     share: "",
   },
   
@@ -90,8 +90,8 @@ let data = [
     time: "20h",
     caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
     post: "https://scontent.fdel15-1.fna.fbcdn.net/v/t39.30808-6/319366497_856641655537554_6911095490872985966_n.jpg?stp=dst-jpg_s960x960&_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=xStYXxEiZW4AX_4YZFE&_nc_ht=scontent.fdel15-1.fna&oh=00_AfCvCIvC_6AC7T8FJa1C190SIy22sGBFn_lMHSYqJIPXbQ&oe=63A95744",
-    like: 17,
-    comment: "",
+    like: 789,
+    comment: 478,
     share: "",
   },
 
@@ -103,7 +103,7 @@ let data = [
     caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
     post: "/images/post2.png",
     like: 17,
-    comment: "",
+    comment: 48,
     share: "",
   },
 
@@ -115,7 +115,7 @@ let data = [
     caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
     post: "https://scontent.fdel15-1.fna.fbcdn.net/v/t39.30808-6/319366497_856641655537554_6911095490872985966_n.jpg?stp=dst-jpg_s960x960&_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=xStYXxEiZW4AX_4YZFE&_nc_ht=scontent.fdel15-1.fna&oh=00_AfCvCIvC_6AC7T8FJa1C190SIy22sGBFn_lMHSYqJIPXbQ&oe=63A95744",
     like: 17,
-    comment: "",
+    comment: 15,
     share: "",
   },
 
@@ -126,8 +126,8 @@ let data = [
     time: "20h",
     caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
     post: "/images/friend5.png",
-    like: 17,
-    comment: "",
+    like: 178,
+    comment:184,
     share: "",
   },
 
@@ -138,8 +138,8 @@ let data = [
     time: "20h",
     caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
     post: "https://scontent.fdel15-1.fna.fbcdn.net/v/t39.30808-6/319366497_856641655537554_6911095490872985966_n.jpg?stp=dst-jpg_s960x960&_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=xStYXxEiZW4AX_4YZFE&_nc_ht=scontent.fdel15-1.fna&oh=00_AfCvCIvC_6AC7T8FJa1C190SIy22sGBFn_lMHSYqJIPXbQ&oe=63A95744",
-    like: 17,
-    comment: "",
+    like: 185,
+    comment: 100,
     share: "",
   },
 
@@ -150,8 +150,8 @@ let data = [
     time: "20h",
     caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
     post: "/images/post2.png",
-    like: 17,
-    comment: "",
+    like: 187,
+    comment: 40,
     share: "",
   },
 
@@ -162,8 +162,8 @@ let data = [
     time: "20h",
     caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
     post: "https://scontent.fdel15-1.fna.fbcdn.net/v/t39.30808-6/319366497_856641655537554_6911095490872985966_n.jpg?stp=dst-jpg_s960x960&_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=xStYXxEiZW4AX_4YZFE&_nc_ht=scontent.fdel15-1.fna&oh=00_AfCvCIvC_6AC7T8FJa1C190SIy22sGBFn_lMHSYqJIPXbQ&oe=63A95744",
-    like: 17,
-    comment: "",
+    like: 107,
+    comment: 48,
     share: "",
   },
 
@@ -174,8 +174,8 @@ let data = [
     time: "20h",
     caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
     post: "/images/friend5.png",
-    like: 17,
-    comment: "",
+    like: 148,
+    comment: 478,
     share: "",
   },
 
@@ -186,7 +186,7 @@ let data = [
     time: "20h",
     caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
     post: "https://scontent.fdel15-1.fna.fbcdn.net/v/t39.30808-6/319366497_856641655537554_6911095490872985966_n.jpg?stp=dst-jpg_s960x960&_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=xStYXxEiZW4AX_4YZFE&_nc_ht=scontent.fdel15-1.fna&oh=00_AfCvCIvC_6AC7T8FJa1C190SIy22sGBFn_lMHSYqJIPXbQ&oe=63A95744",
-    like: 17,
+    like: 170,
     comment: "",
     share: "",
   },
@@ -218,14 +218,14 @@ const dataRender = () => {
         <div class="likes">
           <img src="" alt="" />
           <img src="" alt="" />
-          <span class="pointer">👍💖15k</span>
+          <span class="pointer"> ${data[i].like}</span>
         </div>
         <div class="commets">
-          <p class="pointer">300 Comments</p>
+          <p class="pointer comment">${data[i].comment}Comments</p>
         </div>
       </div>
       <div class="reaction">
-        <p class="hover"><i class="fa-regular fa-thumbs-up"></i> Like</p>
+        <p class="hover like"><i class="fa-regular fa-thumbs-up"></i> Like</p>
         <p class="hover"><i class="fa-regular fa-message"></i> Comment</p>
         <p class="hover"><i class="fa-solid fa-share"></i> Share</p>
       </div>
@@ -311,10 +311,50 @@ const home = document.querySelector("#home");
 home.addEventListener("click", () => {
   window.location.href = "/pages/header.html";
 });
-console.log(home.innerHTML)
+// console.log(home.innerHTML)
 const friendIcon = document.querySelector("#friend");
 
 
 friendIcon.addEventListener("click", () => {
   window.location.href = "/pages/friends.html";
 });
+
+// let likebtn=document.querySelectorAll('.like');
+
+
+// for(let j=0;j<likebtn.length;j++)
+// {
+//   likebtn[j].addEventListener('click',()=>{
+//     for(let i=0;i<data.length;i++)
+//     {
+      
+//      console.log(data[i].like)
+//     }
+// })
+// }
+
+
+
+//=========================for displaying user profile=============
+
+let userdata=[{email: "santosh@gmail.com",profilePic: "/images/santosh-mehta-profilepic.jpg"},
+             {email: "varsharajput353@gmail.com",profilePic: "/images/varsha-profilepic.jpg"},
+             {email:"ss0149952@gmail.com",profilePic: "/images/sonu-profilepic.jpg"},
+             {email: "rohanpalankar8@gmail.com",profilePic: "/images/profile-pic-rohan.jpg"}];
+
+  let Email=localStorage.getItem('userEmail');
+  console.log(Email)
+let userimage=document.querySelectorAll('.userimage');
+
+for(let k=0;k<userdata.length;k++)
+{
+for(let i=0;i<userimage.length;i++)
+{
+   if(userdata[k].email==Email)
+   {
+    
+   userimage[i].src=userdata[k].profilePic
+   }
+}
+}
+
