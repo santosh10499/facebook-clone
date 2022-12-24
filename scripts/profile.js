@@ -549,11 +549,25 @@ function displayGroups(groupsArray){
   })
 
 }
+
+
+
+
+
+
+/*=============================== Event-Listeners to move to different pages ===========================================*/
+
+
+/*=============== On-click FB-logo =================*/
+
 const fb_logo = document.querySelector("#fb_logo");
 
 fb_logo.addEventListener("click", () => {
   window.location.href = "/pages/header.html";
 });
+
+
+/*=============== On-click Home-logo =================*/
 
 const home = document.querySelector("#home");
 
@@ -562,6 +576,9 @@ home.addEventListener("click", () => {
   window.location.href = "/pages/header.html";
 });
 
+
+/*=============== On-click Friends-logo =================*/
+
 const friend = document.querySelector("#friend");
 
 friend.addEventListener("click", () => {
@@ -569,7 +586,13 @@ friend.addEventListener("click", () => {
 });
 
 
+/*=============== On-click Logout-logo =================*/
 
+const logOut = document.querySelector("#logout");
+
+logOut.addEventListener("click", () => {
+  window.location.href = "/pages/login.html";
+});
 
 
 
