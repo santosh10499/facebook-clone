@@ -518,7 +518,7 @@ i {
 
 @media only screen and (max-width: 1180px) {
    .aside_container{
-    margin-top: 10%;
+    margin-top: 2%;
    }
   
    .prfile_dialogue_box {
@@ -560,4 +560,16 @@ i {
     margin-top: 5%;
   }
 
+  }
+
+
+  @media only screen and (max-width: 540px){
+
+    header{
+    margin-top: -10%;
+    }
+
+    .aside_container{
+      margin-top:15%;
+     }
   }
