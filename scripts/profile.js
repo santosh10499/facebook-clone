@@ -1,6 +1,24 @@
 
 
 
+/*======================================= Side-fix-button - Dialog-Box ===================================*/
+
+const sideFixButton = document.querySelector(".side-fix-button");
+const crossButton = document.querySelector(".fa-xmark");
+
+sideFixButton.addEventListener("click", (e) => {
+
+    document.querySelector(".create_new_group").style.display = "block";
+  
+})
+
+crossButton.addEventListener("click", (e) => {
+
+  document.querySelector(".create_new_group").style.display = "none";
+
+})
+
+
 
 
 

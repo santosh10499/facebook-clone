@@ -67,6 +67,7 @@
     margin-left: 12px;
     margin-top: 10px;
     padding-left: 10px;
+    /* text-align: center; */
   }
   /*Input section end*/
   /*Date of birth section start*/
@@ -147,7 +148,7 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 540px) {
     #container {
         width:96%;
         margin-left:2%;

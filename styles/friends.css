@@ -18,7 +18,7 @@
 /* main part of body*/
 #friend-suggestion-main {
     width: 100%;
-    max-height: fit-content;
+    max-height: max-content;
     display: flex;
 }
 
@@ -28,7 +28,7 @@
 
 #suggestion-aside-bar {
     width: 28%;
-    height: 100vh;
+    height: 95vh;
     border-right: 0.1em solid black;
     background-color: var(--first-color);
     display: flex;
@@ -142,12 +142,12 @@
 }
 
 .item-section {
-    width: 90%;
+    width: 93%;
     height: max-content;
     margin: 1em auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .friend-content {
@@ -156,9 +156,10 @@
     border: 1px solid black;
     border-style: none;
     background-color: var(--first-color);
-    margin-bottom: 0.4em;
+    margin-bottom: 0.5em;
     border-radius: 5px;
     box-shadow: 0 0 1px 1px rgb(105, 105, 105);
+    margin-left: 0.8em;
 }
 
 .friend-content img{

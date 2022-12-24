@@ -327,7 +327,8 @@ for(let j=0;j<likebtn.length;j++)
   likebtn[j].addEventListener('click',()=>{
     for(let i=0;i<data.length;i++)
     {
-     console.log( data[i].like)
+      
+     console.log(data[i].like)
     }
 })
 }
