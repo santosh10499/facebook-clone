@@ -1,4 +1,5 @@
 
+
 /**-------------------------foraside bar----------------------------- */
 const seeMore = document.getElementById("see_more");
 const seeLess = document.getElementById("see_less");
@@ -103,6 +104,7 @@ grid.addEventListener("click",(e)=>{
       plus_items_popUp.style.display = "block";
     }
 })
+
 
 
 
