@@ -1,9 +1,10 @@
 const confirmBtn =document.querySelectorAll("#cnfm");
 const delBtn = document.querySelectorAll("#delete-btn");
 const addBtn = document.querySelectorAll("#add-btn");
-const removeBtn = document.querySelectorAll("#removeBtn");
-const cancel = document.querySelectorAll('#cancel')
-const frnd_request = document.getElementById('friend-request')
+const removeBtn = document.querySelectorAll("#remove-btn");
+const cancel = document.querySelectorAll('#cancel');
+const frnd_request = document.getElementById('friend-request');
+const frnd_suggestion = document.getElementById('frnd-suggestion');
 const allfrnd = document.getElementById('all-frnd')
 // =================for accept request=======================  
 for(const bts of confirmBtn){
@@ -36,11 +37,11 @@ for(const bts of addBtn){
 
 
 // =============================for removing from suggestion ================================================
-// for(const bts of removeBtn){
-//     bts.addEventListener('click', function(){
-//         bts.parentElement.parentElement.style.display = 'none'
-//     })
-// }
+for(const bts of removeBtn){
+    bts.addEventListener('click', function(){
+        bts.parentElement.parentElement.style.display = 'none'
+    })
+}
 
 
 // =====================for canceling send request===========================================================
@@ -54,6 +55,7 @@ for(const bts of cancel){
 }
 
 
+// =========================friend request button ===========================================
 
 frnd_request.addEventListener('click', function(){
     const frnd = document.getElementById('sec2');
@@ -64,16 +66,47 @@ frnd_request.addEventListener('click', function(){
     frndHead1.style.display = 'flex';
     frndHead.style.display = 'none';
     frnd.style.display = 'none';
-})
+});
+
+// ==========================friend Suggestion button===========================================
 
 
-allfrnd.addEventListener('click', function(){
+frnd_suggestion.addEventListener('click', function(){
     const frnd = document.querySelector('#sec2');
     const frndHead = document.querySelector('#cont2');
     const frnd1 = document.getElementById('sec1');
     const frndHead1 = document.getElementById('cont1')
+    const hr = document.getElementById('hr')
+    hr.style.display = 'none';
     frnd1.style.display = 'none';
     frndHead1.style.display = 'none';
+<<<<<<< HEAD
+    frndHead.style.display = 'flex';
+    frnd.style.display = 'flex';
+});
+
+
+
+// =======================all friend button ==========================================
+allfrnd.addEventListener('click', function(){
+    const frnd = document.querySelector('#sec2');
+    const frndHead = document.querySelector('#cont2');
+    const frnd1 = document.getElementById('sec1');
+    const frndHead1 = document.getElementById('cont1');
+    const hr = document.getElementById('hr')
+    hr.style.display = 'block';
+    frnd1.style.display = 'flex';
+    frndHead1.style.display = 'flex';
+    frndHead.style.display = 'flex';
+    frnd.style.display = 'flex';
+});
+
+
+const mediaQuery = window.matchMedia('(max-width: 480px)');
+if(mediaQuery.matches) {
+    alert('media query matched!');
+}
+=======
     frndHead.style.display = 'block';
     frnd.style.display = 'none';
 })
@@ -212,3 +245,4 @@ grid.addEventListener("click",(e)=>{
         plus_items_popUp.style.display = "block";
       }
   })
+>>>>>>> 21e0e020b83ad127b2dd4edba2317a4292db3f92
