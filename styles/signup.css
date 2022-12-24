@@ -147,7 +147,7 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 540px) {
     #container {
         width:96%;
         margin-left:2%;

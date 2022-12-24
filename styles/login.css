@@ -140,7 +140,7 @@
   }
   /*----------------------------------------------------- making responsive  phone*/
   
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 540px) {
     #container {
       width: 100%;
       flex-direction: column;
