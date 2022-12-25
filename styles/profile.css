@@ -685,7 +685,7 @@
     object-fit: cover;
 }
 
-.image-div span {                     /*=== Edit-Pencil-icon ===*/ 
+.photo-edit {                     /*=== Edit-Pencil-icon ===*/ 
     position: absolute;
     top: 0.6em;
     right: 0.6em;
@@ -693,7 +693,7 @@
     background-color: rgba(0, 0, 0, 0.523);
     font-size: 1.2rem;
     padding: 0.3em;
-    /* border-radius: 50%; */
+    border-radius: 50%;
 }
 
 .image-div span:hover {
