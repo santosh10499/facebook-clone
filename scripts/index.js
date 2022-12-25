@@ -2,7 +2,7 @@ const dummy_post = document.querySelector(".dummy_post");
 async function api() {
   let data1 = await fetch("https://63a7491a59fd83b1bb42ba9a.mockapi.io/api/v1/facbook_posts");
   let data = await data1.json();
-
+  
   for (let i = 0; i < data.length; i++) {
     dummy_post.innerHTML += `<div class="dummy_post">
       <div class="top">
@@ -20,7 +20,7 @@ async function api() {
         </div>
       </div>
       <div class="image">
-        <img src="${data[i].post}" alt="" />
+        <img src="${data[i].post}" alt="post" />
       </div>
       <div class="bottom">
         <div class="likes">
@@ -163,3 +163,19 @@ for (let k = 0; k < userdata.length; k++) {
     }
   }
 }
+
+
+// --------------comment_btn-------------
+
+// const add_comment = document.querySelector("#comment_btn");
+
+// const commentSection = document.querySelector(".commentSection")
+// console.log(add_comment)
+
+// document.addEventListener("click", () => {
+//   if (commentSection.style.display == "block") {
+//     commentSection.style.display = "none";
+//   } else {
+//     commentSection.style.display = "block";
+//   }
+// });

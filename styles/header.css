@@ -216,7 +216,6 @@ i {
   display: none;
 }
 
-
 /* -------------------newGroup--------------------- */
 
 /* ===================diagouge boxes============= */
@@ -255,7 +254,6 @@ i {
   margin: 0 5px 5px 5px;
   border-radius: 0.5em;
 }
-
 
 .items p {
   margin: 10px 5px;
@@ -375,13 +373,13 @@ i {
 .plus_items {
   position: fixed;
   right: 10%;
-  top: 5%;
+  top: 6%;
   background: var(--main-color);
   border-radius: 0.5em;
   padding: 1em;
   z-index: 100;
+  width:25% ;
   display: none;
- 
 }
 
 .plus_items .box span {
@@ -392,8 +390,8 @@ i {
 .plus_items .box {
   display: flex;
   align-items: center;
-  width: 320px;
-  padding: 8px 12px ;
+  width: 100%;
+  padding: 8px 12px;
   border-radius: 0.5em;
 }
 .plus_items .box i,
@@ -401,11 +399,9 @@ i {
   margin-right: 6%;
 }
 
-
-
 /* ---------------create_new_group---------------- */
 
-.create_new_group{
+.create_new_group {
   background: var(--main-color);
   border-radius: 0.5em;
   width: 20%;
@@ -418,16 +414,17 @@ i {
   display: none;
 }
 
-.create_new_group p, hr{
+.create_new_group p,
+hr {
   margin: 6% 0;
 }
 
-.create_new_group p input{
+.create_new_group p input {
   border: none;
   outline: none;
   padding: 5px;
 }
-.create_new_group .blue{
+.create_new_group .blue {
   text-decoration: underline;
   text-underline-offset: 10px;
   padding: 5px 10px;
@@ -481,7 +478,7 @@ i {
 
   .aside_container {
     width: 95%;
-    margin: 4% 2% 0 2% ;
+    margin: 4% 2% 0 2%;
     background: var(--main-color);
   }
 
@@ -515,8 +512,6 @@ i {
     font-size: 1.2em;
   }
 
-
-
   .plus_items {
     margin: 8% 2%;
   }
@@ -524,22 +519,32 @@ i {
 
 /* -------------media query for tab------------ */
 
+@media only screen and (max-width: 290px) {
+  #bars {
+    display: block;
+  }
+  #plus_icon{
+    display: none;
+  }
+
+}
+
 @media only screen and (max-width: 768px) {
-  .mid{
+  .mid {
     display: none;
   }
 }
 
 @media only screen and (max-width: 1180px) {
-   .aside_container{
+  .aside_container {
     margin-top: 2%;
-   }
-  
-   .prfile_dialogue_box {
+  }
+
+  .prfile_dialogue_box {
     width: 98%;
-   margin: 10% 0;
-   }
-   .display_none_forTab {
+    margin: 10% 0;
+  }
+  .display_none_forTab {
     display: none;
   }
 
@@ -549,98 +554,118 @@ i {
 
   .main_container {
     width: 100%;
-    
   }
 
-  .content{
+  .content {
     width: 68%;
   }
 
-  .create_post{
+  .create_post {
     width: 55%;
   }
-  .notification{
+  .notification {
     width: 95%;
     margin-top: 10%;
   }
 
-  .messenger{
+  .messenger {
     width: 92%;
     margin-top: 10%;
   }
 
-  .plus_items{
+  .plus_items {
     width: 90%;
     margin-top: 5%;
   }
-
+  #bars {
+    display: none;
   }
+}
 
-
-  @media only screen and (max-width: 540px){
-
-    header{
+@media only screen and (max-width: 540px) {
+  header {
     margin-top: -10%;
-    }
+  }
 
-    .aside_container{
-      margin-top:11%;
-     }
+  .aside_container {
+    margin-left: 40%;
+    margin-top: 5%;
+    background: var(--main-color);
+    width: 60%;
+  }
 
-     .main_container {
-      width: 5px;
-      
-    }
-    .display_none_forTab {
-      display: none;
-    }
+  .prfile_dialogue_box,
+  .notification,
+  .messenger {
+    width: 60%;
+    margin-top: 2%;
+  }
   
-  }
-
-  @media only screen and (max-width: 380px){
-
-  .prfile_dialogue_box{
-     width: 90%;
-    margin-top: -2%;
-    background: #1876f2;
-  }
-  .notification{
-     width: 90%;
-    margin-top: 4%;
-    margin-right: 5%;
-  }
-  .messenger{
-     width: 85%;
-    margin-top: 4%;
-    margin-right: 6%;
-  }
-  .plus_items{
-     width: 60%;
+  .plus_items {
+    width: 60%;
     margin-top: 4%;
     margin-right: 22%;
   }
 
-    .content{
-      width: 100%;
-      margin-top: 4%;
-    }
-
+  .content {
+    width: 100%;
+    margin: 0;
   }
 
+  #bars {
+    display: block;
+  }
+}
 
-  @media only screen and (max-width: 415px){
+@media only screen and (max-width: 380px) {
+  .prfile_dialogue_box {
+    width: 90%;
+    margin-top: -2%;
+  }
+  .notification {
+    width: 90%;
+    margin-top: 4%;
+    margin-right: 5%;
+  }
+  .messenger {
+    width: 85%;
+    margin-top: 4%;
+    margin-right: 6%;
+  }
+  .plus_items {
+    width: 60%;
+    margin-top: 4%;
+    margin-right: 22%;
+  }
 
-    .prfile_dialogue_box, .notification, .messenger{
-      margin-top: 2%;
-    }
-    .plus_items{
-       width: 88%;
-      margin-top: 2%;
-    }
+  .content {
+    width: 100%;
+    margin-top: 4%;
+  }
+}
+
+@media only screen and (max-width: 415px) {
   
-      .content{
-        width: 100%;
-        margin-top: 4%;
-      }
-  
-    }
+  .prfile_dialogue_box,
+  .notification{
+    margin-top: 2%;
+    width: 98%;
+    padding: 1em;
+  }
+
+  .messenger {
+    margin-top: 2%;
+    width: 90%;
+    padding: 1em;
+  }
+  .plus_items {
+    width: 70%;
+    margin-top: -1%;
+ 
+  }
+
+  .content {
+    width: 100%;
+    margin-top: 4%;
+  }
+}
