@@ -62,18 +62,6 @@ let data = [
   {
     userImage:
       "https://img.freepik.com/free-photo/closeup-shot-beautiful-oxeye-daisy-flower_181624-11106.jpg?auto=format&h=200",
-    userName: "varsha",
-    time: "20h",
-    caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
-    post: "/images/post1.png",
-    like: 17,
-    comment: 48,
-    share: "",
-  },
-
-  {
-    userImage:
-      "https://img.freepik.com/free-photo/closeup-shot-beautiful-oxeye-daisy-flower_181624-11106.jpg?auto=format&h=200",
     userName: "Varsha",
     time: "20h",
     caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -143,17 +131,6 @@ let data = [
     share: "",
   },
 
-  {
-    userImage:
-      "https://img.freepik.com/free-photo/closeup-shot-beautiful-oxeye-daisy-flower_181624-11106.jpg?auto=format&h=200",
-    userName: "varsha",
-    time: "20h",
-    caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
-    post: "/images/post2.png",
-    like: 187,
-    comment: 40,
-    share: "",
-  },
 
   {
     userImage:

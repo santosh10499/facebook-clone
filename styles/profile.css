@@ -32,12 +32,9 @@
 .cover-photo {
     position: relative;
     width: 100%;
-<<<<<<< HEAD
     height: 28em;
     object-fit: cover;
-=======
     height: 25em;
->>>>>>> 82bd454e546fd85df69b8057416984621aecec09
 }
 
 .cover-photo img {             /*=====Cover-Photo-img=====*/

@@ -160,6 +160,7 @@
     border-radius: 5px;
     box-shadow: 0 0 1px 1px rgb(105, 105, 105);
     margin-left: 0.8em;
+    object-fit: cover;
 }
 
 .friend-content img{
@@ -167,6 +168,7 @@
     height: 55%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    object-fit: cover;
 }
 
 .friend-content h3 {
@@ -189,6 +191,7 @@
      width: 1em;
      height: 1em;
      border-radius: 50%;
+     object-fit: cover;
 }
 
 #people-icon p{
