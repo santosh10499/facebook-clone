@@ -1,180 +1,10 @@
-let data = [
-  {
-    userImage:
-      "https://img.freepik.com/free-photo/closeup-shot-beautiful-oxeye-daisy-flower_181624-11106.jpg?auto=format&h=200",
-    userName: "varsha",
-    time: "20h",
-    caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
-    post: "/images/post2.png",
-    like: 17,
-    comment: 48,
-    share: "",
-  },
-
-  {
-    userImage:
-      "https://img.freepik.com/free-photo/closeup-shot-beautiful-oxeye-daisy-flower_181624-11106.jpg?auto=format&h=200",
-    userName: "Nikita",
-    time: "20h",
-    caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
-    post: "https://scontent.fdel15-1.fna.fbcdn.net/v/t39.30808-6/319366497_856641655537554_6911095490872985966_n.jpg?stp=dst-jpg_s960x960&_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=xStYXxEiZW4AX_4YZFE&_nc_ht=scontent.fdel15-1.fna&oh=00_AfCvCIvC_6AC7T8FJa1C190SIy22sGBFn_lMHSYqJIPXbQ&oe=63A95744",
-    like: 17,
-    comment: 48,
-    share: "",
-  },
-
-  {
-    userImage:
-      "https://img.freepik.com/free-photo/closeup-shot-beautiful-oxeye-daisy-flower_181624-11106.jpg?auto=format&h=200",
-    userName: "Aditya",
-    time: "20h",
-    caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
-    post: "https://img.freepik.com/free-photo/black-friday-sale-model-being-covered-by-shopping-bags_23-2148674121.jpg?w=2000",
-    like: 171,
-    comment: 87,
-    share: "",
-  },
-
-  {
-    userImage:
-      "https://img.freepik.com/free-photo/closeup-shot-beautiful-oxeye-daisy-flower_181624-11106.jpg?auto=format&h=200",
-    userName: "Robin",
-    time: "20h",
-    caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
-    post: "https://img.freepik.com/premium-photo/christmas-decoration-home-xmas-new-year-celebration-party-holiday_42957-4049.jpg?w=2000",
-    like: 147,
-    comment: 78,
-    share: "",
-  },
-
-  {
-    userImage:
-      "https://img.freepik.com/free-photo/closeup-shot-beautiful-oxeye-daisy-flower_181624-11106.jpg?auto=format&h=200",
-    userName: "Ashutosh",
-    time: "20h",
-    caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
-    post: "https://media.istockphoto.com/id/516656372/photo/man-traveler-with-big-backpack-mountaineering-travel-lifestyle-concept.jpg?b=1&s=170667a&w=0&k=20&c=kL32NLHjvWgxE2cU9JMPgpaegb2pdBim3Z2FoTdinks=",
-    like: 17,
-    comment: 487,
-    share: "",
-  },
-
-  {
-    userImage:
-      "https://img.freepik.com/free-photo/closeup-shot-beautiful-oxeye-daisy-flower_181624-11106.jpg?auto=format&h=200",
-    userName: "Varsha",
-    time: "20h",
-    caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
-    post: "https://api.time.com/wp-content/uploads/2019/08/better-smartphone-photos.jpg",
-    like: 184,
-    comment: 47,
-    share: "",
-  },
-
-  {
-    userImage:
-      "https://img.freepik.com/free-photo/closeup-shot-beautiful-oxeye-daisy-flower_181624-11106.jpg?auto=format&h=200",
-    userName: "Rohan",
-    time: "20h",
-    caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
-    post: "https://d3nn873nee648n.cloudfront.net/HomeImages/Vacation-and-Holidays.jpg",
-    like: 789,
-    comment: 478,
-    share: "",
-  },
-
-  {
-    userImage:
-      "https://img.freepik.com/free-photo/closeup-shot-beautiful-oxeye-daisy-flower_181624-11106.jpg?auto=format&h=200",
-    userName: "varsha",
-    time: "20h",
-    caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
-    post: "/images/post2.png",
-    like: 17,
-    comment: 48,
-    share: "",
-  },
-
-  {
-    userImage:
-      "https://img.freepik.com/free-photo/closeup-shot-beautiful-oxeye-daisy-flower_181624-11106.jpg?auto=format&h=200",
-    userName: "Santosh",
-    time: "20h",
-    caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
-    post: "https://thumbs.dreamstime.com/b/spectacles-open-books-15550565.jpg",
-    like: 17,
-    comment: 15,
-    share: "",
-  },
-
-  {
-    userImage:
-      "https://img.freepik.com/free-photo/closeup-shot-beautiful-oxeye-daisy-flower_181624-11106.jpg?auto=format&h=200",
-    userName: "Aditya",
-    time: "20h",
-    caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
-    post: "/images/friend5.png",
-    like: 178,
-    comment: 184,
-    share: "",
-  },
-
-  {
-    userImage:
-      "https://img.freepik.com/free-photo/closeup-shot-beautiful-oxeye-daisy-flower_181624-11106.jpg?auto=format&h=200",
-    userName: "Sonu",
-    time: "20h",
-    caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
-    post: "https://img.phonandroid.com/2021/11/comment-reduire-taille-poids-image.jpg",
-    like: 185,
-    comment: 100,
-    share: "",
-  },
-
-
-  {
-    userImage:
-      "https://img.freepik.com/free-photo/closeup-shot-beautiful-oxeye-daisy-flower_181624-11106.jpg?auto=format&h=200",
-    userName: "Nikita",
-    time: "20h",
-    caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
-    post: "/images/friend6.png",
-    like: 107,
-    comment: 48,
-    share: "",
-  },
-
-  {
-    userImage:
-      "https://img.freepik.com/free-photo/closeup-shot-beautiful-oxeye-daisy-flower_181624-11106.jpg?auto=format&h=200",
-    userName: "Aditya",
-    time: "20h",
-    caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
-    post: "https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8=",
-    like: 148,
-    comment: 478,
-    share: "",
-  },
-
-  {
-    userImage:
-      "https://img.freepik.com/free-photo/closeup-shot-beautiful-oxeye-daisy-flower_181624-11106.jpg?auto=format&h=200",
-    userName: "Robin",
-    time: "20h",
-    caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
-    post: "https://img.freepik.com/free-photo/cheerful-handsome-man-eyeglasses-looks-photos-camera_8353-6509.jpg?w=2000",
-    like: 170,
-    comment: "",
-    share: "",
-  },
-];
-
 const dummy_post = document.querySelector(".dummy_post");
+async function api() {
+  let data1 = await fetch("https://63a7491a59fd83b1bb42ba9a.mockapi.io/api/v1/facbook_posts");
+  let data = await data1.json();
 
-// const dataRender = () => {
-for (let k = 0; k < 5; k++) {
   for (let i = 0; i < data.length; i++) {
-    dummy_post.innerHTML += `
+    dummy_post.innerHTML += `<div class="dummy_post">
       <div class="top">
         <img src="${data[i].userImage}" alt="" class="profile bg_img hover" width="45px" />
         <div class="name">
@@ -203,17 +33,31 @@ for (let k = 0; k < 5; k++) {
         </div>
       </div>
       <div class="reaction">
-        <span class="like"><p class="hover "><i class="fa-regular icon  fa-thumbs-up"></i> Like</p></span>
+        <span class="like1"><p class="hover "><i class="fa-regular icon  fa-thumbs-up"></i> Like</p></span>
         <p class="hover"><i class="fa-regular fa-message"></i> Comment</p>
         <p class="hover"><i class="fa-solid fa-share"></i> Share</p>
     </div>
 `;
     // dummy_post.insertAdjacentHTML("afterbegin", post)
   }
+  // ====================this is for likeing post
+
+  let likebtn = document.querySelectorAll(".like1");
+  let icon = document.querySelectorAll(".icon");
+  let likeCount = document.querySelectorAll(".like-count");
+
+  for (let j = 0; j < likebtn.length; j++) {
+    likebtn[j].addEventListener("click", () => {
+      likeCount[j].innerHTML = `<span style="margin-left:-20px" class="pointer like-count" > ${data[j].like + 1}</span>`;
+
+      likebtn[j].style.color = "blue";
+      icon[j].style.color = "blue";
+    });
+  }
 }
-// };
+api();
+
 // window.addEventListener("load", dataRender)
-// dataRender()
 
 // pop up on photo/video
 
@@ -289,25 +133,6 @@ const friendIcon = document.querySelector("#friend");
 friendIcon.addEventListener("click", () => {
   window.location.href = "/pages/friends.html";
 });
-
-let likebtn=document.querySelectorAll('.like');
-let icon=document.querySelectorAll('.icon');
-let likeCount=document.querySelectorAll('.like-count');
-console.log(likebtn)
-
-
-for(let j=0;j<likebtn.length;j++)
-{
-  likebtn[j].addEventListener('click',()=>{
-    
-      likeCount[j].innerHTML=`<span style="margin-left:-20px" class="pointer like-count" > ${data[j].like+1}</span>`;
-     
-     likebtn[j].style.color="blue";
-     icon[j].style.color="blue";
-     
-    
-})
-}
 
 //=========================for displaying user profile=============
 
