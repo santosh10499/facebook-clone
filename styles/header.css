@@ -524,6 +524,12 @@ i {
 
 /* -------------media query for tab------------ */
 
+@media only screen and (max-width: 768px) {
+  .mid{
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 1180px) {
    .aside_container{
     margin-top: 2%;
@@ -620,3 +626,21 @@ i {
     }
 
   }
+
+
+  @media only screen and (max-width: 415px){
+
+    .prfile_dialogue_box, .notification, .messenger{
+      margin-top: 2%;
+    }
+    .plus_items{
+       width: 88%;
+      margin-top: 2%;
+    }
+  
+      .content{
+        width: 100%;
+        margin-top: 4%;
+      }
+  
+    }
