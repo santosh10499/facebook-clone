@@ -32,8 +32,12 @@
 .cover-photo {
     position: relative;
     width: 100%;
+<<<<<<< HEAD
     height: 28em;
     object-fit: cover;
+=======
+    height: 25em;
+>>>>>>> 82bd454e546fd85df69b8057416984621aecec09
 }
 
 .cover-photo img {             /*=====Cover-Photo-img=====*/
@@ -75,8 +79,7 @@
 .profile-details-container {
     padding: 0em 2em;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
 }
 
 /*============== Profile-details-display ==========================*/
@@ -86,6 +89,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* margin-bottom: -4em; */
 }
 
 /*--------------- Profile-details-left-part ------------------*/
@@ -133,6 +137,7 @@
 .profile-name h1 {           /*==== Profile-Name ====*/
     font-size: 2rem;
     margin-bottom: 0.2em;
+    text-align: center;
 }
 
 .profile-name p {           /*==== Friends-count ====*/
@@ -219,6 +224,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* margin-top: -4em; */
 }
 
 .navBar-left-part {
