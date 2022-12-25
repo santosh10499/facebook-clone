@@ -33,6 +33,8 @@
     position: relative;
     width: 100%;
     height: 28em;
+    object-fit: cover;
+    height: 25em;
 }
 
 .cover-photo img {             /*=====Cover-Photo-img=====*/
@@ -74,8 +76,7 @@
 .profile-details-container {
     padding: 0em 2em;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
 }
 
 /*============== Profile-details-display ==========================*/
@@ -85,6 +86,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* margin-bottom: -4em; */
 }
 
 /*--------------- Profile-details-left-part ------------------*/
@@ -112,6 +114,7 @@
     border-radius: 50%;
     border: 1px solid rgb(158, 158, 159);
     outline: 0.2em solid white;
+    object-fit: cover;
 }
 
 .profile-pic i {           /*==== Camera-icon-inside-Profile-Photo-img ====*/
@@ -131,6 +134,7 @@
 .profile-name h1 {           /*==== Profile-Name ====*/
     font-size: 2rem;
     margin-bottom: 0.2em;
+    text-align: center;
 }
 
 .profile-name p {           /*==== Friends-count ====*/
@@ -153,6 +157,7 @@
     outline: 3px solid white;
     margin-right: -0.6em;
     cursor: pointer;
+    object-fit: cover;
 }
 
 .small-imgs img:hover {
@@ -216,6 +221,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* margin-top: -4em; */
 }
 
 .navBar-left-part {
@@ -518,6 +524,7 @@
     border-radius: 0.6em;
     margin-right: 1em;
     cursor: pointer;
+    object-fit: cover;
 }
 
 .friends-details-left img:hover {
@@ -675,6 +682,7 @@
     height: 12.5em;
     border-radius: 0.6em;
     border: 1px solid rgb(213, 210, 210);
+    object-fit: cover;
 }
 
 .image-div span {                     /*=== Edit-Pencil-icon ===*/ 
@@ -685,7 +693,7 @@
     background-color: rgba(0, 0, 0, 0.523);
     font-size: 1.2rem;
     padding: 0.3em;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 
 .image-div span:hover {
@@ -861,6 +869,7 @@
     height: 5em;
     border: 1px solid rgb(213, 210, 210);
     border-radius: 0.6em;
+    object-fit: cover;
     margin-right: 1em;
     cursor: pointer;
 }
@@ -977,6 +986,7 @@
     height: 5em;
     border: 1px solid rgb(213, 210, 210);
     border-radius: 0.6em;
+    object-fit: cover;
     margin-right: 1em;
     cursor: pointer;
 }
@@ -1207,6 +1217,37 @@
 
 
 @media screen and (max-width: 540px) {
+    header{
+        margin-top: 0;
+    }
+
+    .mid{
+        display: none;
+    }
+
+    .prfile_dialogue_box{
+       width: 60%;
+      margin-top: 4%;
+    }
+    .notification{
+       width: 60%;
+      margin-top: 4%;
+      margin-right: 10%;
+    }
+    .messenger{
+       width: 60%;
+      margin-top: 4%;
+      margin-right: 15%;
+    }
+    .plus_items{
+       width: 60%;
+      margin-top: 4%;
+      margin-right: 22%;
+    }
+
+    #bars, #plus_icon{
+        display: none;
+    }
 
     .cover-photo {
         height: 13em;
@@ -1268,6 +1309,10 @@
 
 @media screen and (max-width: 420px) {
 
+    header{
+        margin-top: 0;
+    }
+
     .cover-photo {
         height: 11em;
     }
@@ -1314,6 +1359,31 @@
 
 
 @media screen and (max-width: 380px) {
+
+    .prfile_dialogue_box{
+        width: 95%;
+       margin-top: 4%;
+       margin-right: 2%;
+     }
+     .notification{
+        width: 94%;
+        margin-top: 4%;
+        margin-right: 2%;
+     }
+     .messenger{
+        width: 90%;
+        margin-top: 4%;
+        margin-right: 2%;
+     }
+     .plus_items{
+        width: 60%;
+       margin-top: 4%;
+       margin-right: 22%;
+     }
+
+    header{
+        margin-top: 0;
+    }
 
     .add-story, .edit-profile {
         padding: 0.5em 1.5em;

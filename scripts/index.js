@@ -6,7 +6,7 @@ async function api() {
   for (let i = 0; i < data.length; i++) {
     dummy_post.innerHTML += `<div class="dummy_post">
       <div class="top">
-        <img src="${data[i].userImage}" alt="" class="profile bg hover" width="45px" />
+        <img src="${data[i].userImage}" alt="" class="profile bg_img hover" width="45px" />
         <div class="name">
           <p class="pointer">${data[i].userName}</p>
           <span class="pointer"
@@ -36,7 +36,6 @@ async function api() {
         <span class="like1"><p class="hover "><i class="fa-regular icon  fa-thumbs-up"></i> Like</p></span>
         <p class="hover"><i class="fa-regular fa-message"></i> Comment</p>
         <p class="hover"><i class="fa-solid fa-share"></i> Share</p>
-      </div>
     </div>
 `;
     // dummy_post.insertAdjacentHTML("afterbegin", post)

@@ -126,11 +126,11 @@ content.innerHTML += `<div class="create_story">
         <img
           src="/images/profile2.png"
           alt=""
-          class="profile bg hover"
+          class="profile bg hover userimage"
           width="45px"
         />
         <div class="btn">
-          <span>Varsha Rajput</span>
+          <span class="user-name">Varsha Rajput</span>
           <button class="pointer">
             <i class="fa-solid fa-user-group"></i>Friends<i
               class="fa-solid fa-caret-down"
