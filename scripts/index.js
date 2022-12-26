@@ -36,7 +36,7 @@ async function api() {
       </div>
       <div class="reaction">
         <span class="like1"><p class="hover "><i class="fa-regular icon  fa-thumbs-up"></i> Like</p></span>
-        <p class="hover"><i class="fa-regular fa-message comment_btn"></i> Comment</p>
+        <p class="hover comment_btn"><i class="fa-regular fa-message"></i> Comment</p>
         <p class="hover"><i class="fa-solid fa-share"></i> Share</p>
     </div>
     <div class="commentSection">
