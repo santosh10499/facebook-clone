@@ -34,8 +34,31 @@ async function api() {
       </div>
       <div class="reaction">
         <span class="like1"><p class="hover "><i class="fa-regular icon  fa-thumbs-up"></i> Like</p></span>
-        <p class="hover"><i class="fa-regular fa-message"></i> Comment</p>
+        <p class="hover"><i class="fa-regular fa-message comment_btn"></i> Comment</p>
         <p class="hover"><i class="fa-solid fa-share"></i> Share</p>
+    </div>
+    <div class="commentSection">
+          <div class="Profile_area">
+            <img
+              src="/images/profile2.png"
+              alt=""
+              class=" hover userimage"
+              width="45px"
+            />
+            <div class="input_field flex">
+              <input type="text" placeholder="Write a comment..." />
+              <i class="fa-brands fa-rocketchat pointer"></i>
+              <i class="fa-regular fa-face-smile pointer"></i>
+              <i class="fa-solid fa-camera-retro pointer"></i>
+              <i class="fa-regular fa-image pointer"></i>
+            </div>
+            <button class="pointer">Add</button>
+          </div>
+          <ul>
+            <li>wonderfull</li>
+            <li>nice</li>
+          </ul>
+        </div>
     </div>
 `;
     // dummy_post.insertAdjacentHTML("afterbegin", post)

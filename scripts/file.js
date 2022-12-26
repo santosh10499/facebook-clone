@@ -209,8 +209,11 @@ const add_comment = document.querySelector(".comment_btn");
 
 const commentSection = document.querySelector(".commentSection")
 
-document.addEventListener("click", () => {
-  if (commentSection.style.display == "none") {
+
+add_comment.addEventListener("click", () => {
+  if (commentSection.style.display == "block") {
+    commentSection.style.display = "none";
+  } else {
     commentSection.style.display = "block";
-  } 
+  }
 });

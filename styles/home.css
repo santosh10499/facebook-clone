@@ -84,7 +84,7 @@
   border-top-right-radius: 0.5em;
   background: #e0e1e4;
   object-fit: cover;
-  margin-top: 30%;
+
 }
 
 .plus {
@@ -298,7 +298,7 @@
   margin-right: 2%;
 }
 .Profile_area .input_field input{
- width: 340px;
+ width: 18em;
  border: none;
  outline: none;
  padding: 0.5em;
