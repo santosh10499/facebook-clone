@@ -66,7 +66,10 @@ async function api() {
     // dummy_post.insertAdjacentHTML("afterbegin", post)
   }
   // ====================this is for likeing post
+  const add_comment = document.querySelector("#comment_btn");
 
+  const commentSection = document.querySelector(".commentSection")
+  console.log(add_comment)
   let likebtn = document.querySelectorAll(".like1");
   let icon = document.querySelectorAll(".icon");
   let likeCount = document.querySelectorAll(".like-count");
@@ -84,10 +87,7 @@ async function api() {
     });
   }
   // ===================================add comment 
-//   const add_comment = document.querySelector("#comment_btn");
-
-// const commentSection = document.querySelector(".commentSection")
-// console.log(add_comment)
+ 
 // for(let i=0;i<add_comment.length;i++)
 // {
 // add_comment[i].addEventListener("click", () => {
