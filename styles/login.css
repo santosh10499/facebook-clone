@@ -59,21 +59,22 @@
     color: red;
     font-family: sans-serif;
     font-style: italic;
-    /* font-size: 10px; */
-  
-    /* display: none; */
   }
   input {
     width: 92%;
-    height: 45px;
     border-radius: 5px;
     margin-left: auto;
     margin-right: auto;
-    padding: 8px;
-    font-size: 1em;
-  
+    padding: 15px;
+    font-size: 1rem;
     border: 0.1px solid rgb(193, 190, 190);
   }
+  
+  input:focus {
+    outline: none;
+    box-shadow: 0 0 1px 1px #1877f2;
+  }
+
 
   
   #log {
@@ -89,6 +90,11 @@
     font-weight: bolder;
     color: white;
   }
+
+  #log:hover {
+    background-color: #0365e5;
+  }
+
   #create {
     border: none;
     width: 60%;
@@ -100,9 +106,13 @@
     cursor: pointer;
     margin-top: 5%;
     font-size: 1.1rem;
-    
     color: white;
   }
+
+  #create:hover {
+    background: #0da702;
+  }
+
   #forgot {
     border: none;
     width: 92%;
@@ -115,15 +125,12 @@
     background: white;
     border-bottom: 0.5px solid gray;
   }
-/* --------------------dummy_credentials css------------------- */
 
-.dummy_credentials{
-  background: #ffffff;
-  width: 27.5%;
-  padding: 1.5em;
-  border-radius: 1em;
-  margin: -12% 0 0 56.5%;
-}
+  #forgot:hover {
+    text-decoration: underline;
+  }
+
+
 
   /*----------------------------------------------------- making responsive  tab*/
   @media screen and (max-width: 950px) {
