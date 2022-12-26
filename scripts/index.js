@@ -77,6 +77,21 @@ async function api() {
       icon[j].style.color = "blue";
     });
   }
+  // ===================================add comment 
+//   const add_comment = document.querySelector("#comment_btn");
+
+// const commentSection = document.querySelector(".commentSection")
+// console.log(add_comment)
+// for(let i=0;i<add_comment.length;i++)
+// {
+// add_comment[i].addEventListener("click", () => {
+//   if (commentSection.style.display == "block") {
+//     commentSection.style.display = "none";
+//   } else {
+//     commentSection.style.display = "block";
+//   }
+// });
+// }
 }
 api();
 
@@ -195,7 +210,7 @@ for (let k = 0; k < userdata.length; k++) {
 // const commentSection = document.querySelector(".commentSection")
 // console.log(add_comment)
 
-// document.addEventListener("click", () => {
+// add_comment.addEventListener("click", () => {
 //   if (commentSection.style.display == "block") {
 //     commentSection.style.display = "none";
 //   } else {
