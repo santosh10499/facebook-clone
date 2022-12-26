@@ -7,16 +7,10 @@ content.innerHTML += `<div class="create_story">
   <p><i class="fa-solid fa-video"></i>Rooms</p>
 </div>
 <div class="stories">
-  <div class="" >
-    <img class="userimage"
-      src="/images/profile2.png"
-      alt="story"
-      id="my_story"
-    />
-    <div class="">
-    <i class="fa-fa fa-plus forHome pointer"></i>
-      <span>Create story</span>
-    </div>
+  <div class="Create_my_story" >
+  <img  class="userimage"src="https://images.unsplash.com/photo-1564463836146-4e30522c2984?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTkyfHxwZXJzb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="story" id="" />
+  <i class="fa-solid fa-circle-plus"></i>
+  <span>Create story</span>
   </div>
   <div class="container">
     <img
@@ -24,13 +18,13 @@ content.innerHTML += `<div class="create_story">
       alt="story"
       class="bgImg img pointer"
     />
-    <img src="/images/story4.png" alt="story" class="story pointer" />
-    <span>Smarti</span>
+    <img src="https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTAxfHxwZXJzb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="story" class="story pointer" />
+    <span>Smriti</span>
   </div>
 
   <div class="container">
     <img
-      src="/images/story3.png"
+      src="https://images.unsplash.com/photo-1492288991661-058aa541ff43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTh8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
       alt="story"
       class="bgImg img pointer"
     />
@@ -44,7 +38,7 @@ content.innerHTML += `<div class="create_story">
       alt="story"
       class="bgImg img pointer"
     />
-    <img src="/images/story3.png" alt="story" class="story pointer" />
+    <img src="https://images.unsplash.com/photo-1525875975471-999f65706a10?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTEyfHxwZXJzb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="story" class="story pointer" />
     <span>Mehak</span>
   </div>
 
@@ -52,7 +46,7 @@ content.innerHTML += `<div class="create_story">
 
   <div class="container">
     <img
-      src="/images/story2.png"
+      src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nzh8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
       alt="story"
       class="bgImg img pointer"
     />
@@ -126,7 +120,7 @@ content.innerHTML += `<div class="create_story">
         <img
           src="/images/profile2.png"
           alt=""
-          class="profile bg hover userimage"
+          class="profile bg_img hover userimage"
           width="45px"
         />
         <div class="btn">
