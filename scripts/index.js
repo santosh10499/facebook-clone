@@ -86,33 +86,7 @@ async function api() {
 }
 api();
 
-// window.addEventListener("load", dataRender)
 
-// pop up on photo/video
-
-let Add_post = document.querySelector("#Add_post");
-let photo_video = document.querySelector("#create_post_Wrapper");
-// console.log(photo_video.innerHTML);
-
-Add_post.addEventListener("click", (e) => {
-  if (photo_video.style.display == "block") {
-    photo_video.style.display = "none";
-  } else {
-    photo_video.style.display = "block";
-  }
-});
-
-// click on fa-xmark
-
-const fa_xmark = document.querySelector(".fa-xmark");
-
-fa_xmark.addEventListener("click", () => {
-  if (photo_video.style.display == "block") {
-    photo_video.style.display = "none";
-  }
-});
-
-// create_new_group
 
 const create_new_group_popUp = document.querySelector("#create_new_group");
 const plus_btn = document.querySelector("#plus_btn");
