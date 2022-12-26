@@ -205,15 +205,197 @@
 // `
 
 
-const add_comment = document.querySelector(".comment_btn");
+// const add_comment = document.querySelector(".comment_btn");
 
-const commentSection = document.querySelector(".commentSection")
-console.log(add_comment)
+// const commentSection = document.querySelector(".commentSection")
 
-document.addEventListener("click", () => {
-  if (commentSection.style.display == "block") {
-    commentSection.style.display = "none";
-  } else {
-    commentSection.style.display = "block";
-  }
-});
+
+// add_comment.addEventListener("click", () => {
+//   if (commentSection.style.display == "block") {
+//     commentSection.style.display = "none";
+//   } else {
+//     commentSection.style.display = "block";
+//   }
+// });
+
+
+
+const post = [ {
+  userImage:
+    "https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+  userName: "Ashutosh",
+    time: new Date().toDateString(),
+  caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
+  postImage: "https://images.unsplash.com/photo-1492681290082-e932832941e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+  like: 17,
+  comment: 487,
+  share: "",
+},
+{
+  userImage:
+    "https://img.freepik.com/free-photo/closeup-shot-beautiful-oxeye-daisy-flower_181624-11106.jpg?auto=format&h=200",
+  userName: "Ashutosh",
+    time: new Date().toDateString(),
+  caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
+  post: "https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+  like: 17,
+  comment: 487,
+  share: "",
+},
+{
+  userImage:
+    "https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+  userName: "Ashutosh",
+    time: new Date().toDateString(),
+  caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
+  post: "https://images.unsplash.com/photo-1664574654521-7faf33eb9086?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxzZWFyY2h8MTV8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+  like: 17,
+  comment: 487,
+  share: "",
+},
+
+
+{
+  userImage:
+    "https://images.unsplash.com/photo-1542206395-9feb3edaa68d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+  userName: "Ashutosh",
+    time: new Date().toDateString(),
+  caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
+  post: "https://images.unsplash.com/photo-1670272504471-61a632484750?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxzZWFyY2h8MjJ8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+  like: 17,
+  comment: 487,
+  share: "",
+},
+{
+  userImage:
+    "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+  userName: "Ashutosh",
+    time: new Date().toDateString(),
+  caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
+  post: "https://images.unsplash.com/photo-1670272499232-d6c55af87386?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxzZWFyY2h8MzZ8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+  like: 17,
+  comment: 487,
+  share: "",
+},
+{
+  userImage:
+    "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+  userName: "Ashutosh",
+    time: new Date().toDateString(),
+  caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
+  post: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+  like: 17,
+  comment: 487,
+  share: "",
+},
+{
+  userImage:
+    "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+  userName: "Ashutosh",
+    time: new Date().toDateString(),
+  caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
+  post: "https://images.unsplash.com/photo-1670272498456-a9f02e3cead9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxzZWFyY2h8NTB8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+  like: 17,
+  comment: 487,
+  share: "",
+},
+{
+  userImage:
+    "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTJ8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+  userName: "Ashutosh",
+    time: new Date().toDateString(),
+  caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
+  post: "https://images.unsplash.com/photo-1534083264897-aeabfc7daf8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTZ8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+  like: 17,
+  comment: 487,
+  share: "",
+},
+{
+  userImage:
+    "https://images.unsplash.com/photo-1607346256330-dee7af15f7c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjV8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+  userName: "Ashutosh",
+    time: new Date().toDateString(),
+  caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
+  post: "https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+  like: 17,
+  comment: 487,
+  share: "",
+},
+{
+  userImage:
+    "https://images.unsplash.com/photo-1587502537104-aac10f5fb6f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxzZWFyY2h8MTV8fG5hdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+  userName: "Ashutosh",
+    time: new Date().toDateString(),
+  caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
+  post: "https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+  like: 17,
+  comment: 487,
+  share: "",
+},
+{
+  userImage:
+    "https://img.freepik.com/free-photo/closeup-shot-beautiful-oxeye-daisy-flower_181624-11106.jpg?auto=format&h=200",
+  userName: "Ashutosh",
+    time: new Date().toDateString(),
+  caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
+  post: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+  like: 17,
+  comment: 487,
+  share: "",
+},
+{
+  userImage:
+    "https://images.unsplash.com/photo-1500048993953-d23a436266cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+  userName: "Ashutosh",
+    time: new Date().toDateString(),
+  caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
+  post: "https://images.unsplash.com/photo-1431794062232-2a99a5431c6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fG5hdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+  like: 17,
+  comment: 487,
+  share: "",
+},
+{
+  userImage:
+    "https://img.freepik.com/free-photo/closeup-shot-beautiful-oxeye-daisy-flower_181624-11106.jpg?auto=format&h=200",
+  userName: "Ashutosh",
+    time: new Date().toDateString(),
+  caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
+  post: "https://images.unsplash.com/photo-1444464666168-49d633b86797?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fG5hdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+  like: 17,
+  comment: 487,
+  share: "",
+},
+{
+  userImage:
+    "https://images.unsplash.com/photo-1504567961542-e24d9439a724?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTd8fG5hdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+  userName: "Ashutosh",
+    time: new Date().toDateString(),
+  caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
+  post: "https://images.unsplash.com/photo-1552083375-1447ce886485?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDV8fG5hdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+  like: 17,
+  comment: 487,
+  share: "",
+},
+{
+  userImage:
+    "https://images.unsplash.com/photo-1504567961542-e24d9439a724?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTd8fG5hdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+  userName: "Ashutosh",
+  time: new Date().toDateString(),
+  caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
+  post: "https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+  like: 17,
+  comment: 487,
+  share: "",
+},
+{
+  userImage:
+    "https://images.unsplash.com/photo-1470093851219-69951fcbb533?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGFuaW1hbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+  userName: "Ashutosh",
+    time: new Date().toDateString(),
+  caption: "lLorem ipsum dolor sit amet consectetur adipisicing elit.",
+  post: "https://images.unsplash.com/photo-1497752531616-c3afd9760a11?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGFuaW1hbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+  like: 17,
+  comment: 487,
+  share: "",
+},
+]

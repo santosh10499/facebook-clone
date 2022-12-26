@@ -1,8 +1,10 @@
-const dummy_post = document.querySelector(".dummy_post");
+const dummy_post = document.querySelector(".dummy_posts");
 async function api() {
-  let data1 = await fetch("https://63a7491a59fd83b1bb42ba9a.mockapi.io/api/v1/facbook_posts");
+  let data1 = await fetch(
+    "https://63a7491a59fd83b1bb42ba9a.mockapi.io/api/v1/facbook_posts"
+  );
   let data = await data1.json();
-  
+
   for (let i = 0; i < data.length; i++) {
     dummy_post.innerHTML += `<div class="dummy_post">
       <div class="top">
@@ -34,8 +36,31 @@ async function api() {
       </div>
       <div class="reaction">
         <span class="like1"><p class="hover "><i class="fa-regular icon  fa-thumbs-up"></i> Like</p></span>
-        <p class="hover"><i class="fa-regular fa-message"></i> Comment</p>
+        <p class="hover comment_btn"><i class="fa-regular fa-message"></i> Comment</p>
         <p class="hover"><i class="fa-solid fa-share"></i> Share</p>
+    </div>
+    <div class="commentSection">
+          <div class="Profile_area">
+            <img
+              src="/images/profile2.png"
+              alt=""
+              class=" hover userimage"
+              width="45px"
+            />
+            <div class="input_field flex">
+              <input type="text" placeholder="Write a comment..." />
+              <i class="fa-brands fa-rocketchat pointer"></i>
+              <i class="fa-regular fa-face-smile pointer"></i>
+              <i class="fa-solid fa-camera-retro pointer"></i>
+              <i class="fa-regular fa-image pointer"></i>
+            </div>
+            <button class="pointer">Add</button>
+          </div>
+          <ul>
+            <li>wonderfull</li>
+            <li>nice</li>
+          </ul>
+        </div>
     </div>
 `;
     // dummy_post.insertAdjacentHTML("afterbegin", post)
@@ -48,7 +73,11 @@ async function api() {
 
   for (let j = 0; j < likebtn.length; j++) {
     likebtn[j].addEventListener("click", () => {
-      likeCount[j].innerHTML = `<span style="margin-left:-20px" class="pointer like-count" > ${data[j].like + 1}</span>`;
+      likeCount[
+        j
+      ].innerHTML = `<span style="margin-left:-20px" class="pointer like-count" > ${
+        data[j].like + 1
+      }</span>`;
 
       likebtn[j].style.color = "blue";
       icon[j].style.color = "blue";
@@ -163,7 +192,6 @@ for (let k = 0; k < userdata.length; k++) {
     }
   }
 }
-
 
 // --------------comment_btn-------------
 
