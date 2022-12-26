@@ -7,13 +7,13 @@ content.innerHTML += `<div class="create_story">
   <p><i class="fa-solid fa-video"></i>Rooms</p>
 </div>
 <div class="stories">
-  <div class="container_myStory pointer">
+  <div class="" >
     <img class="userimage"
       src="/images/profile2.png"
       alt="story"
       id="my_story"
     />
-    <div class="plus">
+    <div class="">
     <i class="fa-fa fa-plus forHome pointer"></i>
       <span>Create story</span>
     </div>
@@ -108,7 +108,7 @@ content.innerHTML += `<div class="create_story">
 
 
 <!-- --------------dummy post------------------- -->
-<div class="dummy_post">
+<div class="dummy_posts">
 <!-- -----------------data rendered------------------ -->
 </div>
 
