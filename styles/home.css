@@ -69,21 +69,22 @@
   background-color: transparent;
 }
 
- .stories .container_mystory {
+ .container_mystory {
+  background: #0967e2;
   height: 24vh;
   border-radius: 0.5em;
   box-shadow: 0 0 2px rgb(174, 167, 167);
   margin: 0 1% 0 0;
-  
 }
 
 #my_story {
   width: 110px;
-  height: 120px;
+  height: 50%;
   border-top-left-radius: 0.5em;
   border-top-right-radius: 0.5em;
   background: #e0e1e4;
   object-fit: cover;
+border: 2px solid;
 
 }
 

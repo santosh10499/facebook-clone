@@ -1,8 +1,10 @@
-const dummy_post = document.querySelector(".dummy_post");
+const dummy_post = document.querySelector(".dummy_posts");
 async function api() {
-  let data1 = await fetch("https://63a7491a59fd83b1bb42ba9a.mockapi.io/api/v1/facbook_posts");
+  let data1 = await fetch(
+    "https://63a7491a59fd83b1bb42ba9a.mockapi.io/api/v1/facbook_posts"
+  );
   let data = await data1.json();
-  
+
   for (let i = 0; i < data.length; i++) {
     dummy_post.innerHTML += `<div class="dummy_post">
       <div class="top">
@@ -71,7 +73,11 @@ async function api() {
 
   for (let j = 0; j < likebtn.length; j++) {
     likebtn[j].addEventListener("click", () => {
-      likeCount[j].innerHTML = `<span style="margin-left:-20px" class="pointer like-count" > ${data[j].like + 1}</span>`;
+      likeCount[
+        j
+      ].innerHTML = `<span style="margin-left:-20px" class="pointer like-count" > ${
+        data[j].like + 1
+      }</span>`;
 
       likebtn[j].style.color = "blue";
       icon[j].style.color = "blue";
@@ -201,7 +207,6 @@ for (let k = 0; k < userdata.length; k++) {
     }
   }
 }
-
 
 // --------------comment_btn-------------
 
