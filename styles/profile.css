@@ -1443,6 +1443,17 @@
 /*=========================================== Update-Profile-Picture & Cover-Photo-PopUp ==========================================*/
 
 
+
+.popUp-divs-container {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(251, 246, 246, 0.768);
+    display: none;
+}
+
+
 .update-profile-pic-div,.update-cover-photo-div {
     position: absolute;
     background: white;

@@ -46,24 +46,29 @@ const updateCoverPhotoUrlInput = document.querySelector("#update-cover-photo-url
 const coverPhotoUploadBtn = document.querySelector("#cover-photo-upload-btn");
 const coverPhotoCancelBtn = document.querySelector("#cover-photo-cancel-btn");
 
+
 /*---------------- Event-Listener for Add-Cover-Photo-Btn -----------------*/
 
 addCoverPhotoBtn.addEventListener("click", ()=>{
     updateCoverPhotoDiv.style.display = "block";
+    document.querySelector(".popUp-divs-container").style.display = "block";
 })
 
 coverPhotoCancelBtn.addEventListener("click", ()=>{
     updateCoverPhotoDiv.style.display = "none";
+    document.querySelector(".popUp-divs-container").style.display = "none";
 })
 
 /*---------------- Event-Listener for Profile-picture-Edit-Btn -----------------*/
 
 profilePicCamera.addEventListener("click", ()=>{
     updateProfilePicDiv.style.display = "block";
+    document.querySelector(".popUp-divs-container").style.display = "block";
 })
 
 profilePicCancelBtn.addEventListener("click", ()=>{
     updateProfilePicDiv.style.display = "none";
+    document.querySelector(".popUp-divs-container").style.display = "none";
 })
 
 
