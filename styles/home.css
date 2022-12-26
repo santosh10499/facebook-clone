@@ -284,6 +284,20 @@ border: 2px solid;
   padding: 1em;
   display: none;
 }
+.comment-person
+{
+  margin-left:15%;
+  border-radius: 40px;
+}
+.commenti{
+
+  border-radius: 40px;
+}
+.comment_text{
+  margin-left:5%;
+  font-weight: bolder;
+  text-align: center;
+}
 
  .commentSection .Profile_area{
   width: 100%;

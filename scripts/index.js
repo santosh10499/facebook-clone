@@ -31,12 +31,12 @@ async function api() {
           <span class="pointer like-count" > ${data[i].like}</span>
         </div>
         <div class="commets">
-          <p class="pointer comment">${data[i].comment}Comments</p>
+         <span class="commentcount"> <p class="pointer comment">${data[i].comment}Comments</p></span>
         </div>
       </div>
       <div class="reaction">
         <span class="like1"><p class="hover "><i class="fa-regular icon  fa-thumbs-up"></i> Like</p></span>
-        <p class="hover"><i class="fa-regular fa-message comment_btn"></i> Comment</p>
+         <p class="hover comment_btn"><i class="fa-regular fa-message"></i> Comment</p></span>
         <p class="hover"><i class="fa-solid fa-share"></i> Share</p>
     </div>
     <div class="commentSection">
@@ -44,60 +44,117 @@ async function api() {
             <img
               src="/images/profile2.png"
               alt=""
-              class=" hover userimage"
+              class="hover userimage"
               width="45px"
             />
-            <div class="input_field flex">
-              <input type="text" placeholder="Write a comment..." />
+            <div class="input_field flex ">
+              <input type="text"  class="usercomment"placeholder="Write a comment..." />
               <i class="fa-brands fa-rocketchat pointer"></i>
               <i class="fa-regular fa-face-smile pointer"></i>
               <i class="fa-solid fa-camera-retro pointer"></i>
               <i class="fa-regular fa-image pointer"></i>
+              <button class="pointer comment-add">Add</button>
             </div>
-            <button class="pointer">Add</button>
+            
+            
           </div>
-          <ul>
-            <li>wonderfull</li>
-            <li>nice</li>
-          </ul>
-        </div>
-    </div>
+          <ul class="commentlist">
+          <li>
+          <span class="comment-person">
+          <img src="/images/profile2.png" alt="" class="hover userimage commenti" width="30px"/>
+            <span class="comment_text">Good</span>
+          </span>
+          </li>
+          
+          </li>
+          </div>
+          </div>
+       
 `;
     // dummy_post.insertAdjacentHTML("afterbegin", post)
   }
-  // ====================this is for likeing post
-  const add_comment = document.querySelector("#comment_btn");
+  // ===================================add comment 
+  let commentCount = document.querySelectorAll(".commentcount");
+  let addComment = document.querySelectorAll(".comment_btn");
+  let commentSection = document.querySelectorAll(".commentSection")
+  let addBtn = document.querySelectorAll(".comment-add");
+  let userComment = document.querySelectorAll(".usercomment");
+  let commentlist = document.querySelectorAll(".commentlist");
+  
+  
+for(let i=0;i<addComment.length;i++)
+{
+  
+  addComment[i].addEventListener("click", () => {
+  
+  if (commentSection[i].style.display == "block") {
+    commentSection[i].style.display = "none";
+  } else {
+    commentSection[i].style.display = "block";
+  }
+});
+ if(userComment[i].value.length > 0)
+{
+  addBtn[i].addEventListener("click", () => {
+    commentlist[i].innerHTML+=`<li>
+    <span class="comment-person">
+    <img src="/images/profile2.png" alt="" class="hover userimage commenti" width="30px"/>
+      <span class="comment_text">${userComment[i].value}</span>
+    </span>
+    </li>`
+    
+    
+     commentCount[i].innerHTML=`<span style="margin-left:-50px"class="commentcount"> <p class="pointer comment">${++data[i].comment}Comments</p></span>`
+  
+});
+}
+}
 
-  const commentSection = document.querySelector(".commentSection")
-  console.log(add_comment)
+  //=========================for displaying user profile=============
+
+let userdata = [
+  {
+    email: "santosh@gmail.com",
+    profilePic: "/images/santosh-mehta-profilepic.jpg",
+  },
+  {
+    email: "varsharajput353@gmail.com",
+    profilePic: "/images/varsha-profilepic.jpg",
+  },
+  { email: "ss0149952@gmail.com", profilePic: "/images/sonu-profilepic.jpg" },
+  {
+    email: "rohanpalankar8@gmail.com",
+    profilePic: "/images/profile-pic-rohan.jpg",
+  },
+];
+
+let Email = localStorage.getItem("userEmail");
+
+let userimage = document.querySelectorAll(".userimage");
+
+for (let k = 0; k < userdata.length; k++) {
+  for (let i = 0; i < userimage.length; i++) {
+    if (userdata[k].email == Email) {
+      userimage[i].src = userdata[k].profilePic;
+    }
+  }
+}
+
+  // ====================this is for likeing post
+  
   let likebtn = document.querySelectorAll(".like1");
   let icon = document.querySelectorAll(".icon");
   let likeCount = document.querySelectorAll(".like-count");
 
   for (let j = 0; j < likebtn.length; j++) {
     likebtn[j].addEventListener("click", () => {
-      likeCount[
-        j
-      ].innerHTML = `<span style="margin-left:-20px" class="pointer like-count" > ${
-        data[j].like + 1
-      }</span>`;
+      likeCount[j].innerHTML = `<span style="margin-left:-20px" class="pointer like-count" > ${data[j].like +1}</span>`;
 
       likebtn[j].style.color = "blue";
       icon[j].style.color = "blue";
     });
   }
-  // ===================================add comment 
- 
-// for(let i=0;i<add_comment.length;i++)
-// {
-// add_comment[i].addEventListener("click", () => {
-//   if (commentSection.style.display == "block") {
-//     commentSection.style.display = "none";
-//   } else {
-//     commentSection.style.display = "block";
-//   }
-// });
-// }
+  
 }
 api();
 
@@ -178,35 +235,35 @@ friendIcon.addEventListener("click", () => {
   window.location.href = "/pages/friends.html";
 });
 
-//=========================for displaying user profile=============
+// //=========================for displaying user profile=============
 
-let userdata = [
-  {
-    email: "santosh@gmail.com",
-    profilePic: "/images/santosh-mehta-profilepic.jpg",
-  },
-  {
-    email: "varsharajput353@gmail.com",
-    profilePic: "/images/varsha-profilepic.jpg",
-  },
-  { email: "ss0149952@gmail.com", profilePic: "/images/sonu-profilepic.jpg" },
-  {
-    email: "rohanpalankar8@gmail.com",
-    profilePic: "/images/profile-pic-rohan.jpg",
-  },
-];
+// let userdata = [
+//   {
+//     email: "santosh@gmail.com",
+//     profilePic: "/images/santosh-mehta-profilepic.jpg",
+//   },
+//   {
+//     email: "varsharajput353@gmail.com",
+//     profilePic: "/images/varsha-profilepic.jpg",
+//   },
+//   { email: "ss0149952@gmail.com", profilePic: "/images/sonu-profilepic.jpg" },
+//   {
+//     email: "rohanpalankar8@gmail.com",
+//     profilePic: "/images/profile-pic-rohan.jpg",
+//   },
+// ];
 
-let Email = localStorage.getItem("userEmail");
-console.log(Email);
-let userimage = document.querySelectorAll(".userimage");
+// let Email = localStorage.getItem("userEmail");
 
-for (let k = 0; k < userdata.length; k++) {
-  for (let i = 0; i < userimage.length; i++) {
-    if (userdata[k].email == Email) {
-      userimage[i].src = userdata[k].profilePic;
-    }
-  }
-}
+// let userimage = document.querySelectorAll(".userimage");
+
+// for (let k = 0; k < userdata.length; k++) {
+//   for (let i = 0; i < userimage.length; i++) {
+//     if (userdata[k].email == Email) {
+//       userimage[i].src = userdata[k].profilePic;
+//     }
+//   }
+// }
 
 // --------------comment_btn-------------
 
