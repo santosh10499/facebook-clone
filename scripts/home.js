@@ -172,6 +172,7 @@ content.innerHTML += `<div class="create_story">
       <i class="fa-solid fa-flag pointer"></i>
       <i class="fa-solid fa-ellipsis pointer hover bg"></i>
     </div>
+    <button id="create-post-btn">Post</button>
   </div>
 </div>
 `;
