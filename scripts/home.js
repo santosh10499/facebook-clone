@@ -7,16 +7,10 @@ content.innerHTML += `<div class="create_story">
   <p><i class="fa-solid fa-video"></i>Rooms</p>
 </div>
 <div class="stories">
-  <div class="" >
-    <img class="userimage"
-      src="/images/profile2.png"
-      alt="story"
-      id="my_story"
-    />
-    <div class="">
-    <i class="fa-fa fa-plus forHome pointer"></i>
-      <span>Create story</span>
-    </div>
+  <div class="Create_my_story" >
+  <img  class="userimage"src="/images/Varsha7.png" alt="story" id="" />
+  <i class="fa-solid fa-circle-plus"></i>
+  <span>Create story</span>
   </div>
   <div class="container">
     <img
@@ -175,6 +169,3 @@ content.innerHTML += `<div class="create_story">
   </div>
 </div>
 `;
-
-
-

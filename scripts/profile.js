@@ -243,7 +243,7 @@ let usersArray = [
   {
     name: "Varsha Rajput",
     email: "varsharajput353@gmail.com",
-    profilePic: "/images/varsha-profilepic.jpg",
+    profilePic: "/images/Varsha7.png",
     coverPhoto: "/images/varsha-coverphoto.jpg",
     totalFriends: "1.2K friends",
     workPlace: "Worked at Herbal Life",

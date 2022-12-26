@@ -172,7 +172,7 @@ let userdata = [
   },
   {
     email: "varsharajput353@gmail.com",
-    profilePic: "/images/varsha-profilepic.jpg",
+    profilePic: "/images/Varsha7.png",
   },
   { email: "ss0149952@gmail.com", profilePic: "/images/sonu-profilepic.jpg" },
   {
