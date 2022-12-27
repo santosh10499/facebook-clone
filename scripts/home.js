@@ -313,7 +313,7 @@ createPostBtn.addEventListener("click", () => {
       </div>
       <div class="bottom">
         <div class="likes">
-          <span class="pointer like-count" id="like-count" >0 Likes</span>
+          <span class="pointer like-count" id="like-count">0 Likes</span>
         </div>
         <div class="commets">
           <p class="pointer comment">0 Comments</p>

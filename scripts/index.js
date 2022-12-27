@@ -26,12 +26,10 @@ async function api() {
       </div>
       <div class="bottom">
         <div class="likes">
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <span class="pointer like-count" > ${data[i].like}</span>
+          <span class="pointer like-count" id="like-count"> ${data[i].like} Likes</span>
         </div>
         <div class="commets">
-         <span class="commentcount"> <p class="pointer comment">${data[i].comment}Comments</p></span>
+          <p class="pointer comment">${data[i].comment} Comments</p>
         </div>
       </div>
       <div class="reaction">
