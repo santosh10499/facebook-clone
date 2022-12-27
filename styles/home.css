@@ -446,6 +446,48 @@
   border-radius: 0.5em;
 }
 
+
+
+.about_post input {
+  cursor: pointer;
+}
+
+#post-audience i {
+  margin: 0 0.4em;
+  font-size: 1em;
+}
+
+#create-post-url-input {
+  margin-top: 0.3em;
+  width: 15em;
+  border-radius: 0.3em;
+  border: 1px solid lightskyblue;
+  padding: 0.3em 0.6em;
+}
+
+#create-post-url-input:focus {
+  outline: none;
+  border: 2px solid rgb(88, 184, 244);
+}
+
+#create-post-btn {
+  width: 100%;
+  margin-top: 0.8em;
+  margin-bottom: 0.5em;
+  padding: 0.7em;
+  font-size: 1rem;
+  border-radius: 0.3em;
+  border: none;
+  background-color: lightgray;
+  color: white;
+}
+
+
+
+
+
+
+
 /* -------------------end of css for dialogue boxes--------------------- */
 
 /* -------------------------------end CSS for home.html file--------------------------------- */
