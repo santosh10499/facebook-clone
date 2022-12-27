@@ -146,10 +146,10 @@ let usersArray = [
       {id:"checkIns-4",name:"Goa Airport",details_1:"Mormugao, Goa",details_2:"Visited on November 8, 2019",img:"https://th.bing.com/th/id/OIP.5ltecM5UJ7FyEAr9wcFhPgHaEK?w=303&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"}
     ],
     groups: [
-      {id:"group-1",name:"Konkani Friends",category:"Public group |",members:"1.9K members",img:"https://scontent.fblr19-1.fna.fbcdn.net/v/t39.30808-6/244409381_566127964700327_5014872789516970616_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8631f5&_nc_ohc=lXWCYDgwOV0AX_XcJyH&_nc_ht=scontent.fblr19-1.fna&oh=00_AfDNxUp1E1YZtg1ieRULjjkdDwWbKv9wh9gjnBHnNHKfuQ&oe=63AD9129"},
-      {id:"group-2",name:"Daivadnya Pratibhe",category:"Public group |",members:"797 members",img:"https://scontent.fblr19-1.fna.fbcdn.net/v/t39.30808-6/245040133_4341962339173714_8439844709310079065_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8631f5&_nc_ohc=49crsT45DgYAX9NsmhJ&_nc_ht=scontent.fblr19-1.fna&oh=00_AfCdXVpkI_NBJLKzTuXCBzVq8-ROfFxLynz_leP2hZnR4g&oe=63AE152E"},
-      {id:"group-3",name:"Passionpreneurs",category:"Public group |",members:"42.2K members",img:"https://scontent.fblr19-1.fna.fbcdn.net/v/t39.30808-6/224469468_4125355554228007_4122144367981821646_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8631f5&_nc_ohc=FNkfX3MGW8kAX90QXFD&_nc_ht=scontent.fblr19-1.fna&oh=00_AfDGq2sMzJC7C2N8O_60nSpGINPVCttvh_SgF-qEFoNOYA&oe=63ADE81B"},
-      {id:"group-4",name:"Incredible Karwar",category:"Public group |",members:"4.9K members",img:"https://scontent.fblr19-1.fna.fbcdn.net/v/t39.30808-6/299427673_1040514539986613_6602557206582369554_n.jpg?stp=cp6_dst-jpg&_nc_cat=110&ccb=1-7&_nc_sid=8631f5&_nc_ohc=MuDhsK2lqBwAX_9AV3w&tn=MlK-62xn9mAFYEGv&_nc_ht=scontent.fblr19-1.fna&oh=00_AfD9HB5VRD7B9ubSV5gprMKDtCFnqwIzyJSbe-DxCo7LaA&oe=63AEAE74"}
+      {id:"group-1",name:"Konkani Friends",categoryIcon:"public",category:"Public group |",members:"1.9K members",img:"https://scontent.fblr19-1.fna.fbcdn.net/v/t39.30808-6/244409381_566127964700327_5014872789516970616_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8631f5&_nc_ohc=lXWCYDgwOV0AX_XcJyH&_nc_ht=scontent.fblr19-1.fna&oh=00_AfDNxUp1E1YZtg1ieRULjjkdDwWbKv9wh9gjnBHnNHKfuQ&oe=63AD9129"},
+      {id:"group-2",name:"Daivadnya Pratibhe",categoryIcon:"public",category:"Public group |",members:"797 members",img:"https://scontent.fblr19-1.fna.fbcdn.net/v/t39.30808-6/245040133_4341962339173714_8439844709310079065_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8631f5&_nc_ohc=49crsT45DgYAX9NsmhJ&_nc_ht=scontent.fblr19-1.fna&oh=00_AfCdXVpkI_NBJLKzTuXCBzVq8-ROfFxLynz_leP2hZnR4g&oe=63AE152E"},
+      {id:"group-3",name:"Passionpreneurs",categoryIcon:"public",category:"Public group |",members:"42.2K members",img:"https://scontent.fblr19-1.fna.fbcdn.net/v/t39.30808-6/224469468_4125355554228007_4122144367981821646_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8631f5&_nc_ohc=FNkfX3MGW8kAX90QXFD&_nc_ht=scontent.fblr19-1.fna&oh=00_AfDGq2sMzJC7C2N8O_60nSpGINPVCttvh_SgF-qEFoNOYA&oe=63ADE81B"},
+      {id:"group-4",name:"Incredible Karwar",categoryIcon:"public",category:"Public group |",members:"4.9K members",img:"https://scontent.fblr19-1.fna.fbcdn.net/v/t39.30808-6/299427673_1040514539986613_6602557206582369554_n.jpg?stp=cp6_dst-jpg&_nc_cat=110&ccb=1-7&_nc_sid=8631f5&_nc_ohc=MuDhsK2lqBwAX_9AV3w&tn=MlK-62xn9mAFYEGv&_nc_ht=scontent.fblr19-1.fna&oh=00_AfD9HB5VRD7B9ubSV5gprMKDtCFnqwIzyJSbe-DxCo7LaA&oe=63AEAE74"}
     ]
   },
 
@@ -192,10 +192,10 @@ let usersArray = [
       {id:"checkIns-4",name:"Nakshatra Van",details_1:"Jharkhand",details_2:"Visited on April 8, 2019",img:"https://th.bing.com/th/id/OIP.-q8gha9J5C6U7p8wJ9B7OQHaEJ?w=290&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"}
     ],
     groups: [
-      {id:"group-1",name:"Young India",category:"Public group |",members:"15K members",img:"https://th.bing.com/th/id/OIP.u6d1hFa1z48Xbim5wy62HwHaHa?w=199&h=199&c=7&r=0&o=5&dpr=1.3&pid=1.7"},
-      {id:"group-2",name:"Local News",category:"Public group |",members:"605 members",img:"https://th.bing.com/th/id/OIP.iljR8ZF82Us3ispXotKijQHaE8?w=272&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"},
-      {id:"group-3",name:"Friends",category:"Public group |",members:"30 members",img:"https://th.bing.com/th/id/OIP.JxTU_DlQQFHW8DgE5rdXTQHaEK?w=275&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"},
-      {id:"group-4",name:"My City",category:"Public group |",members:"12.5K members",img:"https://images.unsplash.com/photo-1444723121867-7a241cacace9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2l0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"}
+      {id:"group-1",name:"Young India",categoryIcon:"public",category:"Public group |",members:"15K members",img:"https://th.bing.com/th/id/OIP.u6d1hFa1z48Xbim5wy62HwHaHa?w=199&h=199&c=7&r=0&o=5&dpr=1.3&pid=1.7"},
+      {id:"group-2",name:"Local News",categoryIcon:"public",category:"Public group |",members:"605 members",img:"https://th.bing.com/th/id/OIP.iljR8ZF82Us3ispXotKijQHaE8?w=272&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"},
+      {id:"group-3",name:"Friends",categoryIcon:"public",category:"Public group |",members:"30 members",img:"https://th.bing.com/th/id/OIP.JxTU_DlQQFHW8DgE5rdXTQHaEK?w=275&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"},
+      {id:"group-4",name:"My City",categoryIcon:"public",category:"Public group |",members:"12.5K members",img:"https://images.unsplash.com/photo-1444723121867-7a241cacace9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2l0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"}
     ]
   },
 
@@ -238,10 +238,10 @@ let usersArray = [
       {id:"checkIns-4",name:"CITM Lake",details_1:"Faridabad",details_2:"Visited on September 8, 2019",img:"https://th.bing.com/th/id/OIP.CRPjLIvPlwDeVkpH5I3ASAHaEK?w=301&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"}
     ],
     groups: [
-      {id:"group-1",name:"Cricket Lovers",category:"Public group |",members:"14K members",img:"https://th.bing.com/th/id/OIP.o6K4GHxvB3JsjUbSw_riqgHaHa?w=173&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"},
-      {id:"group-2",name:"Dreamers",category:"Public group |",members:"555 members",img:"https://th.bing.com/th/id/OIP.Vlfpge50hTcZfLYErn_yJgHaE7?w=286&h=190&c=7&r=0&o=5&dpr=1.3&pid=1.7"},
-      {id:"group-3",name:"Hustlers",category:"Public group |",members:"4K members",img:"https://th.bing.com/th/id/OIP.QVvpcpsyPpR9u0peJO9D-gHaFj?w=223&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"},
-      {id:"group-4",name:"Knowledge Hub",category:"Public group |",members:"8.2K members",img:"https://th.bing.com/th/id/OIP.V5hiehbUg0umHZ4fsNSWtAHaE7?w=253&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"}
+      {id:"group-1",name:"Cricket Lovers",categoryIcon:"public",category:"Public group |",members:"14K members",img:"https://th.bing.com/th/id/OIP.o6K4GHxvB3JsjUbSw_riqgHaHa?w=173&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"},
+      {id:"group-2",name:"Dreamers",categoryIcon:"public",category:"Public group |",members:"555 members",img:"https://th.bing.com/th/id/OIP.Vlfpge50hTcZfLYErn_yJgHaE7?w=286&h=190&c=7&r=0&o=5&dpr=1.3&pid=1.7"},
+      {id:"group-3",name:"Hustlers",categoryIcon:"public",category:"Public group |",members:"4K members",img:"https://th.bing.com/th/id/OIP.QVvpcpsyPpR9u0peJO9D-gHaFj?w=223&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"},
+      {id:"group-4",name:"Knowledge Hub",categoryIcon:"public",category:"Public group |",members:"8.2K members",img:"https://th.bing.com/th/id/OIP.V5hiehbUg0umHZ4fsNSWtAHaE7?w=253&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"}
     ]
   },
 
@@ -284,10 +284,10 @@ let usersArray = [
       {id:"checkIns-4",name:"Lotus Temple",details_1:"Delhi",details_2:"Visited on March 1, 2021",img:"https://th.bing.com/th/id/OIP.km7Ii7q1YWbFqubZsfb1mgHaFq?w=265&h=203&c=7&r=0&o=5&dpr=1.3&pid=1.7"}
     ],
     groups: [
-      {id:"group-1",name:"Developers Hub",category:"Public group |",members:"2.1K members",img:"https://th.bing.com/th/id/OIP.4N-h2V5ZQmhXOReLfH7rNgHaEK?w=277&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"},
-      {id:"group-2",name:"Science Facts",category:"Public group |",members:"21.3k members",img:"https://th.bing.com/th/id/OIP.cmf4G5jPX6gCMAGdy0jEbQHaGV?w=214&h=184&c=7&r=0&o=5&dpr=1.3&pid=1.7"},
-      {id:"group-3",name:"Travellers",category:"Public group |",members:"4.2K members",img:"https://th.bing.com/th/id/OIP.Bbd02JmKN7q0WuDlhQFmUgHaFj?w=204&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"},
-      {id:"group-4",name:"Incredible Delhi",category:"Public group |",members:"87K members",img:"https://th.bing.com/th/id/OIP.5POpapmp5vfzDh6Pa58XVgHaEK?w=323&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"}
+      {id:"group-1",name:"Developers Hub",categoryIcon:"public",category:"Public group |",members:"2.1K members",img:"https://th.bing.com/th/id/OIP.4N-h2V5ZQmhXOReLfH7rNgHaEK?w=277&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"},
+      {id:"group-2",name:"Science Facts",categoryIcon:"public",category:"Public group |",members:"21.3k members",img:"https://th.bing.com/th/id/OIP.cmf4G5jPX6gCMAGdy0jEbQHaGV?w=214&h=184&c=7&r=0&o=5&dpr=1.3&pid=1.7"},
+      {id:"group-3",name:"Travellers",categoryIcon:"public",category:"Public group |",members:"4.2K members",img:"https://th.bing.com/th/id/OIP.Bbd02JmKN7q0WuDlhQFmUgHaFj?w=204&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"},
+      {id:"group-4",name:"Incredible Delhi",categoryIcon:"public",category:"Public group |",members:"87K members",img:"https://th.bing.com/th/id/OIP.5POpapmp5vfzDh6Pa58XVgHaEK?w=323&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"}
     ]
   }
 
@@ -522,6 +522,7 @@ function displayGroups(groupsArray){
 
       document.getElementById("group-1-img").src = groupObj.img;
       document.getElementById("group-1-name").innerText = groupObj.name;
+      document.getElementById("group-1-category-icon").innerText = groupObj.categoryIcon;
       document.getElementById("group-1-category").innerText = groupObj.category;
       document.getElementById("group-1-members").innerText = groupObj.members;
 
@@ -530,6 +531,7 @@ function displayGroups(groupsArray){
 
       document.getElementById("group-2-img").src = groupObj.img;
       document.getElementById("group-2-name").innerText = groupObj.name;
+      document.getElementById("group-2-category-icon").innerText = groupObj.categoryIcon;
       document.getElementById("group-2-category").innerText = groupObj.category;
       document.getElementById("group-2-members").innerText = groupObj.members;
 
@@ -538,6 +540,7 @@ function displayGroups(groupsArray){
 
       document.getElementById("group-3-img").src = groupObj.img;
       document.getElementById("group-3-name").innerText = groupObj.name;
+      document.getElementById("group-3-category-icon").innerText = groupObj.categoryIcon;
       document.getElementById("group-3-category").innerText = groupObj.category;
       document.getElementById("group-3-members").innerText = groupObj.members;
 
@@ -546,6 +549,7 @@ function displayGroups(groupsArray){
 
       document.getElementById("group-4-img").src = groupObj.img;
       document.getElementById("group-4-name").innerText = groupObj.name;
+      document.getElementById("group-4-category-icon").innerText = groupObj.categoryIcon;
       document.getElementById("group-4-category").innerText = groupObj.category;
       document.getElementById("group-4-members").innerText = groupObj.members;
 
