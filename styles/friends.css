@@ -294,11 +294,6 @@ hr {
         margin-top: 0;
     }
 
-    #suggestion-item {
-        display: none;
-    }
-    
-    
     #suggestion-aside-bar {
         width: 95%;
     }
@@ -345,4 +340,13 @@ hr {
     #bars, #plus_icon{
         display: none;
     }
+}
+
+
+@media screen and (max-width: 540px){
+
+    #suggestion-aside-bar{
+        display: none;
+    }
+
 }
