@@ -355,6 +355,7 @@ postCreator.style.display = "none";
 
 
 
+
 /*=============== to send post to Backend ================================*/
 
 
@@ -382,5 +383,6 @@ createPostBtn.addEventListener("click", async () => {
 
   document.getElementById("create-post-text-input").value = "";
   document.getElementById("create-post-url-input").value = "";
+  
 
 })
