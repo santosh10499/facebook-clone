@@ -118,7 +118,7 @@ content.innerHTML += `<div class="create_story">
     <div class="about_post">
       <div class="name">
         <img
-          src="/images/profile2.png"
+          src="https://images.unsplash.com/photo-1564463836146-4e30522c2984?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTkyfHxwZXJzb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
           alt=""
           class="profile bg_img hover userimage"
           width="45px"
@@ -126,7 +126,7 @@ content.innerHTML += `<div class="create_story">
         <div class="btn">
           <span class="user-name">Varsha Rajput</span>
           <button class="pointer" id="post-audience">
-            <i class="fa-solid fa-user-group"></i>Friends<i
+          <i class="fa-solid fa-earth-americas"></i>Public<i
               class="fa-solid fa-caret-down"
             ></i>
           </button>
