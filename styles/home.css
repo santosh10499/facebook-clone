@@ -277,8 +277,9 @@
 }
 .comment-person
 {
-  margin-left:15%;
-  border-radius: 40px;
+
+  margin-left:3%;
+  
 }
 .commenti{
 
@@ -286,7 +287,7 @@
 }
 .comment_text{
   margin-left:5%;
-  font-weight: bolder;
+  
   text-align: center;
 }
 
