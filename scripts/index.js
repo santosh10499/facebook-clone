@@ -139,10 +139,21 @@ for (let k = 0; k < userdata.length; k++) {
 
   for (let j = 0; j < likebtn.length; j++) {
     likebtn[j].addEventListener("click", () => {
-      likeCount[j].innerHTML = `<span style="margin-left:-20px" class="pointer like-count" > ${data[j].like +1}</span>`;
+      if (likebtn[j].style.color != "blue"){
+        likeCount[j].innerHTML = `<span style="margin-left:-20px" class="pointer like-count" id="like-count">
+        ${data[j].like +1} Likes</span>`;
 
-      likebtn[j].style.color = "blue";
-      icon[j].style.color = "blue";
+        likebtn[j].style.color = "blue";
+        icon[j].style.color = "blue";
+      }
+      else {
+        likeCount[j].innerHTML = `<span style="margin-left:-20px" class="pointer like-count" id="like-count">
+        ${data[j].like} Likes</span>`;
+
+        likebtn[j].style.color = "black";
+        icon[j].style.color = "black";
+      }
+      
     });
   }
   
