@@ -93,7 +93,7 @@ for(let i=0;i<addComment.length;i++)
     commentSection[i].style.display = "block";
   }
 });
- if(userComment[i].value.length > 0)
+ if(userComment[i].value.length >= 0)
 {
   addBtn[i].addEventListener("click", () => {
     commentlist[i].innerHTML+=`<li>
