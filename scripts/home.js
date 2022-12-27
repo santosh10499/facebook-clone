@@ -126,7 +126,7 @@ content.innerHTML += `<div class="create_story">
         <div class="btn">
           <span class="user-name">Varsha Rajput</span>
           <button class="pointer" id="post-audience">
-            <i class="fa-solid fa-user-group"></i>Friends<i
+          <i class="fa-solid fa-earth-americas"></i>Public<i
               class="fa-solid fa-caret-down"
             ></i>
           </button>
