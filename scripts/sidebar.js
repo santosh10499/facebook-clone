@@ -1,4 +1,5 @@
 
+
 /**-------------------------foraside bar----------------------------- */
 const seeMore = document.getElementById("see_more");
 const seeLess = document.getElementById("see_less");
@@ -12,7 +13,6 @@ const profile = document.querySelector("#profile")
 
 const bars = document.querySelector("#bars")
 const outer_container = document.querySelector(".aside_container")
-
 
 /**---------------------click event on see more btn------------------------ */
 seeMore.addEventListener("click",(e)=>{
@@ -104,3 +104,15 @@ grid.addEventListener("click",(e)=>{
       plus_items_popUp.style.display = "block";
     }
 })
+
+
+
+
+
+
+
+
+
+
+
+

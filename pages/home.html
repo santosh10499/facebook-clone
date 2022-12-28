@@ -25,13 +25,11 @@
           <p><i class="fa-solid fa-video"></i>Rooms</p>
         </div>
         <div class="stories">
-          <div class="container_mystory pointer">
-            <img src="/images/profile2.png" alt="story" id="my_story" />
-            <div class="plus">
-              <i class="fa-fa fa-plus forhome pointer"></i>
-              <span>Create story</span>
+          <div class="Create_my_story" >
+            <img  class="userimage"src="/images/Varsha7.png" alt="story" />
+            <i class="fa-solid fa-circle-plus"></i>
+            <span>Create story</span>
             </div>
-          </div>
           <div class="container">
             <img
               src="/images/story2.png"
@@ -98,7 +96,7 @@
           <img
             src="/images/profile2.png"
             alt=""
-            class="profile bg hover"
+            class="profile bg_img hover"
             width="45px"
           />
           <input type="text" placeholder="What's on your mind" />
@@ -115,17 +113,18 @@
       </div>
 
       <!-- --------------dummy post------------------- -->
-      <div class="dummy_post">
+      <div class="dummy_posts">
+        
         <!-- -----------------data rendered------------------ -->
       </div>
 
       <!-- -------dummy post2----------- -->
-      <div class="dummy_post">
+      <!-- <div class="dummy_post">
         <div class="top">
           <img
             src="/images/profile2.png"
             alt=""
-            class="profile bg hover"
+            class="profile bg_img hover"
             width="45px"
           />
 
@@ -138,34 +137,51 @@
 
           <div class="icons">
             <i class="fa-solid fa-ellipsis hover"></i>
-            <i class="fa-solid fa-xmark hover"></i>
+            
           </div>
         </div>
         <div class="image">
-          <!-- <video controls width="500px">
-            <source src="https://youtu.be/BwY8RlNiAOA" type="video/mp4" />
-          </video> -->
-          <iframe
-            width="420"
-            height="315"
-            src="https://fb.watch/hAj2dbO26w/"
-          >
-          </iframe>
+          <img src="" alt="">
         </div>
+         
         <div class="bottom">
           <div class="likes">
-            <span class="pointer">👍💖15k</span>
+            <span class="pointer"> 0👍💖</span>
           </div>
           <div class="commets">
-            <p class="pointer">300 Comments</p>
+            <p class="pointer">500 Comments</p>
           </div>
         </div>
+        
+        
         <div class="reaction">
           <p class="hover"><i class="fa-regular fa-thumbs-up"></i> Like</p>
-          <p class="hover"><i class="fa-regular fa-message"></i> Comment</p>
+          <p class="hover comment_btn" id="comment_btn"><i class="fa-regular fa-message"></i> Comment</p>
           <p class="hover"><i class="fa-solid fa-share"></i> Share</p>
         </div>
-      </div>
+        <div class="commentSection">
+          <div class="Profile_area">
+            <img
+              src="/images/profile2.png"
+              alt=""
+              class=" hover"
+              width="45px"
+            />
+            <div class="input_field flex">
+              <input type="text" placeholder="Write a comment..." />
+              <i class="fa-brands fa-rocketchat pointer"></i>
+              <i class="fa-regular fa-face-smile pointer"></i>
+              <i class="fa-solid fa-camera-retro pointer"></i>
+              <i class="fa-regular fa-image pointer"></i>
+            </div>
+            <button class="pointer">Add</button>
+          </div>
+          <ul>
+            <li>wonderfull</li>
+            <li>nice</li>
+          </ul>
+        </div>
+      </div> -->
 
       <!-- ------------dummy post 3------------- -->
     </div>
@@ -174,17 +190,17 @@
     <div class="create_post_Wrapper" id="create_post_Wrapper">
       <div class="create_post" id="popUp">
         <h3>Create post</h3>
-        <i class="fa-solid fa-xmark hover"></i>
+        <i class="fa-solid fa-xmark hover" ></i>
         <div class="about_post">
           <div class="name">
             <img
               src="/images/profile2.png"
               alt=""
-              class="profile bg hover"
+              class="profile bg_img hover"
               width="45px"
             />
             <div class="btn">
-              <span>Varsha Rajput</span>
+              <span class="user-name">Varsha Rajput</span>
               <button class="pointer">
                 <i class="fa-solid fa-user-group"></i>Friends<i
                   class="fa-solid fa-caret-down"
@@ -226,11 +242,14 @@
           <i class="fa-solid fa-flag pointer"></i>
           <i class="fa-solid fa-ellipsis pointer hover bg"></i>
         </div>
+        <button>Post</button>
       </div>
     </div>
 
     <!-- -------------end of dialogue boxes---------------- -->
 
     <script src="/scripts/index.js"></script>
+    <script src="/scripts/file.js"></script>
+   
   </body>
 </html>

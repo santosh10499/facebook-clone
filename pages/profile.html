@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meta - My profile</title>
-    <link rel="stylesheet" href="styles/profile.css">
-    <link rel="stylesheet" href="/styles/profile.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="styles/profile.css" />
+    <link rel="stylesheet" href="/styles/profile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -16,552 +22,929 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="/scripts/sidebar.js" defer></script>
+    <!-- <script src="/scripts/sidebar.js" defer></script> -->
     <script src="/scripts/profile.js" defer></script>
-</head>
-<body>
+    <script src="/scripts/userName.js" defer></script>
+  </head>
+  <body>
     <!----------------------------------------------------------- Header ----------------------------------------------------------------->
-    <div id="fb-header"></div>
-    <div id="header-popUp"></div>
+    <div id="fb-header">
+      <header class="shadow">
+        <nav>
+          <div class="container flex" id="container">
+            <!-----------------------------------------------------left nav--------------------------------------------------------->
+            <div class="left_of_nav flex">
+              <img  src="/images/fb.png" alt="Facebook logo" id="fb_logo" />
+              <i
+                class="fa-solid fa-magnifying-glass hover"
+                id="search_icon"
+              ></i>
+              <div class="search_input flex">
+                <i class="fa-solid fa-magnifying-glass hover search_icon"></i>
+
+                <input type="text" placeholder="Search Facebook" />
+              </div>
+            </div>
+            <!---------------------------------------------------end of left nav----------------------------------------------------------->
+            <div id="home" class="mid_of_nav flex">
+              <div class="mid hover display_none">
+                <i class="fa-solid fa-house-chimney home_icon"></i>
+              </div>
+
+              <div id="friend" class="mid hover display_none">
+                <i class="fa-solid fa-user-group user_icon"></i>
+              </div>
+
+              <div class="mid hover display_none">
+                <i class="fa-solid fa-users users_icons"></i>
+              </div>
+            </div>
+            <div class="right_of_nav">
+              <button class="display_none display_none_forTab hover">
+                Find Friends
+              </button>
+              <div class="display_none">
+                <i class="fa-solid fa-grip bg hover" id="grid"></i>
+              </div>
+
+              <!----------plus icon for media query------------->
+              <i class="fa-solid fa-plus hover" id="plus_icon"></i>
+
+              <i
+                class="fa-brands fa-facebook-messenger messenger_icon gap hover bg"
+                id="messenger"
+              ></i>
+
+              <i
+                class="fa-solid fa-bell bell_icon bg hover"
+                id="notifications"
+              ></i>
+
+              <div class="profile" id="profile">
+                <img class="userimage" src="/images/profile2.png" alt="user" class="hover" />
+              </div>
+              <i class="fa-solid fa-bars hover" id="bars"></i>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
     <main>
-        <!----------------------------------------------------------- Section-1 ----------------------------------------------------------------->
-        <section class="section-1">
-            <div class="section-1-container">
-
-                <!--------------------------------------------- cover-photo ----------------------------------------------->
-                <div class="cover-photo">
-                    <img src="/images/cover-photo-rohan.jpg" id="cover-photo-img" alt="">
-                    <div class="add-cover-photo">
-                        <i class="bi bi-camera-fill"></i>
-                        <span>Add cover photo</span>
-                    </div>
-                </div>
-
-                <!--------------------------------------------- profile-details ----------------------------------------------->
-                <div class="profile-details-container">
-
-                    <!------------------------------------ profile-details-display ------------------------------>
-                    <div class="profile-details-display">
-                        <div class="profile-details-left-part">
-                            <div class="profile-pic">
-                                <img src="/images/profile-pic-rohan.jpg" id="profile-pic-img" alt="">
-                                <i class="bi bi-camera-fill" id="profile-pic-camera"></i>
-                            </div>
-                            <div class="profile-name">
-                                <h1 id="profile-name">Rohan Palankar</h1>
-                                <p id="total-friends">2.1K friends</p>
-                                <div class="small-imgs">
-                                    <img src="/images/friend-1.jpg" alt="">
-                                    <img src="/images/friend-2.jpg" alt="">
-                                    <img src="/images/friend-3.jpg" alt="">
-                                    <img src="/images/friend-4.jpg" alt="">
-                                    <img src="/images/friend-5.jpg" alt="">
-                                    <img src="/images/friend-6.jpg" alt="">
-                                    <img src="/images/friend-7.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="profile-details-right-part">
-                            <div class="add-story">
-                                <span class="material-icons">add_circle</span>
-                                <p>Add to story</p>
-                            </div>
-                            <div class="edit-profile">
-                                <span class="material-icons">mode</span>
-                                <p>Edit profile</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <hr>
-
-                    <!------------------------------------ profile-details-navBar ---------------------------------->
-                    <div class="profile-details-navBar">
-                        <div class="navBar-left-part">
-                            <button id="profile-posts-btn">Posts</button>
-                            <button id="profile-about-btn">About</button>
-                            <button id="profile-friends-btn">Friends</button>
-                            <button id="profile-photos-btn">Photos</button>
-                            <button id="profile-videos-btn">Videos</button>
-                            <button id="profile-check-ins-btn">Check-ins</button>
-                            <button id="profile-more-btn">More<i class="bi bi-caret-down-fill"></i></button>
-                        </div>
-                        <div class="navBar-right-part">
-                            <button class="triple-dot-btn"><i class="bi bi-three-dots"></i></button>
-                        </div>
-                    </div>
-
-                </div>
-
+      <!----------------------------------------------------------- Section-1 ----------------------------------------------------------------->
+      <section class="section-1">
+        <div class="section-1-container">
+          <!--------------------------------------------- cover-photo ----------------------------------------------->
+          <div class="cover-photo">
+            <img
+              src=""
+              id="cover-photo-img"
+              alt=""
+            />
+            <div class="add-cover-photo">
+              <i class="bi bi-camera-fill"></i>
+              <span>Add cover photo</span>
             </div>
-        </section>
-        
-        <!----------------------------------------------------------- Section-2 ----------------------------------------------------------------->
+          </div>
 
-        <section class="section-2">
-            <!----------------------------------------------- Divs-container --------------------------------------------------------------->
-            <div class="divs-container">
-                <!----------------------------------------------- About-div --------------------------------------------------------------->
-                <div class="about-div">
-                    <!----------------------------------------------- About-div-left-part --------------------------------------------->
-                    <div class="about-left-part">
-                        <h3 class="about-title">About</h3>
-                        <p class="about-overview" id="about-overview">Overview</p>
-                        <p class="about-work-Edu">Work and education</p>
-                        <p class="about-places-lived">Places lived</p>
-                        <p class="about-contact-info">Contact and basic info</p>
-                        <p class="about-fam-relation">Family and relationships</p>
-                        <p class="about-details-you">Details about you</p>
-                        <p class="about-life-events">Life events</p>
-                    </div>
-                    <!----------------------------------------------- About-div-right-part --------------------------------------------->
-                    <div class="about-right-part">
-                        <!--------------------------- Overview-work ------------------------->
-                        <div class="overview-details-div">
-                            <div class="overview-details-left">
-                                <span class="material-icons">business_center</span>
-                                <div class="overview-description">
-                                    <p id="work-place">Worked at Lupin Limited</p>
-                                    <p id="work-year">2011 to 2021</p>
-                                </div>
-                            </div>
-                            <div class="overview-details-right">
-                                <span class="material-icons visibility">people</span>
-                                <i class="bi bi-three-dots edit"></i>
-                            </div>
-                        </div>
-                        <!--------------------------- Overview-education ------------------------->
-                        <div class="overview-details-div">
-                            <div class="overview-details-left">
-                                <span class="material-icons">school</span>
-                                <div class="overview-description">
-                                    <p id="college">Studied at YCMOU</p>
-                                    <p id="college-year">2011 to 2014</p>
-                                </div>
-                            </div>
-                            <div class="overview-details-right">
-                                <span class="material-icons visibility">public</span>
-                                <i class="bi bi-three-dots edit"></i>
-                            </div>
-                        </div>
-                        <!--------------------------- Overview-current-city ------------------------->
-                        <div class="overview-details-div">
-                            <div class="overview-details-left">
-                                <span class="material-icons">house</span>
-                                <div class="overview-description">
-                                    <p id="current-city">Lives in Karwar</p>
-                                </div>
-                            </div>
-                            <div class="overview-details-right">
-                                <span class="material-icons visibility">public</span>
-                                <i class="bi bi-three-dots edit"></i>
-                            </div>
-                        </div>
-                        <!--------------------------- Overview-permanent-city ------------------------->
-                        <div class="overview-details-div">
-                            <div class="overview-details-left">
-                                <span class="material-icons">place</span>
-                                <div class="overview-description">
-                                    <p id="permanent-city">From Karwar</p>
-                                </div>
-                            </div>
-                            <div class="overview-details-right">
-                                <span class="material-icons visibility">public</span>
-                                <i class="bi bi-three-dots edit"></i>
-                            </div>
-                        </div>
-                        <!--------------------------- Overview-relationship ------------------------->
-                        <div class="overview-details-div">
-                            <div class="overview-details-left">
-                                <span class="material-icons">favorite</span>
-                                <div class="overview-description">
-                                    <p id="relationship">Single</p>
-                                </div>
-                            </div>
-                            <div class="overview-details-right">
-                                <span class="material-icons visibility">public</span>
-                                <i class="bi bi-pencil edit"></i>
-                            </div>
-                        </div>
-                        <!--------------------------- Overview-contact ------------------------->
-                        <div class="overview-details-div">
-                            <div class="overview-details-left">
-                                <span class="material-icons">phone</span>
-                                <div class="overview-description">
-                                    <p id="contact-num">095274 57742</p>
-                                    <p id="mobile">Mobile</p>
-                                </div>
-                            </div>
-                            <div class="overview-details-right">
-                                <span class="material-icons">lock</span>
-                                <i class="bi bi-pencil edit"></i>
-                            </div>
-                        </div>
-                    </div>
+          <!--------------------------------------------- profile-details ----------------------------------------------->
+          <div class="profile-details-container">
+            <!------------------------------------ profile-details-display ------------------------------>
+            <div class="profile-details-display">
+              <div class="profile-details-left-part">
+                <div class="profile-pic">
+                  <img
+                    src=""
+                    id="profile-pic-img"
+                    alt=""
+                  />
+                  <i class="bi bi-camera-fill" id="profile-pic-camera"></i>
                 </div>
-
-                <!----------------------------------------------- Friends-div ------------------------------------------------------------->
-                <div class="friends-div">
-                    <!----------------------------------- Friends-div-header ------------------------------->
-                    <div class="friends-header">
-                        <h3 class="friends-title">Friends</h3>
-                        <div class="friends-header-right">
-                            <p class="friend-requests">Friend requests</p>
-                            <p class="find-friends">Find Friends</p>
-                            <button class="triple-dot-btn"><i class="bi bi-three-dots"></i></button>
-                        </div>
-                    </div>
-                    <!----------------------------------- Friends-div-navBar ------------------------------->
-                    <div class="friends-navBar">
-                        <button id="friends-allFriends-btn">All friends</button>
-                        <button id="friends-recentlyAdded-btn">Recently Added</button>
-                        <button id="friends-birthdays-btn">Birthdays</button>
-                        <button id="friends-work-btn">Work</button>
-                        <button id="friends-college-btn">College</button>
-                        <button id="friends-currentCity-btn">Current city</button>
-                        <button id="friends-hometown-btn">Hometown</button>
-                        <button id="friends-following-btn">Following</button>
-                        <button id="friends-more-btn">More<i class="bi bi-caret-down-fill"></i></button>
-                    </div>
-                    <!----------------------------------- Friends-container ------------------------------->
-                    <div class="friends-details-container">
-                        <div class="friends-details-wrapper">
-                            <div class="friends-details-div">
-                                <div class="friends-details-left">
-                                    <img src="/images/friend-1.jpg" id="friend-1-img" alt="">
-                                    <div class="name-details">
-                                        <p class="friend-name" id="friend-1-name">Rahul Shinde</p>
-                                        <p class="mutual-friends" id="friend-1-mutuals">180 mutual friends</p>
-                                    </div>
-                                </div>
-                                <div class="friends-details-right">
-                                    <i class="bi bi-three-dots"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="friends-details-wrapper">
-                            <div class="friends-details-div">
-                                <div class="friends-details-left">
-                                    <img src="/images/friend-2.jpg" id="friend-2-img" alt="">
-                                    <div class="name-details">
-                                        <p class="friend-name" id="friend-2-name">Nitin Palankar</p>
-                                        <p class="mutual-friends" id="friend-2-mutuals">402 mutual friends</p>
-                                    </div>
-                                </div>
-                                <div class="friends-details-right">
-                                    <i class="bi bi-three-dots"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="friends-details-wrapper">
-                            <div class="friends-details-div">
-                                <div class="friends-details-left">
-                                    <img src="/images/friend-3.jpg" id="friend-3-img" alt="">
-                                    <div class="name-details">
-                                        <p class="friend-name" id="friend-3-name">Sunil Pise</p>
-                                        <p class="mutual-friends" id="friend-3-mutuals">100 mutual friends</p>
-                                    </div>
-                                </div>
-                                <div class="friends-details-right">
-                                    <i class="bi bi-three-dots"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="friends-details-wrapper">
-                            <div class="friends-details-div">
-                                <div class="friends-details-left">
-                                    <img src="/images/friend-4.jpg" id="friend-4-img" alt="">
-                                    <div class="name-details">
-                                        <p class="friend-name" id="friend-4-name">Shivam Kale</p>
-                                        <p class="mutual-friends" id="friend-4-mutuals">12 mutual friends</p>
-                                    </div>
-                                </div>
-                                <div class="friends-details-right">
-                                    <i class="bi bi-three-dots"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="friends-details-wrapper">
-                            <div class="friends-details-div">
-                                <div class="friends-details-left">
-                                    <img src="/images/friend-5.jpg" id="friend-5-img" alt="">
-                                    <div class="name-details">
-                                        <p class="friend-name" id="friend-5-name">Swapnil Jadhav</p>
-                                        <p class="mutual-friends" id="friend-5-mutuals">87 mutual friends</p>
-                                    </div>
-                                </div>
-                                <div class="friends-details-right">
-                                    <i class="bi bi-three-dots"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="friends-details-wrapper">
-                            <div class="friends-details-div">
-                                <div class="friends-details-left">
-                                    <img src="/images/friend-6.jpg" id="friend-6-img" alt="">
-                                    <div class="name-details">
-                                        <p class="friend-name" id="friend-6-name">Aditya Revankar</p>
-                                        <p class="mutual-friends" id="friend-6-mutuals">250 mutual friends</p>
-                                    </div>
-                                </div>
-                                <div class="friends-details-right">
-                                    <i class="bi bi-three-dots"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!------------------------- Friends-div-see-all-btn ------------------------------->
-                    <button class="friends-see-all-btn">See All</button>
+                <div class="profile-name">
+                  <h1 id="profile-name"></h1>
+                  <p id="total-friends"></p>
+                  <div class="small-imgs">
+                    <img
+                      src=""
+                      id="friend-1-small-img"
+                      alt=""
+                    />
+                    <img
+                      src=""
+                      id="friend-2-small-img"
+                      alt=""
+                    />
+                    <img
+                      src=""
+                      id="friend-3-small-img"
+                      alt=""
+                    />
+                    <img
+                      src=""
+                      id="friend-4-small-img"
+                      alt=""
+                    />
+                    <img
+                      src=""
+                      id="friend-5-small-img"
+                      alt=""
+                    />
+                    <img
+                      src=""
+                      id="friend-6-small-img"
+                      alt=""
+                    />
+                  </div>
                 </div>
-
-                <!----------------------------------------------- Photos-div -------------------------------------------------------------->
-                <div class="photos-div">
-                    <!----------------------------------- Photos-div-header ------------------------------->
-                    <div class="photos-header">
-                        <h3 class="photos-title">Photos</h3>
-                        <div class="photos-header-right">
-                            <p class="add-photos-videos">Add photos/video</p>
-                            <button class="triple-dot-btn"><i class="bi bi-three-dots"></i></button>
-                        </div>
-                    </div>
-                    <!----------------------------------- Photos-div-navBar ------------------------------->
-                    <div class="photos-navBar">
-                        <button id="photos-of-you">Photos of You</button>
-                        <button id="your-photos">Your Photos</button>
-                        <button id="albums">Albums</button>
-                        <button id="photos-more-btn">More<i class="bi bi-caret-down-fill"></i></button>
-                    </div>
-                    <!----------------------------------- Photos-div-images-container --------------------->
-                    <div class="photos-images-container">
-                        <div class="image-div">
-                            <img src="/images/photos-of-you-1.jpg" id="photo-1" alt="">
-                            <span class="material-icons photo-edit">mode</span>
-                        </div>
-                        <div class="image-div">
-                            <img src="/images/photos-of-you-2.jpg" id="photo-2" alt="">
-                            <span class="material-icons photo-edit">mode</span>
-                        </div>
-                        <div class="image-div">
-                            <img src="/images/photos-of-you-3.jpg" id="photo-3" alt="">
-                            <span class="material-icons photo-edit">mode</span>
-                        </div>
-                        <div class="image-div">
-                            <img src="/images/photos-of-you-4.jpg" id="photo-4" alt="">
-                            <span class="material-icons photo-edit">mode</span>
-                        </div>
-                        <div class="image-div">
-                            <img src="/images/photos-of-you-5.jpg" id="photo-5" alt="">
-                            <span class="material-icons photo-edit">mode</span>
-                        </div>
-                        <div class="image-div">
-                            <img src="/images/photos-of-you-6.jpg" id="photo-6" alt="">
-                            <span class="material-icons photo-edit">mode</span>
-                        </div>
-                        <div class="image-div">
-                            <img src="/images/photos-of-you-7.jpg" id="photo-7" alt="">
-                            <span class="material-icons photo-edit">mode</span>
-                        </div>
-                        <div class="image-div">
-                            <img src="/images/photos-of-you-8.jpg" id="photo-8" alt="">
-                            <span class="material-icons photo-edit">mode</span>
-                        </div>
-                    </div>
-                    <!----------------------------------- Photos-div-see-all-btn -------------------------->
-                    <button class="photo-see-all-btn">See All</button>
+              </div>
+              <div class="profile-details-right-part">
+                <div class="add-story">
+                  <span class="material-icons">add_circle</span>
+                  <p>Add to story</p>
                 </div>
-
-                <!----------------------------------------------- Videos-div -------------------------------------------------------------->
-                <div class="videos-div">
-                    <div class="videos-header">
-                        <h3 class="videos-title">Videos</h3>
-                    </div>
-                    <div class="videos-navbar">
-                        <button id="your-videos">Your Videos</button>
-                    </div>
-                    <div class="videos-container"></div>
-                    <div class="video-see-all-btn"></div>
+                <div class="edit-profile">
+                  <span class="material-icons">mode</span>
+                  <p>Edit profile</p>
                 </div>
-
-                <!----------------------------------------------- Check-ins-div ----------------------------------------------------------->
-                <div class="check-ins-div">
-                    <!----------------------------------- Check-ins-header -------------------------------->
-                    <div class="check-ins-header">
-                        <h3 class="check-ins-title">Check-ins</h3>
-                        <div class="check-ins-header-right">
-                            <button class="triple-dot-btn"><i class="bi bi-three-dots"></i></button>
-                        </div>
-                    </div>
-                    <!----------------------------------- Check-ins-navBar -------------------------------->
-                    <div class="check-ins-navBar">
-                        <button id="check-ins-recent">Recent</button>
-                    </div>
-                    <!----------------------------------- Check-ins-container -------------------------------->
-                    <div class="check-ins-container">
-                        <div class="check-ins-details-wrapper">
-                            <div class="check-ins-details-div">
-                                <img src="/images/betalbatim.jpg" id="checkIns-1-img" alt="">
-                                <div class="check-ins-details">
-                                    <p class="check-ins-place-name" id="check-ins-1-name">Betalbatim, Goa, India</p>
-                                    <p class="check-ins-place-details" id="check-ins-1-details-1">Majorda</p>
-                                    <p class="check-ins-place-details" id="check-ins-1-details-2">Visited on December 19, 2019</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="check-ins-details-wrapper">
-                            <div class="check-ins-details-div">
-                                <img src="/images/airport-bangkok.jpg" id="checkIns-2-img" alt="">
-                                <div class="check-ins-details">
-                                    <p class="check-ins-place-name" id="check-ins-2-name">Don Mueang Airport Bangkok</p>
-                                    <p class="check-ins-place-details" id="check-ins-2-details-1">Bangkok, Thailand</p>
-                                    <p class="check-ins-place-details" id="check-ins-2-details-2">Visited on November 9, 2019</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="check-ins-details-wrapper">
-                            <div class="check-ins-details-div">
-                                <img src="/images/chennai-airport.jpg" id="checkIns-3-img" alt="">
-                                <div class="check-ins-details">
-                                    <p class="check-ins-place-name" id="check-ins-3-name">Chennai International Airport</p>
-                                    <p class="check-ins-place-details" id="check-ins-3-details-1">Chennai, India</p>
-                                    <p class="check-ins-place-details" id="check-ins-3-details-2">Visited on November 8, 2019</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="check-ins-details-wrapper">
-                            <div class="check-ins-details-div">
-                                <img src="/images/goa-airport.jpg" id="checkIns-4-img" alt="">
-                                <div class="check-ins-details">
-                                    <p class="check-ins-place-name" id="check-ins-4-name">Goa International Airport</p>
-                                    <p class="check-ins-place-details" id="check-ins-4-details-1">Mormugao, Goa</p>
-                                    <p class="check-ins-place-details" id="check-ins-4-details-2">Visited on November 8, 2019</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!----------------------------------------------- Groups-div -------------------------------------------------------------->
-                <div class="groups-div">
-                    <!----------------------------------- Groups-header -------------------------------->
-                    <div class="groups-header">
-                        <h3 class="groups-title">Groups</h3>
-                        <div class="groups-header-right">
-                            <button class="triple-dot-btn"><i class="bi bi-three-dots"></i></button>
-                        </div>
-                    </div>
-                    <!----------------------------------- Groups-navBar -------------------------------->
-                    <div class="groups-navBar">
-                        <button id="groups-public">Public</button>
-                    </div>
-                    <!----------------------------------- Groups-container ----------------------------->
-                    <div class="groups-container">
-                        <div class="groups-details-wrapper">
-                            <div class="groups-details-div">
-                                <img src="/images/group-1.jpg" id="group-1-img" alt="">
-                                <div class="groups-details">
-                                    <p class="group-name" id="group-1-name">Konkani Friends</p>
-                                    <div class="groups-sub-details">
-                                        <span class="material-icons visibility">public</span>
-                                        <span class="group-category" id="group-1-category">Public group |</span>
-                                        <p class="group-members" id="group-1-members">1.9K members</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="groups-details-wrapper">
-                            <div class="groups-details-div">
-                                <img src="/images/group-2.jpg" id="group-2-img" alt="">
-                                <div class="groups-details">
-                                    <p class="group-name" id="group-2-name">Daivadnya Pratibhe</p>
-                                    <div class="groups-sub-details">
-                                        <span class="material-icons visibility">public</span>
-                                        <span class="group-category" id="group-2-category">Public group |</span>
-                                        <p class="group-members" id="group-2-members">797 members</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="groups-details-wrapper">
-                            <div class="groups-details-div">
-                                <img src="/images/group-3.jpg" id="group-3-img" alt="">
-                                <div class="groups-details">
-                                    <p class="group-name" id="group-3-name">Passionpreneurs</p>
-                                    <div class="groups-sub-details">
-                                        <span class="material-icons visibility">public</span>
-                                        <span class="group-category" id="group-3-category">Public group |</span>
-                                        <p class="group-members" id="group-3-members">42.2K members</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="groups-details-wrapper">
-                            <div class="groups-details-div">
-                                <img src="/images/group-4.jpg" id="group-4-img" alt="">
-                                <div class="groups-details">
-                                    <p class="group-name" id="group-4-name">Incredible Karwar</p>
-                                    <div class="groups-sub-details">
-                                        <span class="material-icons visibility">public</span>
-                                        <span class="group-category" id="group-4-category">Public group |</span>
-                                        <p class="group-members" id="group-4-members">4.9K members</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!----------------------------------- Groups-see-all-btn --------------------------->
-                    <button class="groups-see-all-btn">See All</button>
-                </div>
+              </div>
             </div>
-            
 
-        </section>
+            <hr />
 
-        <!----------------------------------------------- Side-fix-button -------------------------------------------------------------->
-        <button class="side-fix-button"><i class="bi bi-pencil-square"></i></button>
-        <!------------------------------------------------------------------------------------------------------------------------------>
+            <!------------------------------------ profile-details-navBar ---------------------------------->
+            <div class="profile-details-navBar">
+              <div class="navBar-left-part">
+                <button id="profile-posts-btn">Posts</button>
+                <button id="profile-about-btn">About</button>
+                <button id="profile-friends-btn">Friends</button>
+                <button id="profile-photos-btn">Photos</button>
+                <button id="profile-videos-btn">Videos</button>
+                <button id="profile-check-ins-btn">Check-ins</button>
+                <button id="profile-more-btn">
+                  More<i class="bi bi-caret-down-fill"></i>
+                </button>
+              </div>
+              <div class="navBar-right-part">
+                <button class="triple-dot-btn">
+                  <i class="bi bi-three-dots"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!----------------------------------------------------------- Section-2 ----------------------------------------------------------------->
+
+      <section class="section-2">
+        <!----------------------------------------------- Divs-container --------------------------------------------------------------->
+        <div class="divs-container">
+          <!----------------------------------------------- About-div --------------------------------------------------------------->
+          <div class="about-div">
+            <!----------------------------------------------- About-div-left-part --------------------------------------------->
+            <div class="about-left-part">
+              <h3 class="about-title">About</h3>
+              <p class="about-overview" id="about-overview">Overview</p>
+              <p class="about-work-Edu">Work and education</p>
+              <p class="about-places-lived">Places lived</p>
+              <p class="about-contact-info">Contact and basic info</p>
+              <p class="about-fam-relation">Family and relationships</p>
+              <p class="about-details-you">Details about you</p>
+              <p class="about-life-events">Life events</p>
+            </div>
+            <!----------------------------------------------- About-div-right-part --------------------------------------------->
+            <div class="about-right-part">
+              <!--------------------------- Overview-work ------------------------->
+              <div class="overview-details-div">
+                <div class="overview-details-left">
+                  <span class="material-icons">business_center</span>
+                  <div class="overview-description">
+                    <p id="work-place"></p>
+                    <p id="work-year"></p>
+                  </div>
+                </div>
+                <div class="overview-details-right">
+                  <span class="material-icons visibility">people</span>
+                  <i class="bi bi-three-dots edit"></i>
+                </div>
+              </div>
+              <!--------------------------- Overview-education ------------------------->
+              <div class="overview-details-div">
+                <div class="overview-details-left">
+                  <span class="material-icons">school</span>
+                  <div class="overview-description">
+                    <p id="college"></p>
+                    <p id="college-year"></p>
+                  </div>
+                </div>
+                <div class="overview-details-right">
+                  <span class="material-icons visibility">public</span>
+                  <i class="bi bi-three-dots edit"></i>
+                </div>
+              </div>
+              <!--------------------------- Overview-current-city ------------------------->
+              <div class="overview-details-div">
+                <div class="overview-details-left">
+                  <span class="material-icons">house</span>
+                  <div class="overview-description">
+                    <p id="current-city"></p>
+                  </div>
+                </div>
+                <div class="overview-details-right">
+                  <span class="material-icons visibility">public</span>
+                  <i class="bi bi-three-dots edit"></i>
+                </div>
+              </div>
+              <!--------------------------- Overview-permanent-city ------------------------->
+              <div class="overview-details-div">
+                <div class="overview-details-left">
+                  <span class="material-icons">place</span>
+                  <div class="overview-description">
+                    <p id="permanent-city"></p>
+                  </div>
+                </div>
+                <div class="overview-details-right">
+                  <span class="material-icons visibility">public</span>
+                  <i class="bi bi-three-dots edit"></i>
+                </div>
+              </div>
+              <!--------------------------- Overview-relationship ------------------------->
+              <div class="overview-details-div">
+                <div class="overview-details-left">
+                  <span class="material-icons">favorite</span>
+                  <div class="overview-description">
+                    <p id="relationship"></p>
+                  </div>
+                </div>
+                <div class="overview-details-right">
+                  <span class="material-icons visibility">public</span>
+                  <i class="bi bi-pencil edit"></i>
+                </div>
+              </div>
+              <!--------------------------- Overview-contact ------------------------->
+              <div class="overview-details-div">
+                <div class="overview-details-left">
+                  <span class="material-icons">phone</span>
+                  <div class="overview-description">
+                    <p id="contact-num"></p>
+                    <p id="mobile">Mobile</p>
+                  </div>
+                </div>
+                <div class="overview-details-right">
+                  <span class="material-icons">lock</span>
+                  <i class="bi bi-pencil edit"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!----------------------------------------------- Friends-div ------------------------------------------------------------->
+          <div class="friends-div">
+            <!----------------------------------- Friends-div-header ------------------------------->
+            <div class="friends-header">
+              <h3 class="friends-title">Friends</h3>
+              <div class="friends-header-right">
+                <p class="friend-requests">Friend requests</p>
+                <p class="find-friends">Find Friends</p>
+                <button class="triple-dot-btn">
+                  <i class="bi bi-three-dots"></i>
+                </button>
+              </div>
+            </div>
+            <!----------------------------------- Friends-div-navBar ------------------------------->
+            <div class="friends-navBar">
+              <button id="friends-allFriends-btn">All friends</button>
+              <button id="friends-recentlyAdded-btn">Recently Added</button>
+              <button id="friends-birthdays-btn">Birthdays</button>
+              <button id="friends-work-btn">Work</button>
+              <button id="friends-college-btn">College</button>
+              <button id="friends-currentCity-btn">Current city</button>
+              <button id="friends-hometown-btn">Hometown</button>
+              <button id="friends-following-btn">Following</button>
+              <button id="friends-more-btn">
+                More<i class="bi bi-caret-down-fill"></i>
+              </button>
+            </div>
+            <!----------------------------------- Friends-container ------------------------------->
+            <div class="friends-details-container">
+              <div class="friends-details-wrapper">
+                <div class="friends-details-div">
+                  <div class="friends-details-left">
+                    <img src="" id="friend-1-img" alt="" />
+                    <div class="name-details">
+                      <p class="friend-name" id="friend-1-name"></p>
+                      <p class="mutual-friends" id="friend-1-mutuals">
+                        
+                      </p>
+                    </div>
+                  </div>
+                  <div class="friends-details-right">
+                    <i class="bi bi-three-dots"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="friends-details-wrapper">
+                <div class="friends-details-div">
+                  <div class="friends-details-left">
+                    <img src="" id="friend-2-img" alt="" />
+                    <div class="name-details">
+                      <p class="friend-name" id="friend-2-name">
+                        
+                      </p>
+                      <p class="mutual-friends" id="friend-2-mutuals">
+                        
+                      </p>
+                    </div>
+                  </div>
+                  <div class="friends-details-right">
+                    <i class="bi bi-three-dots"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="friends-details-wrapper">
+                <div class="friends-details-div">
+                  <div class="friends-details-left">
+                    <img src="" id="friend-3-img" alt="" />
+                    <div class="name-details">
+                      <p class="friend-name" id="friend-3-name"></p>
+                      <p class="mutual-friends" id="friend-3-mutuals">
+                        
+                      </p>
+                    </div>
+                  </div>
+                  <div class="friends-details-right">
+                    <i class="bi bi-three-dots"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="friends-details-wrapper">
+                <div class="friends-details-div">
+                  <div class="friends-details-left">
+                    <img src="" id="friend-4-img" alt="" />
+                    <div class="name-details">
+                      <p class="friend-name" id="friend-4-name"></p>
+                      <p class="mutual-friends" id="friend-4-mutuals">
+                        
+                      </p>
+                    </div>
+                  </div>
+                  <div class="friends-details-right">
+                    <i class="bi bi-three-dots"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="friends-details-wrapper">
+                <div class="friends-details-div">
+                  <div class="friends-details-left">
+                    <img src="" id="friend-5-img" alt="" />
+                    <div class="name-details">
+                      <p class="friend-name" id="friend-5-name">
+                        
+                      </p>
+                      <p class="mutual-friends" id="friend-5-mutuals">
+                        
+                      </p>
+                    </div>
+                  </div>
+                  <div class="friends-details-right">
+                    <i class="bi bi-three-dots"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="friends-details-wrapper">
+                <div class="friends-details-div">
+                  <div class="friends-details-left">
+                    <img src="" id="friend-6-img" alt="" />
+                    <div class="name-details">
+                      <p class="friend-name" id="friend-6-name">
+                        
+                      </p>
+                      <p class="mutual-friends" id="friend-6-mutuals">
+                        
+                      </p>
+                    </div>
+                  </div>
+                  <div class="friends-details-right">
+                    <i class="bi bi-three-dots"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!------------------------- Friends-div-see-all-btn ------------------------------->
+            <button class="friends-see-all-btn">See All</button>
+          </div>
+
+          <!----------------------------------------------- Photos-div -------------------------------------------------------------->
+          <div class="photos-div">
+            <!----------------------------------- Photos-div-header ------------------------------->
+            <div class="photos-header">
+              <h3 class="photos-title">Photos</h3>
+              <div class="photos-header-right">
+                <p class="add-photos-videos">Add photos/video</p>
+                <button class="triple-dot-btn">
+                  <i class="bi bi-three-dots"></i>
+                </button>
+              </div>
+            </div>
+            <!----------------------------------- Photos-div-navBar ------------------------------->
+            <div class="photos-navBar">
+              <button id="photos-of-you">Photos of You</button>
+              <button id="your-photos">Your Photos</button>
+              <button id="albums">Albums</button>
+              <button id="photos-more-btn">
+                More<i class="bi bi-caret-down-fill"></i>
+              </button>
+            </div>
+            <!----------------------------------- Photos-div-images-container --------------------->
+            <div class="photos-images-container">
+              <div class="image-div">
+                <img src="" id="photo-1" alt="" />
+                <span class="material-icons photo-edit">mode</span>
+              </div>
+              <div class="image-div">
+                <img src="" id="photo-2" alt="" />
+                <span class="material-icons photo-edit">mode</span>
+              </div>
+              <div class="image-div">
+                <img src="" id="photo-3" alt="" />
+                <span class="material-icons photo-edit">mode</span>
+              </div>
+              <div class="image-div">
+                <img src="" id="photo-4" alt="" />
+                <span class="material-icons photo-edit">mode</span>
+              </div>
+              <div class="image-div">
+                <img src="" id="photo-5" alt="" />
+                <span class="material-icons photo-edit">mode</span>
+              </div>
+              <div class="image-div">
+                <img src="" id="photo-6" alt="" />
+                <span class="material-icons photo-edit">mode</span>
+              </div>
+              <div class="image-div">
+                <img src="" id="photo-7" alt="" />
+                <span class="material-icons photo-edit">mode</span>
+              </div>
+              <div class="image-div">
+                <img src="" id="photo-8" alt="" />
+                <span class="material-icons photo-edit">mode</span>
+              </div>
+            </div>
+            <!----------------------------------- Photos-div-see-all-btn -------------------------->
+            <button class="photo-see-all-btn">See All</button>
+          </div>
+
+          <!----------------------------------------------- Videos-div -------------------------------------------------------------->
+          <div class="videos-div">
+            <div class="videos-header">
+              <h3 class="videos-title">Videos</h3>
+            </div>
+            <div class="videos-navbar">
+              <button id="your-videos">Your Videos</button>
+            </div>
+            <div class="videos-container"></div>
+            <div class="video-see-all-btn"></div>
+          </div>
+
+          <!----------------------------------------------- Check-ins-div ----------------------------------------------------------->
+          <div class="check-ins-div">
+            <!----------------------------------- Check-ins-header -------------------------------->
+            <div class="check-ins-header">
+              <h3 class="check-ins-title">Check-ins</h3>
+              <div class="check-ins-header-right">
+                <button class="triple-dot-btn">
+                  <i class="bi bi-three-dots"></i>
+                </button>
+              </div>
+            </div>
+            <!----------------------------------- Check-ins-navBar -------------------------------->
+            <div class="check-ins-navBar">
+              <button id="check-ins-recent">Recent</button>
+            </div>
+            <!----------------------------------- Check-ins-container -------------------------------->
+            <div class="check-ins-container">
+              <div class="check-ins-details-wrapper">
+                <div class="check-ins-details-div">
+                  <img
+                    src=""
+                    id="checkIns-1-img"
+                    alt=""
+                  />
+                  <div class="check-ins-details">
+                    <p class="check-ins-place-name" id="check-ins-1-name">
+                      
+                    </p>
+                    <p
+                      class="check-ins-place-details"
+                      id="check-ins-1-details-1"
+                    >
+                      
+                    </p>
+                    <p
+                      class="check-ins-place-details"
+                      id="check-ins-1-details-2"
+                    >
+                      
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="check-ins-details-wrapper">
+                <div class="check-ins-details-div">
+                  <img
+                    src=""
+                    id="checkIns-2-img"
+                    alt=""
+                  />
+                  <div class="check-ins-details">
+                    <p class="check-ins-place-name" id="check-ins-2-name">
+                      
+                    </p>
+                    <p
+                      class="check-ins-place-details"
+                      id="check-ins-2-details-1"
+                    >
+                      
+                    </p>
+                    <p
+                      class="check-ins-place-details"
+                      id="check-ins-2-details-2"
+                    >
+                      
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="check-ins-details-wrapper">
+                <div class="check-ins-details-div">
+                  <img
+                    src=""
+                    id="checkIns-3-img"
+                    alt=""
+                  />
+                  <div class="check-ins-details">
+                    <p class="check-ins-place-name" id="check-ins-3-name">
+                      
+                    </p>
+                    <p
+                      class="check-ins-place-details"
+                      id="check-ins-3-details-1"
+                    >
+                      
+                    </p>
+                    <p
+                      class="check-ins-place-details"
+                      id="check-ins-3-details-2"
+                    >
+                      
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="check-ins-details-wrapper">
+                <div class="check-ins-details-div">
+                  <img
+                    src=""
+                    id="checkIns-4-img"
+                    alt=""
+                  />
+                  <div class="check-ins-details">
+                    <p class="check-ins-place-name" id="check-ins-4-name">
+                      
+                    </p>
+                    <p
+                      class="check-ins-place-details"
+                      id="check-ins-4-details-1"
+                    >
+                      
+                    </p>
+                    <p
+                      class="check-ins-place-details"
+                      id="check-ins-4-details-2"
+                    >
+                      
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!----------------------------------------------- Groups-div -------------------------------------------------------------->
+          <div class="groups-div">
+            <!----------------------------------- Groups-header -------------------------------->
+            <div class="groups-header">
+              <h3 class="groups-title">Groups</h3>
+              <div class="groups-header-right">
+                <button class="triple-dot-btn">
+                  <i class="bi bi-three-dots"></i>
+                </button>
+              </div>
+            </div>
+            <!----------------------------------- Groups-navBar -------------------------------->
+            <div class="groups-navBar">
+              <button id="groups-public">Public</button>
+            </div>
+            <!----------------------------------- Groups-container ----------------------------->
+            <div class="groups-container">
+              <div class="groups-details-wrapper">
+                <div class="groups-details-div">
+                  <img src="" id="group-1-img" alt="" />
+                  <div class="groups-details">
+                    <p class="group-name" id="group-1-name"></p>
+                    <div class="groups-sub-details">
+                      <span class="material-icons visibility" id="group-1-category-icon"></span>
+                      <span class="group-category" id="group-1-category"
+                        ></span
+                      >
+                      <p class="group-members" id="group-1-members">
+                        
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="groups-details-wrapper">
+                <div class="groups-details-div">
+                  <img src="" id="group-2-img" alt="" />
+                  <div class="groups-details">
+                    <p class="group-name" id="group-2-name">
+                      
+                    </p>
+                    <div class="groups-sub-details">
+                      <span class="material-icons visibility" id="group-2-category-icon"></span>
+                      <span class="group-category" id="group-2-category"
+                        ></span
+                      >
+                      <p class="group-members" id="group-2-members">
+                        
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="groups-details-wrapper">
+                <div class="groups-details-div">
+                  <img src="" id="group-3-img" alt="" />
+                  <div class="groups-details">
+                    <p class="group-name" id="group-3-name"></p>
+                    <div class="groups-sub-details">
+                      <span class="material-icons visibility" id="group-3-category-icon"></span>
+                      <span class="group-category" id="group-3-category"
+                        ></span
+                      >
+                      <p class="group-members" id="group-3-members">
+                        
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="groups-details-wrapper">
+                <div class="groups-details-div">
+                  <img src="" id="group-4-img" alt="" />
+                  <div class="groups-details">
+                    <p class="group-name" id="group-4-name">
+                      
+                    </p>
+                    <div class="groups-sub-details">
+                      <span class="material-icons visibility" id="group-4-category-icon"></span>
+                      <span class="group-category" id="group-4-category"
+                        ></span
+                      >
+                      <p class="group-members" id="group-4-members">
+                        
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!----------------------------------- Groups-see-all-btn --------------------------->
+            <button class="groups-see-all-btn">See All</button>
+          </div>
+        </div>
+      </section>
+
+      <!----------------------------------------------- Side-fix-button -------------------------------------------------------------->
+      <button class="side-fix-button">
+        <i class="bi bi-pencil-square"></i>
+      </button>
+
+      <div class="create_new_group shadow" id="create_new_group">
+        <span class="flex">New message <i class="fa-solid fa-xmark hover bg" id="New_message"></i></span>
+        <p>To : <input type="text"></p>
+        <hr>
+        <span class="blue hover">Suggested</span>
+      </div>
+
+
+      <!------------------------------------------------------------------------------------------------------------------------------>
     </main>
+
+  <!----------------------------------------------- Pop-Up-divs ----------------------------------------------------------------------------->
+  <div class="popUp-divs-container"> 
+    <!----------------------------------------------- Update-Cover-Photo-PopUp ----------------------------------------------------->
+    <div class="update-cover-photo-div">
+      <div class="update-cover-photo-header">
+        <h2 class="update-cover-photo-title">Update Cover Photo</h2>
+      </div>
+      <div class="update-cover-photo-body">
+        <div class="update-cover-photo-body-top">
+          <label for="">Enter Image URL:</label>
+          <input type="text" id="update-cover-photo-url-input" />
+        </div>
+        <div class="update-cover-photo-body-bottom">
+          <button id="cover-photo-upload-btn">Upload</button>
+          <button id="cover-photo-cancel-btn">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <!----------------------------------------------- Update-Profile-Picture-PopUp ----------------------------------------------->
+    <div class="update-profile-pic-div">
+      <div class="update-profile-header">
+        <h2 class="update-profile-title">Update Profile Picture</h2>
+      </div>
+      <div class="update-profile-body">
+        <div class="update-profile-body-top">
+          <label for="">Enter Image URL:</label>
+          <input type="text" id="update-profile-url-input" />
+        </div>
+        <div class="update-profile-body-bottom">
+          <button id="profile-pic-upload-btn">Upload</button>
+          <button id="profile-pic-cancel-btn">Cancel</button>
+        </div>
+      </div>
+    </div>
+  
+  </div>
     
 
 
 
-    <!----------------------------------------------- Pop-Up-divs ----------------------------------------------------------------------------->
+  
+    <!-- -------------dialogue boxes---------------- -->
 
-    <!----------------------------------------------- Update-Cover-Photo-PopUp ----------------------------------------------------->
-    <div class="update-cover-photo-div">
-        <div class="update-cover-photo-header">
-            <h2 class="update-cover-photo-title">Update Cover Photo</h2>
+
+    <div class="prfile_dialogue_box shadow">
+      <div class="profile dp shadow">
+        <div class="inner hover">
+          <img  class="userimage"src="/images/profile2.png" alt="profile" width="50px" />
+          <p class="user-name">Varsha Rajput</p>
         </div>
-        <div class="update-cover-photo-body">
-            <div class="update-cover-photo-body-top">
-                <label for="">Enter Image URL:</label>
-                <input type="text" id="update-cover-photo-url-input">
-            </div>
-            <div class="update-cover-photo-body-bottom">
-                <button id="cover-photo-upload-btn">Upload</button>
-                <button id="cover-photo-cancel-btn">Cancel</button>
-            </div>
-        </div>
+        <hr />
+        <span class="hover">See all profiles</span>
+      </div>
+      <div class="items">
+        <p class="hover">
+          <i class="fa-solid fa-gear"></i>Settings & privacy<i
+            class="fa-solid fa-chevron-right"
+          ></i>
+        </p>
+        <p class="hover">
+          <i class="fa-solid fa-circle-question"></i>Help & support<i
+            class="fa-solid fa-chevron-right"
+          ></i>
+        </p>
+        <p class="hover">
+          <i class="fa-solid fa-moon"></i>Display & accessibility<i
+            class="fa-solid fa-chevron-right"
+          ></i>
+        </p>
+        <p class="hover">
+          <i class="fa-solid fa-circle-exclamation"></i>Give feedback
+        </p>
+        <p class="hover" id="logout">
+          <i class="fa-solid fa-right-from-bracket"></i>Log out
+        </p>
+      </div>
+      <div class="bottom">
+        <span>privacy · Terms · Advertising · Ad choices · Cookies · </span>
+        <span> More· Meta © 2022</span>
+      </div>
     </div>
 
-    <!----------------------------------------------- Update-Profile-Picture-PopUp ----------------------------------------------------->
-    <div class="update-profile-pic-div">
-        <div class="update-profile-header">
-            <h2 class="update-profile-title">Update Profile Picture</h2>
-        </div>
-        <div class="update-profile-body">
-            <div class="update-profile-body-top">
-                <label for="">Enter Image URL:</label>
-                <input type="text" id="update-profile-url-input">
-            </div>
-            <div class="update-profile-body-bottom">
-                <button id="profile-pic-upload-btn">Upload</button>
-                <button id="profile-pic-cancel-btn">Cancel</button>
-            </div>
-        </div>
+    <!--------Notifiction dialogue----->
+
+    <div class="notification shadow">
+      <h2 class="flex">
+        Notifications<i class="fa-solid fa-ellipsis hover"></i>
+      </h2>
+
+      <div class="unread flex padding">
+        <p class="hover para">All</p>
+        <p class="hover para">Unread</p>
+        <p class="hover para">Priority</p>
+      </div>
+      <div class="Earlier flex padding">
+        <span>Earlier</span>
+        <p class="para blue hover">See all</p>
+      </div>
+      <div class="profile2 flex">
+        <img src="/images/profile2.png" alt="profile" class="image hover" />
+        <i class="fa-solid fa-bell bell_icon bg hover"></i>
+        <p>
+          You've turned on SMS updates (charges may apply). you can opt out in
+          your notifiaction seetings.
+        </p>
+      </div>
     </div>
 
-    <!-- <input type="email" id="email-input">
-    <button id="login-btn">Login</button> -->
-    <script src="/scripts/userName.js"></script>
-</body>
+    <!-----------------messenger dialogue box-------------------->
+
+    <div class="messenger shadow">
+      <div class="top flex padding">
+        <h2>Chats</h2>
+        <div class="">
+          <i class="fa-solid fa-ellipsis hover"></i>
+          <i class="fa-solid fa-arrows-to-dot hover"></i>
+          <i class="fa-solid fa-video hover"></i>
+          <i class="fa-solid fa-pen-to-square hover"></i>
+        </div>
+      </div>
+      <div class="search_input flex bg">
+        <i class="fa-solid fa-magnifying-glass hover search_icon"></i>
+
+        <input type="text" placeholder="Search Facebook" />
+      </div>
+      <p class="padding">No messages found.</p>
+      <hr />
+      <span class="blue">See all in Messenger</span>
+    </div>
+
+    <!-- ---------------plus dialogue box for mobile view------------------ -->
+
+    <div class="plus_items shadow">
+      <h2>Create</h2>
+      <div class="box hover">
+        <i class="fa-solid fa-pen-to-square"></i>
+        <div class="text">
+          <p>Post</p>
+          <span>Share a post on News Feed.</span>
+        </div>
+      </div>
+      <div class="box hover">
+        <i class="fa-solid fa-book-open"></i>
+        <div class="text">
+          <p>Story</p>
+          <span>Share a post or write something.</span>
+        </div>
+      </div>
+      <div class="box hover">
+        <img src="/images/reels2.png" alt="reels" width="20px" />
+        <div class="text">
+          <p>Reel</p>
+          <span>Share a Reel.</span>
+        </div>
+      </div>
+      <div class="box hover">
+        <i class="fa-solid fa-video"></i>
+        <div class="text">
+          <p>Room</p>
+          <span
+            >Video chat with anyone, on or off Facebook without timw
+            limits.</span
+          >
+        </div>
+      </div>
+      <hr />
+      <div class="box hover">
+        <i class="fa-solid fa-flag"></i>
+        <div class="text">
+          <p>Page</p>
+          <span>Connect and share with customers on fans</span>
+        </div>
+      </div>
+      <div class="box hover">
+        <i class="fa-solid fa-bullhorn"></i>
+        <div class="text">
+          <p>Ad</p>
+          <span>Advertise your business, brand or organisation.</span>
+        </div>
+      </div>
+      <div class="box hover">
+        <i class="fa-solid fa-users"></i>
+        <div class="text">
+          <p>Group</p>
+          <span>Connect with people who share your interests.</span>
+        </div>
+      </div>
+      <div class="box hover">
+        <i class="fa-regular fa-calendar-plus"></i>
+        <div class="text">
+          <p>Events</p>
+          <span>Bring people together wuth a public or private events.</span>
+        </div>
+      </div>
+      <div class="box hover">
+        <i class="fa-solid fa-store"></i>
+        <div class="text">
+          <p>Marketplace Listing</p>
+          <span>Sell items to people in your community.</span>
+        </div>
+      </div>
+    </div>
+    
+    <!---------------------------------end of dialogue boxes-------------------------------------->
+  </body>
 </html>

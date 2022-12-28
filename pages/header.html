@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Facebook</title>
-    <link rel="stylesheet" href="/styles/header.css" />
     <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/header.css"/>
     <!-- <link rel="stylesheet" href="/styles/profile.css" /> -->
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="   crossorigin="anonymous"
       referrerpolicy="no-referrer"/>
     <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
   </head>
-  <body>
+  <body id="body">
     <header class="shadow">
       <nav>
-        <div class="container flex" id="container">
+        <div class="flex" id="container">
           <!-----------------------------------------------------left nav--------------------------------------------------------->
           <div class="left_of_nav flex">
             <img src="/images/fb.png" alt="Facebook logo" id="fb_logo"/>
@@ -29,11 +29,11 @@
           </div>
           <!---------------------------------------------------end of left nav----------------------------------------------------------->
           <div class="mid_of_nav flex">
-            <div class="mid hover display_none">
+            <div id="home" class="mid hover display_none">
               <i class="fa-solid fa-house-chimney home_icon"></i>
             </div>
 
-            <div class="mid hover display_none">
+            <div id="friend" class="mid hover display_none">
               <i class="fa-solid fa-user-group user_icon"></i>
             </div>
 
@@ -61,8 +61,8 @@
               id="notifications"
             ></i>
 
-            <div class="profile" id="profile">
-              <img src="/images/profile2.png" alt="user" class="hover" />
+            <div class="profile dummyBox" id="profile">
+              <img  class="userimage"src="/images/profile2.png" alt="user" class="hover" />
             </div>
             <i class="fa-solid fa-bars hover" id="bars"></i>
           </div>
@@ -74,19 +74,19 @@
 
     <!------------------------------------------aside bar---------------------------------->
     <div class="outer_container" id="outer_container">
-      <div class="aside_container display_none display_none_forTab">
+      <div class="aside_container display_none">
         <aside>
           <div class="profile aside_items hover" id="profile_page">
             <img
               src="/images/profile2.png"
               alt="profile"
               width="50px"
-              class="list_profile side_profile shadow"
+              class="list_profile side_profile shadow userimage"
             />
             <p class="user-name">Varsha Rajput</p>
           </div>
 
-          <div class="aside_items hover">
+          <div id="find-friend"class="aside_items hover">
             <img
               src="/images/find_friends.png"
               alt="find friends"
@@ -255,7 +255,7 @@
       <div class="prfile_dialogue_box shadow">
         <div class="profile dp shadow">
           <div class="inner hover">
-            <img src="/images/profile2.png" alt="profile" width="50px" />
+            <img class="userimage" src="/images/profile2.png" alt="profile" width="50px" />
             <p class="user-name">Varsha Rajput</p>
           </div>
           <hr />
@@ -425,5 +425,7 @@
     <script src="/scripts/sidebar.js"></script>
      <script src="/scripts/index.js"></script>
     <script src="/scripts/userName.js"></script>
+    
+
   </body>
 </html>
