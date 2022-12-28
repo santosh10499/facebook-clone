@@ -157,16 +157,17 @@ async function api() {
 
   for (let j = 0; j < likebtn.length; j++) {
     likebtn[j].addEventListener("click", () => {
+      
       if (likebtn[j].style.color != "blue"){
         likeCount[j].innerHTML = `<span style="margin-left:-20px" class="pointer like-count" id="like-count">
-        ${Number(data[j].like) + 1} Likes</span>`;
+        ${Number(data[data.length-1-j].like) + 1} Likes</span>`;
 
         likebtn[j].style.color = "blue";
         icon[j].style.color = "blue";
       }
       else {
         likeCount[j].innerHTML = `<span style="margin-left:-20px" class="pointer like-count" id="like-count">
-        ${Number(data[j].like)} Likes</span>`;
+        ${Number(data[data.length-1-j].like)} Likes</span>`;
 
         likebtn[j].style.color = "black";
         icon[j].style.color = "black";
