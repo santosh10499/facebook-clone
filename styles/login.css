@@ -130,13 +130,14 @@
     text-decoration: underline;
   }
 
-  .dummy_credentials{
+  .dummy_credentials{ 
     background: #ffffff;
     width: 15%;
     margin-top: -10%;
     font-size: 0.8rem;
     padding: 1em 2em;
    margin-left: 63%;
+   display: none;
   }
 
 
