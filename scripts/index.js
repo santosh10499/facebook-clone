@@ -2,19 +2,21 @@ const dummy_post = document.querySelector(".dummy_posts");
 async function api() {
   let data1 = await fetch(
     "https://fbbackendposts-production-5f33.up.railway.app/fb/getAllposts",{
-      method:"POST"
+      method: "POST"
     }
   );
   let data = await data1.json();
 
   for (let i = 0; i < data.length; i++) {
-    dummy_post.innerHTML += `<div class="dummy_post">
+    let date = new Date(data[i].time);
+
+    dummy_post.innerHTML = `<div class="dummy_post">
       <div class="top">
         <img src="${data[i].userImage}" alt="" class="profile bg_img hover" width="45px" />
         <div class="name">
           <p class="pointer">${data[i].userNamePost}</p>
           <span class="pointer"
-            >${data[i].time}.<i class="fa-solid fa-earth-americas"></i
+            >${date.toDateString()}.<i class="fa-solid fa-earth-americas"></i
           ></span>
         </div>
 
@@ -23,6 +25,7 @@ async function api() {
          
         </div>
       </div>
+      <p id="post-caption">${data[i].caption}</p>
       <div class="image">
         <img src="${data[i].postImage}" alt="post" />
       </div>
@@ -71,7 +74,7 @@ async function api() {
           </div>
           </div>
        
-`;
+`+ dummy_post.innerHTML;
     // dummy_post.insertAdjacentHTML("afterbegin", post)
   }
   // ===================================add comment
