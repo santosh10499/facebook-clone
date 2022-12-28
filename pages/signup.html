@@ -6,27 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Facebook</title>
     <link rel="stylesheet" href="/styles/signup.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!--Facebook Signup from start-->
     <div class="main">
       <div id="container">
-        <i class="fa fa-close"  id="cross"style="float:right;padding:10px"></i>
+        <i
+          class="fa fa-close"
+          id="cross"
+          style="float: right; padding: 10px"
+        ></i>
         <h2 class="first_title">Sign Up</h2>
         <p class="first_sub_title" id="sub_title">It's quick and easy.</p>
         <hr />
         <!--Input section start-->
         <div class="input">
-          <input type="text" placeholder="First Name"  class="all"id="firstName">
-          <input type="text" placeholder="Sur Name" class="all"id="lastname">
+          <input
+            type="text"
+            placeholder="First Name"
+            class="all"
+            id="firstName"
+          />
+          <input type="text" placeholder="Surname" class="all" id="lastname" />
           <br />
-          <input type="email" placeholder="Enter email address" class="all1" id="email">
+          <input
+            type="email"
+            placeholder="Enter email address"
+            class="all1"
+            id="email"
+          />
           <br />
-          <input type="email" placeholder="Confirm email" class="all1" id="confirm-email">
+          <input
+            type="email"
+            placeholder="Confirm email"
+            class="all1"
+            id="confirm-email"
+          />
           <br />
-          <input type="password" placeholder="New password" class="all1" id="password">
+          <input
+            type="password"
+            placeholder="New password"
+            class="all1"
+            id="password"
+          />
           <br />
         </div>
         <!--Input section end-->
@@ -64,7 +94,6 @@
           <option>29</option>
           <option>30</option>
           <option>31</option>
-
         </select>
         <select>
           <option>Jan</option>
@@ -105,36 +134,43 @@
           <option>2001</option>
           <option>2000</option>
           <option>1999</option>
-          
+          <option>1998</option>
+          <option>1997</option>
+          <option>1996</option>
+          <option>1995</option>
         </select>
         <!--Date of Birth section end-->
         <br />
         <!--Gender section start-->
         <p class="sub_title_3" id="sub_title">Gender</p>
-        <div class="female" id="all_gender">
-          <label for="female">Female </label>
-          <input type="radio" name="gender" value="female" class="gender"/>
-        </div>
-        <div class="male" id="all_gender">
-          <label for="male">Male</label>
-          <input type="radio" name="gender" value="male"  class="gender"/>
-        </div>
-        <div class="other" id="all_gender">
-          <label for="other">Custom</label>
-          <input type="radio" name="gender" value="other" class="gender" />
+        <div class="gender_section">
+          <div class="female" id="all_gender">
+            <label for="female">Female </label>
+            <input type="radio" name="gender" value="female" class="gender" />
+          </div>
+          <div class="male" id="all_gender">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="male" class="gender" />
+          </div>
+          <div class="other" id="all_gender">
+            <label for="other">Custom</label>
+            <input type="radio" name="gender" value="other" class="gender" />
+          </div>
         </div>
         <!--Gender section end-->
         <br />
         <p class="sub_title_4">
-          By clicking Sign Up, you agree to our <a href="#"> Terms, Data Policy</a> and
+          By clicking Sign Up, you agree to our
+          <a href="#"> Terms, Data Policy</a> and
           <a href="">Cookie</a>
-          Policy. You may receive SMS notifications from us and can opt out at any time.
+          Policy. You may receive SMS notifications from us and can opt out at
+          any time.
         </p>
         <!-- <input type="submit" value="Signup" class="submit" id="sign"> -->
-        <button id="sign"class="submit">Signup</button>
+        <button id="sign" class="submit">Signup</button>
+      </div>
     </div>
-    </div>
-    
+
     <script src="/scripts/signup.js"></script>
   </body>
 </html>
