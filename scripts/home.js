@@ -270,13 +270,13 @@ let users = [
   }
 ];
 
-let userName;
+let userNamePost;
 let userImage;
 
 users.forEach((user) => {
 
   if (user.email == emailId){
-    userName = user.name;
+    userNamePost = user.name;
     userImage = user.profilePic;
   }
 
@@ -297,7 +297,7 @@ createPostBtn.addEventListener("click", () => {
       <div class="top">
         <img src="${userImage}" alt="" class="profile bg_img hover" width="45px" />
         <div class="name">
-          <p class="pointer">${userName}</p>
+          <p class="pointer">${userNamePost}</p>
           <span class="pointer"
             >${new Date().toDateString()}.<i class="fa-solid fa-earth-americas"></i
           ></span>
@@ -364,7 +364,7 @@ createPostBtn.addEventListener("click", async () => {
 
   const postData = {
     userImage,
-    userName,
+    userNamePost,
     time: new Date(),
     caption: createPostTextInput.value,
     postImage: createPostUrlInput.value,

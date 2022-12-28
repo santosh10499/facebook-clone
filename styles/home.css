@@ -80,6 +80,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
+}
+
+.Create_my_story:hover {
+  background: rgb(248, 239, 239);
+  opacity: 0.9;
 }
 
 .Create_my_story i {
@@ -103,7 +109,6 @@
   object-fit: cover;
   border-top-left-radius: 0.5em;
   border-top-right-radius: 0.5em;
- 
 }
 
 .container .img {
@@ -283,19 +288,17 @@
   padding: 1em;
   display: none;
 }
-.comment-person
-{
-
-  margin-left:3%;
-  
+.comment-person {
+  margin-left: 3%;
 }
-.commenti{
-
-  border-radius: 40px;
+.commenti {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
 }
-.comment_text{
-  margin-left:5%;
-  
+.comment_text {
+  margin-left: 5%;
   text-align: center;
 }
 
@@ -313,6 +316,7 @@
   box-shadow: 0 0 2px gray;
   background: var(--bg-color);
   border-radius: 50%;
+  object-fit: cover;
   margin-right: 2%;
 }
 .Profile_area .input_field input {
@@ -337,7 +341,6 @@
   list-style: none;
   line-height: 30px;
   justify-content: center;
-
 }
 .commentSection ul li {
   background: var(--bg-color);
@@ -352,7 +355,7 @@
   outline: none;
   padding: 0.5em 1em;
   font-size: 1em;
-  border-radius: 0.5em;
+  border-radius: 1em;
   margin-left: 2%;
 }
 
@@ -474,8 +477,6 @@
   border-radius: 0.5em;
 }
 
-
-
 .about_post input {
   cursor: pointer;
 }
@@ -511,12 +512,6 @@
   cursor: pointer;
 }
 
-
-
-
-
-
-
 /* -------------------end of css for dialogue boxes--------------------- */
 
 /* -------------------------------end CSS for home.html file--------------------------------- */
@@ -536,11 +531,12 @@
   .main_container {
     width: 100%;
   }
-  .container, .Create_my_story {
+  .container,
+  .Create_my_story {
     margin-top: 10%;
   }
 
-  .Create_my_story img{
+  .Create_my_story img {
     width: 5em;
   }
 
@@ -583,8 +579,6 @@
 }
 
 @media only screen and (max-width: 540px) {
-
-  
   .container .img {
     height: 25vh;
   }
