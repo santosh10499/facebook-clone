@@ -55,18 +55,38 @@ signUp.addEventListener("click", () => {
   }
 
   if (userLastName.value != "" && userName.value != "" && email.value == confirmEmail.value && password.value != "" && email.value.includes("@") && email.value.includes("gmail.com") && ans) {
+    
     if (localStorage.getItem("signupData")) {
-      var data = JSON.parse(localStorage.getItem("signupData"));
-      data.push({email: email.value,password: password.value,userName:userName.value,surName:userLastName.value});
-      localStorage.setItem("signupData", JSON.stringify(data));
-      window.location.href ="/pages/login.html";
-    } else {
+      let flag = true;
+      userData = JSON.parse(localStorage.getItem("signupData"));
+      userData.forEach((user)=>{
+        if(user.email == email.value){
+          alert("User Already Exists");
+          flag = false;
+        }
+      })
+      if (flag){
+        userData.push({email: email.value,password: password.value,userName: userName.value,surName:userLastName.value});
+        localStorage.setItem("signupData", JSON.stringify(userData));
+        window.location.href = "/pages/login.html";
+      }
+    }
+    else {
       userData.push({email: email.value,password: password.value,userName: userName.value,surName:userLastName.value});
       localStorage.setItem("signupData", JSON.stringify(userData));
       window.location.href = "/pages/login.html";
     }
   }
 });
+
+
+
+
+
+
+
+
+
 
 cross.addEventListener("click", () => {
   window.location.href = "/pages/login.html";

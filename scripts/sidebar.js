@@ -1,4 +1,5 @@
 
+
 /**-------------------------foraside bar----------------------------- */
 const seeMore = document.getElementById("see_more");
 const seeLess = document.getElementById("see_less");
@@ -47,7 +48,6 @@ profile.addEventListener("click",(e)=>{
 bars.addEventListener("click",(e)=>{
   if (outer_container.style.display == "block") {
       outer_container.style.display = "none";
-      outer_container.style.display = "block";
     } else {
       outer_container.style.display = "block";
     }
@@ -104,6 +104,7 @@ grid.addEventListener("click",(e)=>{
       plus_items_popUp.style.display = "block";
     }
 })
+
 
 
 

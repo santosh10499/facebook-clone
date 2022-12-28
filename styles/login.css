@@ -27,7 +27,9 @@
   }
   #dis {
     color: black;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    color:rgb(43, 42, 42)
   }
   /* ===========================================form design */
   #login-form {
@@ -57,24 +59,23 @@
     color: red;
     font-family: sans-serif;
     font-style: italic;
-    /* font-size: 10px; */
-  
-    /* display: none; */
   }
   input {
     width: 92%;
-    height: 45px;
     border-radius: 5px;
     margin-left: auto;
     margin-right: auto;
-    padding: 8px;
-  
+    padding: 15px;
+    font-size: 1rem;
     border: 0.1px solid rgb(193, 190, 190);
   }
-  input::placeholder {
-    color: #1877f2;
-    text-align: center;
+  
+  input:focus {
+    outline: none;
+    box-shadow: 0 0 1px 1px #1877f2;
   }
+
+
   
   #log {
     border: none;
@@ -89,6 +90,11 @@
     font-weight: bolder;
     color: white;
   }
+
+  #log:hover {
+    background-color: #0365e5;
+  }
+
   #create {
     border: none;
     width: 60%;
@@ -96,13 +102,17 @@
     border-radius: 5px;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(1, 65, 1);
+    background: #0ebd02;
     cursor: pointer;
     margin-top: 5%;
     font-size: 1.1rem;
-    font-weight: bolder;
     color: white;
   }
+
+  #create:hover {
+    background: #0da702;
+  }
+
   #forgot {
     border: none;
     width: 92%;
@@ -115,6 +125,23 @@
     background: white;
     border-bottom: 0.5px solid gray;
   }
+
+  #forgot:hover {
+    text-decoration: underline;
+  }
+
+  .dummy_credentials{ 
+    background: #ffffff;
+    width: 15%;
+    margin-top: -10%;
+    font-size: 0.8rem;
+    padding: 1em 2em;
+   margin-left: 63%;
+   display: none;
+  }
+
+
+
   /*----------------------------------------------------- making responsive  tab*/
   @media screen and (max-width: 950px) {
     #container {
@@ -137,10 +164,11 @@
       color: black;
       font-size: 1.3rem;
     }
+    
   }
   /*----------------------------------------------------- making responsive  phone*/
   
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 540px) {
     #container {
       width: 100%;
       flex-direction: column;
@@ -160,5 +188,42 @@
       margin-top: -250px;
       width: 100%;
     }
+    .dummy_credentials{
+      width: 98%;
+      margin: -60% 0 0 0;
+    }
   }
-  
+  @media screen and (max-width: 1100px) {
+  #create {
+    border: none;
+    width: 70%;
+    height: 45px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(1, 65, 1);
+    cursor: pointer;
+    margin-top: 5%;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    color: white;
+  }
+
+  .dummy_credentials{
+    width: 55%;
+    margin: -28% 0 0 42%;
+  }
+}
+
+@media screen and (max-width: 280px){
+  .dummy_credentials{
+    width: 100%;
+    margin: -75% 0 0 0;
+  }
+}
+@media screen and (max-width: 412px){
+  .dummy_credentials{
+    width: 100%;
+    margin: -75% 0 0 0;
+  }
+}

@@ -168,6 +168,7 @@
     height: 55%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    object-fit: cover;
 }
 
 .friend-content h3 {
@@ -190,6 +191,7 @@
      width: 1em;
      height: 1em;
      border-radius: 50%;
+     object-fit: cover;
 }
 
 #people-icon p{
@@ -291,11 +293,11 @@ hr {
     #suggestion-item {
         display: none;
     }
-    
-    
+
     #suggestion-aside-bar {
         width: 95%;
     }
+
 }
 
 @media screen  and (max-width: 1200px){
@@ -304,3 +306,39 @@ hr {
         height: 24.5em;
     }
 }
+
+
+@media screen and (max-width: 540px) {
+    header{
+        margin-top: 0;
+    }
+
+    .mid{
+        display: none;
+    }
+
+    .prfile_dialogue_box{
+       width: 95%;
+      margin-top: 4%;
+    }
+    .notification{
+       width: 90%;
+      margin-top: 4%;
+      margin-right: 5%;
+    }
+    .messenger{
+       width: 85%;
+      margin-top: 4%;
+      margin-right: 6%;
+    }
+    .plus_items{
+       width: 60%;
+      margin-top: 4%;
+      margin-right: 22%;
+    }
+
+    #bars, #plus_icon{
+        display: none;
+    }
+}
+

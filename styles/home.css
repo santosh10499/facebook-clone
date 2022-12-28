@@ -1,6 +1,11 @@
 @import "/styles/reset.css";
 
 /* -------------------------------CSS for home.html file--------------------------------- */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .hover:hover {
   background: #e6e9f0;
@@ -62,49 +67,49 @@
   background-color: transparent;
 }
 
-.container_mystory {
+.container {
+  margin: 0 5px 0 5px;
+}
+
+.Create_my_story {
+  margin: 0 5px 0 5px;
+  width: 120px;
   height: 24vh;
-  border-radius: 0.5em;
   box-shadow: 0 0 2px rgb(174, 167, 167);
-  margin: 0 1% 0 0;
-}
-
-#my_story {
-  width: 110px;
-  height: 120px;
-  border-top-left-radius: 0.5em;
-  border-top-right-radius: 0.5em;
-  background: #e0e1e4;
-}
-
-.plus {
+  border-radius: 0.5em;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.forhome {
-  background: #1876f2;
-  padding: 0 5px 0 3px;
-  font-size: 1.2em;
+
+.Create_my_story i {
+  background: #ffffff;
   border-radius: 50%;
-  border: 2px solid #ffffff;
+  border: 4px solid #ffffff;
+  color: #0967e2;
   position: relative;
-  bottom: 18px;
-  color: #ffffff;
+  top: -12px;
+  font-size: 1.6em;
 }
 
-.plus span {
+.Create_my_story span {
+  font-size: 0.9em;
   margin-top: -10px;
 }
 
-.container {
-  /* height: 200px; */
-  margin: 0 5px 0 5px;
+.Create_my_story img {
+  width: 110px;
+  height: 18vh;
+  object-fit: cover;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+ 
 }
 
 .container .img {
   width: 110px;
   height: 24vh;
+  object-fit: cover;
 }
 
 .bgImg {
@@ -114,6 +119,7 @@
 .story {
   width: 50px;
   height: 50px;
+  object-fit: cover;
   border: 4px solid #1876f2;
   border-radius: 50%;
   object-fit: cover;
@@ -127,12 +133,6 @@
   color: #ffffff;
   font-weight: bolder;
 }
-
-/* .bg {
-  padding: 5px;
-  border-radius: 50%;
-  background: var(--bg-color);
-} */
 
 /* ------------------posts--------------- */
 
@@ -218,13 +218,17 @@
 }
 
 .top .icons {
-  margin: 0 0 0 68%;
+  margin: 0 0 0 60%;
 }
 
 .top .icons i {
   font-size: 1.4em;
   padding: 8px;
   border-radius: 50%;
+}
+
+#post-caption {
+  margin: 1em 0 0 1em;
 }
 
 /* -------------image for dummy post---------------- */
@@ -238,16 +242,21 @@
   width: 100%;
   height: 70vh;
   border-radius: 1em;
+  object-fit: cover;
 }
 
 .bottom {
   display: flex;
   justify-content: space-between;
-  padding: 0 2.5% 0 0;
+  padding: 0 2em 0 0;
+}
+
+#like-count {
+  font-size: 1rem;
 }
 
 .bottom p {
-  font-size: 0.9em;
+  font-size: 1rem;
 }
 
 .reaction {
@@ -255,6 +264,7 @@
   justify-content: space-between;
   padding: 10px;
   border-top: 1px solid rgb(200, 192, 192);
+  border-bottom: 1px solid rgb(200, 192, 192);
   margin-top: 14px;
 }
 
@@ -265,9 +275,93 @@
 
 /* -------------------css for dialogue boxes--------------------- */
 
+/* --------------comment box css---------------------- */
+
+.commentSection {
+  margin: 2% 0;
+  border-radius: 0.5em;
+  padding: 1em;
+  display: none;
+}
+.comment-person
+{
+
+  margin-left:3%;
+  
+}
+.commenti{
+
+  border-radius: 40px;
+}
+.comment_text{
+  margin-left:5%;
+  
+  text-align: center;
+}
+
+.commentSection .Profile_area {
+  width: 100%;
+  padding: 1em;
+  outline: none;
+  font-size: 0.5em 1em;
+  display: flex;
+  align-items: center;
+}
+.commentSection .Profile_area img {
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 0 2px gray;
+  background: var(--bg-color);
+  border-radius: 50%;
+  margin-right: 2%;
+}
+.Profile_area .input_field input {
+  width: 18em;
+  border: none;
+  outline: none;
+  padding: 0.5em;
+  font-size: 1em;
+  background: transparent;
+}
+
+.Profile_area .input_field {
+  background: var(--bg-color);
+  padding: 0.5em;
+  border-radius: 1.6em;
+}
+.Profile_area .input_field i {
+  margin: 0 1%;
+}
+
+.commentSection ul {
+  list-style: none;
+  line-height: 30px;
+  justify-content: center;
+
+}
+.commentSection ul li {
+  background: var(--bg-color);
+  margin: 1% 0;
+  padding: 0.5em;
+}
+
+.Profile_area button {
+  background: #0967e2;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  border-radius: 0.5em;
+  margin-left: 2%;
+}
+
+.Profile_area button:hover {
+  background: #034090;
+}
 /* -------create_post-------- */
 
-.create_post_Wrapper{
+.create_post_Wrapper {
   position: fixed;
   top: 0;
   width: 100%;
@@ -380,24 +474,74 @@
   border-radius: 0.5em;
 }
 
+
+
+.about_post input {
+  cursor: pointer;
+}
+
+#post-audience i {
+  margin: 0 0.4em;
+  font-size: 1em;
+}
+
+#create-post-url-input {
+  margin-top: 0.3em;
+  width: 15em;
+  border-radius: 0.3em;
+  border: 1px solid lightskyblue;
+  padding: 0.3em 0.6em;
+}
+
+#create-post-url-input:focus {
+  outline: none;
+  border: 2px solid rgb(88, 184, 244);
+}
+
+#create-post-btn {
+  width: 100%;
+  margin-top: 0.8em;
+  margin-bottom: 0.5em;
+  padding: 0.7em;
+  font-size: 1rem;
+  border-radius: 0.3em;
+  border: none;
+  background-color: lightgray;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
 /* -------------------end of css for dialogue boxes--------------------- */
 
 /* -------------------------------end CSS for home.html file--------------------------------- */
 
 /* media query for mobile view */
 
+@media only screen and (max-width: 375px) {
+  .container .img {
+    height: 28vh;
+  }
+  .top .icons {
+    margin: 0 0 0 45%;
+  }
+}
+
 @media only screen and (max-width: 580px) {
   .main_container {
     width: 100%;
-    
   }
-  .container {
+  .container, .Create_my_story {
     margin-top: 10%;
   }
 
-  .container_mystory {
-    margin-top: 10%;
-  
+  .Create_my_story img{
+    width: 5em;
   }
 
   .display_none {
@@ -405,15 +549,47 @@
   }
 
   .story {
-    top: -100%;
+    top: -75%;
   }
 
-  .create_post{
+  .create_post {
     width: 90%;
     margin: 0 10% 0 -28%;
   }
-
- 
-  
 }
 
+@media only screen and (max-width: 820px) {
+  .container .img {
+    height: 18vh;
+  }
+  .story {
+    top: -79%;
+  }
+  #my_story {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .story {
+    top: -74%;
+  }
+}
+
+@media only screen and (max-width: 915px) {
+  .container .img {
+    height: 15vh;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+
+  
+  .container .img {
+    height: 25vh;
+  }
+
+  .story {
+    top: -76%;
+  }
+}

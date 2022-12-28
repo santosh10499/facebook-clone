@@ -76,7 +76,7 @@ frnd_request.addEventListener('click', function(){
     frnd1.style.width = "100%";
     frnd1.style.justifyContent = "center";
     frndHead1.style.display ='flex';
-    frndHead1.style.marginTop = "-3em";
+    frndHead1.style.marginTop = "-1em";
     frndHead1.style.justifyContent = 'spaceBetween'
     frndHead1.style.width = "100%";
     frnd.style.display = 'none';
@@ -114,7 +114,7 @@ frnd_suggestion.addEventListener('click', function(){
     frnd.style.width = "100%";
     frnd.style.justifyContent = 'center';
     frndHead.style.display ='flex';
-    frndHead.style.marginTop = "-3em";
+    frndHead.style.marginTop = "-1em";
     frndHead.style.width = "100%";
     frnd1.style.display ='none';
     frndHead1.style.display = 'none';
@@ -179,19 +179,41 @@ allfrnd.addEventListener('click', function(){
   }
 });
 
+
+
+/*=============== On-click FB-logo =================*/
+
 fb_logo.addEventListener("click", () => {
     window.location.href = "/pages/header.html";
-  });
-  home.addEventListener("click", () => {
-    window.location.href = "/pages/header.html";
-  });
+});
+
+
+/*=============== On-click Home-logo =================*/
+
+
+home.addEventListener("click", () => {
+  window.location.href = "/pages/header.html";
+});
   
   const friendIcon = document.querySelector("#friend");
   
-  
-  friendIcon.addEventListener("click", () => {
-    window.location.href = "/pages/friends.html";
-  });
+ 
+/*=============== On-click Friends-logo =================*/
+
+friendIcon.addEventListener("click", () => {
+  window.location.href = "/pages/friends.html";
+});
+
+
+/*=============== On-click Logout-logo =================*/
+
+const logOut = document.querySelector("#logout");
+
+logOut.addEventListener("click", () => {
+  window.location.href = "/pages/login.html";
+});
+
+
 
 // let Add_post = document.querySelector("#Add_post");
 // let photo_video = document.querySelector("#create_post_Wrapper");
@@ -314,3 +336,26 @@ grid.addEventListener("click",(e)=>{
         plus_items_popUp.style.display = "block";
       }
   })
+
+  //=========================for displaying user profile=============
+
+let userdata=[{email: "santosh@gmail.com",profilePic: "https://images.unsplash.com/photo-1554311884-415bfda22b47?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTU2fHxwZXJzb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60-1.fna.fbcdn.net/v/t1.6435-9/180555609_835950667306477_8372471323999180307_n.jpg?stp=c0.232.576.576a_dst-jpg_s851x315&_nc_cat=100&ccb=1-7&_nc_sid=da31f3&_nc_ohc=X_lWHKpsJCcAX_d_x_a&_nc_ht=scontent.fdbd1-1.fna&oh=00_AfDveHHlzXU6eM7ISWaR-KmFLTWleTld-Ub-47Q-c3hpkQ&oe=63CBA2B8://scontent.fdbd1-2.fna.fbcdn.net/v/t39.30808-6/272761181_1011609503073925_5723654845178925652_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=-uIbQyVbT9sAX_QROVi&_nc_oc=AQlYysLgwkhD0CQIhatqnkjw07-Hwzoiw8lgu7Fu9gd2X8quntvLbRivNs15eXOELWSEioi1fVSFm0i3F8uNTPZJ&tn=BOMrDsLuOSui51gf&_nc_ht=scontent.fdbd1-2.fna&oh=00_AfAMStQAwDcpfRmdoR3PEwByjcYjYQosva6lefqBCh0F8Q&oe=63A8D1B0"},
+{email: "varsharajput353@gmail.com",profilePic: "https://images.unsplash.com/photo-1564463836146-4e30522c2984?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTkyfHxwZXJzb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"},
+{email:"ss0149952@gmail.com",profilePic: "https://images.unsplash.com/photo-1504593811423-6dd665756598?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"},
+{email: "rohanpalankar8@gmail.com",profilePic: "https://scontent.fblr19-1.fna.fbcdn.net/v/t1.6435-9/58460714_2287391554832092_8244223977036185600_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=_H-Wll3YYZsAX_wV8nc&_nc_oc=AQlOjK0ZniGbopsnq7JZYOg1w9GN1PQB7BU7UsxJlvcX2Un_F7sRyu7W5y1Fzwzc6M8&_nc_ht=scontent.fblr19-1.fna&oh=00_AfCeZYKKBuYs6TYhmQ0cQzxSlEncwD2vKJQmCPXq_1T3uQ&oe=63D0D104"}];
+
+let Email=localStorage.getItem('userEmail');
+console.log(Email)
+let userimage=document.querySelectorAll('.userimage');
+
+for(let k=0;k<userdata.length;k++)
+{
+for(let i=0;i<userimage.length;i++)
+{
+if(userdata[k].email==Email)
+{
+
+userimage[i].src=userdata[k].profilePic
+}
+}
+}
