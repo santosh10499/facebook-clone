@@ -1,7 +1,9 @@
 const dummy_post = document.querySelector(".dummy_posts");
 async function api() {
   let data1 = await fetch(
-    "https://63a7491a59fd83b1bb42ba9a.mockapi.io/api/v1/facbook_posts"
+    "https://fbbackendposts-production-5f33.up.railway.app/fb/getAllposts",{
+      method:"POST"
+    }
   );
   let data = await data1.json();
 
@@ -10,7 +12,7 @@ async function api() {
       <div class="top">
         <img src="${data[i].userImage}" alt="" class="profile bg_img hover" width="45px" />
         <div class="name">
-          <p class="pointer">${data[i].userName}</p>
+          <p class="pointer">${data[i].userNamePost}</p>
           <span class="pointer"
             >${data[i].time}.<i class="fa-solid fa-earth-americas"></i
           ></span>
@@ -22,7 +24,7 @@ async function api() {
         </div>
       </div>
       <div class="image">
-        <img src="${data[i].post}" alt="post" />
+        <img src="${data[i].postImage}" alt="post" />
       </div>
       <div class="bottom">
         <div class="likes">
@@ -91,7 +93,7 @@ async function api() {
     
 
     addBtn[i].addEventListener("click", () => {
-      if (userComment[i].value.length >= 1) {
+      if (userComment[i].value.length > 0) {
         commentlist[i].innerHTML += `<li>
     <span class="comment-person">
     <img src="/images/profile2.png" alt="" class="hover userimage commenti" width="30px"/>
@@ -154,14 +156,14 @@ async function api() {
     likebtn[j].addEventListener("click", () => {
       if (likebtn[j].style.color != "blue"){
         likeCount[j].innerHTML = `<span style="margin-left:-20px" class="pointer like-count" id="like-count">
-        ${data[j].like +1} Likes</span>`;
+        ${Number(data[j].like) + 1} Likes</span>`;
 
         likebtn[j].style.color = "blue";
         icon[j].style.color = "blue";
       }
       else {
         likeCount[j].innerHTML = `<span style="margin-left:-20px" class="pointer like-count" id="like-count">
-        ${data[j].like} Likes</span>`;
+        ${Number(data[j].like)} Likes</span>`;
 
         likebtn[j].style.color = "black";
         icon[j].style.color = "black";
