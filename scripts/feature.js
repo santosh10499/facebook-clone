@@ -5,7 +5,8 @@ const removeBtn = document.querySelectorAll("#remove-btn");
 const cancel = document.querySelectorAll('#cancel');
 const frnd_request = document.getElementById('friend-request');
 const frnd_suggestion = document.getElementById('frnd-suggestion');
-const allfrnd = document.getElementById('all-frnd')
+const allfrnd = document.getElementById('all-frnd');
+// const asidebar = documnet.querySelector('suggestion-aside-bar');
 // =================for accept request=======================  
 for(const bts of confirmBtn){
     bts.addEventListener('click', function(){
@@ -58,6 +59,32 @@ for(const bts of cancel){
 // =========================friend request button ===========================================
 
 frnd_request.addEventListener('click', function(){
+  if(window.matchMedia('(max-width: 480px)').matches == true){
+    const bar = document.getElementById('suggestion-aside-bar');
+    const item = document.getElementById('suggestion-item');
+    const frnd1 = document.getElementById('sec1');
+    const frndHead1 = document.getElementById('cont1');
+    const wrap = document.getElementById('create_post_Wrapper');
+    const frnd = document.getElementById('sec2');
+    const frndHead = document.getElementById('cont2');
+    wrap.style.display = "none";
+    bar.style.display = 'none';
+    item.style.display = 'block';
+    item.style.left = '5%'
+    item.style.width = "90%";
+    frnd1.style.display = 'flex';
+    frnd1.style.width = "100%";
+    frnd1.style.justifyContent = "center";
+    frndHead1.style.display ='flex';
+    frndHead1.style.marginTop = "-3em";
+    frndHead1.style.justifyContent = 'spaceBetween'
+    frndHead1.style.width = "100%";
+    frnd.style.display = 'none';
+    frndHead.style.display = 'none';
+    hr.style.display = 'none';
+  }else {
+    frnd_request.firstElementChild.style.bgColor = "#1877f2";
+    frnd_request.style.bgColor = "#f0f2f5";
     const frnd = document.getElementById('sec2');
     const frndHead = document.getElementById('cont2');
     const frnd1 = document.getElementById('sec1');
@@ -66,12 +93,37 @@ frnd_request.addEventListener('click', function(){
     frndHead1.style.display = 'flex';
     frndHead.style.display = 'none';
     frnd.style.display = 'none';
+  }
 });
 
 // ==========================friend Suggestion button===========================================
 
 
 frnd_suggestion.addEventListener('click', function(){
+  if(window.matchMedia('(max-width: 480px)').matches == true){
+    const bar = document.getElementById('suggestion-aside-bar');
+    const item = document.getElementById('suggestion-item');
+    const frnd = document.querySelector('#sec2');
+    const frndHead = document.querySelector('#cont2');
+    const frnd1 = document.getElementById('sec1');
+    const frndHead1 = document.getElementById('cont1')
+    const wrap = document.getElementById('create_post_Wrapper');
+    bar.style.display = 'none';
+    item.style.display = 'block';
+    frnd.style.display = 'flex';
+    frnd.style.width = "100%";
+    frnd.style.justifyContent = 'center';
+    frndHead.style.display ='flex';
+    frndHead.style.marginTop = "-3em";
+    frndHead.style.width = "100%";
+    frnd1.style.display ='none';
+    frndHead1.style.display = 'none';
+    wrap.style.display = "none";
+    bar.style.display = 'none';
+    item.style.display = 'block';
+    item.style.left = '5%';
+    item.style.width = "90%";
+  }
     const frnd = document.querySelector('#sec2');
     const frndHead = document.querySelector('#cont2');
     const frnd1 = document.getElementById('sec1');
@@ -88,6 +140,32 @@ frnd_suggestion.addEventListener('click', function(){
 
 // =======================all friend button ==========================================
 allfrnd.addEventListener('click', function(){
+  if(window.matchMedia('(max-width: 480px)').matches == true){
+    const bar = document.getElementById('suggestion-aside-bar');
+    const item = document.getElementById('suggestion-item');
+    const frnd = document.querySelector('#sec2');
+    const frndHead = document.querySelector('#cont2');
+    const frnd1 = document.getElementById('sec1');
+    const frndHead1 = document.getElementById('cont1');
+    const wrap = document.getElementById('create_post_Wrapper');
+    frnd1.style.display = 'flex';
+    frnd1.style.width = "100%";
+    frnd1.style.justifyContent = 'center';
+    frndHead1.style.display = 'flex';
+    frndHead1.style.width = "100%";
+    frndHead.style.display = 'flex';
+    frndHead.style.width = "100%";
+    frnd.style.display = 'flex';
+    frnd.style.justifyContent = 'center';
+    frnd.style.width = "100%";
+    bar.style.display = 'none';
+    item.style.display = 'block';
+    wrap.style.display = "none";
+    bar.style.display = 'none';
+    item.style.display = 'block';
+    item.style.left = '5%'
+    item.style.width = "90%";
+  }else {
     const frnd = document.querySelector('#sec2');
     const frndHead = document.querySelector('#cont2');
     const frnd1 = document.getElementById('sec1');
@@ -98,6 +176,7 @@ allfrnd.addEventListener('click', function(){
     frndHead1.style.display = 'flex';
     frndHead.style.display = 'flex';
     frnd.style.display = 'flex';
+  }
 });
 
 fb_logo.addEventListener("click", () => {
