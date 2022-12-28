@@ -8,13 +8,15 @@ async function api() {
   let data = await data1.json();
 
   for (let i = 0; i < data.length; i++) {
+    let date = new Date(data[i].time);
+
     dummy_post.innerHTML = `<div class="dummy_post">
       <div class="top">
         <img src="${data[i].userImage}" alt="" class="profile bg_img hover" width="45px" />
         <div class="name">
           <p class="pointer">${data[i].userNamePost}</p>
           <span class="pointer"
-            >${data[i].time}.<i class="fa-solid fa-earth-americas"></i
+            >${date.toDateString()}.<i class="fa-solid fa-earth-americas"></i
           ></span>
         </div>
 
