@@ -600,7 +600,7 @@ friend.addEventListener("click", () => {
 const logOut = document.querySelector("#logout");
 
 logOut.addEventListener("click", () => {
-  window.location.href = "/pages/login.html";
+  window.location.href = "/index.html";
 });
 
 
@@ -732,5 +732,5 @@ userName[i].innerText=firstname +" " +lastname;
 // ==========================logout
 
 logout.addEventListener('click',()=>{
-    window.location.href='/pages/login.html'
+    window.location.href='/index.html'
 })

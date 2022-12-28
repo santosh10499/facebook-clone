@@ -14,5 +14,5 @@ for(let i=0;i<userloginName.length;i++)
 // ==========================logout
 
 logout.addEventListener('click',()=>{
-    window.location.href='/pages/login.html'
+    window.location.href='/index.html'
 })
