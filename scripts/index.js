@@ -155,12 +155,13 @@ async function api() {
   let icon = document.querySelectorAll(".icon");
   let likeCount = document.querySelectorAll(".like-count");
 
+  console.log(data[0].like)
   for (let j = 0; j < likebtn.length; j++) {
     likebtn[j].addEventListener("click", () => {
       if (likebtn[j].style.color != "blue"){
         likeCount[j].innerHTML = `<span style="margin-left:-20px" class="pointer like-count" id="like-count">
         ${Number(data[j].like) + 1} Likes</span>`;
-
+        
         likebtn[j].style.color = "blue";
         icon[j].style.color = "blue";
       }
