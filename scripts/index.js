@@ -96,7 +96,7 @@ async function api() {
     
 
     addBtn[i].addEventListener("click", () => {
-      if (userComment[i].value.length >= 1) {
+      if (userComment[i].value.length > 0) {
         commentlist[i].innerHTML += `<li>
     <span class="comment-person">
     <img src="/images/profile2.png" alt="" class="hover userimage commenti" width="30px"/>
@@ -159,14 +159,14 @@ async function api() {
     likebtn[j].addEventListener("click", () => {
       if (likebtn[j].style.color != "blue"){
         likeCount[j].innerHTML = `<span style="margin-left:-20px" class="pointer like-count" id="like-count">
-        ${data[j].like +1} Likes</span>`;
+        ${Number(data[j].like) + 1} Likes</span>`;
 
         likebtn[j].style.color = "blue";
         icon[j].style.color = "blue";
       }
       else {
         likeCount[j].innerHTML = `<span style="margin-left:-20px" class="pointer like-count" id="like-count">
-        ${data[j].like} Likes</span>`;
+        ${Number(data[j].like)} Likes</span>`;
 
         likebtn[j].style.color = "black";
         icon[j].style.color = "black";
