@@ -1,16 +1,18 @@
 const dummy_post = document.querySelector(".dummy_posts");
 async function api() {
   let data1 = await fetch(
-    "https://63a7491a59fd83b1bb42ba9a.mockapi.io/api/v1/facbook_posts"
+    "https://fbbackendposts-production-5f33.up.railway.app/fb/getAllposts",{
+      method: "POST"
+    }
   );
   let data = await data1.json();
 
   for (let i = 0; i < data.length; i++) {
-    dummy_post.innerHTML += `<div class="dummy_post">
+    dummy_post.innerHTML = `<div class="dummy_post">
       <div class="top">
         <img src="${data[i].userImage}" alt="" class="profile bg_img hover" width="45px" />
         <div class="name">
-          <p class="pointer">${data[i].userName}</p>
+          <p class="pointer">${data[i].userNamePost}</p>
           <span class="pointer"
             >${data[i].time}.<i class="fa-solid fa-earth-americas"></i
           ></span>
@@ -21,8 +23,9 @@ async function api() {
          
         </div>
       </div>
+      <p id="post-caption">${data[i].caption}</p>
       <div class="image">
-        <img src="${data[i].post}" alt="post" />
+        <img src="${data[i].postImage}" alt="post" />
       </div>
       <div class="bottom">
         <div class="likes">
@@ -69,7 +72,7 @@ async function api() {
           </div>
           </div>
        
-`;
+`+ dummy_post.innerHTML;
     // dummy_post.insertAdjacentHTML("afterbegin", post)
   }
   // ===================================add comment

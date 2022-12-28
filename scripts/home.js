@@ -291,66 +291,66 @@ users.forEach((user) => {
 /*============================== to post just on UI ================================*/
 
 
-createPostBtn.addEventListener("click", () => {
+// createPostBtn.addEventListener("click", () => {
 
-  dummy_post.innerHTML = `<div class="dummy_post">
-      <div class="top">
-        <img src="${userImage}" alt="" class="profile bg_img hover" width="45px" />
-        <div class="name">
-          <p class="pointer">${userNamePost}</p>
-          <span class="pointer"
-            >${new Date().toDateString()}.<i class="fa-solid fa-earth-americas"></i
-          ></span>
-        </div>
+//   dummy_post.innerHTML = `<div class="dummy_post">
+//       <div class="top">
+//         <img src="${userImage}" alt="" class="profile bg_img hover" width="45px" />
+//         <div class="name">
+//           <p class="pointer">${userNamePost}</p>
+//           <span class="pointer"
+//             >${new Date().toDateString()}.<i class="fa-solid fa-earth-americas"></i
+//           ></span>
+//         </div>
 
-        <div class="icons">
-          <i class="fa-solid fa-ellipsis hover"></i>
-        </div>
-      </div>
-      <p id="post-caption">${createPostTextInput.value}</p>
-      <div class="image">
-        <img src="${createPostUrlInput.value}" alt="post" />
-      </div>
-      <div class="bottom">
-        <div class="likes">
-          <span class="pointer like-count" id="like-count">0 Likes</span>
-        </div>
-        <div class="commets">
-          <p class="pointer comment">0 Comments</p>
-        </div>
-      </div>
-      <div class="reaction">
-        <span class="like1"><p class="hover "><i class="fa-regular icon  fa-thumbs-up"></i> Like</p></span>
-        <p class="hover comment_btn"><i class="fa-regular fa-message"></i> Comment</p>
-        <p class="hover"><i class="fa-solid fa-share"></i> Share</p>
-    </div>
-    <div class="commentSection">
-          <div class="Profile_area">
-            <img
-              src="/images/profile2.png"
-              alt=""
-              class=" hover userimage"
-              width="45px"
-            />
-            <div class="input_field flex">
-              <input type="text" placeholder="Write a comment..." />
-              <i class="fa-brands fa-rocketchat pointer"></i>
-              <i class="fa-regular fa-face-smile pointer"></i>
-              <i class="fa-solid fa-camera-retro pointer"></i>
-              <i class="fa-regular fa-image pointer"></i>
-            </div>
-            <button class="pointer">Add</button>
-          </div>
-          <ul>
-            <li>wonderfull</li>
-            <li>nice</li>
-          </ul>
-        </div>
-    </div>
-` + dummy_post.innerHTML;
+//         <div class="icons">
+//           <i class="fa-solid fa-ellipsis hover"></i>
+//         </div>
+//       </div>
+//       <p id="post-caption">${createPostTextInput.value}</p>
+//       <div class="image">
+//         <img src="${createPostUrlInput.value}" alt="post" />
+//       </div>
+//       <div class="bottom">
+//         <div class="likes">
+//           <span class="pointer like-count" id="like-count">0 Likes</span>
+//         </div>
+//         <div class="commets">
+//           <p class="pointer comment">0 Comments</p>
+//         </div>
+//       </div>
+//       <div class="reaction">
+//         <span class="like1"><p class="hover "><i class="fa-regular icon  fa-thumbs-up"></i> Like</p></span>
+//         <p class="hover comment_btn"><i class="fa-regular fa-message"></i> Comment</p>
+//         <p class="hover"><i class="fa-solid fa-share"></i> Share</p>
+//     </div>
+//     <div class="commentSection">
+//           <div class="Profile_area">
+//             <img
+//               src="/images/profile2.png"
+//               alt=""
+//               class=" hover userimage"
+//               width="45px"
+//             />
+//             <div class="input_field flex">
+//               <input type="text" placeholder="Write a comment..." />
+//               <i class="fa-brands fa-rocketchat pointer"></i>
+//               <i class="fa-regular fa-face-smile pointer"></i>
+//               <i class="fa-solid fa-camera-retro pointer"></i>
+//               <i class="fa-regular fa-image pointer"></i>
+//             </div>
+//             <button class="pointer">Add</button>
+//           </div>
+//           <ul>
+//             <li>wonderfull</li>
+//             <li>nice</li>
+//           </ul>
+//         </div>
+//     </div>
+// ` + dummy_post.innerHTML;
 
-postCreator.style.display = "none";
-})
+// postCreator.style.display = "none";
+// })
 
 
 
@@ -373,7 +373,7 @@ createPostBtn.addEventListener("click", async () => {
     share:""
   }
 
-  let post = await fetch('http://localhost:3000/fb-post/create',{
+  let post = await fetch('https://fbbackendposts-production-5f33.up.railway.app/fb/createpost',{
       method: "POST",
       headers: {
         "Content-Type": "application/json"
