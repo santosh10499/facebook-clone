@@ -466,7 +466,7 @@ hr {
 
 @media only screen and (max-width: 480px) {
   header {
-    align-items: center;
+   margin-top: 5%;
   }
 
   .left_of_nav .search_input {
@@ -619,6 +619,7 @@ hr {
 }
 
 @media only screen and (max-width: 380px) {
+  
   .prfile_dialogue_box {
     width: 90%;
     margin-top: -2%;

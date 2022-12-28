@@ -1,5 +1,5 @@
-let userName=document.querySelectorAll('.user-name');
-let logout=document.getElementById('logout');
+let userName = document.querySelectorAll('.user-name');
+let logout = document.getElementById('logout');
 // ================================get data from localStorage
 let firstname=localStorage.getItem('firstName');
 let lastname=localStorage.getItem('LastName');
