@@ -373,7 +373,7 @@ createPostBtn.addEventListener("click", async () => {
     share:""
   }
 
-  let post = await fetch('http://localhost:3000/fb-post/create',{
+  let post = await fetch('https://fbbackendposts-production-5f33.up.railway.app/fb/createpost',{
       method: "POST",
       headers: {
         "Content-Type": "application/json"
