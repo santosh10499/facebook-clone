@@ -68,13 +68,13 @@ signUp.addEventListener("click", () => {
       if (flag){
         userData.push({email: email.value,password: password.value,userName: userName.value,surName:userLastName.value});
         localStorage.setItem("signupData", JSON.stringify(userData));
-        window.location.href = "/pages/login.html";
+        window.location.href = "index.html";
       }
     }
     else {
       userData.push({email: email.value,password: password.value,userName: userName.value,surName:userLastName.value});
       localStorage.setItem("signupData", JSON.stringify(userData));
-      window.location.href = "/pages/login.html";
+      window.location.href = "/index.html";
     }
   }
 });
@@ -89,5 +89,5 @@ signUp.addEventListener("click", () => {
 
 
 cross.addEventListener("click", () => {
-  window.location.href = "/pages/login.html";
+  window.location.href = "/index.html";
 });

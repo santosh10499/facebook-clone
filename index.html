@@ -1,15 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook</title>
-    <link rel="stylesheet" href="/styles/style.css">
-</head>
-<body>
-    <div id="root"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/login.css" />
+    <title>login</title>
+  </head>
+  <body>
+    
+    <div id="container">
+      <div id="facebook-discripition">
+        <h2 id="logo">facebook</h2>
+        <p id="dis">
+          Facebook helps you connect and share with the people in your life.
+        </p>
+      </div>
 
-    <script src="/scripts/index.js"></script>
-</body>
+      <div id="login-form">
+        <div id="login">
+            <!-- <span  id='msg'></span> -->
+          <input type="email" id="email" placeholder="Email address" />
+          <input type="password" id="password" placeholder="Password" />
+          <button id="log">Log in</button>
+          <button id="forgot">Forgotten Password?</button>
+          <button id="create">Create new account</button>
+        </div>
+      </div>
+    </div>
+    <div class="dummy_credentials">
+      <h3>Dummy credential :-</h3>
+      <br>
+     <ul>
+      <li>Email : santosh@gmail.com</li>
+      <li>Password : 24680</li>
+     </ul>
+    </div>
+    <script src="/scripts/login.js"></script>
+
+    <!-- <script src="/facebook-clone/"></script> -->
+  </body>
 </html>
