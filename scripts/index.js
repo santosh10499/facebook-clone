@@ -26,10 +26,10 @@ async function api() {
       </div>
       <div class="bottom">
         <div class="likes">
-          <span class="pointer like-count" id="like-count" id="like-count">"${data[i].like}Likes" Likes</span>
+          <span class="pointer like-count" id="like-count" id="like-count">${data[i].like} Likes</span>
         </div>
         <div class="commets">
-          <p class="pointer comment">${data[i].comment} Comments</p>
+          <p class="pointer comment commentcount">${data[i].comment} Comments</p>
         </div>
       </div>
       <div class="reaction">
@@ -88,22 +88,21 @@ async function api() {
         commentSection[i].style.display = "block";
       }
     });
+    
 
     addBtn[i].addEventListener("click", () => {
-      if (userComment[i].value.length > 0) {
+      if (userComment[i].value.length >= 1) {
         commentlist[i].innerHTML += `<li>
     <span class="comment-person">
     <img src="/images/profile2.png" alt="" class="hover userimage commenti" width="30px"/>
       <span class="comment_text">${userComment[i].value}</span>
     </span>
     </li>`;
-
-        commentCount[
-          i
-        ].innerHTML = `<span style="margin-left:-50px"class="commentcount"> <p class="pointer comment">${++data[
+    
+        commentCount[i].innerHTML = `<span style="margin-left:-50px"class="commentcount"> <p class="pointer comment">${++data[
           i
         ].comment}Comments</p></span>`;
-        userComment[i].value = "";
+        userComment[i].value = " ";
       }
     });
   }
