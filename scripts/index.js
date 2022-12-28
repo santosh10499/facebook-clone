@@ -155,6 +155,7 @@ async function api() {
   let icon = document.querySelectorAll(".icon");
   let likeCount = document.querySelectorAll(".like-count");
 
+  console.log(data[0].like)
   for (let j = 0; j < likebtn.length; j++) {
     likebtn[j].addEventListener("click", () => {
       
