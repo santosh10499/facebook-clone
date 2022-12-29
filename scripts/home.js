@@ -8,7 +8,7 @@ content.innerHTML += `<div class="create_story">
 </div>
 <div class="stories">
   <div class="Create_my_story" >
-  <img  class="userimage"src="" alt="story" id="" />
+  <img  class="userimage"src="https://th.bing.com/th/id/OIP.d_V5Ti60n3mJuPheks-k4AHaHa?w=205&h=205&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="story" id="" />
   <i class="fa-solid fa-circle-plus"></i>
   <span>Create story</span>
   </div>
