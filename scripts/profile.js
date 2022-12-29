@@ -7,7 +7,7 @@ let firstName = localStorage.getItem('firstName');
 let lastName =  localStorage.getItem('LastName');
 
 
-
+let fbUsers = JSON.parse(localStorage.getItem("users"));
 
 /*============================== Users-Array ============================================================================*/
 
@@ -201,14 +201,14 @@ usersArray = [
 ]
 
 
-
+// localStorage.setItem("users", JSON.stringify(usersArray));
 
 
 
 /*============================================= Rendering User-Profile-details =================================================*/
 
 
-  usersArray.forEach((userObj) => {
+fbUsers.forEach((userObj) => {
 
     if (userEmail == userObj.email){
 
@@ -554,9 +554,10 @@ coverPhotoUploadBtn.addEventListener("click", ()=>{
     document.getElementById("cover-photo-img").src = coverPhotoUrl;
     updateCoverPhotoUrlInput.value = "";
 
-    usersArray.forEach((user) => {
+    fbUsers.forEach((user) => {
       if(user.email == userEmail){
         user.coverPhoto = coverPhotoUrl;
+        localStorage.setItem("users", JSON.stringify(fbUsers));
       }
     })
 })
@@ -568,9 +569,10 @@ profilePicUploadBtn.addEventListener("click", ()=>{
     document.getElementById("profile-pic-img").src = profilePicUrl;
     updateProfileUrlInput.value = "";
 
-    usersArray.forEach((user) => {
+    fbUsers.forEach((user) => {
       if(user.email == userEmail){
         user.profilePic = profilePicUrl;
+        localStorage.setItem("users", JSON.stringify(fbUsers));
       }
     })
     
