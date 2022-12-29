@@ -89,14 +89,7 @@ async function api() {
             
           </div>
           <ul class="commentlist">
-          <li>
-          <span class="comment-person">
-          <img src="/images/profile2.png" alt="" class="hover userimage commenti" width="30px"/>
-            <span class="comment_text">Good</span>
-          </span>
-          </li>
           
-          </li>
           </ul>
           </div>
           </div>
