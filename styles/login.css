@@ -170,8 +170,12 @@
   
   @media screen and (max-width: 540px) {
     #container {
-      width: 100%;
+      width: 80%;
       flex-direction: column;
+    }
+
+    #container h2{
+      margin-left: 65%;
     }
   
     #dis {
@@ -201,11 +205,11 @@
     border-radius: 5px;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(1, 65, 1);
+    background-color: #0da702;
     cursor: pointer;
     margin-top: 5%;
     font-size: 1.1rem;
-    font-weight: bolder;
+    font-weight: bold;
     color: white;
   }
 
@@ -216,12 +220,34 @@
 }
 
 @media screen and (max-width: 280px){
+  
+#container{
+  width: 100%;
+}
+
+  #container h2{
+    font-size: 2.5em;
+    margin-left: 50%;
+  }
+
+  #create{
+    width:90%;
+    padding: 4px;
+  }
   .dummy_credentials{
     width: 100%;
     margin: -75% 0 0 0;
   }
+  #log{
+    padding: 5px 0;
+  }
 }
-@media screen and (max-width: 412px){
+@media screen and (max-width: 415px){
+
+  #container h2{
+    font-size: 2.5em;
+    margin-left: 55%;
+  }
   .dummy_credentials{
     width: 100%;
     margin: -75% 0 0 0;

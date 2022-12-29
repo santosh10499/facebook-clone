@@ -22,7 +22,7 @@
   /*From Section Start*/
   #container {
     width:28%;
-    height: 550px;
+    height: 75vh;
     margin-left: 35%;
     margin-top: 5%;
     box-shadow: 0px 5px 8px 3px #aaaa;
@@ -138,10 +138,17 @@
     cursor:pointer;
   }
   
+  @media screen and (max-width: 1024px){
+    #container{
+      width: 40%;
+      height: 90vh;
+    }
+  }
   
   @media screen and (max-width: 950px) {
     #container {
         width:60%;
+        height: 50vh;
         margin-left:20%;
     }
     body{
@@ -151,16 +158,14 @@
 
 @media screen and (max-width: 540px) {
     #container {
-        width:96%;
-        margin-left:2%;
+        width:80%;
+        height: 80vh;
+        margin: 5% auto;
     }
     #all_gender {
         width: 26%;
         height: 25px;
         border: 1px solid #aaaa;
-        /* border: 1px solid red; */
-    
-        
         border-radius: 5px;
       }
       .female {
@@ -175,4 +180,29 @@
         margin-left: 65%;
         margin-top: -38px;
       }
+}
+
+@media screen and (max-width: 285px){
+  #container{
+    width: 96%;
+  }
+  #firstName, #lastname{
+    width: 90%;
+  }
+  select{
+    width: 76px;
+  }
+  #all_gender{
+    font-size: 0.9em;
+  }
+  #sign{
+    margin-left: 13%;
+  }
+}
+@media screen and (max-width: 415px){
+  #container{
+    width: 96%;
+    height: 78vh;
+  }
+ 
 }
