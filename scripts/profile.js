@@ -743,7 +743,7 @@ let userName=document.querySelectorAll('.user-name');
 
 for(let i=0;i<userName.length;i++)
 {
-userName[i].innerText=firstname +" " +lastname;
+userName[i].innerText=firstName +" " +lastName;
 }
 
 
