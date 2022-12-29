@@ -124,10 +124,8 @@ async function api() {
     </span>
     </li>`;
     
-        commentCount[i].innerHTML = `<span style="margin-left:-50px"class="commentcount"> <p class="pointer comment">${++data[
-          i
-        ].comment}Comments</p></span>`;
-        userComment[i].value = " ";
+        commentCount[i].innerHTML = `<span style="margin-left:-50px"class="commentcount"> <p class="pointer comment">${++data[data.length-1-i].comment}Comments</p></span>`;
+        userComment[i].value = "";
       }
     });
   }
