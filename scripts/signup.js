@@ -8,8 +8,6 @@ let signUp = document.getElementById("sign");
 let cross = document.getElementById("cross");
 let genderbox = document.querySelectorAll("#all_gender");
 let userData = [];
-// for checking gender value
-console.log(genderbox);
 
 // =======================add click function on signUp button and some validation====================
 signUp.addEventListener("click", () => {
@@ -54,39 +52,46 @@ signUp.addEventListener("click", () => {
     }
   }
 
-  if (userLastName.value != "" && userName.value != "" && email.value == confirmEmail.value && password.value != "" && email.value.includes("@") && email.value.includes("gmail.com") && ans) {
-    
+  if (
+    userLastName.value != "" &&
+    userName.value != "" &&
+    email.value == confirmEmail.value &&
+    password.value != "" &&
+    email.value.includes("@") &&
+    email.value.includes("gmail.com") &&
+    ans
+  ) {
     if (localStorage.getItem("signupData")) {
       let flag = true;
       userData = JSON.parse(localStorage.getItem("signupData"));
-      userData.forEach((user)=>{
-        if(user.email == email.value){
+      userData.forEach((user) => {
+        if (user.email == email.value) {
           alert("User Already Exists");
           flag = false;
         }
-      })
-      if (flag){
-        userData.push({email: email.value,password: password.value,userName: userName.value,surName:userLastName.value});
+      });
+      if (flag) {
+        userData.push({
+          email: email.value,
+          password: password.value,
+          userName: userName.value,
+          surName: userLastName.value,
+        });
         localStorage.setItem("signupData", JSON.stringify(userData));
         window.location.href = "/index.html";
       }
-    }
-    else {
-      userData.push({email: email.value,password: password.value,userName: userName.value,surName:userLastName.value});
+    } else {
+      userData.push({
+        email: email.value,
+        password: password.value,
+        userName: userName.value,
+        surName: userLastName.value,
+      });
       localStorage.setItem("signupData", JSON.stringify(userData));
       window.location.href = "/index.html";
     }
   }
 });
-
-
-
-
-
-
-
-
-
 
 cross.addEventListener("click", () => {
   window.location.href = "/index.html";
