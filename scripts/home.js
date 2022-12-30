@@ -385,6 +385,12 @@ createPostBtn.addEventListener("click", async () => {
   document.getElementById("create-post-url-input").value = "";
   postCreator.style.display = "none";
 
-  api();
+  // api();
 
 })
+
+
+
+
+
+
