@@ -68,7 +68,7 @@ signUp.addEventListener("click", () => {
       if (flag){
         userData.push({email: email.value,password: password.value,userName: userName.value,surName:userLastName.value});
         localStorage.setItem("signupData", JSON.stringify(userData));
-        window.location.href = "index.html";
+        window.location.href = "/index.html";
       }
     }
     else {

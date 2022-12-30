@@ -1,4 +1,5 @@
 const dummy_post = document.querySelector(".dummy_posts");
+
 async function api() {
   let data1 = await fetch(
     "https://fbbackendposts-production-5f33.up.railway.app/fb/getAllposts",{
@@ -8,7 +9,33 @@ async function api() {
   let data = await data1.json();
 
   for (let i = 0; i < data.length; i++) {
-    let date = new Date(data[i].time);
+    
+    let currentTime = new Date();
+    let showTime;
+    let postedTime = new Date(data[i].time);
+    let timeDiff = currentTime - postedTime;
+    timeDiff = Math.round(timeDiff/1000);
+
+    if(timeDiff < 60){
+      showTime = timeDiff + ' s';
+    }
+    else if(timeDiff >= 60 && timeDiff < 3600){
+      timeDiff = Math.round(timeDiff/60);
+      showTime = timeDiff + ' m';
+    }
+    else if(timeDiff >= 3600 && timeDiff < (3600*24)){
+      timeDiff = Math.round(timeDiff/3600);
+      showTime = timeDiff + ' h';
+    }
+    else if(timeDiff >= (3600*24) && timeDiff < (3600*24*30)){
+      timeDiff = Math.round(timeDiff/(3600*24));
+      showTime = timeDiff + ' d';
+    }
+    else if(timeDiff >= (3600*24*30) && timeDiff < (3600*24*30*12)){
+      timeDiff = Math.round(timeDiff/(3600*24*30));
+      showTime = timeDiff + ' m';
+    }
+
 
     dummy_post.innerHTML = `<div class="dummy_post">
       <div class="top">
@@ -16,7 +43,7 @@ async function api() {
         <div class="name">
           <p class="pointer">${data[i].userNamePost}</p>
           <span class="pointer"
-            >${date.toDateString()}.<i class="fa-solid fa-earth-americas"></i
+            >${showTime}.<i class="fa-solid fa-earth-americas"></i
           ></span>
         </div>
 
@@ -62,14 +89,7 @@ async function api() {
             
           </div>
           <ul class="commentlist">
-          <li>
-          <span class="comment-person">
-          <img src="/images/profile2.png" alt="" class="hover userimage commenti" width="30px"/>
-            <span class="comment_text">Good</span>
-          </span>
-          </li>
           
-          </li>
           </ul>
           </div>
           </div>
@@ -153,6 +173,7 @@ async function api() {
   let icon = document.querySelectorAll(".icon");
   let likeCount = document.querySelectorAll(".like-count");
 
+  console.log(data[0].like)
   for (let j = 0; j < likebtn.length; j++) {
     likebtn[j].addEventListener("click", () => {
       

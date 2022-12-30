@@ -2,110 +2,17 @@
 /*======================================= Getting User-Email from local storage ===================================*/
 
 
-let userEmail=localStorage.getItem('userEmail')
+let userEmail = localStorage.getItem('userEmail');
+let firstName = localStorage.getItem('firstName');
+let lastName =  localStorage.getItem('LastName');
 
 
-
-/*======================================= Side-fix-button - Dialog-Box ===================================*/
-
-const sideFixButton = document.querySelector(".side-fix-button");
-const crossButton = document.querySelector(".fa-xmark");
-
-sideFixButton.addEventListener("click", (e) => {
-
-    document.querySelector(".create_new_group").style.display = "block";
-  
-})
-
-crossButton.addEventListener("click", (e) => {
-
-  document.querySelector(".create_new_group").style.display = "none";
-
-})
-
-
-
-
-
-
-
-
-/*====================================== Update-Profile-Picture & Cover-Photo-PopUp =========================================================================================*/
-
-
-const profilePicCamera = document.querySelector("#profile-pic-camera");
-const updateProfilePicDiv = document.querySelector(".update-profile-pic-div");
-const updateProfileUrlInput = document.querySelector("#update-profile-url-input");
-const profilePicUploadBtn = document.querySelector("#profile-pic-upload-btn");
-const profilePicCancelBtn = document.querySelector("#profile-pic-cancel-btn");
-
-
-const addCoverPhotoBtn = document.querySelector(".add-cover-photo");
-const updateCoverPhotoDiv = document.querySelector(".update-cover-photo-div");
-const updateCoverPhotoUrlInput = document.querySelector("#update-cover-photo-url-input");
-const coverPhotoUploadBtn = document.querySelector("#cover-photo-upload-btn");
-const coverPhotoCancelBtn = document.querySelector("#cover-photo-cancel-btn");
-
-
-/*---------------- Event-Listener for Add-Cover-Photo-Btn -----------------*/
-
-addCoverPhotoBtn.addEventListener("click", ()=>{
-    updateCoverPhotoDiv.style.display = "block";
-    document.querySelector(".popUp-divs-container").style.display = "block";
-})
-
-coverPhotoCancelBtn.addEventListener("click", ()=>{
-    updateCoverPhotoDiv.style.display = "none";
-    document.querySelector(".popUp-divs-container").style.display = "none";
-})
-
-/*---------------- Event-Listener for Profile-picture-Edit-Btn -----------------*/
-
-profilePicCamera.addEventListener("click", ()=>{
-    updateProfilePicDiv.style.display = "block";
-    document.querySelector(".popUp-divs-container").style.display = "block";
-})
-
-profilePicCancelBtn.addEventListener("click", ()=>{
-    updateProfilePicDiv.style.display = "none";
-    document.querySelector(".popUp-divs-container").style.display = "none";
-})
-
-
-
-
-
-
-/*---------------- Event-Listener for Cover-Photo-UploadBtn -----------------*/
-
-coverPhotoUploadBtn.addEventListener("click", ()=>{
-    const coverPhotoUrl = updateCoverPhotoUrlInput.value;
-    document.getElementById("cover-photo-img").src = coverPhotoUrl;
-    updateCoverPhotoUrlInput.value = "";
-})
-
-/*---------------- Event-Listener for Profile-picture-UploadBtn -----------------*/
-
-profilePicUploadBtn.addEventListener("click", ()=>{
-    const profilePicUrl = updateProfileUrlInput.value;
-    document.getElementById("profile-pic-img").src = profilePicUrl;
-    updateProfileUrlInput.value = "";
-})
-
-
-
-
-/*=============================================================================================================================================*/
-
-
-
-
-
+let fbUsers = JSON.parse(localStorage.getItem("users"));
 
 /*============================== Users-Array ============================================================================*/
 
 
-let usersArray = [
+usersArray = [
 
   {
     name: "Rohan Palankar",
@@ -294,18 +201,14 @@ let usersArray = [
 ]
 
 
-
-
-
-
-
+// localStorage.setItem("users", JSON.stringify(usersArray));
 
 
 
 /*============================================= Rendering User-Profile-details =================================================*/
 
 
-  usersArray.forEach((userObj) => {
+fbUsers.forEach((userObj) => {
 
     if (userEmail == userObj.email){
 
@@ -340,6 +243,16 @@ let usersArray = [
       displayCheckIns(userObj.checkIns);
 
       displayGroups(userObj.groups);
+
+    }
+    else {
+      document.getElementById("profile-name").innerText = firstName + " " + lastName;
+
+      let userObject = {
+        name: firstName + " " + lastName,
+        email: userEmail
+      }
+      usersArray.push(userObject);
 
     }
 
@@ -564,6 +477,119 @@ function displayGroups(groupsArray){
 
 
 
+/*======================================= Side-fix-button - Dialog-Box ===================================*/
+
+const sideFixButton = document.querySelector(".side-fix-button");
+const crossButton = document.querySelector(".fa-xmark");
+
+sideFixButton.addEventListener("click", (e) => {
+
+    document.querySelector(".create_new_group").style.display = "block";
+  
+})
+
+crossButton.addEventListener("click", (e) => {
+
+  document.querySelector(".create_new_group").style.display = "none";
+
+})
+
+
+
+
+
+
+
+
+/*====================================== Update-Profile-Picture & Cover-Photo-PopUp ================================================*/
+
+
+const profilePicCamera = document.querySelector("#profile-pic-camera");
+const updateProfilePicDiv = document.querySelector(".update-profile-pic-div");
+const updateProfileUrlInput = document.querySelector("#update-profile-url-input");
+const profilePicUploadBtn = document.querySelector("#profile-pic-upload-btn");
+const profilePicCancelBtn = document.querySelector("#profile-pic-cancel-btn");
+
+
+const addCoverPhotoBtn = document.querySelector(".add-cover-photo");
+const updateCoverPhotoDiv = document.querySelector(".update-cover-photo-div");
+const updateCoverPhotoUrlInput = document.querySelector("#update-cover-photo-url-input");
+const coverPhotoUploadBtn = document.querySelector("#cover-photo-upload-btn");
+const coverPhotoCancelBtn = document.querySelector("#cover-photo-cancel-btn");
+
+
+/*---------------- Event-Listener for Add-Cover-Photo-Btn -----------------*/
+
+addCoverPhotoBtn.addEventListener("click", ()=>{
+    updateCoverPhotoDiv.style.display = "block";
+    document.querySelector(".popUp-divs-container").style.display = "block";
+})
+
+coverPhotoCancelBtn.addEventListener("click", ()=>{
+    updateCoverPhotoDiv.style.display = "none";
+    document.querySelector(".popUp-divs-container").style.display = "none";
+})
+
+/*---------------- Event-Listener for Profile-picture-Edit-Btn -----------------*/
+
+profilePicCamera.addEventListener("click", ()=>{
+    updateProfilePicDiv.style.display = "block";
+    document.querySelector(".popUp-divs-container").style.display = "block";
+})
+
+profilePicCancelBtn.addEventListener("click", ()=>{
+    updateProfilePicDiv.style.display = "none";
+    document.querySelector(".popUp-divs-container").style.display = "none";
+})
+
+
+
+
+
+
+/*---------------- Event-Listener for Cover-Photo-UploadBtn -----------------*/
+
+coverPhotoUploadBtn.addEventListener("click", ()=>{
+    const coverPhotoUrl = updateCoverPhotoUrlInput.value;
+    document.getElementById("cover-photo-img").src = coverPhotoUrl;
+    updateCoverPhotoUrlInput.value = "";
+
+    fbUsers.forEach((user) => {
+      if(user.email == userEmail){
+        user.coverPhoto = coverPhotoUrl;
+        localStorage.setItem("users", JSON.stringify(fbUsers));
+      }
+    })
+})
+
+/*---------------- Event-Listener for Profile-picture-UploadBtn -----------------*/
+
+profilePicUploadBtn.addEventListener("click", ()=>{
+    const profilePicUrl = updateProfileUrlInput.value;
+    document.getElementById("profile-pic-img").src = profilePicUrl;
+    updateProfileUrlInput.value = "";
+
+    fbUsers.forEach((user) => {
+      if(user.email == userEmail){
+        user.profilePic = profilePicUrl;
+        localStorage.setItem("users", JSON.stringify(fbUsers));
+      }
+    })
+    
+})
+
+
+
+
+/*=============================================================================================================================================*/
+
+
+
+
+
+
+
+
 /*=============================== Event-Listeners to move to different pages ===========================================*/
 
 
@@ -602,9 +628,6 @@ const logOut = document.querySelector("#logout");
 logOut.addEventListener("click", () => {
   window.location.href = "/index.html";
 });
-
-
-
 
 
 
@@ -715,19 +738,17 @@ userimage[i].src=userdata[k].profilePic
 }
 }
 }
+
+
 // for user name displaying
 let userName=document.querySelectorAll('.user-name');
 
-// ================================get data from localStorage
-let firstname=localStorage.getItem('firstName');
-let lastname=localStorage.getItem('LastName');
-
-
-
 for(let i=0;i<userName.length;i++)
 {
-userName[i].innerText=firstname +" " +lastname;
+userName[i].innerText=firstName +" " +lastName;
 }
+
+
 
 // ==========================logout
 

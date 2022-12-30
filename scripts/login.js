@@ -34,7 +34,7 @@ login.addEventListener("click", () => {
        lastName.push(array[i].surName);
        localStorage.setItem('userEmail',userEmail);
        localStorage.setItem('firstName',firstName);
-       localStorage.setItem('LastName',lastName)
+       localStorage.setItem('LastName',lastName);
 
       //  ---------------------------------
       
