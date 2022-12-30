@@ -21,6 +21,7 @@ console.log(array)
 
 login.addEventListener("click", () => {
   let wrongEmail = true;
+  
   for (let i = 0; i<array.length; i++) {
 
     if (array[i].email == email.value){
@@ -33,7 +34,7 @@ login.addEventListener("click", () => {
        lastName.push(array[i].surName);
        localStorage.setItem('userEmail',userEmail);
        localStorage.setItem('firstName',firstName);
-       localStorage.setItem('LastName',lastName)
+       localStorage.setItem('LastName',lastName);
 
       //  ---------------------------------
       
@@ -53,6 +54,7 @@ login.addEventListener("click", () => {
     email.style.border = "1px solid red";
     alert("User doesn't exist");
   }
+  
 
 });
 
