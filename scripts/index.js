@@ -246,30 +246,38 @@ friendIcon.addEventListener("click", () => {
   window.location.href = "/pages/friends.html";
 });
 
+// //=========================for displaying user profile=============
+
+// let userdata = [
+//   {
+//     email: "santosh@gmail.com",
+//     profilePic: "/images/santosh-mehta-profilepic.jpg",
+//   },
+//   {
+//     email: "varsharajput353@gmail.com",
+//     profilePic: "/images/varsha-profilepic.jpg",
+//   },
+//   { email: "ss0149952@gmail.com", profilePic: "/images/sonu-profilepic.jpg" },
+//   {
+//     email: "rohanpalankar8@gmail.com",
+//     profilePic: "/images/profile-pic-rohan.jpg",
+//   },
+// ];
+
+// let Email = localStorage.getItem("userEmail");
+
+// let userimage = document.querySelectorAll(".userimage");
+
+// for (let k = 0; k < userdata.length; k++) {
+//   for (let i = 0; i < userimage.length; i++) {
+//     if (userdata[k].email == Email) {
+//       userimage[i].src = userdata[k].profilePic;
+//     }
+//   }
+// }
+
+// --------------comment_btn-------------
+
+// const add_comment = document.querySelector("#comment_btn");
 
 
-// ===============================update api===========================
-
-const postData = {
-    userImage,
-    userNamePost,
-    time: new Date(),
-    caption: createPostTextInput.value,
-    postImage: createPostUrlInput.value,
-    like:0,
-    comment:0,
-    share:""
-  }
-
-
-
-async function updateAPI() {
-  let post = await fetch('https://fbbackendposts-production-5f33.up.railway.app/fb/updatepost',{
-      method: "PATCH",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(api())
-  })
-  }
-  updateAPI()
