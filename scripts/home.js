@@ -80,7 +80,7 @@ content.innerHTML += `<div class="create_story">
   <img
     src="/images/profile2.png"
     alt=""
-    class="profile bg hover"
+    class="profile bg_img hover userimage"
     width="45px"
   />
   <input type="text" placeholder="What's on your mind?" id="post-input"/>
