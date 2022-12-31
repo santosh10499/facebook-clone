@@ -335,7 +335,7 @@
   padding: 0.5em;
   border-radius: 1.6em;
   width: 100%;
-  border: 2px solid;
+
 }
 .Profile_area .input_field i {
   margin: 0 1%;
@@ -522,7 +522,7 @@
 
 /* media query for mobile view */
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 376px) {
   .container .img {
     height: 28vh;
   }
@@ -532,6 +532,9 @@
 
   .Profile_area .input_field input{
     width: 1em;
+  }
+  .Create_my_story{
+    height: 20vh;
   }
 }
 
@@ -572,9 +575,12 @@
   #my_story {
     margin-top: 0;
   }
+  
+  
 }
 
 @media only screen and (max-width: 415px) {
+  
   .story {
     top: -74%;
   }
@@ -590,8 +596,16 @@
   .container .img {
     height: 25vh;
   }
+  
 
   .story {
     top: -76%;
+  }
+
+}
+
+@media only screen and (max-width: 1180px){
+  .Create_my_story{
+    height: 11em;
   }
 }
