@@ -19,7 +19,7 @@ usersArray = [
   {
     name: "Rohan Palankar",
     email: "rohanpalankar8@gmail.com",
-    profilePic: "https://scontent.fblr19-1.fna.fbcdn.net/v/t1.6435-9/58460714_2287391554832092_8244223977036185600_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=_H-Wll3YYZsAX_wV8nc&_nc_oc=AQlOjK0ZniGbopsnq7JZYOg1w9GN1PQB7BU7UsxJlvcX2Un_F7sRyu7W5y1Fzwzc6M8&_nc_ht=scontent.fblr19-1.fna&oh=00_AfCeZYKKBuYs6TYhmQ0cQzxSlEncwD2vKJQmCPXq_1T3uQ&oe=63D0D104",
+    profilePic: "https://images.unsplash.com/photo-1508341591423-4347099e1f19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bWVufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     coverPhoto: "https://images.unsplash.com/photo-1462400362591-9ca55235346a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzN8fGxhbmRzY2FwZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60  ",
     totalFriends: "2.1K friends",
     workPlace: "Worked at Lupin Limited",
@@ -31,34 +31,34 @@ usersArray = [
     relationship: "Single",
     contactNum: "095274 57742",
     friends: [
-      { id: "frnd-1", name: "Rahul Shinde", mutual: "180 mutual friends", img: "https://scontent.fblr19-1.fna.fbcdn.net/v/t39.30808-6/300799642_4117214955171269_1357015044324035002_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=jLQIDEBmhBUAX8uUSCK&tn=MlK-62xn9mAFYEGv&_nc_ht=scontent.fblr19-1.fna&oh=00_AfA1VHc3RQWnGhz1x5fO6c1cbHafFgWgEe7_h6u2rFydLg&oe=63AF58D2" },
-      { id: "frnd-2", name: "Nitin Palankar", mutual: "402 mutual friends", img: "https://scontent.fblr19-1.fna.fbcdn.net/v/t39.30808-6/313299241_3686539308239201_1044608399826045902_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=R-4NlfAnMv8AX-AVhwr&_nc_ht=scontent.fblr19-1.fna&oh=00_AfCQMaQF_I-uCexiMSWaiCrjR730UQwuO0oQ_qlShjJXZg&oe=63AE8841" },
-      { id: "frnd-3", name: "Sunil Pise", mutual: "100 mutual friends", img: "https://scontent.fblr19-1.fna.fbcdn.net/v/t1.6435-9/124053197_1680319898797235_4879508572554340628_n.jpg?stp=dst-jpg_s1080x2048&_nc_cat=108&ccb=1-7&_nc_sid=e3f864&_nc_ohc=dIBk_m5aR6cAX8Xm8eY&tn=MlK-62xn9mAFYEGv&_nc_ht=scontent.fblr19-1.fna&oh=00_AfBrNhLH49cBz6XoAoboACnoqFDosDMOAvzb7Qq-UlJUOg&oe=63D0E6D2" },
-      { id: "frnd-4", name: "Shivam Kale", mutual: "12 mutual friends", img: "https://scontent.fblr19-1.fna.fbcdn.net/v/t39.30808-6/310685772_102914442608898_699989746744650584_n.jpg?stp=cp6_dst-jpg_p720x720&_nc_cat=107&ccb=1-7&_nc_sid=e3f864&_nc_ohc=DBUgHpZ7bFUAX8XjRBK&_nc_ht=scontent.fblr19-1.fna&oh=00_AfDMJd0JZfPBFSEFUfeKoXr3eWrzkuaOBy04H4cmzxd6pg&oe=63AD93BD" },
-      { id: "frnd-5", name: "Swapnil Jadhav", mutual: "87 mutual friends", img: "https://scontent.fblr19-1.fna.fbcdn.net/v/t39.30808-1/278701061_4947140945403149_260893688769938148_n.jpg?stp=dst-jpg_p320x320&_nc_cat=107&ccb=1-7&_nc_sid=7206a8&_nc_ohc=BOTjU2LSo0QAX-5qW3g&_nc_ht=scontent.fblr19-1.fna&oh=00_AfCimbeLJTtyy6PkgymDMGh-SkpzNZ3-atnqzikuRrL8Jw&oe=63ADAE7C" },
-      { id: "frnd-6", name: "Aditya Revankar", mutual: "250 mutual friends", img: "https://scontent.fblr19-1.fna.fbcdn.net/v/t1.6435-9/165693156_3011495162407034_9036206987992104802_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=nDvPBNNaLNcAX8keg5l&_nc_ht=scontent.fblr19-1.fna&oh=00_AfDqf0FcoDu9usPb2ENBBRhJWNk69w5oY7AU1fFpw4h6sw&oe=63D106D8" }
+      { id: "frnd-1", name: "Rahul Shinde", mutual: "180 mutual friends", img: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bWVufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" },
+      { id: "frnd-2", name: "Nitin Palankar", mutual: "402 mutual friends", img: "https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fG1lbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" },
+      { id: "frnd-3", name: "Sunil Pise", mutual: "100 mutual friends", img: "https://images.unsplash.com/photo-1492446845049-9c50cc313f00?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bWVufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" },
+      { id: "frnd-4", name: "Shivam Kale", mutual: "12 mutual friends", img: "https://images.unsplash.com/photo-1500048993953-d23a436266cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" },
+      { id: "frnd-5", name: "Swapnil Jadhav", mutual: "87 mutual friends", img: "https://images.unsplash.com/photo-1584043720379-b56cd9199c94?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fG1lbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" },
+      { id: "frnd-6", name: "Aditya Revankar", mutual: "250 mutual friends", img: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bWVufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" }
     ],
     photos: [
-      { id: "photo-1", img: "https://scontent.fblr19-1.fna.fbcdn.net/v/t1.6435-9/67280999_2098581323779533_5057943557252317184_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=0Tv7ZuJBsv8AX-V_owN&tn=MlK-62xn9mAFYEGv&_nc_ht=scontent.fblr19-1.fna&oh=00_AfAMK-EdFGONH_g4Yddlv99OwwWn6yGWoHou662S7Po3Eg&oe=63D0EC40" },
-      { id: "photo-2", img: "https://scontent.fblr19-1.fna.fbcdn.net/v/t1.6435-9/74682734_2431467927091120_1933154068281163776_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=qFxbP_LULkUAX9tysWt&_nc_ht=scontent.fblr19-1.fna&oh=00_AfD_O5XrPJRgHMWm6SLRRtMzkmfalIa3HG9TPt-lTtkRNg&oe=63D0D651" },
-      { id: "photo-3", img: "https://scontent.fblr19-1.fna.fbcdn.net/v/t1.6435-9/74604671_2431210593783520_1886867252976812032_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=D5vjq4WFpKUAX860CKD&_nc_ht=scontent.fblr19-1.fna&oh=00_AfDjmYIbXy14uJD0-MTuiEzdjYZhU0tHX8I2HNAjG2J8uA&oe=63D0EF5A" },
-      { id: "photo-4", img: "https://scontent.fblr19-1.fna.fbcdn.net/v/t1.6435-9/75580402_2431210543783525_1912186338589802496_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=gB29UnwxPhUAX9Zt8HT&tn=MlK-62xn9mAFYEGv&_nc_ht=scontent.fblr19-1.fna&oh=00_AfC-6dH_IeWnN8-5e068NhLxLmoDsjXZrl38V5FjfoU67g&oe=63D0FBA3" },
-      { id: "photo-5", img: "https://scontent.fblr19-1.fna.fbcdn.net/v/t1.6435-9/69524860_2372884706282776_7724990842158448640_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=T5K3OHNiNhUAX9NFrIA&_nc_ht=scontent.fblr19-1.fna&oh=00_AfCZ-NxwCBraBb9tjFq6vzXj70kB48BJTA2wt1Aa2-grVg&oe=63D0D572" },
-      { id: "photo-6", img: "https://scontent.fblr19-1.fna.fbcdn.net/v/t1.6435-9/58462731_2287412058163375_8486552066305556480_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=pA5hU4Rifq8AX9Z9ZBl&_nc_ht=scontent.fblr19-1.fna&oh=00_AfBUOm__-grBTw0yEMQuL_lBUZFfEOveCFJKC6fucU-vAw&oe=63D0E92C" },
-      { id: "photo-7", img: "https://scontent.fblr19-1.fna.fbcdn.net/v/t1.6435-9/59328249_2287411988163382_2029500681630515200_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=pNknQIdA_1gAX_U3Xo5&tn=MlK-62xn9mAFYEGv&_nc_ht=scontent.fblr19-1.fna&oh=00_AfDEnQOCPCfL9Wk1t34wbufdRob_NPEXUSsah08nYVpeZA&oe=63D0ED87" },
-      { id: "photo-8", img: "https://scontent.fblr19-1.fna.fbcdn.net/v/t1.6435-9/59391866_2287411884830059_7843916562439340032_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=46M64V3Bz8kAX8ghyGb&_nc_ht=scontent.fblr19-1.fna&oh=00_AfDVd7PTIKOyPrAbfW5hufxJwA3XmPICfD_43Mosuj7Y2Q&oe=63D10821" }
+      { id: "photo-1", img: "https://images.unsplash.com/photo-1492681290082-e932832941e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" },
+      { id: "photo-2", img: "https://images.unsplash.com/photo-1496302662116-35cc4f36df92?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" },
+      { id: "photo-3", img: "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" },
+      { id: "photo-4", img: "https://images.unsplash.com/photo-1488161628813-04466f872be2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nzl8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" },
+      { id: "photo-5", img: "https://images.unsplash.com/photo-1543357480-c60d40007a3f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA5fHxwZXJzb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" },
+      { id: "photo-6", img: "https://images.unsplash.com/photo-1496016943515-7d33598c11e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTI0fHxwZXJzb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" },
+      { id: "photo-7", img: "https://images.unsplash.com/photo-1502791451862-7bd8c1df43a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTk4fHxwZXJzb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" },
+      { id: "photo-8", img: "https://images.unsplash.com/photo-1548280684-8c051518e195?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjY1fHxwZXJzb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" }
     ],
     checkIns: [
       { id: "checkIns-1", name: "Betalbatim, Goa, India", details_1: "Majorda", details_2: "Visited on December 19, 2019", img: "https://th.bing.com/th/id/OIP.bQJT7Lb5_O0vAUy8E0oSZwHaEK?w=322&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7" },
-      { id: "checkIns-2", name: "Don Mueang Airport", details_1: "Bangkok, Thailand", details_2: "Visited on November 9, 2019", img: "https://scontent.fblr19-1.fna.fbcdn.net/v/t1.18169-9/10624965_1679064285652894_93471452215634055_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=ESUSL9ifTscAX9YNNTc&_nc_ht=scontent.fblr19-1.fna&oh=00_AfCzm6swD9bOv-WRfgQdoJ4NQ5NRJII6LJNPVioMgoFVog&oe=63D10B96" },
+      { id: "checkIns-2", name: "Don Mueang Airport", details_1: "Bangkok, Thailand", details_2: "Visited on November 9, 2019", img: "https://images.unsplash.com/photo-1542296332-2e4473faf563?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGFpcnBvcnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" },
       { id: "checkIns-3", name: "Chennai Airport", details_1: "Chennai, India", details_2: "Visited on November 8, 2019", img: "https://th.bing.com/th/id/OIP.bdHmvj3LfCrSVqSQHHnr7QHaE6?w=289&h=192&c=7&r=0&o=5&dpr=1.3&pid=1.7" },
       { id: "checkIns-4", name: "Goa Airport", details_1: "Mormugao, Goa", details_2: "Visited on November 8, 2019", img: "https://th.bing.com/th/id/OIP.5ltecM5UJ7FyEAr9wcFhPgHaEK?w=303&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" }
     ],
     groups: [
-      { id: "group-1", name: "Konkani Friends", categoryIcon: "public", category: "Public group |", members: "1.9K members", img: "https://scontent.fblr19-1.fna.fbcdn.net/v/t39.30808-6/244409381_566127964700327_5014872789516970616_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8631f5&_nc_ohc=lXWCYDgwOV0AX_XcJyH&_nc_ht=scontent.fblr19-1.fna&oh=00_AfDNxUp1E1YZtg1ieRULjjkdDwWbKv9wh9gjnBHnNHKfuQ&oe=63AD9129" },
-      { id: "group-2", name: "Daivadnya Pratibhe", categoryIcon: "public", category: "Public group |", members: "797 members", img: "https://scontent.fblr19-1.fna.fbcdn.net/v/t39.30808-6/245040133_4341962339173714_8439844709310079065_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8631f5&_nc_ohc=49crsT45DgYAX9NsmhJ&_nc_ht=scontent.fblr19-1.fna&oh=00_AfCdXVpkI_NBJLKzTuXCBzVq8-ROfFxLynz_leP2hZnR4g&oe=63AE152E" },
-      { id: "group-3", name: "Passionpreneurs", categoryIcon: "public", category: "Public group |", members: "42.2K members", img: "https://scontent.fblr19-1.fna.fbcdn.net/v/t39.30808-6/224469468_4125355554228007_4122144367981821646_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8631f5&_nc_ohc=FNkfX3MGW8kAX90QXFD&_nc_ht=scontent.fblr19-1.fna&oh=00_AfDGq2sMzJC7C2N8O_60nSpGINPVCttvh_SgF-qEFoNOYA&oe=63ADE81B" },
-      { id: "group-4", name: "Incredible Karwar", categoryIcon: "public", category: "Public group |", members: "4.9K members", img: "https://scontent.fblr19-1.fna.fbcdn.net/v/t39.30808-6/299427673_1040514539986613_6602557206582369554_n.jpg?stp=cp6_dst-jpg&_nc_cat=110&ccb=1-7&_nc_sid=8631f5&_nc_ohc=MuDhsK2lqBwAX_9AV3w&tn=MlK-62xn9mAFYEGv&_nc_ht=scontent.fblr19-1.fna&oh=00_AfD9HB5VRD7B9ubSV5gprMKDtCFnqwIzyJSbe-DxCo7LaA&oe=63AEAE74" }
+      { id: "group-1", name: "Konkani Friends", categoryIcon: "public", category: "Public group |", members: "1.9K members", img: "https://images.unsplash.com/photo-1506869640319-fe1a24fd76dc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGZyaWVuZHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" },
+      { id: "group-2", name: "Daivadnya Pratibhe", categoryIcon: "public", category: "Public group |", members: "797 members", img: "https://images.unsplash.com/photo-1538460120076-604b93a2ce88?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dGVtcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" },
+      { id: "group-3", name: "Passionpreneurs", categoryIcon: "public", category: "Public group |", members: "42.2K members", img: "https://images.unsplash.com/photo-1629721671030-a83edbb11211?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHN1Y2Nlc3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" },
+      { id: "group-4", name: "Incredible Karwar", categoryIcon: "public", category: "Public group |", members: "4.9K members", img: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGluZGlhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" }
     ]
   },
 
@@ -203,7 +203,10 @@ usersArray = [
 ]
 
 
- localStorage.setItem("users", JSON.stringify(usersArray));
+
+localStorage.setItem("users", JSON.stringify(usersArray));
+
+
 
 
 
