@@ -116,22 +116,26 @@ async function api() {
     
 
     addBtn[i].addEventListener("click", () => {
+      
       if (userComment[i].value.length > 0) {
+        
         commentlist[i].innerHTML += `<li>
+        
     <span class="comment-person">
     <img src="/images/profile2.png" alt="" class="hover userimage commenti" width="30px"/>
       <span class="comment_text">${userComment[i].value}</span>
     </span>
     </li>`;
-    
+    imageRender()
         commentCount[i].innerHTML = `<span style="margin-left:-50px"class="commentcount"> <p class="pointer comment">${++data[data.length-1-i].comment}Comments</p></span>`;
         userComment[i].value = "";
+        
       }
     });
   }
 
   //=========================for displaying user profile=============
-
+  function imageRender(){
   let userdata = [
     {
       email: "santosh@gmail.com",
@@ -155,10 +159,11 @@ async function api() {
     },
   ];
 
+  
   let Email = localStorage.getItem("userEmail");
 
   let userimage = document.querySelectorAll(".userimage");
-
+   
   for (let k = 0; k < userdata.length; k++) {
     for (let i = 0; i < userimage.length; i++) {
       if (userdata[k].email == Email) {
@@ -166,7 +171,8 @@ async function api() {
       }
     }
   }
-
+}
+imageRender()
   // ====================this is for likeing post
 
   let likebtn = document.querySelectorAll(".like1");
@@ -280,13 +286,4 @@ friendIcon.addEventListener("click", () => {
 
 // const add_comment = document.querySelector("#comment_btn");
 
-// const commentSection = document.querySelector(".commentSection")
-// console.log(add_comment)
 
-// add_comment.addEventListener("click", () => {
-//   if (commentSection.style.display == "block") {
-//     commentSection.style.display = "none";
-//   } else {
-//     commentSection.style.display = "block";
-//   }
-// });

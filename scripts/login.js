@@ -18,6 +18,7 @@ login.addEventListener("click", () => {
   let wrongEmail = true;
 
   for (let i = 0; i < array.length; i++) {
+
     if (array[i].email == email.value || email.value=="guest@gmail.com") {
 
       wrongEmail = false;
@@ -36,12 +37,19 @@ login.addEventListener("click", () => {
         localStorage.setItem("LastName", lastName);
         }
       else{
+
+    if (array[i].email == email.value) {
+      wrongEmail = false;
+      if (array[i].password == password.value) {
+        // this is used for render name in home page
+
         userEmail.push(array[i].email);
         firstName.push(array[i].userName);
         lastName.push(array[i].surName);
         localStorage.setItem("userEmail", userEmail);
         localStorage.setItem("firstName", firstName);
         localStorage.setItem("LastName", lastName);
+
       }
         //  ---------------------------------
         
@@ -49,6 +57,7 @@ login.addEventListener("click", () => {
         password.style.border = "1px solid black";
         window.location.href = "/pages/header.html";
         
+
       } else {
         password.style.border = "1px solid red";
         alert("Wrong Password");
