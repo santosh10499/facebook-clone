@@ -58,6 +58,10 @@ login.addEventListener("click", () => {
         window.location.href = "/pages/header.html";
         
 
+
+
+        
+
       } else {
         password.style.border = "1px solid red";
         alert("Wrong Password");
