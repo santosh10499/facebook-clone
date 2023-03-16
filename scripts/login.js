@@ -34,6 +34,9 @@ login.addEventListener("click", () => {
           localStorage.setItem("userEmail", userEmail);
         localStorage.setItem("firstName", firstName);
         localStorage.setItem("LastName", lastName);
+        email.style.border = "1px solid black";
+        password.style.border = "1px solid black";
+        window.location.href = "/pages/header.html";
         }
       else{
         userEmail.push(array[i].email);
@@ -42,12 +45,13 @@ login.addEventListener("click", () => {
         localStorage.setItem("userEmail", userEmail);
         localStorage.setItem("firstName", firstName);
         localStorage.setItem("LastName", lastName);
-      }
-        //  ---------------------------------
-        
         email.style.border = "1px solid black";
         password.style.border = "1px solid black";
         window.location.href = "/pages/header.html";
+        
+      }
+        //  ---------------------------------
+        
         
       } else {
         password.style.border = "1px solid red";
